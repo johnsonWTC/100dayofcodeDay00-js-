@@ -16,5 +16,7 @@ public class UserController {
         return userService.createUser(user);
     }
 
-    public Iterable
+    public Iterable all(){
+        return userService.findAll();
+    }
 }
