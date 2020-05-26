@@ -12,6 +12,6 @@ public class UserController {
     UserService userService;
     @PostMapping("create")
     public User createUser(User user){
-        return
+        return userService.createUser(user);
     }
 }
