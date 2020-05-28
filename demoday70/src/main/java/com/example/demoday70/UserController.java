@@ -11,5 +11,7 @@ public class UserController {
     @Autowired
     UserService userService;
     @PostMapping("create")
-    public User createUser(User user)
+    public User createUser(User user){
+
+    }
 }
