@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+
+
+
+</head>
+
+<body>
+    <input id="name" placeholder="enter your name"></input>
+    <button id="button" value="add a name" onclick="addtoarray()">add a name</button>
+    <span id="listOfNames"></span>
+
+</body>
+<script>
+    let input = document.getElementById('name');
+    let button = document.getElementById('button');
+    let listOfNames = document.getElementById('listOfNames');
+    const list = [];
+
+    function addtoarray() {
+        console.log("jam " + input.value + " mizzy");
+        list.push(input.value);
+        listOfNames.innerHTML = list;
+        input.value = " ";
+
+    }
+</script>
+
+</html>
