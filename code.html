@@ -23,6 +23,9 @@
     const list = [];
 
     function addtoarray() {
+        if (input.value.length == 0) {
+            alert("name is required");
+        }
         console.log("jam " + input.value + " mizzy");
         list.push(input.value);
         listOfNames.innerHTML = list;
