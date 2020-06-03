@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <br>
+    <input id="input" placeholder="Name" onkeyup="nameOnList()"></input>
+    <button id="button" onclick="addName()">Add Name on the list</button>
+    <span id="span"></span>
+    <br><br>
+</head>
+
+<body id="body">
+    <script>
+        let input = document.getElementById("input");
+        let button = document.getElementById("button");
+        let body = document.getElementById("body");
+        let span = document.getElementById("span");
+        const names = [];
+
+        function addName() {
+            if (input.value.length == 0) {
+                alert("The name field is required");
+            } else {
+                if (names.indexOf(input.value) > -1) {
+                    alert(input.value + " is already on the list");
+                } else {
+                    names.push(input.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = input.value;
+                    body.appendChild(li);
+                    input.value = "";
+                }
+            }
+        }
+
+        function nameOnList() {
+
+
+            let size = names.length;
+            let i = 0;
+            while (i <= size) {
+                if (input.value.startsWith(names[i])) {
+                    span.innerHTML = names[i];
+                }
+                i++;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
