@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body id="body">
     <input id="name" placeholder="enter your name"></input>
     <button id="button" value="add a name" onclick="addtoarray()">add a name</button>
     <span id="listOfNames"></span>
@@ -20,17 +20,25 @@
     let input = document.getElementById('name');
     let button = document.getElementById('button');
     let listOfNames = document.getElementById('listOfNames');
+    let body = document.getElementById("body");
     const list = [];
 
     function addtoarray() {
         if (input.value.length == 0) {
             alert("name is required");
+        } else {
+            if (list.lastIndexOf(input.value) > -1) {
+                alert(input.value + " is already on the list");
+            } else {
+                console.log("jam " + input.value + " mizzy");
+                list.push(input.value);
+                listOfNames.innerHTML = list;
+                var item = document.createElement("li");
+                item.innerHTML = (input.value);
+                body.appendChild(item);
+                input.value = "";
+            }
         }
-        console.log("jam " + input.value + " mizzy");
-        list.push(input.value);
-        listOfNames.innerHTML = list;
-        input.value = " ";
-
     }
 </script>
 
