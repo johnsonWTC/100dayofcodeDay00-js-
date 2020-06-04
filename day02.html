@@ -39,6 +39,19 @@
 
         function autoComplete() {
 
+            let val = names.length;
+            const startWithArray = [];
+            let i = 0;
+            while (i <= val) {
+                if (names[i].startsWith(input.value)) {
+                    startWithArray.push(names[i]);
+                }
+                i++;
+                span.innerHTML = startWithArray;
+            }
+
+            span.innerHTML = val;
+
         }
     </script>
 
