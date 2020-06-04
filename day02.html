@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+</head>
+
+<body id="body">
+    <title>Page Title</title>
+    <input id="input" onkeyup="autoComplete()" placeholder="insert name"></input>
+    <button id="button" onclick="addName()">Add Name</button>
+    <br>
+
+    <span id="span"></span>
+
+    <script>
+        let input = document.getElementById("input");
+        let button = document.getElementById("button");
+        let body = document.getElementById("body");
+        let span = document.getElementById("span");
+        let names = [];
+
+        function addName() {
+            if (input.value.length == 0) {
+                alert("Name is required");
+            } else {
+                if (names.indexOf(input.value) > -1) {
+                    alert("name is already on the list");
+                } else {
+                    let li = document.createElement("li");
+                    li.innerHTML = input.value;
+                    names.push(input.value);
+                    body.appendChild(li);
+                    input.value = "";
+                }
+            }
+        }
+
+        function autoComplete() {
+
+        }
+    </script>
+
+</body>
+
+
+</html>
