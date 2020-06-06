@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Day 4.2</title>
+</head>
+
+<body id="body">
+    <input id="itemID" placeholder="item ID"></input>
+    <input id="productName" placeholder="Product Name"></input>
+    <span id="span"></span>
+    <br>
+    <br>
+    <button id="add" onclick="addItems()">Add Item</button>
+    <br>
+    <br>
+    <table border="1" id="table">
+        <tr>
+            <td>itemID</td>
+            <td>product Name</td>
+        </tr>
+    </table>
+
+    <script>
+        let itemID = document.getElementById("itemID");
+        let productName = document.getElementById("productName");
+        let span = document.getElementById("span");
+        let items = [];
+        let table = document.getElementById("table");
+
+        function addItems() {
+            if (itemID.value.length == 0 || productName.value.length == 0) {
+                alert("please fill in all the inputs")
+            } else {
+                if (items.indexOf(productName.value) > -1) {
+                    alert("this product is already on the list");
+                } else {
+                    items.push(productName.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = productName.value;
+                    body.append(li);
+
+
+                    let row = table.insertRow();
+                    let itemIDCell = row.insertCell();
+                    let productNameCell = row.insertCell();
+
+
+
+                    itemIDCell.innerHTML = itemID.value;
+                    productNameCell.innerHTML = productName.value;
+
+
+                    productName.value = "";
+                    itemID.value = "";
+                    span.innerHTML = items;
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
