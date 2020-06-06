@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Page Title</title>
+
+    <body id="body">
+        <h1> Dynamics Tables</h1>
+        <input id="itemID" placeholder="itemID"></input>
+        <input id="itemName" placeholder="itemName"></input>
+        <button id="button" onclick="addItems()"> Add Item</button>
+
+        <table id="table" border="1">
+            <tr>
+                <td>Item ID</td>
+                <td>Item Name</td>
+            </tr>
+        </table>
+
+        <script>
+            let table = document.getElementById("table");
+            let itemID = document.getElementById("itemID");
+            let itemName = document.getElementById("itemName");
+            let button = document.getElementById("button");
+
+
+            function addItems() {
+                let row = table.insertRow();
+                let itemIDCell = row.insertCell();
+                let itemNameCell = row.insertCell();
+
+                itemIDCell.innerHTML = itemID.value;
+                itemNameCell.innerHTML = itemName.value;
+
+
+            }
+        </script>
+    </body>
+
+</html>
