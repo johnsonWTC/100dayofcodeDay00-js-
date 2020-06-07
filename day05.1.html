@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Page Title</title>
+
+</head>
+
+<body>
+    <h1>My spread sheet</h1>
+    <input type="number" id="rows" placeholder="number of row">
+    <input type="number" id="cells" placeholder="number of cells">
+    <input type="button" value="Creat Sheet" onclick="createSheet()">
+    <br>
+    <br>
+    <table id="table" border="1">
+        <tr>
+            <td>Rows</td>
+            <td>Cells</td>
+        </tr>
+    </table>
+
+    <script>
+        let rows = document.getElementById("rows");
+        let cells = document.getElementById("cells");
+        let table = document.getElementById("table");
+
+        function createSheet() {
+            if (rows.value.length == 0 || cells.value.length == 0) {
+                alert("both these fields are required");
+            } else {
+                let i = 0;
+                while (rows.value >= i) {
+                    let newRow = table.insertRow();
+                    // let j = 0;
+                    // while (cells.value >= j) {
+                    let NewCell = newRow.insertCell();
+                    NewCell.innerHTML = i;
+                    //     j++;
+                    // }
+                    newRow.innerHTML = i;
+                    i++;
+                }
+
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
