@@ -30,16 +30,16 @@
             if (rows.value.length == 0 || cells.value.length == 0) {
                 alert("both these fields are required");
             } else {
-                let i = 0;
+                let i = 1;
                 while (rows.value >= i) {
                     let newRow = table.insertRow();
-                    // let j = 0;
-                    // while (cells.value >= j) {
-                    let NewCell = newRow.insertCell();
-                    NewCell.innerHTML = i;
-                    //     j++;
-                    // }
-                    newRow.innerHTML = i;
+                    let j = 1;
+                    while (cells.value >= j) {
+                        let NewCell = newRow.insertCell();
+                        NewCell.innerHTML = cells.value;
+                        j++;
+                    }
+
                     i++;
                 }
 
