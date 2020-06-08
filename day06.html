@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Page Title</title>
+
+
+</head>
+
+<body>
+    <input type="number" id="itemID">
+    <input type="text" id="itemName">
+    <input type="button" value="add item" id="buton" onclick="addItem()">
+    <br><br>
+
+    <table id="itam" border="1">
+        <tr>
+            <td>item ID</td>
+            <td>item Name</td>
+        </tr>
+    </table>
+    <script>
+        let itemID = document.getElementById("itemID");
+        let itemIDs = [];
+        let itemName = document.getElementById("itemName");
+        let itemNames = [];
+        let button = document.getElementById("button");
+        let table = document.getElementById("table");
+
+        function addItem() {
+            if (itemID.value == 0 || itemName.value == 0) {
+                alert("Please fit in the required fields");
+            } else {
+                if ((itemIDs.indexOf(itemID.value) > -1) || (itemNames.indexOf(itemName.value) > -1)) {
+                    alert("item already contained");
+                } else {
+                    itemNames.push(itemName.value);
+                    itemIDs.push(itemID.value);
+                    alert("item added");
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
