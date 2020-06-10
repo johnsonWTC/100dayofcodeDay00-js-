@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+
+</head>
+
+<body id="body">
+    <input type="color" id="color">
+    <span id="span"></span>
+    <script>
+        let color = document.getElementById("color");
+        let body = document.getElementById("body");
+        let span = document.getElementById("span");
+        colors = [];
+        let i = 0;
+
+        color.addEventListener("input", function() {
+
+            body.style.backgroundColor = color.value;
+
+            colors.push(color.value);
+            span.innerHTML = i++;
+            span.style.backgroundColor = "white";
+
+
+        })
+    </script>
+
+</body>
+
+</html>
