@@ -17,6 +17,7 @@
         let body = document.getElementById("body");
 
         range.addEventListener("input", function() {
+            range.style.color = "gray";
             if (range.value == 20) {
                 body.style.backgroundColor = "red";
             } else if (range.value == 30) {
