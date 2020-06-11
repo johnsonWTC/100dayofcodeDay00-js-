@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Page Title</title>
+
+
+</head>
+
+<body id="body">
+    <input type="range" name="range" id="range">
+    <span id="span"></span>
+    <script>
+        let range = document.getElementById("range");
+        let span = document.getElementById("span");
+        let body = document.getElementById("body");
+
+        range.addEventListener("input", function() {
+            if (range.value == 20) {
+                body.style.backgroundColor = "red";
+            } else if (range.value == 30) {
+                body.style.backgroundColor = "blue";
+            } else if (range.value == 50) {
+                body.style.backgroundColor = "pink";
+            } else if (range.value == 60) {
+                body.style.backgroundColor = "orange";
+            } else if (range.value == 70) {
+                body.style.backgroundColor = "black";
+            } else if (range.value == 80) {
+                body.style.backgroundColor = "gray";
+            };
+
+            span.innerHTML = range.value;
+        });
+
+        span.innerHTML = range.value;
+    </script>
+</body>
+
+</html>
