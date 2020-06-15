@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Page Title</title>
+
+</head>
+
+<body id="body">
+    <input type="text" name="item" id="item">
+    <input type="button" value="Add to list" id="button">
+    <input type="checkbox" name="listItems" id="listItems">
+    <input type="checkbox" name="tableItems" id="tableItams">
+    <script>
+        let item = document.getElementById("item");
+        let button = document.getElementById("button");
+        let listItems = document.getElementById("listItems");
+        let tableItams = document.getElementById("tableItams");
+
+        button.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("this field is required");
+            }
+        });
+    </script>
+</body>
+
+</html>

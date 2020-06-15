@@ -12,6 +12,7 @@
     <input type="checkbox" name="addtoList" id="addtoList">
     <input type="checkbox" name="addtoTable" id="addtoTable">
     <input type="button" value="addItems" id="button">
+    <input type="color" value="">
     <table border="1" id="table">
         <tr>
             <td>items</td>
@@ -62,6 +63,10 @@
                 }
 
             }
+        });
+
+        itemID.addEventListener("input", function() {
+            body.style.backgroundColor = "white";
         });
     </script>
 </body>
