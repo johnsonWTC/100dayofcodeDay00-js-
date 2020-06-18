@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Page Title</title>
+
+</head>
+
+<body id="body">
+
+    <input type="text" id="item" placeholder="searchOrAdd">
+    <input type="button" name="searchButton" id="searchButton" placeholder="search" value="search">
+    <input type="button" name="addItemButton" id="addItemButton" placeholder=" Add" value="add tem">
+    <br><br>
+    <table id="table" border="1 ">
+        <tr>
+            <td>Items</td>
+        </tr>
+    </table>
+    <br><br>
+
+    <script>
+        let item = document.getElementById("item");
+        let searchButton = document.getElementById("searchButton");
+        let addItemButton = document.getElementById("addItemButton");
+        let body = document.getElementById("body");
+        let table = document.getElementById("table");
+        let items = [];
+
+        addItemButton.addEventListener("click", function() {
+            if (items.indexOf(item.value) > -1) {
+                alert("the item is already on the list");
+            } else {
+                alert("the item is added on the list");
+                items.push(item.value);
+                let tableRow = table.insertRow();
+                let tableCell = tableRow.insertCell();
+                tableCell.innerHTML = item.value;
+
+            }
+        });
+
+        searchButton.addEventListener("click", function() {
+            if (items.indexOf(item.value) > -1) {
+                let li = document.createElement("li");
+                li.innerHTML = item.value;
+                body.append(li);
+            } else {
+                alert("the item is not on the list");
+            }
+        });
+    </script>
+</body>
+
+</html>
