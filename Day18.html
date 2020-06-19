@@ -29,12 +29,19 @@
         let table = document.getElementById("table");
         let items = [];
         let span = document.getElementById("span");
+        let body = document.getElementById("body");
 
         searchButton.addEventListener("click", function() {
             span.innerHTML = "";
             let result = search();
             if (result.length > 0) {
-                span.innerHTML = result.toString();
+                let i = 0;
+                while (result.length > i) {
+                    let li = document.createElement("li");
+                    li.innerHTML = result[i];
+                    body.append(li);
+                    i++;
+                }
             } else {
                 alert("item not found");
             }
@@ -57,7 +64,7 @@
             let i = 0;
             while (items.length > i) {
                 if (items[i].startsWith(item.value)) {
-                    itemsList.push(item.value);
+                    itemsList.push(items[i]);
                 }
                 i++;
             }
