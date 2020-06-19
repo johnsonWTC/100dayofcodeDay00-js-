@@ -20,6 +20,7 @@
 
     </table>
     <h2>search results:</h2>
+    <span id="span"></span>
     <script>
         let item = document.getElementById("item");
         let searchButton = document.getElementById("search");
@@ -27,12 +28,15 @@
         let range = document.getElementById("range");
         let table = document.getElementById("table");
         let items = [];
+        let span = document.getElementById("span");
 
         searchButton.addEventListener("click", function() {
-            if (items.indexOf(item.value) > -1) {
-                alert("items found");
+            span.innerHTML = "";
+            let result = search();
+            if (result.length > 0) {
+                span.innerHTML = result.toString();
             } else {
-                alert("item not found")
+                alert("item not found");
             }
         });
 
@@ -47,6 +51,19 @@
                 tableCell.innerHTML = item.value;
             }
         });
+
+        function search() {
+            let itemsList = [];
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(item.value)) {
+                    itemsList.push(item.value);
+                }
+                i++;
+            }
+            console.log(itemsList);
+            return itemsList;
+        }
     </script>
 </body>
 
