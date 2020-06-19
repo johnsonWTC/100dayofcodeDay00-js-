@@ -7,15 +7,43 @@
 
 </head>
 
-<body>
+<body id="body">
     <input type="text" name="item" id="item" placeholder="search or add">
     <input type="button" value="search item" id="search">
     <input type="button" value="add item" id="add">
     <input type="range" name="range" id="range" value="number of search result">
+    <br><br>
+    <table id="table" border="1">
+        <tr>
+            <td>Items</td>
+        </tr>
 
+    </table>
+    <h2>search results:</h2>
     <script>
         let item = document.getElementById("item");
-        let button =
+        let searchButton = document.getElementById("search");
+        let addButton = document.getElementById("add");
+        let range = document.getElementById("range");
+        let table = document.getElementById("table");
+        let items = [];
+
+        searchButton.addEventListener("click", function() {
+            if (items.indexOf(item.value) > -1) {
+                alert("items found");
+            } else {
+                alert("item not found")
+            }
+        });
+
+        addButton.addEventListener("click", function() {
+            if (items.indexOf(item.value) > -1) {
+                alert("items already in the list");
+            } else {
+                items.push(item.value);
+                alert("item added");
+            }
+        });
     </script>
 </body>
 
