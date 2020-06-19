@@ -27,6 +27,8 @@
         let body = document.getElementById("body");
         let table = document.getElementById("table");
         let items = [];
+        let lu = document.createElement("lu");
+        let li = document.createElement("li");
 
         addItemButton.addEventListener("click", function() {
             if (items.indexOf(item.value) > -1) {
@@ -42,8 +44,8 @@
         });
 
         searchButton.addEventListener("click", function() {
+            li.innerHTML = ""
             if (items.indexOf(item.value) > -1) {
-                let li = document.createElement("li");
                 li.innerHTML = item.value;
                 body.append(li);
             } else {
