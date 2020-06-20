@@ -20,6 +20,7 @@
 
     </table>
     <h2>search results:</h2>
+    <div id="div"></div>
     <span id="span"></span>
     <script>
         let item = document.getElementById("item");
@@ -31,15 +32,18 @@
         let span = document.getElementById("span");
         let body = document.getElementById("body");
 
+
         searchButton.addEventListener("click", function() {
+
             span.innerHTML = "";
             let result = search();
             if (result.length > 0) {
                 let i = 0;
+                div.innerHTML = "";
                 while (result.length > i) {
                     let li = document.createElement("li");
                     li.innerHTML = result[i];
-                    body.append(li);
+                    div.append(li);
                     i++;
                 }
             } else {
