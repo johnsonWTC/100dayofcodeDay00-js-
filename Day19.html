@@ -16,6 +16,7 @@
             <td>Items on the list</td>
         </tr>
     </table>
+    <br><br>
     <div id="div"></div>
     <script>
         let item = document.getElementById("item");
@@ -23,7 +24,8 @@
         let search = document.getElementById("search");
         let items = [];
         let div = document.getElementById("div");
-        let table = document.getElementById("table")
+        let table = document.getElementById("table");
+        let span = document.getElementById("span");
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
@@ -41,6 +43,16 @@
 
             }
         });
+
+
+        item.addEventListener("keyup", function() {
+            if (item.value == 0) {
+                span.innerHTML = "";
+            }
+            let suggestion = searching();
+            span.innerHTML = "sugestions: " + suggestion.toString();
+        });
+
         search.addEventListener("click", function() {
             div.innerHTML = "";
             if (item.value.length == 0) {
