@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Google</title>
+    <br><br>
+    <input type="text" placeholder="search or add" id="item">
+    <input type="button" value="Add" id="add">
+    <input type="button" value="Search" id="search">
+    <br><br>
+    <span id="span"></span>
+    <br><br>
+    <table border="1" id="table">
+        <tr>
+            <td>Items on the list</td>
+        </tr>
+    </table>
+    <div id="div"></div>
+    <script>
+        let item = document.getElementById("item");
+        let add = document.getElementById("add");
+        let search = document.getElementById("search");
+        let items = [];
+        let div = document.getElementById("div");
+        let table = document.getElementById("table")
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("the field is required");
+                item.focus();
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert("item is already on the list");
+                } else {
+                    items.push(item.value);
+                    let tableRow = table.insertRow();
+                    let tableCell = tableRow.insertCell();
+                    tableCell.innerHTML = item.value;
+                }
+
+            }
+        });
+        search.addEventListener("click", function() {
+            div.innerHTML = "";
+            if (item.value.length == 0) {
+                alert("the field is required");
+                item.focus();
+            } else {
+                let itemList = searching();
+                if (itemList.length > 0) {
+                    i = 0;
+                    while (itemList.length > i) {
+                        let li = document.createElement("li");
+                        li.innerHTML = itemList[i];
+                        div.append(li);
+                        i++;
+                    }
+                } else {
+                    alert("no item found")
+                }
+            }
+        });
+
+        function searching() {
+            let i = 0;
+            searchItems = [];
+            while (items.length > i) {
+                if (items[i].startsWith(item.value)) {
+                    searchItems.push(items[i]);
+                }
+                i++;
+            }
+            return searchItems;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
