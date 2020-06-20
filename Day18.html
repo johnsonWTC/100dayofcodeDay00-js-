@@ -8,20 +8,22 @@
 </head>
 
 <body id="body">
-    <input type="text" name="item" id="item" placeholder="search or add">
+    <input type="text" name="item" id="item" placeholder="search or add" onkeyup="searchInstant()">
     <input type="button" value="search item" id="search">
     <input type="button" value="add item" id="add">
-    <input type="range" name="range" id="range" value="number of search result">
-    <br><br>
+
+    <span id="span"><h4>suggestions:</h4> </span>
     <table id="table" border="1">
         <tr>
             <td>Items</td>
         </tr>
 
     </table>
+    <input type="range" name="range" id="range" value="number of search result">
+
     <h2>search results:</h2>
     <div id="div"></div>
-    <span id="span"></span>
+
     <script>
         let item = document.getElementById("item");
         let searchButton = document.getElementById("search");
@@ -34,8 +36,6 @@
 
 
         searchButton.addEventListener("click", function() {
-
-            span.innerHTML = "";
             let result = search();
             if (result.length > 0) {
                 let i = 0;
@@ -74,6 +74,21 @@
             }
             console.log(itemsList);
             return itemsList;
+        }
+
+        function searchInstant() {
+            span.innerHTML = "";
+            let itemsListTwo = [];
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(item.value)) {
+                    itemsListTwo.push(items[i]);
+                }
+                i++;
+            }
+            console.log(itemsListTwo);
+            span.innerHTML = "suggestion " + itemsListTwo.toString();
+
         }
     </script>
 </body>
