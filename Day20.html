@@ -61,6 +61,13 @@
             span.innerHTML = suggestions.toString();
         });
 
+
+        item.addEventListener("keyup", function() {
+            span.innerHTML = "";
+            let suggest = seaching();
+            span.innerHTML = suggest.toString();
+        });
+
         function seaching() {
             let searchReturn = [];
             let i = 0;
