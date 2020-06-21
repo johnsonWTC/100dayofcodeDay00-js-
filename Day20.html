@@ -23,6 +23,23 @@
         let item = document.getElementById("item");
         let add = document.getElementById("add");
         let search = document.getElementById("search");
+        let items = [];
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("please fill in item value");
+                item.focus();
+                item.style.backgroundColor = "pink";
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert("item aleady on the list");
+                    item.focus();
+                    item.style.backgroundColor = "pink";
+                } else {
+                    items.push(item.value);
+                }
+            }
+        });
     </script>
 </body>
 
