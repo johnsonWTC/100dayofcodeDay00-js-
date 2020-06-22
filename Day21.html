@@ -21,6 +21,37 @@
         let item = document.getElementById("item");
         let add = document.getElementById("add");
         let search = document.getElementById("search");
+        let table = document.getElementById("table");
+        let items = [];
+        let span = document.getElementById("span");
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("fill in item to be added");
+                item.focus();
+                item.style.backgroundColor = "blue";
+            } else {
+                items.push(item.value);
+            }
+        });
+
+        item.addEventListener("keyup", function() {
+            item.style.backgroundColor = "white";
+            let suggestionItems = searchfunction();
+            span.innerHTML = "Sugestions: " + suggestionItems;
+        });
+
+        function searchfunction() {
+            let suggestionItems = [];
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(item.value)) {
+                    suggestionItems.push(items[i]);
+                }
+                i++;
+            }
+            return suggestionItems;
+        }
     </script>
 </head>
 
