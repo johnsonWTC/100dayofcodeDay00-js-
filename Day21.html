@@ -24,8 +24,10 @@
         let table = document.getElementById("table");
         let items = [];
         let span = document.getElementById("span");
+        let div = document.getElementById("div");
 
         add.addEventListener("click", function() {
+            div.innerHTML = "";
             if (item.value.length == 0) {
                 alert("fill in item to be added");
                 item.focus();
@@ -47,6 +49,7 @@
         });
 
         item.addEventListener("keyup", function() {
+            div.innerHTML = "";
             item.style.backgroundColor = "white";
             let suggestionItems = searchfunction();
             span.innerHTML = "Sugestions: " + suggestionItems;
@@ -63,6 +66,32 @@
             }
             return suggestionItems;
         }
+
+        search.addEventListener("click", function() {
+            div.innerHTML = "";
+            if (item.value.length == 0) {
+                alert("fill in item to be searched");
+                item.focus();
+                item.style.backgroundColor = "blue";
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    let suggestionItems = searchfunction();
+                    let i = 0;
+                    while (suggestionItems.length > i) {
+                        let li = document.createElement("li");
+                        li.innerHTML = suggestionItems[i];
+                        div.append(li);
+                        i++;
+                    }
+
+                } else {
+                    div.innerHTML = "no item found";
+
+                }
+
+            }
+
+        });
     </script>
 </head>
 
