@@ -31,7 +31,18 @@
                 item.focus();
                 item.style.backgroundColor = "blue";
             } else {
-                items.push(item.value);
+                if (items.indexOf(item.value) > -1) {
+                    alert("item is already on the list");
+                    item.style.backgroundColor = "green";
+                    item.focus();
+                } else {
+                    items.push(item.value);
+                    let tableRow = table.insertRow();
+                    let tableCell = tableRow.insertCell();
+                    tableCell.innerHTML = item.value;
+
+                }
+
             }
         });
 
