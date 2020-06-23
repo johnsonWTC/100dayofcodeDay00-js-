@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Page Title</title>
+
+</head>
+
+<body>
+    <input type="button" value="jam" id="jam">
+    <script>
+        let jam = document.getElementById("jam");
+
+        jam.addEventListener("click", function() {
+            let varable = test();
+            let testArray = [];
+            console.log(varable + " to " + testArray);
+        });
+
+        function test() {
+            let varable = "jam";
+            return varable;
+        }
+    </script>
+
+</body>
+
+</html>
