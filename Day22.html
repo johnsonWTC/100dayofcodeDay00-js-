@@ -7,23 +7,23 @@
 
 </head>
 
-<body>
-    <input type="button" value="jam" id="jam">
+<body class="body">
+    <input type="text" id="input" placeholder="Search or Add">
+    <input type="button" value="Add item" id="add">
+    <input type="button" value="Search item" id="search">
+    <br>
+
     <script>
-        let jam = document.getElementById("jam");
+        let input = document.querySelector("#input");
+        let add = document.querySelector("#add");
+        let search = document.querySelector("#search");
+        let body = document.querySelector(".body");
 
-        jam.addEventListener("click", function() {
-            let varable = test();
-            let testArray = [];
-            console.log(varable + " to " + testArray);
-        });
 
-        function test() {
-            let varable = "jam";
-            return varable;
-        }
+        add.addEventListener("click", function() {
+            body.append(input.value);
+        })
     </script>
-
 </body>
 
 </html>
