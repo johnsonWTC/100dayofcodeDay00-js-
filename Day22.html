@@ -18,9 +18,20 @@
         let add = document.querySelector("#add");
         let search = document.querySelector("#search");
         let body = document.querySelector(".body");
+        let inputs = [];
 
         add.addEventListener("click", function() {
-            body.append(input.value);
+            if (input.value.length == 0) {
+                alert("input required");
+                focus();
+            } else {
+                let li = document.createElement("li");
+                li.innerHTML = input.value;
+                body.append(li);
+
+            }
+
+
         })
     </script>
 </body>
