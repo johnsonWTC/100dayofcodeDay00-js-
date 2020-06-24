@@ -25,13 +25,16 @@
                 alert("input required");
                 focus();
             } else {
-                let li = document.createElement("li");
-                li.innerHTML = input.value;
-                body.append(li);
-
+                if (inputs.indexOf(input.value) > -1) {
+                    alert("item already added on the list");
+                } else {
+                    let li = document.createElement("li");
+                    inputs.push(input.value);
+                    li.innerHTML = input.value;
+                    body.append(li);
+                    alert(input.value + " has been added")
+                }
             }
-
-
         })
     </script>
 </body>
