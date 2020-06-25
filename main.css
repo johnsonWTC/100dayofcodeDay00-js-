@@ -12,4 +12,10 @@ h1 {
 
 .box {
     background-color: slateblue;
+    color: springgreen;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
 }
