@@ -10,12 +10,22 @@
     <script src='main.js'></script>
 </head>
 
-<body>
-    <input type="text" name="" id="">
+<body id="body">
+    <input type="text" name="" id="input">
+    <input type="button" value="click" id="adder">
     <div class="container">
         <h1>CSS TEST</h1>
         <p class="box"> I am testing css</p>
     </div>
+    <script>
+        let box = document.querySelector(".box");
+        let adder = document.querySelector("#adder");
+        let body = document.querySelector("#body");
+        adder.addEventListener("click", function() {
+            box.style.backgroundColor = "red";
+
+        });
+    </script>
 </body>
 
 </html>
