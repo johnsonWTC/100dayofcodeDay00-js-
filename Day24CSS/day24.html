@@ -17,6 +17,8 @@
         <input type="text" name="input" id="input">
         <input type="button" value="Add" id="adder">
         <input type="button" value="search">
+        <br>
+        <span id="span"></span>
         <p class="box"></p>
     </div>
     <script>
@@ -25,7 +27,9 @@
         let body = document.querySelector("#body");
         let search = document.querySelector("#search");
         let input = document.getElementById("input");
+        let span = document.querySelector("#span");
         let items = [];
+        let t = 0;
 
         item.addEventListener("click", function() {
             if (input.value.length == 0) {
@@ -41,7 +45,25 @@
                     items.push(input.value);
                 }
             }
+        });
 
+        function anigma() {
+            let searchItem = [];
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(input.vlaue)) {
+                    searchItem.push(items[i]);
+                }
+                i++;
+            }
+            return searchItem;
+        }
+
+        input.addEventListener("keyup", function() {
+            let searchItem = anigma();
+            if (searchItem.length > -1) {
+                span.innerHTML = toString(searchItem);
+            }
         });
     </script>
 </body>
