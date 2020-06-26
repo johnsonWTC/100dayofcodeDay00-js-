@@ -11,7 +11,8 @@ h1 {
 }
 
 .box {
-    color: springgreen;
+    color: rgb(23, 7, 68);
+    font-size: large;
 }
 
 .container {
