@@ -19,3 +19,9 @@ h1 {
     width: 50%;
     margin: auto;
 }
+
+.span {
+    color: coral;
+    font-family: cursive;
+    font-size: medium;
+}

@@ -7,7 +7,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+
 </head>
 
 <body id="body">
@@ -18,7 +18,7 @@
         <input type="button" value="Add" id="adder">
         <input type="button" value="search">
         <br>
-        <span id="span"></span>
+        <span class="span"></span>
         <p class="box"></p>
     </div>
     <script>
@@ -27,7 +27,7 @@
         let body = document.querySelector("#body");
         let search = document.querySelector("#search");
         let input = document.getElementById("input");
-        let span = document.querySelector("#span");
+        let span = document.querySelector(".span");
         let items = [];
         let t = 0;
 
@@ -51,8 +51,9 @@
             let searchItem = [];
             let i = 0;
             while (items.length > i) {
-                if (items[i].startsWith(input.vlaue)) {
+                if (items[i].startsWith(input.value)) {
                     searchItem.push(items[i]);
+                    console.log(items[i]);
                 }
                 i++;
             }
@@ -60,11 +61,13 @@
         }
 
         input.addEventListener("keyup", function() {
-            let searchItem = anigma();
-            if (searchItem.length > -1) {
-                span.innerHTML = toString(searchItem);
+            let searchItems = anigma();
+            if (searchItems.length > 0) {
+                span.innerHTML = "suggestions : " + searchItems.toString();
+            } else {
+                span.innerHTML = "no suggestions";
             }
-        });
+        })
     </script>
 </body>
 
