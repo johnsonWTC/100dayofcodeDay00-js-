@@ -29,6 +29,14 @@
                 alert("Please fill in item name");
                 focus();
                 input.style.backgroundColor = "pink";
+            } else {
+                if (inputs.indexOf(input.value) > -1) {
+                    alert(input.value + " is already on the list")
+                } else {
+                    inputs.push(input.value);
+                    alert(input.value + " added to the list");
+
+                }
             }
         });
     </script>
