@@ -21,3 +21,11 @@
     font-style: italic;
     color: darkkhaki;
 }
+
+.ull li:nth-child(even) {
+    background: darkorange;
+}
+
+.ull li:nth-child(odd) {
+    background: darkred;
+}
