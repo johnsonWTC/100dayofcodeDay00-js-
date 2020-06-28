@@ -15,3 +15,9 @@
     margin: auto;
     width: 50%;
 }
+
+.suggestion {
+    font-family: cursive;
+    font-style: italic;
+    color: darkkhaki;
+}
