@@ -45,6 +45,22 @@
                 }
             }
         });
+
+        function anigma() {
+            let suggestions = [];
+            let i = 0;
+            while (inputs.length > i) {
+                if (inputs[i].startsWith(input.value)) {
+                    suggestions.push(inputs[i]);
+                }
+                i++;
+            }
+            return suggestions;
+        }
+
+        search.addEventListener("click", function() {
+
+        });
     </script>
 </body>
 
