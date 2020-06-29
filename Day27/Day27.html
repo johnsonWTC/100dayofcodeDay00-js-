@@ -13,15 +13,27 @@
     <input type="search" name="search" id="search" placeholder="search">
     <input type="button" value="add" id="add">
     <input type="button" value="search" id="searchButton">
+    <div class="div">
+        <span id="span"></span>
+    </div>
 
     <script>
-        let search = document.querySelector("search");
+        let search = document.querySelector("#search");
         let add = document.querySelector("#add");
         let searchButton = document.querySelector("#searchButton");
+        let span = document.getElementById("span");
 
         add.addEventListener("click", function() {
-            if (search.value == 0) {
-                alert("please fill in item name")
+            if (search.value.length == 0) {
+                alert("please fill in item name");
+            } else {
+                let li = document.createElement("li");
+                li.innerHTML = search.value;
+                span.append(li);
+                li.addEventListener("click", function() {
+                    alert("clicked " + this.innerHTML);
+                })
+
             }
         })
     </script>
