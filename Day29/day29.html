@@ -32,10 +32,18 @@
                 let parah = document.createElement("p");
                 li.innerHTML = obj.title;
                 parah.innerHTML = obj.information;
+                parah.style.display = "none";
                 ul.append(li);
                 ul.append(parah);
+                ul.addEventListener("click", function() {
 
+                    if (parah.style.display === "block") {
+                        parah.style.display = "none";
+                    } else {
+                        parah.style.display = "block";
+                    }
 
+                });
 
 
             }
