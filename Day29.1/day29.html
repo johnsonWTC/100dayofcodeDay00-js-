@@ -17,6 +17,16 @@
         let add = document.querySelector("#add");
         let surname = document.querySelector("#surname");
         let name = document.querySelector("#name");
+        let names = [];
+
+        add.addEventListener("click", function() {
+            if (name.value == 0 || surname.value == 0) {
+                alert("please fill in both name and surname");
+            } else {
+                names.push(name.value);
+
+            }
+        })
     </script>
 </body>
 
