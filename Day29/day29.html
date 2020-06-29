@@ -29,8 +29,14 @@
                 obj.title = title.value;
                 obj.information = information.value;
                 let li = document.createElement("li");
+                let parah = document.createElement("p");
                 li.innerHTML = obj.title;
+                parah.innerHTML = obj.information;
                 ul.append(li);
+                ul.append(parah);
+
+
+
 
             }
         })
