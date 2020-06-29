@@ -17,7 +17,13 @@
     <script>
         let search = document.querySelector("search");
         let add = document.querySelector("#add");
-        let searchButton = document.querySelector("#searchButton")
+        let searchButton = document.querySelector("#searchButton");
+
+        add.addEventListener("click", function() {
+            if (search.value == 0) {
+                alert("please fill in item name")
+            }
+        })
     </script>
 </body>
 
