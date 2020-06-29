@@ -13,15 +13,25 @@
         <input type="text" name="title" id="title" placeholder="title">
         <input type="text" name="information" id="information" placeholder="information">
     </div>
+    <ul id="ul"></ul>
     <script>
         let add = document.querySelector("#add");
         let search = document.querySelector("#search");
         let title = document.querySelector("#title");
         let information = document.querySelector("#information");
+        let obj = {};
+        let ul = document.querySelector("#ul")
 
         add.addEventListener("click", function() {
             if (title.value == 0 || information.value == 0) {
                 alert("please fill in the both fields");
+            } else {
+                obj.title = title.value;
+                obj.information = information.value;
+                let li = document.createElement("li");
+                li.innerHTML = obj.title;
+                ul.append(li);
+
             }
         })
     </script>
