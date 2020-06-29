@@ -14,7 +14,7 @@
     <input type="button" value="add" id="add">
     <input type="button" value="search" id="searchButton">
     <div class="div">
-        <span id="span"></span>
+        <ul id="span"></ul>
     </div>
 
     <script>
@@ -22,17 +22,24 @@
         let add = document.querySelector("#add");
         let searchButton = document.querySelector("#searchButton");
         let span = document.getElementById("span");
+        let searches = [];
 
         add.addEventListener("click", function() {
             if (search.value.length == 0) {
                 alert("please fill in item name");
             } else {
-                let li = document.createElement("li");
-                li.innerHTML = search.value;
-                span.append(li);
-                li.addEventListener("click", function() {
-                    alert("clicked " + this.innerHTML);
-                })
+                if (searches.indexOf(search.value) > -1) {
+                    alert(search.value + " is already on the list");
+                } else {
+                    searches.push(search.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = search.value;
+                    span.append(li);
+                    li.addEventListener("click", function() {
+                        alert("clicked " + this.innerHTML);
+                    })
+                }
+
 
             }
         })
