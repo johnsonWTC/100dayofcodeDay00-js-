@@ -5,3 +5,8 @@
 .body {
     background-color: tomato;
 }
+
+.table {
+    padding-left: 50%;
+    scroll-padding-top: 50%;
+}
