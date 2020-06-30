@@ -11,7 +11,7 @@
 
 <body class="body">
     <div class="info">
-        <input type="text" name="name" id="name" placeholder="bio">
+        <input type="text" name="name" id="name" placeholder="name">
         <input type="text" name="surname" id="surname" placeholder="surname"><br><br>
         <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio"></textarea>
         <br><input type="button" value="add" id="add">
@@ -31,10 +31,21 @@
         let surname = document.getElementById("surname");
         let bio = document.getElementById("bio");
         let add = document.getElementById("add");
+        let names = [];
 
         add.addEventListener("click", function() {
             if (name.value == 0 || surname.value == 0 || bio.value == 0) {
                 alert("please fill in the form");
+            } else {
+                if (names.indexOf(name.value) > -1) {
+                    alert("this name is taken")
+                } else {
+                    names.push(name.value);
+                    let tableRow = document.createElement("tr");
+                    tableRow.innerHTML = `<td>${name.value}</td>`
+                    `<td>${surname.value}</td>`
+                    `<td><a href="#" class= "delete"><a></td>`
+                }
             }
         });
     </script>
