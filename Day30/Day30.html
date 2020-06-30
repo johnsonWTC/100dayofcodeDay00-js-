@@ -31,6 +31,12 @@
         let surname = document.getElementById("surname");
         let bio = document.getElementById("bio");
         let add = document.getElementById("add");
+
+        add.addEventListener("click", function() {
+            if (name.value == 0 || surname.value == 0 || bio.value == 0) {
+                alert("please fill in the form");
+            }
+        });
     </script>
 </body>
 
