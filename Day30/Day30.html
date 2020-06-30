@@ -42,19 +42,18 @@
                     alert("this name is taken")
                 } else {
                     names.push(name.value);
-                    let tableRow = document.createElement("tr");
-                    tableRow.innerHTML = `<td id="nameV">${name.value}</td>
-                    <td>${surname.value}</td>
-                    <td><a href="#" class="delete">X<a></td>`;
-
+                    let tableRow = table.insertRow();
+                    let tableCellOne = tableRow.insertCell();
+                    let tableCellTwo = tableRow.insertCell();
+                    tableCellOne.innerHTML = name.value;
+                    tableCellTwo.innerHTML = surname.value;
                     table.appendChild(tableRow);
-
                     let nameV = document.getElementById("nameV");
                     let para = document.createElement("p");
                     para.innerHTML = bio.value;
                     table.appendChild(para);
                     para.style.display = "none";
-                    this.nameV.addEventListener("click", function() {
+                    nameV.addEventListener("click", function() {
                         if (para.style.display === "none") {
                             para.style.display = "block";
                         } else
