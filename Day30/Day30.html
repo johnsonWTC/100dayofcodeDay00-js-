@@ -48,12 +48,11 @@
                     tableCellOne.innerHTML = name.value;
                     tableCellTwo.innerHTML = surname.value;
                     table.appendChild(tableRow);
-                    let nameV = document.getElementById("nameV");
                     let para = document.createElement("p");
                     para.innerHTML = bio.value;
                     table.appendChild(para);
                     para.style.display = "none";
-                    nameV.addEventListener("click", function() {
+                    tableCellOne.addEventListener("click", function() {
                         if (para.style.display === "none") {
                             para.style.display = "block";
                         } else
