@@ -46,13 +46,16 @@
                     tableRow.innerHTML = `<td id="nameV">${name.value}</td>
                     <td>${surname.value}</td>
                     <td><a href="#" class="delete">X<a></td>`;
+
+                    table.appendChild(tableRow);
+
                     let nameV = document.getElementById("nameV");
                     let para = document.createElement("p");
                     para.innerHTML = bio.value;
-                    table.appendChild(tableRow);
-                    para.style.display = "none"
-                    nameV.addEventListener("click", function() {
-                        if (para.style.display == "none") {
+                    table.appendChild(para);
+                    para.style.display = "none";
+                    this.nameV.addEventListener("click", function() {
+                        if (para.style.display === "none") {
                             para.style.display = "block";
                         } else
                             para.style.display = "none"
