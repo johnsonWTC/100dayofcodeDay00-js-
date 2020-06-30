@@ -14,7 +14,9 @@
         <input type="text" name="name" id="name" placeholder="bio">
         <input type="text" name="surname" id="surname" placeholder="surname"><br><br>
         <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio"></textarea>
+        <br><input type="button" value="add" id="add">
     </div>
+
     <div class="table">
         <table border="1">
             <tr>
@@ -22,8 +24,13 @@
                 <td>surname</td>
             </tr>
         </table>
-
     </div>
+
+    <script>
+        let name = document.getElementById("name");
+        let surname = document.getElementById("surname");
+        let bio = document.getElementById("bio");
+    </script>
 </body>
 
 </html>
