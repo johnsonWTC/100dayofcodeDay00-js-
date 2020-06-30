@@ -18,7 +18,7 @@
     </div>
 
     <div class="table">
-        <table border="1">
+        <table border="1" id="table">
             <tr>
                 <td>Name</td>
                 <td>surname</td>
@@ -31,6 +31,7 @@
         let surname = document.getElementById("surname");
         let bio = document.getElementById("bio");
         let add = document.getElementById("add");
+        let table = document.querySelector("#table")
         let names = [];
 
         add.addEventListener("click", function() {
@@ -42,9 +43,20 @@
                 } else {
                     names.push(name.value);
                     let tableRow = document.createElement("tr");
-                    tableRow.innerHTML = `<td>${name.value}</td>`
-                    `<td>${surname.value}</td>`
-                    `<td><a href="#" class= "delete"><a></td>`
+                    tableRow.innerHTML = `<td id="nameV">${name.value}</td>
+                    <td>${surname.value}</td>
+                    <td><a href="#" class="delete">X<a></td>`;
+                    let nameV = document.getElementById("nameV");
+                    let para = document.createElement("p");
+                    para.innerHTML = bio.value;
+                    table.appendChild(tableRow);
+                    para.style.display = "none"
+                    nameV.addEventListener("click", function() {
+                        if (para.style.display == "none") {
+                            para.style.display = "block";
+                        } else
+                            para.style.display = "none"
+                    })
                 }
             }
         });
