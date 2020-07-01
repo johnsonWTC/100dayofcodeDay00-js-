@@ -55,6 +55,13 @@
                     let tableRow = table.insertRow();
                     let tableCell = tableRow.insertCell();
                     tableCell.innerHTML = item.value;
+                    let info = document.createElement("p");
+                    info.innerHTML = discription.value;
+                    info.style.display = "none";
+
+                    tableCell.addEventListener("click", function() {
+
+                    })
                 }
             }
         })
