@@ -56,9 +56,10 @@
                     let tableCell = tableRow.insertCell();
                     tableCell.innerHTML = item.value;
                     let info = document.createElement("p");
-                    info.innerHTML = discription.value;
-                    info.style.display = "none";
 
+                    info.innerHTML = discription.value;
+                    body.append("info");
+                    info.style.display = "none";
                     tableCell.addEventListener("click", function() {
                         if (info.style.display == "none") {
                             info.style.display = "block";
