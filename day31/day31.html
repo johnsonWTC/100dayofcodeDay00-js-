@@ -29,6 +29,7 @@
         let discription = document.getElementById("discription");
         let counter = document.getElementById("counter");
         let count = 0;
+        let items = []
 
 
         discription.addEventListener("keyup", function() {
@@ -44,6 +45,10 @@
             if (item.value == 0) {
                 alert("this field is required");
                 focus();
+            } else {
+                if (items.indexOf(item) > -1) {
+                    alert("item is already in the list")
+                }
             }
         })
     </script>
