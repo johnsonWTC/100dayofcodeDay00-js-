@@ -46,8 +46,11 @@
                 alert("this field is required");
                 focus();
             } else {
-                if (items.indexOf(item) > -1) {
-                    alert("item is already in the list")
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already in the list");
+                } else {
+                    items.push(item.value);
+                    alert(item.value + " was added to the list")
                 }
             }
         })
