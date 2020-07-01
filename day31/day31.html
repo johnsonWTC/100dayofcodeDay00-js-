@@ -60,12 +60,12 @@
                     info.innerHTML = discription.value;
                     body.append(info);
                     info.style.display = "none";
-                    // tableCell.addEventListener("click", function() {
-                    //     if (info.style.display == "none") {
-                    //         info.style.display = "block";
-                    //     } else
-                    //         info.style.display = "none";
-                    // });
+                    tableCell.addEventListener("click", function() {
+                        if (info.style.display == "none") {
+                            info.style.display = "block";
+                        } else
+                            info.style.display = "none";
+                    });
                 }
             }
         })
