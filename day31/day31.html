@@ -16,7 +16,7 @@
         <textarea name="discription" id="discription" cols="30" rows="10"></textarea>
         <span id="counter">0</span>
         <hr>
-        <table border="1">
+        <table border="1" id="table">
             <tr>
                 <td>Name</td>
             </tr>
@@ -37,6 +37,13 @@
                 counter.style.color = "yellow"
             } else
                 counter.style.color = "black";
+        })
+
+
+        add.addEventListener("click", function() {
+            if (item.value == 0) {
+                alert("this field is required")
+            }
         })
     </script>
 
