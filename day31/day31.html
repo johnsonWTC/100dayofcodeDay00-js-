@@ -27,8 +27,11 @@
 
 
         discription.addEventListener("keyup", function() {
-            counter.innerHTML = count;
-            count++;
+            counter.innerHTML = discription.value.length;
+            if (discription.value.length > 15) {
+                counter.style.color = "yellow"
+            } else
+                counter.style.color = "black";
         })
     </script>
 
