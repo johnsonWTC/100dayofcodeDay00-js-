@@ -23,6 +23,13 @@
         let add = document.getElementById("add");
         let discription = document.getElementById("discription");
         let counter = document.getElementById("counter");
+        let count = 0;
+
+
+        discription.addEventListener("keyup", function() {
+            counter.innerHTML = count;
+            count++;
+        })
     </script>
 
 </body>
