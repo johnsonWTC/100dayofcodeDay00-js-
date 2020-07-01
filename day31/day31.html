@@ -29,7 +29,8 @@
         let discription = document.getElementById("discription");
         let counter = document.getElementById("counter");
         let count = 0;
-        let items = []
+        let items = [];
+        let table = document.getElementById("table");
 
 
         discription.addEventListener("keyup", function() {
@@ -51,6 +52,9 @@
                 } else {
                     items.push(item.value);
                     alert(item.value + " was added to the list")
+                    let tableRow = table.insertRow();
+                    let tableCell = tableRow.insertCell();
+                    tableCell.insertCell = item.value;
                 }
             }
         })
