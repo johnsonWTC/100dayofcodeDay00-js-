@@ -39,8 +39,11 @@
                     div.append(li);
 
                     checkbox.addEventListener("change", function() {
-                        if (checkbox == "checked");
-                        li.style.color = "yellow";
+                        if (checkbox == "checked") {
+                            li.style.color = "blue";
+                        } else {
+                            li.style.color = "black";
+                        }
                     })
                 }
             }
