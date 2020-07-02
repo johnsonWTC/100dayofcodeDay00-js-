@@ -8,12 +8,13 @@
 </head>
 
 <body id="body">
-    <div id="div">
-        <h1>My to do list</h1>
-        <input type="text" name="item" id="item" placeholder="tasks to be done">
-        <input type="button" value="ADD" id="add">
 
-    </div>
+    <h1>My to do list</h1>
+    <input type="text" name="item" id="item" placeholder="tasks to be done">
+    <input type="button" value="ADD" id="add">
+    <br>
+    <hr>
+    <div id="div"></div>
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
@@ -36,6 +37,11 @@
                     checkbox.type = "checkbox";
                     div.append(checkbox);
                     div.append(li);
+
+                    checkbox.addEventListener("change", function() {
+                        if (checkbox == "checked");
+                        li.style.color = "yellow";
+                    })
                 }
             }
         })
