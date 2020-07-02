@@ -8,7 +8,7 @@
 </head>
 
 <body id="body">
-    <div>
+    <div id="div">
         <h1>My to do list</h1>
         <input type="text" name="item" id="item" placeholder="tasks to be done">
         <input type="button" value="ADD" id="add">
@@ -19,6 +19,7 @@
         let add = document.getElementById("add");
         items = [];
         let body = document.getElementById("body");
+        let div = document.getElementById("div")
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
@@ -31,9 +32,10 @@
                     items.push(item.value);
                     let li = document.createElement("li");
                     li.innerHTML = item.value;
-                    let checkbox = document.createElement("checkbox");
-                    body.append(checkbox);
-                    body.append(li);
+                    let checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    div.append(checkbox);
+                    div.append(li);
                 }
             }
         })
