@@ -7,16 +7,18 @@
 
 </head>
 
-<body>
+<body id="body">
     <div>
         <h1>My to do list</h1>
         <input type="text" name="item" id="item" placeholder="tasks to be done">
         <input type="button" value="ADD" id="add">
+
     </div>
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
         items = [];
+        let body = document.getElementById("body");
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
@@ -27,6 +29,11 @@
                     alert(item.value + " is already added on the tasks list");
                 } else {
                     items.push(item.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = item.value;
+                    let checkbox = document.createElement("checkbox");
+                    body.append(checkbox);
+                    body.append(li);
                 }
             }
         })
