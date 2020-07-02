@@ -10,7 +10,7 @@
 <body>
     <div>
         <h1>My to do list</h1>
-        <input type="text" name="item" id="item">
+        <input type="text" name="item" id="item" placeholder="tasks to be done">
         <input type="button" value="ADD" id="add">
     </div>
     <script>
@@ -19,7 +19,10 @@
         items = [];
 
         add.addEventListener("click", function() {
-
+            if (item.value.length == 0) {
+                alert("tasks field required");
+                item.focus();
+            }
         })
     </script>
 </body>
