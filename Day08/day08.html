@@ -40,9 +40,13 @@
 
                     checkbox.addEventListener("change", function() {
                         if (checkbox.checked) {
-                            li.style.color = "red";
+                            li.style.color = "blue";
+                            let itemName = li.innerHTML.split(" ");
+                            li.innerHTML = itemName[0] + " done";
                         } else {
                             li.style.color = "black";
+                            let itemName = li.innerHTML.split(" ");
+                            li.innerHTML = itemName[0];
                         }
                     });
                 }
