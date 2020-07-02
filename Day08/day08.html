@@ -43,10 +43,13 @@
                             li.style.color = "blue";
                             let itemName = li.innerHTML.split(" ");
                             li.innerHTML = itemName[0] + " done";
+                            console.log(itemName[0]);
+                            items.pop(itemName[0]);
                         } else {
                             li.style.color = "black";
                             let itemName = li.innerHTML.split(" ");
                             li.innerHTML = itemName[0];
+                            items.push(itemName[0]);
                         }
                     });
                 }
