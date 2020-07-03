@@ -11,12 +11,13 @@
 <body class="body">
     <div class="thelist">
         <input type="button" value="add" id="add">
-        <input type="text" name="item" id="item">
+        <input type="text" name="item" id="item"><span id="conter">0</span>
     </div>
 
     <script>
         let add = document.getElementById("add");
         let item = document.getElementById("item");
+        let conter = document.getElementById("conter");
         let items = [];
 
         add.addEventListener("click", function() {
@@ -28,6 +29,7 @@
                 } else {
                     items.push(item.value);
                     alert(item.value + " added");
+
                 }
             }
         });
