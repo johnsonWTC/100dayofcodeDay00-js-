@@ -13,11 +13,14 @@
         <input type="button" value="add" id="add">
         <input type="text" name="item" id="item"><span id="conter">0</span>
     </div>
+    <div class="result"></div>
 
     <script>
         let add = document.getElementById("add");
         let item = document.getElementById("item");
         let conter = document.getElementById("conter");
+        let result = document.querySelector("#result");
+
         let items = [];
 
         add.addEventListener("click", function() {
@@ -29,6 +32,12 @@
                 } else {
                     items.push(item.value);
                     alert(item.value + " added");
+                    let li = document.createElement("li");
+                    let input = document.createElement("input");
+                    input.type = "checkbox";
+                    result.append(input);
+
+
                 }
             }
         });
