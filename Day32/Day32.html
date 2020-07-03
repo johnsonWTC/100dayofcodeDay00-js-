@@ -17,6 +17,20 @@
     <script>
         let add = document.getElementById("add");
         let item = document.getElementById("item");
+        let items = [];
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("item name is required");
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already on the list");
+                } else {
+                    items.push(item.value);
+                    alert(item.value + " added");
+                }
+            }
+        });
     </script>
 </body>
 
