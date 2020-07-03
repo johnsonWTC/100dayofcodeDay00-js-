@@ -39,9 +39,11 @@
                     result.append(input);
                     result.append(li);
 
-                    input.addEventListener("chenge", function() {
+                    input.addEventListener("change", function() {
                         if (input.checked) {
                             li.style.color = "red";
+                        } else {
+                            li.style.color = "black"
                         }
                     })
                 }
