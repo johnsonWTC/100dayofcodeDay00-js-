@@ -19,7 +19,7 @@
         let add = document.getElementById("add");
         let item = document.getElementById("item");
         let conter = document.getElementById("conter");
-        let result = document.querySelector("#result");
+        let result = document.querySelector(".result");
 
         let items = [];
 
@@ -34,10 +34,16 @@
                     alert(item.value + " added");
                     let li = document.createElement("li");
                     let input = document.createElement("input");
+                    li.innerHTML = item.value;
                     input.type = "checkbox";
                     result.append(input);
+                    result.append(li);
 
-
+                    input.addEventListener("chenge", function() {
+                        if (input.checked) {
+                            li.style.color = "red";
+                        }
+                    })
                 }
             }
         });
