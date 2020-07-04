@@ -24,13 +24,23 @@
         let surname = document.getElementById("surname");
         let nike = document.getElementById("nike");
         let puma = document.getElementById("puma");
-        let add = document.getElementById("add")
+        let add = document.getElementById("add");
+
         let iName = document.getElementById("iName");
+        iName.style.display = "none";
         let iSurname = document.getElementById("iSurname");
+        iSurname.style.display = "none"
         let iShoe = document.getElementById("iShoe");
+        iShoe.style.display = "none";
 
-        name.add("change", function() {
 
+
+        name.addEventListener("keyup", function() {
+            if (name.value.length == 0) {
+                iName.style.display = "none";
+            }
+            iName.style.display = "block";
+            iName.innerHTML = "Name : " + name.value;
         });
     </script>
 
