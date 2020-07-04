@@ -38,9 +38,11 @@
         name.addEventListener("keyup", function() {
             if (name.value.length == 0) {
                 iName.style.display = "none";
+            } else {
+                iName.style.display = "block";
+                iName.innerHTML = "Name : " + name.value;
             }
-            iName.style.display = "block";
-            iName.innerHTML = "Name : " + name.value;
+
         });
     </script>
 
