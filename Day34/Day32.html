@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>THE FORM</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body class="body">
+
+    <h1>The form</h1>
+    <input type="text" name="name" id="name" placeholder="name">
+    <input type="text" name="surname" id="surname" placeholder="surname"><br><br> nike
+    <input type="checkbox" name="nike" id="nike" value="nike"> puma
+    <input type="checkbox" name="puma" id="puma"> <br><br>
+    <input type="button" value="add" id="add">
+    <hr>
+    <h3 id="iName">Name : </h3>
+    <h3 id="iSurname"> Surname :</h3>
+    <h3 id="iShoe"> Shoe collection : </h3>
+
+    <script>
+        let name = document.getElementById("name");
+        let surname = document.getElementById("surname");
+        let nike = document.getElementById("nike");
+        let puma = document.getElementById("puma");
+        let add = document.getElementById("add");
+
+        let iName = document.getElementById("iName");
+        iName.style.display = "none";
+        let iSurname = document.getElementById("iSurname");
+        iSurname.style.display = "none"
+        let iShoe = document.getElementById("iShoe");
+        iShoe.style.display = "none";
+
+
+
+        name.addEventListener("keyup", function() {
+            if (name.value.length == 0) {
+                iName.style.display = "none";
+            } else {
+                iName.style.display = "block";
+                iName.innerHTML = "Name : " + name.value;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
