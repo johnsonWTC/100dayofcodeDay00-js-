@@ -24,9 +24,13 @@
                 alert("item name is required");
             } else {
                 if (items.indexOf(item.value) > -1) {
-                    alert(`${itam.value} already on the list`)
+                    alert(`${item.value} already on the list`)
                 } else {
                     items.push(item.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = item.value;
+                    result.append(li);
+
                 }
             }
         })
