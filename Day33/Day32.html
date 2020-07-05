@@ -10,10 +10,9 @@
 <body>
     <br>
     <input type="text" name="item" id="item">
-    <input type="button" value="add" id="Add">
+    <input type="button" value="add" id="add">
     <hr>
     <div class="result"></div>
-
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
@@ -21,8 +20,14 @@
         let result = document.querySelector(".result");
 
         add.addEventListener("click", function() {
-            if (item.value === 0) {
+            if (item.value.length == 0) {
                 alert("item name is required");
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(`${itam.value} already on the list`)
+                } else {
+                    items.push(item.value);
+                }
             }
         })
     </script>
