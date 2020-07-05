@@ -19,6 +19,12 @@
         let add = document.getElementById("add");
         let items = [];
         let result = document.querySelector(".result");
+
+        add.addEventListener("click", function() {
+            if (item.value === 0) {
+                alert("item name is required");
+            }
+        })
     </script>
 
 </body>
