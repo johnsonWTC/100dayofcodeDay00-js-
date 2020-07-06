@@ -33,9 +33,11 @@
                     items.push(item.value);
                     let li = document.createElement("li");
                     let checkbox = document.createElement("input");
-                    let del = document.createElement("input");
+                    let del = document.createElement("button");
                     checkbox.type = "checkbox";
-                    del.type = "button";
+                    // del.type = "button";
+                    del.innerHTML = "delete";
+                    del.value - "delete"
                     li.innerHTML = item.value;
                     li.contentEditable = true;
                     div.append(li);
