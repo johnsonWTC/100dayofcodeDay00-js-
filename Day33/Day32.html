@@ -33,13 +33,32 @@
                     items.push(item.value);
                     let li = document.createElement("li");
                     let checkbox = document.createElement("input");
-                    let button = document.createElement("input");
+                    let del = document.createElement("input");
                     checkbox.type = "checkbox";
-                    button.type = "button";
+                    del.type = "button";
                     li.innerHTML = item.value;
+                    li.contentEditable = true;
                     div.append(li);
-                    div.append(button);
+                    div.append(del);
                     div.append(checkbox);
+
+                    del.addEventListener("click", function() {
+                        if (checkbox.checked) {
+                            let comfirmation = confirm("are you sure you want to delete this item")
+                            if (comfirmation) {
+                                li.remove();
+                                del.remove();
+                                checkbox.remove();
+                                items.pop(item.value);
+                            } else {
+                                alert("item was not deleted")
+                            }
+                        } else {
+                            alert("please check the item you want to delete");
+                        }
+                    })
+
+
                 }
             }
         })
