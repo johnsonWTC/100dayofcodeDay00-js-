@@ -14,8 +14,21 @@
     <input type="button" value="add" id="add">
 
     <script>
-        let item = document.getElementById(item);
-        let add = document.getElementById(add);
+        let item = document.getElementById("item");
+        let add = document.getElementById("add");
+        let items = [];
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("item name is required");
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item + " already on the list");
+                } else {
+                    alert(item.value + "added on the list");
+                }
+            }
+        })
     </script>
     <hr>
 </body>
