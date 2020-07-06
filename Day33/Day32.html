@@ -13,6 +13,7 @@
     <input type="text" name="item" id="item">
     <input type="button" value="add" id="add">
 
+
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
@@ -27,6 +28,13 @@
                 } else {
                     alert(item.value + " added on the list");
                     items.push(item.value);
+                    let li = document.createElement("li");
+                    let checkbox = document.createElement("input");
+                    let button = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    button.type = "button";
+                    li.innerHTML = item.value;
+
                 }
             }
         })
