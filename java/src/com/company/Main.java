@@ -9,11 +9,6 @@ public class Main {
         MyClass test = new MyClass();
         AgeEvaluator ageEvaluator = new AgeEvaluator(27,"johnson");
         ageEvaluator.nameEvaluator();
-
-
-
-
-
     }
 
     public static  class MyClass {

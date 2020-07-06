@@ -3,64 +3,12 @@
 
 <head>
 
-    <title>Editable Form</title>
+    <title>add My name</title>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
 </head>
 
 <body>
-    <br>
-    <input type="text" name="item" id="item">
-    <input type="button" value="add" id="add">
-    <span id="span"></span>
-    <hr>
-
-    <div class="result"></div>
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        let items = [];
-        let result = document.querySelector(".result");
-        let span = document.getElementById("span");
-        span.innerHTML = "0";
-
-        add.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("item name is required");
-            } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert(`${item.value} already on the list`)
-                } else {
-                    items.push(item.value);
-                    let li = document.createElement("li");
-                    let del = document.createElement("input");
-                    del.type = "button";
-                    li.innerHTML = item.value;
-                    item.value = " ";
-                    span.innerHTML = "0";
-                    result.append(li);
-                    result.append(del);
-
-                    li.addEventListener("click", function() {
-                        li.contentEditable = true;
-                    });
-
-                    del.addEventListener("click", function() {
-                        let ans = confirm("are you sure you want to remove item")
-                        if (ans) {
-                            del.remove();
-                            li.remove();
-                        }
-
-                    })
-
-                }
-            }
-        })
-
-        item.addEventListener("keyup", function() {
-            span.innerHTML = item.value.length;
-        })
-    </script>
 
 </body>
 
