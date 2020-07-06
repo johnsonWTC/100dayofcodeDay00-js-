@@ -35,14 +35,24 @@ public class STDBank {
 
     public void depositMoney(int funds) {
         if (bankAccounts.contains(this.name)) {
-            if (bankBalance > 5000) {
-                System.out.println("You have too much money in your account, please open an investment account");
+            if (funds > 50000) {
+                System.out.println("this amount is too much for this account, please open an investment account");
+                return;
             } else {
                 this.bankBalance = funds + this.bankBalance;
-                System.out.println("your new balance is " + this.bankBalance);
+                System.out.println(funds +" was deposited, your new balance is " + this.bankBalance);
             }
         }else {
             System.out.println(this.name + " does not have an acount with us");
+        }
+    }
+
+    public void withDrawMoney(int funds){
+        if(this.bankBalance < funds){
+            System.out.println("insufficient funds on the account");
+        }else{
+            this.bankBalance = this.bankBalance - funds;
+            System.out.println(funds + " was withdrawn, your new balance is "+  bankBalance);
         }
     }
 }
