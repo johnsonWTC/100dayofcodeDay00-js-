@@ -23,9 +23,10 @@
                 alert("item name is required");
             } else {
                 if (items.indexOf(item.value) > -1) {
-                    alert(item + " already on the list");
+                    alert(item.value + " already on the list");
                 } else {
-                    alert(item.value + "added on the list");
+                    alert(item.value + " added on the list");
+                    items.push(item.value);
                 }
             }
         })
