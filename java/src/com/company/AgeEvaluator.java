@@ -2,12 +2,19 @@ package com.company;
 
 public class AgeEvaluator {
 
-    public void nameEvaluator(int personsAge) {
+    int age;
+    String name;
 
-        if (personsAge > 21) {
-            System.out.println("umdala");
+    public AgeEvaluator(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    public void nameEvaluator() {
+        if (age > 21) {
+            System.out.println("umdala " + name);
         } else {
-            System.out.println("no you are ok");
+            System.out.println("no you are ok " + name);
         }
     }
 }

@@ -7,9 +7,8 @@ public class Main {
         int age = 210;
 
         MyClass test = new MyClass();
-        AgeEvaluator ageEvaluator = new AgeEvaluator();
-        ageEvaluator.nameEvaluator(7);
-        test.nameEvaluator(age);
+        AgeEvaluator ageEvaluator = new AgeEvaluator(27,"johnson");
+        ageEvaluator.nameEvaluator();
 
 
 
