@@ -11,10 +11,14 @@
     <input type="text" name="item" id="item" placeholder="add item on the list">
     <input type="button" value="Add" id="add">
     <hr>
+    <div class="div"></div>
+
+    <hr>
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
         let items = [];
+        let div = document.querySelector(".div");
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
@@ -25,10 +29,13 @@
                     alert(`${item.value} is aleady on the list`);
                 } else {
                     items.push(item.value);
-                    item.value = " ";
+                    let li = document.createElement("li");
+                    li.contentEditable = true;
+                    li.innerHTML = item.value;
+                    console.log(li);
+                    div.append(li);
+                    item.value = "";
                 }
-
-
             }
         })
     </script>
