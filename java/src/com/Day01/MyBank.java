@@ -20,6 +20,24 @@ public class MyBank {
     public void depositFunds(int funds){
         if(funds > 10000){
             System.out.println("This amount is too large to deposit");
+        }else {
+            bankBalance = bankBalance + funds;
+            System.out.println(funds + " was deposited into your bank account");
+        }
+    }
+
+    public  void withDrawFunds(int funds){
+        if (funds > bankBalance){
+            System.out.println("inefficient funds");
+        }else{
+            bankBalance = bankBalance - funds;
+            System.out.println(bankBalance + " was withdrawn, your new balance is " + bankBalance);
+        }
+    }
+
+    public void createAccount{
+        if(this.age > 65){
+            System.out.println(this.name + " Sorry we can not open an account for you");
         }
     }
 }
