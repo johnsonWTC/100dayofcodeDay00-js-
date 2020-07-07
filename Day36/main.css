@@ -1,3 +1,9 @@
-.body {
+body {
     background-color: aqua;
+}
+
+div {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
 }

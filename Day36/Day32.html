@@ -30,10 +30,13 @@
                 } else {
                     items.push(item.value);
                     let li = document.createElement("li");
+                    let del = document.createElement("button");
+                    del.innerHTML = "delete item";
                     li.contentEditable = true;
                     li.innerHTML = item.value;
                     console.log(li);
                     div.append(li);
+                    div.append(del);
                     item.value = "";
                 }
             }
