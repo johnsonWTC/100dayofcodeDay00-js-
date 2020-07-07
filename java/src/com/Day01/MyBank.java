@@ -46,7 +46,7 @@ public class MyBank {
             System.out.println("inefficient funds");
         }else{
             bankBalance = bankBalance - funds;
-            System.out.println(bankBalance + " was withdrawn, your new balance is " + bankBalance);
+            System.out.println(funds + " was withdrawn, your new balance is " + bankBalance);
         }
     }
 
