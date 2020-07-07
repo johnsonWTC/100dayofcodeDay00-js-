@@ -2,15 +2,44 @@
 <html>
 
 <head>
-
     <title>Page Title</title>
-
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-
 </head>
 
 <body>
+    <H1>To do list</H1>
+    <hr>
+    <br>
+    <hr>
+    <input type="text" name="item" id="item">
+    <input type="button" value="add" id="add">
+    <br>
+    <div class="div"></div>
+    <hr>
+    <script>
+        let div = document.querySelector(".div");
+        let item = document.getElementById("item");
+        let add = document.getElementById("add");
+        let items = [];
 
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("the item name is required");
+                item.focus();
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already on the to do list");
+                } else {
+                    items.push(item.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = item.value;
+                    li.contentEditable = true;
+                    li.style.color = "blue";
+                    div.append(li);
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
