@@ -1,4 +1,4 @@
-package com.Day0001;
+package com.javaday00.Day0001;
 
 public class Main {
 

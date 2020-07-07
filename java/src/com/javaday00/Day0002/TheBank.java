@@ -1,4 +1,4 @@
-package com.Day0002;
+package com.javaday00.Day0002;
 
 public class TheBank {
     public static void main(String[] args) {
