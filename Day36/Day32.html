@@ -37,6 +37,10 @@
                     console.log(li);
                     div.append(li);
                     div.append(del);
+                    del.addEventListener("click", function() {
+                        li.remove();
+                        del.remove();
+                    })
                     item.value = "";
                 }
             }
