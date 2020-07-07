@@ -34,6 +34,7 @@
                     del.innerHTML = "delete item";
                     li.contentEditable = true;
                     li.innerHTML = item.value;
+                    const pain = "full body";
                     console.log(li);
                     div.append(li);
                     div.append(del);
@@ -42,6 +43,8 @@
                         if (decision) {
                             li.remove();
                             del.remove();
+                            pain = "jam";
+
                         }
 
                     })
