@@ -38,8 +38,12 @@
                     div.append(li);
                     div.append(del);
                     del.addEventListener("click", function() {
-                        li.remove();
-                        del.remove();
+                        let decision = confirm("Are you sure you want to remove " + li.innerHTML);
+                        if (decision) {
+                            li.remove();
+                            del.remove();
+                        }
+
                     })
                     item.value = "";
                 }
