@@ -30,6 +30,20 @@ public class BankBluePrint {
             System.out.println("The maximum amount that can be deposited is 10000");
         }else{
             this.bankBalance = this.bankBalance + funds;
+            System.out.println(funds + " where deposited into you account, your new balance is " + this.bankBalance);
         }
     }
+
+    public void withdrawFunds(int funds){
+        if(!bankAccount.contains(this.name)){
+            System.out.println(this.name + " does not have an account with us");
+        }else if(funds > this.bankBalance){
+            System.out.println("Insufficient fund");
+        }else{
+            this.bankBalance = this.bankBalance - funds;
+            System.out.println(funds + " where withdrawn from  your account, you new balance is " + this.bankBalance);
+        }
+    }
+
+
 }
