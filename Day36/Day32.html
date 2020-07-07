@@ -21,6 +21,13 @@
                 alert("item name is required");
                 return;
             } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(`${item.value} is aleady on the list`);
+                } else {
+                    items.push(item.value);
+                    item.value = " ";
+                }
+
 
             }
         })
