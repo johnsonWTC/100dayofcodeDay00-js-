@@ -3,7 +3,9 @@ body {
 }
 
 div {
-    display: inline-block;
+    display: inline;
     font-size: 20px;
     padding: 20px;
+    display: inline;
+    padding: 5px;
 }
