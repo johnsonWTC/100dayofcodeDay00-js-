@@ -34,9 +34,14 @@
                     li.contentEditable = true;
                     div.append(li);
 
-                    li.addEventListener("input", function() {
-                        itemList.pop(val);
-                        itemList.push(li.innerHTML);
+                    li.addEventListener("blur", function() {
+                        if (itemList.indexOf(li.innerHTML) > -1) {
+                            alert("item is already on the list");;
+                            li.innerHTML = val;
+                        } else {
+                            itemList.pop(val);
+                            itemList.push(li.innerHTML);
+                        }
                     });
                 }
             }
