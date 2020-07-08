@@ -16,6 +16,7 @@
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
+        let div = document.querySelector(".div")
         let itemList = [];
 
         add.addEventListener("click", function() {
@@ -26,9 +27,16 @@
                 if (itemList.indexOf(item.value) > -1) {
                     alert(item.value + " is already on the list")
                 } else {
-                    item.push(item.value);
+                    itemList.push(item.value);
                     let li = document.createElement("li");
                     li.innerHTML = item.value;
+                    let val = li.innerHTML;
+                    li.contentEditable = true;
+                    div.append(li);
+
+                    li.addEventListener("change", function() {
+                        itemList.pop(val);
+                    });
                 }
             }
         })
