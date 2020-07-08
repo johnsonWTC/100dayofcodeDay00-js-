@@ -23,6 +23,7 @@ public class Capitec implements IBank {
         }
         else{
             accounts.add(this.name);
+            System.out.println("Account for "+ this.name + " has been created" );
         }
     }
 

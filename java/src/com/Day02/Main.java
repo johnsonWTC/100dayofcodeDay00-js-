@@ -15,10 +15,10 @@ public class Main {
                     + "2.No\n");
             Integer i = scanner.nextInt();
             if (i.equals(2)) {
-                System.out.println("******create account******\n"
-                        + "what is you name");
-                String name = scanner.nextLine();
-                System.out.println("what is your age");
+                System.out.println("******create account******");
+                System.out.println("what is you name");
+                String name = scanner.next();
+                System.out.println("Hello "name +" what is your age");
                 Integer age = scanner.nextInt();
                 IBank client = new Capitec(age, name);
                 client.createAccount();
