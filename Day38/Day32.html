@@ -11,7 +11,7 @@
     <input type="text" name="item" id="item">
     <input type="button" value="add" id="add">
     <hr>
-    <div class="div"></div>
+    <ul class="div"></ul>
 
     <script>
         let item = document.getElementById("item");
@@ -33,14 +33,16 @@
                     let val = li.innerHTML;
                     li.contentEditable = true;
                     div.append(li);
+                    item.value = "";
 
                     li.addEventListener("blur", function() {
                         if (itemList.indexOf(li.innerHTML) > -1) {
-                            alert("item is already on the list");;
+                            alert(li.innerHTML + " is already on the list");;
                             li.innerHTML = val;
                         } else {
                             itemList.pop(val);
                             itemList.push(li.innerHTML);
+                            console.dir(div[1].toString());
                         }
                     });
                 }
