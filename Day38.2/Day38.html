@@ -8,7 +8,44 @@
 </head>
 
 <body>
+    <br>
+    <input type="text" name="item" id="item" placeholder="item">
+    <input type="button" value="add" id="add">
+    <hr>
+    <ul id="list">
+    </ul>
+    <script>
+        let item = document.getElementById("item");
+        let add = document.getElementById("add");
+        let items = [];
+        let list = document.getElementById("list");
 
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("item name is required");
+                item.focus();
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " already on the list");
+                } else {
+                    items.push(item.value);
+                    let li = document.createElement("li");
+                    li.contentEditable = true;
+                    li.innerHTML = item.value;
+                    list.append(li);
+
+                    li.addEventListener("blur", function() {
+                        let lists = list.childNodes;
+                        let i = 1;
+                        while (lists.length > i) {
+                            alert(lists[i].innerHTML);
+                            i++;
+                        }
+                    })
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
