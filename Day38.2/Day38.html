@@ -20,6 +20,7 @@
         let items = [];
         let list = document.getElementById("list");
 
+
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
                 alert("item name is required");
@@ -34,12 +35,19 @@
                     li.innerHTML = item.value;
                     list.append(li);
 
+
+                    let oldLists = list.childNodes;
+                    console.dir(oldLists);
+                    let oldLi = li.innerHTML;
+
                     li.addEventListener("blur", function() {
-                        let lists = list.childNodes;
-                        let i = 1;
-                        while (lists.length > i) {
-                            alert(lists[i].innerHTML);
-                            i++;
+                        if (oldLists.indexOf(li.innerHTML) > -1) {
+                            alert(li.innerHTML + " already on the list");
+                            li.innerHTML = oldLi;
+                        } else {
+                            items.pop(oldLi);
+                            items.push(li.innerHTML);
+
                         }
                     })
                 }
@@ -49,3 +57,24 @@
 </body>
 
 </html>
+
+<!-- let oldLists = list.childNodes;
+let oldLi = li.innerHTML;
+
+li.addEventListener("blur", function() {
+    if (oldLists.indexOf(li.innerHTML) > -1) {
+        alert(li.innerHTML + " already on the list");
+        li.innerHTML = oldLi;
+    } else {
+        items.pop(oldLi);
+        items.push(li.innerHTML);
+    }
+
+    // let lists = list.childNodes;
+    // let i = 1;
+    // while (lists.length > i) {
+    //     alert(lists[i].innerHTML);
+    //     i++;
+
+});
+} -->
