@@ -34,8 +34,9 @@
                     li.contentEditable = true;
                     div.append(li);
 
-                    li.addEventListener("change", function() {
+                    li.addEventListener("input", function() {
                         itemList.pop(val);
+                        itemList.push(li.innerHTML);
                     });
                 }
             }
