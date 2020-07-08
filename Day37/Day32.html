@@ -39,12 +39,14 @@
                     li.style.color = "blue";
                     div.append(li);
                     div.append(del);
+                    item.value = "";
 
                     del.addEventListener("click", function() {
                         let discusion = confirm("are you sure you want ro remove this item");
                         if (discusion) {
                             li.remove();
                             del.remove();
+                            items.pop(li.innerHTML);
                         }
                     });
                 }
