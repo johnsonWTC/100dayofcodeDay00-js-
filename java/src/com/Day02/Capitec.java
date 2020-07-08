@@ -28,7 +28,10 @@ public class Capitec implements IBank {
 
     @Override
     public void depositFunds(int fund) {
-        if(fund > 10000){
+        if(!accounts.contains(this.name)){
+            System.out.println(this.name + " Does not have an account with us");
+        }
+        else if(fund > 10000){
             System.out.println("that's to much for a saving account");
         }
         else{
@@ -40,7 +43,10 @@ public class Capitec implements IBank {
 
     @Override
     public void withdrawFund(int fund) {
-        if(fund > bankBalance){
+        if(!accounts.contains(this.name)){
+            System.out.println(this.name + " Does not have an account with us");
+        }
+        else if(fund > bankBalance){
             System.out.println("insufficient funds");
         }else{
             bankBalance = bankBalance - fund;
