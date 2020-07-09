@@ -13,6 +13,18 @@
     <input type="button" value="ADD" id="add">
     <hr>
 
+    <script>
+        let items = [];
+        let item = document.getElementById("item");
+        let add = document.getElementById("add");
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("Item name is required")
+            }
+        })
+    </script>
+
 </body>
 
 </html>
