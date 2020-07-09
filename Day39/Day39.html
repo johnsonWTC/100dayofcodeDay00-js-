@@ -20,7 +20,12 @@
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
-                alert("Item name is required")
+                alert("Item name is required");
+                item.focus();
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already on the list")
+                }
             }
         })
     </script>
