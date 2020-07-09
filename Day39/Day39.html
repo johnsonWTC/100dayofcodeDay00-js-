@@ -12,11 +12,14 @@
     <input type="text" name="item" id="item">
     <input type="button" value="ADD" id="add">
     <hr>
+    <ul id="ul"></ul>
+    <hr>
 
     <script>
         let items = [];
         let item = document.getElementById("item");
         let add = document.getElementById("add");
+        let ul = document.getElementById("ul");
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
@@ -27,6 +30,18 @@
                     alert(item.value + " is already on the list");
                 } else {
                     items.push(item.value);
+                    let li = document.createElement("li");
+                    let edit = document.createElement("button");
+                    let save = document.createElement("button");
+                    let del = document.createElement("button");
+
+                    li.contentEditable = true;
+                    li.innerHTML = item.value;
+                    del.innerHTML = "Delete";
+                    save.innerHTML = "Save";
+                    edit.innerHTML = "Edit";
+                    ul.append(li);
+
                 }
             }
         })
