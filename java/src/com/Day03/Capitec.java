@@ -39,6 +39,13 @@ public class Capitec implements IBank {
 
     @Override
     public void withDrawFunds(int funds) {
-
+        if(!Accounts.contains(this.name)){
+            System.out.println(this.name+ " doesnt have an account with us");
+        }else if(funds > 50000){
+            System.out.println("Please open an investment account");
+        }else{
+            accountBalance = accountBalance - funds;
+            System.out.println("Hello "+this.name + ", "+ funds + " where withdrawn from your account, your new balance is "+ this.accountBalance);
+        }
     }
 }
