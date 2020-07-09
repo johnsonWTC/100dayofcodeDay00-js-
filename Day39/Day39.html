@@ -12,7 +12,7 @@
     <input type="text" name="item" id="item">
     <input type="button" value="ADD" id="add">
     <hr>
-    <ul id="ul"></ul>
+    <div id="ul"></div>
     <hr>
 
     <script>
@@ -41,7 +41,8 @@
                     save.innerHTML = "Save";
                     edit.innerHTML = "Edit";
                     ul.append(li);
-
+                    ul.append(edit);
+                    ul.append(del);
                 }
             }
         })
