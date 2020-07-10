@@ -22,7 +22,7 @@ public class FNB implements IBank {
         }
         else{
             names.add((this.name));
-            System.out.println("account created for"+ this.name);
+            System.out.println("account created for "+ this.name);
         }
     }
 
