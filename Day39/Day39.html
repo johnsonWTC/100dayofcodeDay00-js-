@@ -35,7 +35,7 @@
                     let save = document.createElement("button");
                     let del = document.createElement("button");
 
-                    li.contentEditable = true;
+
                     li.innerHTML = item.value;
                     del.innerHTML = "Delete";
                     save.innerHTML = "Save";
@@ -43,6 +43,13 @@
                     ul.append(li);
                     ul.append(edit);
                     ul.append(del);
+
+                    edit.addEventListener("click", function() {
+                        li.contentEditable = true;
+                    });
+                    edit.addEventListener("blur", function() {
+                        li.contentEditable = false;
+                    })
                 }
             }
         })
