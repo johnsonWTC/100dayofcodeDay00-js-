@@ -37,6 +37,10 @@ public class FNB implements IBank {
     public void withDrawFunds(int funds) {
         if(!names.contains(this.name)){
             System.out.println(this.name + " does not have an account with us");
-        }else if()
+        }else if(bankBalance < funds){
+            System.out.println("insufficient funds");
+        }else{
+            System.out.println(funds + " was withdrawn, your new balance is "+ this.name);
+        }
     }
 }
