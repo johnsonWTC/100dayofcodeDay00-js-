@@ -13,15 +13,23 @@
     <input type="text" name="item" id="item">
     <input type="button" value="add" id="add">
     <hr>
+    <div class="div"></div>
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
+        let div = document.querySelector(".div");
         let items = [];
 
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
                 alert("Item name is required");
+            } else {
+                items.push(item.value);
+                let li = document.createElement("li");
+                li.innerHTML = item.value;
+                div.append(li);
+
             }
         })
     </script>
