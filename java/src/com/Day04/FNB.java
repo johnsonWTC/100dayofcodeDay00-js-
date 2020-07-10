@@ -30,6 +30,11 @@ public class FNB implements IBank {
     public void depositFunds(int funds) {
         if(!names.contains(this.name)){
             System.out.println(this.name + " does not have an account with us");
+        }else if(40000 < funds){
+            System.out.println("this amount is too much for a savings account");
+        }else{
+            bankBalance = bankBalance+ funds;
+            System.out.println(funds + " was withdrawn, your new balance is "+ bankBalance);
         }
     }
 
@@ -40,7 +45,8 @@ public class FNB implements IBank {
         }else if(bankBalance < funds){
             System.out.println("insufficient funds");
         }else{
-            System.out.println(funds + " was withdrawn, your new balance is "+ this.name);
+            bankBalance = bankBalance - funds;
+            System.out.println(funds + " was withdrawn, your new balance is "+ this.bankBalance);
         }
     }
 }
