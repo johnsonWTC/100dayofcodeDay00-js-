@@ -14,7 +14,7 @@ public class FNB implements IBank {
     }
 
     @Override
-    public void createAccount(String name, int age) {
+    public void createAccount() {
         if(names.contains(this.name)){
             System.out.println(this.name + " already on the list");
         }else if(this.age > 40){
