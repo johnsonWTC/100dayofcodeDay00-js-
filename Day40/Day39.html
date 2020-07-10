@@ -34,10 +34,18 @@
 
         item.addEventListener("input", function() {
 
+
         })
 
         function seach() {
             let searched = [];
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(item.value)) {
+                    searched.push(item.value);
+                }
+                i++;
+            }
             return searched;
         }
     </script>
