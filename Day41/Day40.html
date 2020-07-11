@@ -42,6 +42,13 @@
                         li.contentEditable = true;
 
                         li.addEventListener("blur", function() {
+                            if (inputs.indexOf(li.innerText) > -1) {
+                                alert(li.innerText + " already on the list");
+                                li.innerText = previousState;
+                            } else {
+                                inputs.pop(previousState);
+                                inputs.push(li.innerText);
+                            }
                             li.contentEditable = false;
                         })
                     })
