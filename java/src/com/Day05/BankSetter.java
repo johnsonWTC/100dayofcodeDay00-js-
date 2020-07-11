@@ -8,6 +8,11 @@ public class BankSetter {
     int bankBalance = 0;
     ArrayList<String> bankAccounts = new ArrayList<>();
 
+    public BankSetter(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public void createdAccount() {
         if (bankAccounts.contains(this.name)) {
             System.out.println(this.name + " already has an account with us");
