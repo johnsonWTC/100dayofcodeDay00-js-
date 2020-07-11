@@ -26,8 +26,7 @@
                 input.focus();
             } else {
                 if (inputs.indexOf(input.value) > -1) {
-                    alert(item.value + " already in the list")
-
+                    alert(input.value + " already in the list");
                 } else {
                     inputs.push(input.value);
                     let li = document.createElement("li");
