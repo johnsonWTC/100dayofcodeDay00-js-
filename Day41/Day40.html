@@ -10,18 +10,24 @@
 <body>
     <input type="text" name="input" id="input" placeholder="Add activity">
     <input type="button" value="add" id="add" onclick="addElement()">
-    <div class="div"></div>
     <hr>
+    <div class="div"></div>
+
     <script>
         let input = document.getElementById("input");
         let add = document.getElementById("add");
-        let div = document.getElementById("div");
+        let div = document.querySelector(".div");
         let inputs = [];
 
         function addElement() {
             if (input.value.length == 0) {
                 alert("input name is required");
                 input.focus();
+            } else {
+                inputs.push(input.value);
+                let li = document.createElement("li");
+                li.innerHTML = input.value;
+                div.append(li);
             }
         }
     </script>
