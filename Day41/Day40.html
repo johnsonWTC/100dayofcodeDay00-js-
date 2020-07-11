@@ -31,16 +31,19 @@
                     inputs.push(input.value);
                     let li = document.createElement("li");
                     let edit = document.createElement("button");
+                    let del = document.createElement("button");
+                    del.innerText = "delete";
                     edit.innerHTML = "edit";
                     li.innerHTML = input.value;
                     li.contentEditable = false;
                     div.append(li);
                     div.append(edit);
+                    div.append(del);
+                    input.value = "";
 
                     edit.addEventListener("click", function() {
                         let previousState = li.innerText;
                         li.contentEditable = true;
-
                         li.addEventListener("blur", function() {
                             if (inputs.indexOf(li.innerText) > -1) {
                                 alert(li.innerText + " already on the list");
@@ -51,6 +54,15 @@
                             }
                             li.contentEditable = false;
                         })
+                    })
+                    del.addEventListener("click", function() {
+                        let result = confirm("are you sure want to remove this item");
+                        if (result) {
+                            inputs.pop(li.innerText);
+                            del.remove();
+                            li.remove();
+                            edit.remove();
+                        }
                     })
                 }
 
