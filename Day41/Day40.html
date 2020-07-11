@@ -10,6 +10,7 @@
 <body>
     <input type="text" name="input" id="input" placeholder="Add activity">
     <input type="button" value="add" id="add" onclick="addElement()">
+
     <hr>
     <div class="div"></div>
 
@@ -24,10 +25,16 @@
                 alert("input name is required");
                 input.focus();
             } else {
-                inputs.push(input.value);
-                let li = document.createElement("li");
-                li.innerHTML = input.value;
-                div.append(li);
+                if (inputs.indexOf(input.value) > -1) {
+                    alert(item.value + " already in the list")
+
+                } else {
+                    inputs.push(input.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = input.value;
+                    div.append(li);
+                }
+
             }
         }
     </script>
