@@ -44,6 +44,8 @@ public class BankSetter {
        void checkBalances(){
             if (!bankAccounts.contains(this.name)) {
                 System.out.println(this.name + " doesnt have an account with us");
+            }else{
+                System.out.println("your balance is " +bankBalance);
             }
         }
     }
