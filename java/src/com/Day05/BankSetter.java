@@ -43,7 +43,7 @@ public class BankSetter {
             System.out.println("Insufficient funds");
         } else {
             bankBalance = bankBalance - funds;
-            System.out.println(this.bankBalance + " was withdrawn, your new balance is " + this.bankBalance);
+            System.out.println(funds + " was withdrawn, your new balance is " + this.bankBalance);
         }
     }
        void checkBalances(){
