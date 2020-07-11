@@ -8,13 +8,22 @@
 </head>
 
 <body>
-    <input type="text" name="input" id="input">
-    <input type="button" value="add" id="add">
+    <input type="text" name="input" id="input" placeholder="Add activity">
+    <input type="button" value="add" id="add" onclick="addElement()">
+    <div class="div"></div>
     <hr>
     <script>
         let input = document.getElementById("input");
         let add = document.getElementById("add");
+        let div = document.getElementById("div");
         let inputs = [];
+
+        function addElement() {
+            if (input.value.length == 0) {
+                alert("input name is required");
+                input.focus();
+            }
+        }
     </script>
 </body>
 
