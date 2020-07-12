@@ -22,7 +22,8 @@
             } else {
                 if (items.indexOf(item.value) > -1) {
                     alert(item.value + " is already on the list");
-
+                } else {
+                    items.push(item.value);
                 }
             }
         }
