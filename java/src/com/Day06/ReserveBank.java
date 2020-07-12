@@ -16,6 +16,11 @@ public class ReserveBank {
     public void createAccount(){
         if(names.contains(this.name)){
             System.out.println(this.name + " Already has an account with us");
+        }else if(age > 30){
+            System.out.println("You too old for this type of account "+ this.name);
+        }else{
+            System.out.println("An account was created for "+ this.name);
+            names.add(this.name);
         }
     }
 }
