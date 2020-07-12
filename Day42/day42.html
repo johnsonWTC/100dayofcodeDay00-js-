@@ -10,11 +10,12 @@
 <body>
     <input type="text" name="item" id="item" placeholder="item">
     <input type="button" value="add" id="add" onclick="addItem()">
-
+    <div class="div"></div>
     <script>
         let add = document.querySelector("#add");
         let item = document.querySelector("#item");
         let items = [];
+        let div = document.querySelector(".div");
 
         function addItem() {
             if (item.value.length == 0) {
@@ -24,6 +25,9 @@
                     alert(item.value + " is already on the list");
                 } else {
                     items.push(item.value);
+                    let li = document.createElement("li");
+                    li.innerText = item.value;
+                    div.append(li);
                 }
             }
         }
