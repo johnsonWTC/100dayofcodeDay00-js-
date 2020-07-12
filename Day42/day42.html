@@ -10,6 +10,7 @@
 <body>
     <input type="text" name="item" id="item" placeholder="item">
     <input type="button" value="add" id="add" onclick="addItem()">
+    <hr>
     <div class="div"></div>
     <script>
         let add = document.querySelector("#add");
@@ -26,8 +27,15 @@
                 } else {
                     items.push(item.value);
                     let li = document.createElement("li");
+                    let edit = document.createElement("button");
+                    edit.innerText = "edit item";
                     li.innerText = item.value;
                     div.append(li);
+                    div.append(edit);
+
+                    edit.addEventListener("click", function() {
+
+                    })
                 }
             }
         }
