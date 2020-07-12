@@ -40,10 +40,10 @@ public class ReserveBank {
         if(!names.contains(this.name)){
             System.out.println(this.name + " Doesnt have  an account with us");
         }else if(funds > bankBalance){
-            System.out.println("insufficient fu");
+            System.out.println("insufficient funds");
         }else{
-            bankBalance = funds + bankBalance;
-            System.out.println(funds + " where deposited on your account"+ " your new balance is "+ this.bankBalance);
+            bankBalance =  bankBalance - funds;
+            System.out.println(funds + " where withdrawn on your account"+ " your new balance is "+ this.bankBalance);
         }
     }
 }
