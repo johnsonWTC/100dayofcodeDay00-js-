@@ -8,12 +8,18 @@
 </head>
 
 <body>
-    <input type="text" name="item" id="item" placeholder="item" onclick="addItem()">
-    <input type="button" value="add" id="add">
+    <input type="text" name="item" id="item" placeholder="item">
+    <input type="button" value="add" id="add" onclick="addItem()">
 
     <script>
         let add = document.querySelector("#add");
         let item = document.querySelector("#item");
+
+        function addItem() {
+            if (item.value.length == 0) {
+                alert("Item name is required");
+            }
+        }
     </script>
 </body>
 
