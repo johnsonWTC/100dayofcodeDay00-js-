@@ -1,5 +1,14 @@
 package com.Day06;
 
 public class Main {
-    ReserveBank capitec = new ReserveBank("johnson", 29);
+
+    public static void main(String[] args) {
+        ReserveBank johnson = new ReserveBank("johnson", 29);
+        johnson.depositFunds(70);
+        johnson.createAccount();
+        johnson.depositFunds(5000);
+        johnson.withDrawFunds(600);
+    }
+
+
 }
