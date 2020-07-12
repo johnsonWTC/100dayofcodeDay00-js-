@@ -14,10 +14,16 @@
     <script>
         let add = document.querySelector("#add");
         let item = document.querySelector("#item");
+        let items = [];
 
         function addItem() {
             if (item.value.length == 0) {
                 alert("Item name is required");
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already on the list");
+
+                }
             }
         }
     </script>
