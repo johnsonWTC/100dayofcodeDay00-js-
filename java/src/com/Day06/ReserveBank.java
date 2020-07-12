@@ -6,6 +6,7 @@ public class ReserveBank {
     String name;
     int age;
     ArrayList<String> names = new ArrayList<>();
+    int bankBalance = 0;
 
 
     public ReserveBank(String name, int age) {
@@ -21,6 +22,28 @@ public class ReserveBank {
         }else{
             System.out.println("An account was created for "+ this.name);
             names.add(this.name);
+        }
+    }
+
+    public void depositFunds(int funds){
+        if(!names.contains(this.name)){
+            System.out.println(this.name + " Doesnt have  an account with us");
+        }else if(funds > 10000){
+            System.out.println("This amount is too much for this account");
+        }else{
+            bankBalance = funds + bankBalance;
+            System.out.println(funds + " where deposited on your account"+ " your new balance is "+ this.bankBalance);
+        }
+    }
+
+    public void  withDrawFunds(int funds){
+        if(!names.contains(this.name)){
+            System.out.println(this.name + " Doesnt have  an account with us");
+        }else if(funds > bankBalance){
+            System.out.println("insufficient fu");
+        }else{
+            bankBalance = funds + bankBalance;
+            System.out.println(funds + " where deposited on your account"+ " your new balance is "+ this.bankBalance);
         }
     }
 }
