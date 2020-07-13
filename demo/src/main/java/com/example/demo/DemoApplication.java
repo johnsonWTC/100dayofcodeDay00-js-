@@ -19,4 +19,10 @@ public class DemoApplication {
         return String.format("Hello %s!", name);
     }
 
+    @GetMapping("/jam")
+    public String sayJam(@RequestParam(value = "myName", defaultValue = "World") String name) {
+      //  return String.format("Hello %s!", name);
+        return ("hey there "+ name);
+    }
+
 }
