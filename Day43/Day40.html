@@ -38,6 +38,16 @@
                     list.append(li);
                     list.append(save);
                     list.append(del);
+
+                    del.addEventListener("click", function() {
+                        let removeItem = confirm("are you sure you want to remove " + li.innerText);
+                        if (removeItem) {
+                            items.pop(li.innerText);
+                            li.remove();
+                            del.remove();
+                            save.remove();
+                        }
+                    })
                 }
             }
         });
