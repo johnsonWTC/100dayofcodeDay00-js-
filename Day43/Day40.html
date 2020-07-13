@@ -30,6 +30,10 @@
                 } else {
                     items.push(item.value);
                     let li = document.createElement("li");
+                    let del = document.createElement("button");
+                    let save = document.createElement("button");
+                    save.innerText = "save item";
+                    del.innerText = "delete item";
                     li.innerHTML = item.value;
                     list.append(li);
                 }
