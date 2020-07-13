@@ -33,11 +33,14 @@
                     li.contentEditable = true;
                     let del = document.createElement("button");
                     let save = document.createElement("button");
+                    let edit = document.createElement("button");
+                    edit.innerText = "edit";
                     save.innerText = "save item";
                     del.innerText = "delete item";
                     li.innerHTML = item.value;
                     list.append(li);
                     list.append(save);
+                    list.append(edit);
                     list.append(del);
 
                     del.addEventListener("click", function() {
@@ -50,10 +53,22 @@
                         }
                     })
 
-                    li.addEventListener("blur", function() {
+                    edit.addEventListener("click", function() {
+                        let oldvalue = li.innerText;
+                        li.contentEditable = true;
 
-                    })
+                        li.addEventListener("blur", function() {
+                            if (items.indexOf(li.innerText) > -1) {
+                                alert(li.innerText + " is already on the list");
+                                li.innerText = oldvalue;
+                            } else {
+                                items.pop(oldvalue);
+                                items.push(li.innerText);
+                            }
+                        })
+                    });
 
+                    li
 
                 }
             }
