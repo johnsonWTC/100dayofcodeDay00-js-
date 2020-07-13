@@ -24,5 +24,10 @@ public class DemoApplication {
       //  return String.format("Hello %s!", name);
         return ("hey there "+ name);
     }
+    @GetMapping("/form")
+    public String form(@RequestParam(value = "myName", defaultValue = "World") String name) {
+        //  return String.format("Hello %s!", name);
+        return ("/form");
+    }
 
 }
