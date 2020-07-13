@@ -14,7 +14,7 @@ public class Capitec implements ReserveBank {
 
     ArrayList<String> names = new ArrayList<>();
     @Override
-    public void createAccount(String Name, int age) {
+    public void createAccount() {
         if(names.contains(this.name)){
             System.out.println(this.name + " Already has an account");
         }else{
@@ -43,6 +43,7 @@ public class Capitec implements ReserveBank {
             System.out.println("The maximum deposit limit 10000 for a student account");
         }
         else{
+            balance = balance +funds;
             System.out.println(funds + " was deposited into your account, your new balance is " +this.balance);
         }
     }
@@ -51,11 +52,12 @@ public class Capitec implements ReserveBank {
     public void withDrawFunds(int funds) {
         if(!names.contains(this.name)){
             System.out.println(this.name +" does not have an account with us");
-        }else if(funds > 10000){
-            System.out.println("The maximum deposit limit 10000 for a student account");
+        }else if(funds > balance){
+            System.out.println("insufficient funds");
         }
         else{
-            System.out.println(funds + " was deposited into your account, your new balance is " +this.balance);
+            balance = balance - funds;
+            System.out.println(funds + " was withdrawn from your account, your new balance is " +this.balance);
         }
 
     }
