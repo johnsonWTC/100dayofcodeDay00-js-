@@ -30,6 +30,7 @@
                 } else {
                     items.push(item.value);
                     let li = document.createElement("li");
+                    li.contentEditable = true;
                     let del = document.createElement("button");
                     let save = document.createElement("button");
                     save.innerText = "save item";
@@ -48,6 +49,12 @@
                             save.remove();
                         }
                     })
+
+                    li.addEventListener("blur", function() {
+
+                    })
+
+
                 }
             }
         });
