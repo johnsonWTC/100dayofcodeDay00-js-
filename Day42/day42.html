@@ -10,6 +10,7 @@
 <body>
     <input type="text" name="item" id="item" placeholder="item" oninput="search()">
     <input type="button" value="add " id="add " onclick="addItem() ">
+    <br>
     <span id="span"></span>
     <hr>
     <div class="div"></div>
@@ -30,16 +31,16 @@
                     items.push(item.value);
                     let li = document.createElement("li");
                     let edit = document.createElement("button");
-                    edit.innerText = "edit item ";
+                    edit.innerText = "edit item";
                     li.innerText = item.value;
                     div.append(li);
                     div.append(edit);
 
-                    edit.addEventListener("click ", function() {
-                        let olditem = item.value;
+                    edit.addEventListener("click", function() {
+                        let olditem = li.innerText;
                         li.contentEditable = true;
 
-                        li.addEventListener("blur ", function() {
+                        li.addEventListener("blur", function() {
                             if (items.indexOf(li.innerText) > -1) {
                                 alert(li.innerText + " is already on the list ");
                                 li.innerText = olditem;
@@ -48,21 +49,21 @@
                                 items.push(li.innerText);
                             }
                             li.contentEditable = false;
-
                         })
                     });
-
-
                 }
             }
+            item.value = "";
         }
 
         function search() {
-            if (item.value.length == 0) {
-                span.innerHTML = " ";
-            }
+
             let suggestion = searchItem();
             span.innerText = suggestion;
+            if (item.value.length == 0) {
+                span.innerText = "";
+            }
+
         }
 
         function searchItem() {
