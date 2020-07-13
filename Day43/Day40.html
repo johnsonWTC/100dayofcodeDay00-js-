@@ -30,7 +30,7 @@
                 } else {
                     items.push(item.value);
                     let li = document.createElement("li");
-                    li.contentEditable = true;
+                    li.contentEditable = false;
                     let del = document.createElement("button");
                     let save = document.createElement("button");
                     let edit = document.createElement("button");
@@ -42,6 +42,7 @@
                     list.append(save);
                     list.append(edit);
                     list.append(del);
+                    let oldvalue = li.innerText;
 
                     del.addEventListener("click", function() {
                         let removeItem = confirm("are you sure you want to remove " + li.innerText);
@@ -54,21 +55,24 @@
                     })
 
                     edit.addEventListener("click", function() {
-                        let oldvalue = li.innerText;
+
                         li.contentEditable = true;
 
-                        li.addEventListener("blur", function() {
-                            if (items.indexOf(li.innerText) > -1) {
-                                alert(li.innerText + " is already on the list");
-                                li.innerText = oldvalue;
-                            } else {
-                                items.pop(oldvalue);
-                                items.push(li.innerText);
-                            }
-                        })
+
                     });
 
-                    li
+                    li.addEventListener("blur", function() {
+                        if (items.indexOf(li.innerText) > -1) {
+                            alert(li.innerText + " is already on the list");
+                            li.innerText = oldvalue;
+                        } else {
+                            items.pop(oldvalue);
+                            items.push(li.innerText);
+                        }
+                        li.contentEditable = false;
+                    })
+
+
 
                 }
             }
