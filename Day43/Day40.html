@@ -12,20 +12,25 @@
     <input type="button" value="add" id="add">
     <div class="sugestions"></div>
     <hr>
+    <div class="list"></div>
 
     <script>
         let item = document.getElementById("item");
         let add = document.getElementById("add");
+        let list = document.querySelector(".list");
+        let sugestions = document.querySelector("#sugestions");
         let items = [];
 
         add.addEventListener("click", function() {
             if (item.value.length == 0) {
                 alert("Item name is required ");
             } else {
-                if (items.indexOf(item) > -1) {
-                    alert(item + " is already in the list");
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already in the list");
                 } else {
-                    items.push(item);
+                    items.push(item.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = item.value;
                 }
             }
         });
