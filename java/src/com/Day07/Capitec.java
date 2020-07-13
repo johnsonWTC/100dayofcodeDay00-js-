@@ -10,6 +10,9 @@ public class Capitec implements ReserveBank {
     public void createAccount(String Name, int age) {
         if(names.contains(this.name)){
             System.out.println(this.name + " Already has an account");
+        }else{
+            System.out.println("An account has been created for "+ this.name);
+            names.add(this.name);
         }
     }
 
