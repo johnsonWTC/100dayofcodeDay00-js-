@@ -17,6 +17,18 @@
         let item = document.getElementById("item");
         let add = document.getElementById("add");
         let items = [];
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("Item name is required ");
+            } else {
+                if (items.indexOf(item) > -1) {
+                    alert(item + " is already in the list");
+                } else {
+                    items.push(item);
+                }
+            }
+        });
     </script>
 
 
