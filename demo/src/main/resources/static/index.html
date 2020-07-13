@@ -19,7 +19,17 @@
         <label for="nameField">How should the app call you?</label>
         <input name="myName" id="name">
         <button>Greet me!</button>
+        <span id="span"></span>
     </div>
 </form>
+
+<script>
+    let span = document.querySelector("#span");
+    let name = document.getElementById("name");
+    let i = 0;
+    name.addEventListener("input", function () {
+        span.innerHTML = name.value.length;
+    })
+</script>
 </body>
 </html>
