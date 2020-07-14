@@ -9,16 +9,16 @@ import org.springframework.web.servlet.ModelAndView;
 public class Hello {
 
     @GetMapping("hello")
-    public ModelAndView hello(@RequestParam(value = "name", defaultValue = "World")String MyName){
+    public ModelAndView hello(@RequestParam(value = "name", defaultValue = "World")String name){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("name",MyName);
+        modelAndView.addObject("name",name);
         modelAndView.setViewName("hello.jsp");
         return modelAndView;
     }
-
-//    @GetMapping("/welcome")
+//
+//    @GetMapping("/hello")
 //    public String hello(){
-//        return "welcome.jsp";
+//        return "hello.jsp";
 //    }
 
 }

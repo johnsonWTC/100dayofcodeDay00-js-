@@ -1,6 +1,9 @@
 <html>
-<h1>Hello this is ${myName}</h1>
+<h1>Hello this is johnson</h1>
 
-   <h1>${name}</h1>
+    <form action="/welcome.jsp">
+        <input type="text" id="name">
+        <button> Add</button>
+    </form>
 
 </html>
