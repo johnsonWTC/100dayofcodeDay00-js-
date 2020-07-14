@@ -10,7 +10,15 @@ public class MainController {
     @ResponseBody
     @GetMapping("test")
     public String hello(){
+        System.out.println("we testing");
         return "hello, we are testing";
     }
+
+    @GetMapping("test")
+    public  String wellcome(){
+return  "welcome";
+    }
+
+
 
 }
