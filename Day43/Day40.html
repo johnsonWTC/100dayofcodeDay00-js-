@@ -30,7 +30,19 @@
             if (name.value.length == 0) {
                 suugestions.innerHTML = "";
             }
+        })
 
+        add.addEventListener("click", function() {
+            if (name.value.length == 0) {
+                alert("Name is required");
+            } else {
+                if (names.indexOf(name.value) > -1) {
+                    alert(name.value + " is already on the list");
+                } else {
+                    names.push(name.value);
+                    let li = document.createElement("li");
+                }
+            }
         })
     </script>
 
