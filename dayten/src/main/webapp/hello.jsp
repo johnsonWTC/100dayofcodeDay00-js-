@@ -1,7 +1,9 @@
 <html>
 <h1>Hello this is Johnson</h1>
 
-    <input placeholder="input type" type="text" id="input">
-<button id="add">Add</button>
+    <form action="/welcome.jsp">
+        <input type="text" id="name">
+        <button> Add</button>
+    </form>
 
 </html>
