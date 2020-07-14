@@ -15,10 +15,5 @@ public class Hello {
         modelAndView.setViewName("hello.jsp");
         return modelAndView;
     }
-//
-//    @GetMapping("/hello")
-//    public String hello(){
-//        return "hello.jsp";
-//    }
 
 }
