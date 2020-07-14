@@ -10,9 +10,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class Hello {
 
     @RequestMapping("hello")
-    public ModelAndView hello(@RequestParam(value = "name", defaultValue = "World")String name){
+    public ModelAndView hello(@RequestParam(value = "name", defaultValue = "World")String name, @RequestParam(value = "surname", defaultValue = "dubula")String surname){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("name",name);
+        modelAndView.addObject("surname",surname);
         modelAndView.setViewName("hello.jsp");
         return modelAndView;
     }
