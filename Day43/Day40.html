@@ -41,6 +41,9 @@
                 } else {
                     names.push(name.value);
                     let li = document.createElement("li");
+                    li.innerText = name.value;
+                    div.append(li);
+                    name.value = "";
                 }
             }
         })
