@@ -7,7 +7,7 @@
     <title>Names</title>
 
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+
 </head>
 
 <body>
@@ -15,6 +15,24 @@
 
     <input type="text" name="name" id="name">
     <input type="button" value="add" id="add">
+    <div class="suugestions"></div>
+    <hr>
+    <div class="div"></div>
+    <script>
+        let name = document.getElementById("name");
+        let add = document.getElementById("add");
+        let suugestions = document.querySelector(".suugestions");
+        let div = document.querySelector(".div");
+        let names = [];
+
+        name.addEventListener("input", function() {
+            suugestions.innerHTML = "Typing";
+            if (name.value.length == 0) {
+
+            }
+
+        })
+    </script>
 
 </body>
 
