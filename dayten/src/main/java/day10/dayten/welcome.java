@@ -7,16 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class welcome {
-//    @GetMapping("welcome")
-//    public ModelAndView hello(@RequestParam(value = "name", defaultValue = "World")String MyName){
-//        ModelAndView modelAndView = new ModelAndView();
-//        modelAndView.addObject("name",MyName);
-//        modelAndView.setViewName("welcome.jsp");
-//        return modelAndView;
-//    }
-
-
-    @GetMapping("/welcome")
+    @GetMapping("welcome")
     public String hello(){
         return "welcome.html";
     }
