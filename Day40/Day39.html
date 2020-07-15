@@ -9,50 +9,50 @@
 </head>
 
 <body>
-    <br>
-    <input type="text" name="item" id="item">
-    <input type="button" value="add" id="add">
-    <div class="seachedItem"></div>
-    <hr>
-    <div class="div"></div>
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        let div = document.querySelector(".div");
-        let seachedItem = document.querySelector(".seachedItem")
-        let items = [];
+<br>
+<input type="text" name="item" id="item">
+<input type="button" value="add" id="add">
+<div class="seachedItem"></div>
+<hr>
+<div class="div"></div>
+<script>
+    let item = document.getElementById("item");
+    let add = document.getElementById("add");
+    let div = document.querySelector(".div");
+    let seachedItem = document.querySelector(".seachedItem")
+    let items = [];
 
 
-        add.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("Item name is required");
-            } else {
-                items.push(item.value);
-                let li = document.createElement("li");
-                li.innerHTML = item.value;
-                li.contentEditable = true
-                div.append(li);
-            }
-        })
-        item.addEventListener("input", function() {
-            seachedItem.innerHTML = seach();
-            if (item.value == 0) {
-                seachedItem.innerHTML = "";
-            }
-        })
-
-        function seach() {
-            let searched = [];
-            let i = 0;
-            while (items.length > i) {
-                if (items[i].startsWith(item.value)) {
-                    searched.push(items[i]);
-                }
-                i++;
-            }
-            return searched;
+    add.addEventListener("click", function () {
+        if (item.value.length == 0) {
+            alert("Item name is required");
+        } else {
+            items.push(item.value);
+            let li = document.createElement("li");
+            li.innerHTML = item.value;
+            li.contentEditable = true
+            div.append(li);
         }
-    </script>
+    })
+    item.addEventListener("input", function () {
+        seachedItem.innerHTML = seach();
+        if (item.value == 0) {
+            seachedItem.innerHTML = "";
+        }
+    })
+
+    function seach() {
+        let searched = [];
+        let i = 0;
+        while (items.length > i) {
+            if (items[i].startsWith(item.value)) {
+                searched.push(items[i]);
+            }
+            i++;
+        }
+        return searched;
+    }
+</script>
 </body>
 
 </html>

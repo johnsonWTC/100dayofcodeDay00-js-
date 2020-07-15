@@ -1,4 +1,5 @@
 package com.example.demo;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,9 +22,10 @@ public class DemoApplication {
 
     @GetMapping("/jam")
     public String sayJam(@RequestParam(value = "myName", defaultValue = "World") String name) {
-      //  return String.format("Hello %s!", name);
-        return ("hey there "+ name);
+        //  return String.format("Hello %s!", name);
+        return ("hey there " + name);
     }
+
     @GetMapping("/form")
     public String form(@RequestParam(value = "myName", defaultValue = "World") String name) {
         //  return String.format("Hello %s!", name);

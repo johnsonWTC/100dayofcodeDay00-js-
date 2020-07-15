@@ -16,49 +16,49 @@ public class MyBank {
         this.age = age;
     }
 
-    public void checkBalance(){
-        if(!names.contains(this.name)){
+    public void checkBalance() {
+        if (!names.contains(this.name)) {
             System.out.println(this.name + " does not have an account with us");
             return;
-    }
+        }
         System.out.println(bankBalance + " Your current balance");
     }
 
-    public void depositFunds(int funds){
-        if(!names.contains(this.name)){
+    public void depositFunds(int funds) {
+        if (!names.contains(this.name)) {
             System.out.println(this.name + " does not have an account with us");
             return;
-    }
-        if(funds > 10000){
+        }
+        if (funds > 10000) {
             System.out.println("This amount is too large to deposit");
-        }else {
+        } else {
             bankBalance = bankBalance + funds;
             System.out.println(funds + " was deposited into your bank account");
         }
     }
 
-    public  void withDrawFunds(int funds){
-        if(!names.contains(this.name)) {
+    public void withDrawFunds(int funds) {
+        if (!names.contains(this.name)) {
             System.out.println(this.name + " does not have an account with us");
             return;
         }
-        if (funds > bankBalance){
+        if (funds > bankBalance) {
             System.out.println("inefficient funds");
-        }else{
+        } else {
             bankBalance = bankBalance - funds;
             System.out.println(funds + " was withdrawn, your new balance is " + bankBalance);
         }
     }
 
-    public void createAccount(){
-        if(this.age > 65){
+    public void createAccount() {
+        if (this.age > 65) {
             System.out.println(this.name + " Sorry we can not open an account for you");
-        }else if(names.contains(this.name)){
-                System.out.println(this.name + " Is already has an account");
-            }else {
+        } else if (names.contains(this.name)) {
+            System.out.println(this.name + " Is already has an account");
+        } else {
             names.add(this.name);
-            System.out.println("Account was created for "+ this.name);
+            System.out.println("Account was created for " + this.name);
         }
-        }
+    }
 
 }

@@ -10,42 +10,42 @@
 </head>
 
 <body class="body">
-    <div class="input">
-        <input type="search" name="search" id="search" placeholder="search">
-        <input type="button" value="add" id="add">
-        <input type="button" value="search" id="searchButton">
-    </div>
-    <div class="center">
-        <ul id="span"></ul>
-    </div>
+<div class="input">
+    <input type="search" name="search" id="search" placeholder="search">
+    <input type="button" value="add" id="add">
+    <input type="button" value="search" id="searchButton">
+</div>
+<div class="center">
+    <ul id="span"></ul>
+</div>
 
-    <script>
-        let search = document.querySelector("#search");
-        let add = document.querySelector("#add");
-        let searchButton = document.querySelector("#searchButton");
-        let span = document.getElementById("span");
-        let searches = [];
+<script>
+    let search = document.querySelector("#search");
+    let add = document.querySelector("#add");
+    let searchButton = document.querySelector("#searchButton");
+    let span = document.getElementById("span");
+    let searches = [];
 
-        add.addEventListener("click", function() {
-            if (search.value.length == 0) {
-                alert("please fill in item name");
+    add.addEventListener("click", function () {
+        if (search.value.length == 0) {
+            alert("please fill in item name");
+        } else {
+            if (searches.indexOf(search.value) > -1) {
+                alert(search.value + " is already on the list");
             } else {
-                if (searches.indexOf(search.value) > -1) {
-                    alert(search.value + " is already on the list");
-                } else {
-                    searches.push(search.value);
-                    let li = document.createElement("li");
-                    li.innerHTML = search.value;
-                    span.append(li);
-                    li.addEventListener("click", function() {
-                        alert("clicked " + this.innerHTML);
-                    })
-                }
-
-
+                searches.push(search.value);
+                let li = document.createElement("li");
+                li.innerHTML = search.value;
+                span.append(li);
+                li.addEventListener("click", function () {
+                    alert("clicked " + this.innerHTML);
+                })
             }
-        })
-    </script>
+
+
+        }
+    })
+</script>
 </body>
 
 </html>

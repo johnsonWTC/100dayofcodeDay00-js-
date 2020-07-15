@@ -7,11 +7,11 @@ public class Main {
         int age = 210;
 
         MyClass test = new MyClass();
-        AgeEvaluator ageEvaluator = new AgeEvaluator(27,"johnson");
+        AgeEvaluator ageEvaluator = new AgeEvaluator(27, "johnson");
         ageEvaluator.nameEvaluator();
     }
 
-    public static  class MyClass {
+    public static class MyClass {
         public void nameEvaluator(int personsAge) {
 
             if (personsAge > 21) {

@@ -7,52 +7,52 @@
 </head>
 
 <body>
-    <br>
-    <input type="text" name="item" id="item" placeholder="add item on the list">
-    <input type="button" value="Add" id="add">
-    <hr>
-    <div class="div"></div>
+<br>
+<input type="text" name="item" id="item" placeholder="add item on the list">
+<input type="button" value="Add" id="add">
+<hr>
+<div class="div"></div>
 
-    <hr>
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        let items = [];
-        let div = document.querySelector(".div");
+<hr>
+<script>
+    let item = document.getElementById("item");
+    let add = document.getElementById("add");
+    let items = [];
+    let div = document.querySelector(".div");
 
-        add.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("item name is required");
-                return;
+    add.addEventListener("click", function () {
+        if (item.value.length == 0) {
+            alert("item name is required");
+            return;
+        } else {
+            if (items.indexOf(item.value) > -1) {
+                alert(`${item.value} is aleady on the list`);
             } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert(`${item.value} is aleady on the list`);
-                } else {
-                    items.push(item.value);
-                    let li = document.createElement("li");
-                    let del = document.createElement("button");
-                    del.innerHTML = "delete item";
-                    li.contentEditable = true;
-                    li.innerHTML = item.value;
-                    const pain = "full body";
-                    console.log(li);
-                    div.append(li);
-                    div.append(del);
-                    del.addEventListener("click", function() {
-                        let decision = confirm("Are you sure you want to remove " + li.innerHTML);
-                        if (decision) {
-                            li.remove();
-                            del.remove();
-                            items.pop(li.innerHTML);
+                items.push(item.value);
+                let li = document.createElement("li");
+                let del = document.createElement("button");
+                del.innerHTML = "delete item";
+                li.contentEditable = true;
+                li.innerHTML = item.value;
+                const pain = "full body";
+                console.log(li);
+                div.append(li);
+                div.append(del);
+                del.addEventListener("click", function () {
+                    let decision = confirm("Are you sure you want to remove " + li.innerHTML);
+                    if (decision) {
+                        li.remove();
+                        del.remove();
+                        items.pop(li.innerHTML);
 
-                        }
+                    }
 
-                    })
-                    item.value = "";
-                }
+                })
+                item.value = "";
             }
-        })
-    </script>
+        }
+    })
+</script>
 
 </body>
 

@@ -27,7 +27,7 @@
         let table = document.getElementById("table");
         let span = document.getElementById("span");
 
-        add.addEventListener("click", function() {
+        add.addEventListener("click", function () {
             if (item.value.length == 0) {
                 alert("the field is required");
                 item.focus();
@@ -45,7 +45,7 @@
         });
 
 
-        item.addEventListener("keyup", function() {
+        item.addEventListener("keyup", function () {
             if (item.value == 0) {
                 span.innerHTML = "";
             }
@@ -53,7 +53,7 @@
             span.innerHTML = "sugestions: " + suggestion.toString();
         });
 
-        search.addEventListener("click", function() {
+        search.addEventListener("click", function () {
             div.innerHTML = "";
             if (item.value.length == 0) {
                 alert("the field is required");

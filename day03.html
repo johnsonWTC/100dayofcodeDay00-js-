@@ -8,55 +8,52 @@
 </head>
 
 
-
 <body>
-    <input id="itemID" placeholder="item id"></input> <input id="itemName" placeholder="item name"></input> <input id="quantity" placeholder="quantinty"></input>
-    </br>
-    </br>
-    <button id="button" onclick="addItem()">Add item</button>
-    <table id="table" border="1">
-        <tr>
-            <td>item id </td>
-            <td>item name </td>
-            <td>quantinty </td>
-        </tr>
-    </table>
+<input id="itemID" placeholder="item id"></input> <input id="itemName" placeholder="item name"></input> <input
+        id="quantity" placeholder="quantinty"></input>
+</br>
+</br>
+<button id="button" onclick="addItem()">Add item</button>
+<table id="table" border="1">
+    <tr>
+        <td>item id</td>
+        <td>item name</td>
+        <td>quantinty</td>
+    </tr>
+</table>
 
 
-    <script>
-        let itemID = document.getElementById("itemID");
-        let itemName = document.getElementById("itemName");
-        let quantity = document.getElementById("quantity");
-        let table = document.getElementById('table');
+<script>
+    let itemID = document.getElementById("itemID");
+    let itemName = document.getElementById("itemName");
+    let quantity = document.getElementById("quantity");
+    let table = document.getElementById('table');
 
-        let itemIDs = [];
-        let itemNames = [];
-
-
+    let itemIDs = [];
+    let itemNames = [];
 
 
-        function addItem() {
-            if (itemID.value.length == 0 || itemName.value.length == 0 || quantity.value.length == 0) {
-                alert("please fill in all the fields");
-                if (true) {
+    function addItem() {
+        if (itemID.value.length == 0 || itemName.value.length == 0 || quantity.value.length == 0) {
+            alert("please fill in all the fields");
+            if (true) {
 
-                } else {
-                    let row = table.insertRow();
-                    let itemIDCell = row.insertCell();
-                    let itemNameCell = row.insertCell();
-                    let quantityCell = row.insertCell();
+            } else {
+                let row = table.insertRow();
+                let itemIDCell = row.insertCell();
+                let itemNameCell = row.insertCell();
+                let quantityCell = row.insertCell();
 
-                    itemIDCell.innerHTML = itemID.value;
-                    itemNameCell.innerHTML = itemName.value;
-                    quantityCell.innerHTML = quantity.value;
+                itemIDCell.innerHTML = itemID.value;
+                itemNameCell.innerHTML = itemName.value;
+                quantityCell.innerHTML = quantity.value;
 
-                }
             }
-
-
-
         }
-    </script>
+
+
+    }
+</script>
 
 
 </body>

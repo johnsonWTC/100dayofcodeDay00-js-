@@ -8,89 +8,89 @@
 </head>
 
 <body id="body">
-    <input type="text" name="item" id="item" placeholder="search or add" onkeyup="searchInstant()">
-    <input type="button" value="search item" id="search">
-    <input type="button" value="add item" id="add">
+<input type="text" name="item" id="item" placeholder="search or add" onkeyup="searchInstant()">
+<input type="button" value="search item" id="search">
+<input type="button" value="add item" id="add">
 
-    <span id="span"><h4>suggestions:</h4> </span>
-    <table id="table" border="1">
-        <tr>
-            <td>Items</td>
-        </tr>
+<span id="span"><h4>suggestions:</h4> </span>
+<table id="table" border="1">
+    <tr>
+        <td>Items</td>
+    </tr>
 
-    </table>
-    <input type="range" name="range" id="range" value="number of search result">
+</table>
+<input type="range" name="range" id="range" value="number of search result">
 
-    <h2>search results:</h2>
-    <div id="div"></div>
+<h2>search results:</h2>
+<div id="div"></div>
 
-    <script>
-        let item = document.getElementById("item");
-        let searchButton = document.getElementById("search");
-        let addButton = document.getElementById("add");
-        let range = document.getElementById("range");
-        let table = document.getElementById("table");
-        let items = [];
-        let span = document.getElementById("span");
-        let body = document.getElementById("body");
+<script>
+    let item = document.getElementById("item");
+    let searchButton = document.getElementById("search");
+    let addButton = document.getElementById("add");
+    let range = document.getElementById("range");
+    let table = document.getElementById("table");
+    let items = [];
+    let span = document.getElementById("span");
+    let body = document.getElementById("body");
 
 
-        searchButton.addEventListener("click", function() {
-            let result = search();
-            if (result.length > 0) {
-                let i = 0;
-                div.innerHTML = "";
-                while (result.length > i) {
-                    let li = document.createElement("li");
-                    li.innerHTML = result[i];
-                    div.append(li);
-                    i++;
-                }
-            } else {
-                alert("item not found");
-            }
-        });
-
-        addButton.addEventListener("click", function() {
-            if (items.indexOf(item.value) > -1) {
-                alert("items already in the list");
-            } else {
-                items.push(item.value);
-                alert("item added");
-                let tableRow = table.insertRow();
-                let tableCell = tableRow.insertCell();
-                tableCell.innerHTML = item.value;
-            }
-        });
-
-        function search() {
-            let itemsList = [];
+    searchButton.addEventListener("click", function () {
+        let result = search();
+        if (result.length > 0) {
             let i = 0;
-            while (items.length > i) {
-                if (items[i].startsWith(item.value)) {
-                    itemsList.push(items[i]);
-                }
+            div.innerHTML = "";
+            while (result.length > i) {
+                let li = document.createElement("li");
+                li.innerHTML = result[i];
+                div.append(li);
                 i++;
             }
-            console.log(itemsList);
-            return itemsList;
+        } else {
+            alert("item not found");
         }
+    });
 
-        function searchInstant() {
-            span.innerHTML = "";
-            let itemsListTwo = [];
-            let i = 0;
-            while (items.length > i) {
-                if (items[i].startsWith(item.value)) {
-                    itemsListTwo.push(items[i]);
-                }
-                i++;
+    addButton.addEventListener("click", function () {
+        if (items.indexOf(item.value) > -1) {
+            alert("items already in the list");
+        } else {
+            items.push(item.value);
+            alert("item added");
+            let tableRow = table.insertRow();
+            let tableCell = tableRow.insertCell();
+            tableCell.innerHTML = item.value;
+        }
+    });
+
+    function search() {
+        let itemsList = [];
+        let i = 0;
+        while (items.length > i) {
+            if (items[i].startsWith(item.value)) {
+                itemsList.push(items[i]);
             }
-            console.log(itemsListTwo);
-            span.innerHTML = "suggestion " + itemsListTwo.toString();
-
+            i++;
         }
-    </script>
+        console.log(itemsList);
+        return itemsList;
+    }
+
+    function searchInstant() {
+        span.innerHTML = "";
+        let itemsListTwo = [];
+        let i = 0;
+        while (items.length > i) {
+            if (items[i].startsWith(item.value)) {
+                itemsListTwo.push(items[i]);
+            }
+            i++;
+        }
+        console.log(itemsListTwo);
+        span.innerHTML = "suggestion " + itemsListTwo.toString();
+
+    }
+</script>
 </body>
 
 </html>

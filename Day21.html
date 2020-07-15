@@ -26,7 +26,7 @@
         let span = document.getElementById("span");
         let div = document.getElementById("div");
 
-        add.addEventListener("click", function() {
+        add.addEventListener("click", function () {
             div.innerHTML = "";
             if (item.value.length == 0) {
                 alert("fill in item to be added");
@@ -48,7 +48,7 @@
             }
         });
 
-        item.addEventListener("keyup", function() {
+        item.addEventListener("keyup", function () {
             div.innerHTML = "";
             item.style.backgroundColor = "white";
             let suggestionItems = searchfunction();
@@ -67,7 +67,7 @@
             return suggestionItems;
         }
 
-        search.addEventListener("click", function() {
+        search.addEventListener("click", function () {
             div.innerHTML = "";
             if (item.value.length == 0) {
                 alert("fill in item to be searched");

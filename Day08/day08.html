@@ -9,54 +9,54 @@
 
 <body id="body">
 
-    <h1>My to do list with color coding</h1>
-    <input type="text" name="item" id="item" placeholder="tasks to be done">
-    <input type="button" value="ADD" id="add">
-    <input type="checkbox">
-    <br>
-    <hr>
-    <div id="div"></div>
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        items = [];
-        let body = document.getElementById("body");
-        let div = document.getElementById("div")
+<h1>My to do list with color coding</h1>
+<input type="text" name="item" id="item" placeholder="tasks to be done">
+<input type="button" value="ADD" id="add">
+<input type="checkbox">
+<br>
+<hr>
+<div id="div"></div>
+<script>
+    let item = document.getElementById("item");
+    let add = document.getElementById("add");
+    items = [];
+    let body = document.getElementById("body");
+    let div = document.getElementById("div")
 
-        add.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("tasks field required");
-                item.focus();
+    add.addEventListener("click", function () {
+        if (item.value.length == 0) {
+            alert("tasks field required");
+            item.focus();
+        } else {
+            if (items.indexOf(item.value) > -1) {
+                alert(item.value + " is already added on the tasks list");
             } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert(item.value + " is already added on the tasks list");
-                } else {
-                    items.push(item.value);
-                    let li = document.createElement("li");
-                    li.innerHTML = item.value;
-                    let checkbox = document.createElement("input");
-                    checkbox.type = "checkbox";
-                    div.append(checkbox);
-                    div.append(li);
+                items.push(item.value);
+                let li = document.createElement("li");
+                li.innerHTML = item.value;
+                let checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                div.append(checkbox);
+                div.append(li);
 
-                    checkbox.addEventListener("change", function() {
-                        if (checkbox.checked) {
-                            li.style.color = "blue";
-                            let itemName = li.innerHTML.split(" ");
-                            li.innerHTML = itemName[0] + " done";
-                            console.log(itemName[0]);
-                            items.pop(itemName[0]);
-                        } else {
-                            li.style.color = "black";
-                            let itemName = li.innerHTML.split(" ");
-                            li.innerHTML = itemName[0];
-                            items.push(itemName[0]);
-                        }
-                    });
-                }
+                checkbox.addEventListener("change", function () {
+                    if (checkbox.checked) {
+                        li.style.color = "blue";
+                        let itemName = li.innerHTML.split(" ");
+                        li.innerHTML = itemName[0] + " done";
+                        console.log(itemName[0]);
+                        items.pop(itemName[0]);
+                    } else {
+                        li.style.color = "black";
+                        let itemName = li.innerHTML.split(" ");
+                        li.innerHTML = itemName[0];
+                        items.push(itemName[0]);
+                    }
+                });
             }
-        })
-    </script>
+        }
+    })
+</script>
 </body>
 
 </html>

@@ -8,78 +8,78 @@
 </head>
 
 <body>
-    <br>
-    <input type="text" name="Search or Add" id="item" placeholder="Search or Add">
-    <input type="button" value="Add Item" id="add">
-    <input type="button" value="Search Item" id="search">
-    <br><br>
-    <span id="span"></span>
-    <table id="table" border="1">
-        <tr>
-            <td>Items on the list</td>
-        </tr>
-    </table>
-    <div id="div"></div>
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        let search = document.getElementById("search");
-        let items = [];
-        let table = document.getElementById("table");
-        let span = document.getElementById("span");
-        let div = document.getElementById("div");
+<br>
+<input type="text" name="Search or Add" id="item" placeholder="Search or Add">
+<input type="button" value="Add Item" id="add">
+<input type="button" value="Search Item" id="search">
+<br><br>
+<span id="span"></span>
+<table id="table" border="1">
+    <tr>
+        <td>Items on the list</td>
+    </tr>
+</table>
+<div id="div"></div>
+<script>
+    let item = document.getElementById("item");
+    let add = document.getElementById("add");
+    let search = document.getElementById("search");
+    let items = [];
+    let table = document.getElementById("table");
+    let span = document.getElementById("span");
+    let div = document.getElementById("div");
 
-        add.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("please fill in item value");
+    add.addEventListener("click", function () {
+        if (item.value.length == 0) {
+            alert("please fill in item value");
+            item.focus();
+            item.style.backgroundColor = "pink";
+        } else {
+            if (items.indexOf(item.value) > -1) {
+                alert("item aleady on the list");
                 item.focus();
                 item.style.backgroundColor = "pink";
             } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert("item aleady on the list");
-                    item.focus();
-                    item.style.backgroundColor = "pink";
-                } else {
-                    items.push(item.value);
-                    let tableRow = table.insertRow();
-                    let tableCell = tableRow.insertCell();
-                    tableCell.innerHTML = item.value;
-                }
+                items.push(item.value);
+                let tableRow = table.insertRow();
+                let tableCell = tableRow.insertCell();
+                tableCell.innerHTML = item.value;
             }
-        });
-
-        search.addEventListener("click", function() {
-            let suggestions = seaching();
-            div.innerHTML = "";
-            let i = 0;
-            while (suggestions.length > i) {
-                let li = document.createElement("li");
-                li.innerHTML = suggestions[i];
-                div.append(li);
-                i++;
-            }
-            span.innerHTML = suggestions.toString();
-        });
-
-
-        item.addEventListener("keyup", function() {
-            span.innerHTML = "";
-            let suggest = seaching();
-            span.innerHTML = suggest.toString();
-        });
-
-        function seaching() {
-            let searchReturn = [];
-            let i = 0;
-            while (items.length > i) {
-                if (items[i].startsWith(item.value)) {
-                    searchReturn.push(items[i]);
-                }
-                i++;
-            }
-            return searchReturn;
         }
-    </script>
+    });
+
+    search.addEventListener("click", function () {
+        let suggestions = seaching();
+        div.innerHTML = "";
+        let i = 0;
+        while (suggestions.length > i) {
+            let li = document.createElement("li");
+            li.innerHTML = suggestions[i];
+            div.append(li);
+            i++;
+        }
+        span.innerHTML = suggestions.toString();
+    });
+
+
+    item.addEventListener("keyup", function () {
+        span.innerHTML = "";
+        let suggest = seaching();
+        span.innerHTML = suggest.toString();
+    });
+
+    function seaching() {
+        let searchReturn = [];
+        let i = 0;
+        while (items.length > i) {
+            if (items[i].startsWith(item.value)) {
+                searchReturn.push(items[i]);
+            }
+            i++;
+        }
+        return searchReturn;
+    }
+</script>
 </body>
 
 </html>

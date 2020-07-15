@@ -11,44 +11,44 @@
 </head>
 
 <body>
-    <h1>Names</h1>
+<h1>Names</h1>
 
-    <input type="text" name="name" id="name">
-    <input type="button" value="add" id="add">
-    <div class="suugestions"></div>
-    <hr>
-    <div class="div"></div>
-    <script>
-        let name = document.getElementById("name");
-        let add = document.getElementById("add");
-        let suugestions = document.querySelector(".suugestions");
-        let div = document.querySelector(".div");
-        let names = [];
+<input type="text" name="name" id="name">
+<input type="button" value="add" id="add">
+<div class="suugestions"></div>
+<hr>
+<div class="div"></div>
+<script>
+    let name = document.getElementById("name");
+    let add = document.getElementById("add");
+    let suugestions = document.querySelector(".suugestions");
+    let div = document.querySelector(".div");
+    let names = [];
 
-        name.addEventListener("input", function() {
-            suugestions.innerHTML = "Typing";
-            if (name.value.length == 0) {
+    name.addEventListener("input", function () {
+        suugestions.innerHTML = "Typing";
+        if (name.value.length == 0) {
+            suugestions.innerHTML = "";
+        }
+    })
+
+    add.addEventListener("click", function () {
+        if (name.value.length == 0) {
+            alert("Name is required");
+        } else {
+            if (names.indexOf(name.value) > -1) {
+                alert(name.value + " is already on the list");
+            } else {
+                names.push(name.value);
+                let li = document.createElement("li");
+                li.innerText = name.value;
+                div.append(li);
+                name.value = "";
                 suugestions.innerHTML = "";
             }
-        })
-
-        add.addEventListener("click", function() {
-            if (name.value.length == 0) {
-                alert("Name is required");
-            } else {
-                if (names.indexOf(name.value) > -1) {
-                    alert(name.value + " is already on the list");
-                } else {
-                    names.push(name.value);
-                    let li = document.createElement("li");
-                    li.innerText = name.value;
-                    div.append(li);
-                    name.value = "";
-                    suugestions.innerHTML = "";
-                }
-            }
-        })
-    </script>
+        }
+    })
+</script>
 
 </body>
 

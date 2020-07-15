@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class welcome {
     @GetMapping("welcome")
-    public String hello(){
+    public String hello() {
         return "welcome.html";
     }
 }

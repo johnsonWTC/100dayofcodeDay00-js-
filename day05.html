@@ -9,52 +9,48 @@
 
 <body id="body">
 
-    <input id="itemName" placeholder="Item Name"></input>
-    <button id="button" onclick="addItem()"> Add Item</button>
-    <br><br>
-    <span id="span"></span>
-    <table id="table" border="1">
-        <tr>
-            <td>
-                Item Name
-            </td>
-        </tr>
+<input id="itemName" placeholder="Item Name"></input>
+<button id="button" onclick="addItem()"> Add Item</button>
+<br><br>
+<span id="span"></span>
+<table id="table" border="1">
+    <tr>
+        <td>
+            Item Name
+        </td>
+    </tr>
 
-    </table>
-    <script>
-        let itemName = document.getElementById("itemName");
-        let button = document.getElementById("button");
-        let itemNames = [];
+</table>
+<script>
+    let itemName = document.getElementById("itemName");
+    let button = document.getElementById("button");
+    let itemNames = [];
 
-        let table = document.getElementById("table");
-        let body = document.getElementById("body");
+    let table = document.getElementById("table");
+    let body = document.getElementById("body");
 
-        function addItem() {
-            if (itemName.value.length == 0) {
-                alert("Item Name is required");
+    function addItem() {
+        if (itemName.value.length == 0) {
+            alert("Item Name is required");
+        } else {
+            if (itemNames.indexOf(itemName.value) > -1) {
+                alert("this item is already on the list");
             } else {
-                if (itemNames.indexOf(itemName.value) > -1) {
-                    alert("this item is already on the list");
-                } else {
-                    itemNames.push(itemName.value);
-                    let li = document.createElement("li");
-                    li.innerHTML = itemName.value;
-                    body.appendChild(li);
+                itemNames.push(itemName.value);
+                let li = document.createElement("li");
+                li.innerHTML = itemName.value;
+                body.appendChild(li);
 
-                    let row = table.insertRow();
-                    let itemCell = row.insertCell();
+                let row = table.insertRow();
+                let itemCell = row.insertCell();
 
-                    itemCell.innerHTML = itemName.value;
+                itemCell.innerHTML = itemName.value;
 
 
-
-
-
-
-                }
             }
         }
-    </script>
+    }
+</script>
 
 </body>
 

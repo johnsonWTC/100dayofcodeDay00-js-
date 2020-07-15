@@ -7,74 +7,74 @@
 </head>
 
 <body>
-    <div class="body">
-        <h1>My Seach Engine</h1>
-        <input type="text" name="item" id="item">
-        <input type="button" id="add" value="add">
-        <br>
-        <br>
-        <textarea name="discription" id="discription" cols="30" rows="10"></textarea>
-        <span id="counter">0</span>
-        <hr>
-        <table border="1" id="table">
-            <tr>
-                <td>Name</td>
-            </tr>
-        </table>
-    </div>
-    <ul>
-        <li>jam</li>
-        <li>jam</li>
-        <li>mizzy</li>
-    </ul>
+<div class="body">
+    <h1>My Seach Engine</h1>
+    <input type="text" name="item" id="item">
+    <input type="button" id="add" value="add">
+    <br>
+    <br>
+    <textarea name="discription" id="discription" cols="30" rows="10"></textarea>
+    <span id="counter">0</span>
+    <hr>
+    <table border="1" id="table">
+        <tr>
+            <td>Name</td>
+        </tr>
+    </table>
+</div>
+<ul>
+    <li>jam</li>
+    <li>jam</li>
+    <li>mizzy</li>
+</ul>
 
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        let discription = document.getElementById("discription");
-        let counter = document.getElementById("counter");
-        let count = 0;
-        let items = [];
-        let table = document.getElementById("table");
-        let body = document.querySelector(".body")
-
-
-        discription.addEventListener("keyup", function() {
-            counter.innerHTML = discription.value.length;
-            if (discription.value.length > 15) {
-                counter.style.color = "yellow"
-            } else
-                counter.style.color = "black";
-        })
+<script>
+    let item = document.getElementById("item");
+    let add = document.getElementById("add");
+    let discription = document.getElementById("discription");
+    let counter = document.getElementById("counter");
+    let count = 0;
+    let items = [];
+    let table = document.getElementById("table");
+    let body = document.querySelector(".body")
 
 
-        add.addEventListener("click", function() {
-            if (item.value == 0) {
-                alert("this field is required");
-                focus();
+    discription.addEventListener("keyup", function () {
+        counter.innerHTML = discription.value.length;
+        if (discription.value.length > 15) {
+            counter.style.color = "yellow"
+        } else
+            counter.style.color = "black";
+    })
+
+
+    add.addEventListener("click", function () {
+        if (item.value == 0) {
+            alert("this field is required");
+            focus();
+        } else {
+            if (items.indexOf(item.value) > -1) {
+                alert(item.value + " is already in the list");
             } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert(item.value + " is already in the list");
-                } else {
-                    items.push(item.value);
-                    alert(item.value + " was added to the list")
-                    let tableRow = table.insertRow();
-                    let tableCell = tableRow.insertCell();
-                    tableCell.innerHTML = item.value;
-                    let info = document.createElement("p");
-                    info.innerHTML = discription.value;
-                    body.append(info);
-                    info.style.display = "none";
-                    tableCell.addEventListener("click", function() {
-                        if (info.style.display == "none") {
-                            info.style.display = "block";
-                        } else
-                            info.style.display = "none";
-                    });
-                }
+                items.push(item.value);
+                alert(item.value + " was added to the list")
+                let tableRow = table.insertRow();
+                let tableCell = tableRow.insertCell();
+                tableCell.innerHTML = item.value;
+                let info = document.createElement("p");
+                info.innerHTML = discription.value;
+                body.append(info);
+                info.style.display = "none";
+                tableCell.addEventListener("click", function () {
+                    if (info.style.display == "none") {
+                        info.style.display = "block";
+                    } else
+                        info.style.display = "none";
+                });
             }
-        })
-    </script>
+        }
+    })
+</script>
 
 </body>
 

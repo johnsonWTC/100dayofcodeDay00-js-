@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestControllers {
 
     @GetMapping("/test")
-    public String testing(@RequestParam(value = "name", defaultValue = "World") String name){
+    public String testing(@RequestParam(value = "name", defaultValue = "World") String name) {
         return ("hello.jsp");
     }
 }

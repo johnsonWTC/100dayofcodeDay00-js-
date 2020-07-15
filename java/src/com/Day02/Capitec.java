@@ -16,26 +16,23 @@ public class Capitec implements IBank {
 
     @Override
     public void createAccount() {
-        if(accounts.contains(this.name)){
+        if (accounts.contains(this.name)) {
             System.out.println(this.name + " already has an account with us");
-        }else if (age > 40){
+        } else if (age > 40) {
             System.out.println(" please try Nedbank");
-        }
-        else{
+        } else {
             accounts.add(this.name);
-            System.out.println("Account for "+ this.name + " has been created" );
+            System.out.println("Account for " + this.name + " has been created");
         }
     }
 
     @Override
     public void depositFunds(int fund) {
-        if(!accounts.contains(this.name)){
+        if (!accounts.contains(this.name)) {
             System.out.println(this.name + " Does not have an account with us");
-        }
-        else if(fund > 10000){
+        } else if (fund > 10000) {
             System.out.println("that's to much for a saving account");
-        }
-        else{
+        } else {
             bankBalance = bankBalance + fund;
             System.out.println(bankBalance + " was deposited, your new balance is " + bankBalance);
         }
@@ -44,12 +41,11 @@ public class Capitec implements IBank {
 
     @Override
     public void withdrawFund(int fund) {
-        if(!accounts.contains(this.name)){
+        if (!accounts.contains(this.name)) {
             System.out.println(this.name + " Does not have an account with us");
-        }
-        else if(fund > bankBalance){
+        } else if (fund > bankBalance) {
             System.out.println("insufficient funds");
-        }else{
+        } else {
             bankBalance = bankBalance - fund;
             System.out.println(bankBalance + " was withdrawn, your balance is now " + bankBalance);
         }

@@ -8,35 +8,35 @@
 </head>
 
 <body class="body">
-    <input type="text" id="input" placeholder="Search or Add">
-    <input type="button" value="Add item" id="add">
-    <input type="button" value="Search item" id="search">
-    <br>
+<input type="text" id="input" placeholder="Search or Add">
+<input type="button" value="Add item" id="add">
+<input type="button" value="Search item" id="search">
+<br>
 
-    <script>
-        let input = document.querySelector("#input");
-        let add = document.querySelector("#add");
-        let search = document.querySelector("#search");
-        let body = document.querySelector(".body");
-        let inputs = [];
+<script>
+    let input = document.querySelector("#input");
+    let add = document.querySelector("#add");
+    let search = document.querySelector("#search");
+    let body = document.querySelector(".body");
+    let inputs = [];
 
-        add.addEventListener("click", function() {
-            if (input.value.length == 0) {
-                alert("input required");
-                focus();
+    add.addEventListener("click", function () {
+        if (input.value.length == 0) {
+            alert("input required");
+            focus();
+        } else {
+            if (inputs.indexOf(input.value) > -1) {
+                alert("item already added on the list");
             } else {
-                if (inputs.indexOf(input.value) > -1) {
-                    alert("item already added on the list");
-                } else {
-                    let li = document.createElement("li");
-                    inputs.push(input.value);
-                    li.innerHTML = input.value;
-                    body.append(li);
-                    alert(input.value + " has been added")
-                }
+                let li = document.createElement("li");
+                inputs.push(input.value);
+                li.innerHTML = input.value;
+                body.append(li);
+                alert(input.value + " has been added")
             }
-        })
-    </script>
+        }
+    })
+</script>
 </body>
 
 </html>

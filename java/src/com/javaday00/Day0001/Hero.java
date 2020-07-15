@@ -7,14 +7,14 @@ public class Hero {
         this.random = random;
     }
 
- public  String heroMaker(){
+    public String heroMaker() {
         Integer randomtwo = new Integer(random);
-         if(randomtwo.equals(1)){
-             return "Johnson";
-         } else if (randomtwo.equals(2)) {
-             return "Jam";
-         }else {
-             return "asikwazi";
-         }
- }
+        if (randomtwo.equals(1)) {
+            return "Johnson";
+        } else if (randomtwo.equals(2)) {
+            return "Jam";
+        } else {
+            return "asikwazi";
+        }
+    }
 }

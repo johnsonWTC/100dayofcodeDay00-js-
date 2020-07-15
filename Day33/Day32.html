@@ -9,63 +9,63 @@
 </head>
 
 <body>
-    <br>
-    <input type="text" name="item" id="item">
-    <input type="button" value="add" id="add">
-    <hr>
-    <div class="div"></div>
+<br>
+<input type="text" name="item" id="item">
+<input type="button" value="add" id="add">
+<hr>
+<div class="div"></div>
 
 
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        let div = document.querySelector(".div");
-        let items = [];
+<script>
+    let item = document.getElementById("item");
+    let add = document.getElementById("add");
+    let div = document.querySelector(".div");
+    let items = [];
 
-        add.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("item name is required");
+    add.addEventListener("click", function () {
+        if (item.value.length == 0) {
+            alert("item name is required");
+        } else {
+            if (items.indexOf(item.value) > -1) {
+                alert(item.value + " already on the list");
             } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert(item.value + " already on the list");
-                } else {
-                    alert(item.value + " added on the list");
-                    items.push(item.value);
-                    let li = document.createElement("li");
-                    let checkbox = document.createElement("input");
-                    let del = document.createElement("button");
-                    checkbox.type = "checkbox";
-                    // del.type = "button";
-                    del.innerHTML = "delete";
-                    del.value - "delete"
-                    li.innerHTML = item.value;
-                    li.contentEditable = true;
-                    div.append(li);
-                    div.append(del);
-                    div.append(checkbox);
+                alert(item.value + " added on the list");
+                items.push(item.value);
+                let li = document.createElement("li");
+                let checkbox = document.createElement("input");
+                let del = document.createElement("button");
+                checkbox.type = "checkbox";
+                // del.type = "button";
+                del.innerHTML = "delete";
+                del.value - "delete"
+                li.innerHTML = item.value;
+                li.contentEditable = true;
+                div.append(li);
+                div.append(del);
+                div.append(checkbox);
 
-                    del.addEventListener("click", function() {
-                        if (checkbox.checked) {
-                            let comfirmation = confirm("are you sure you want to delete this item")
-                            if (comfirmation) {
-                                li.remove();
-                                del.remove();
-                                checkbox.remove();
-                                items.pop(item.value);
-                            } else {
-                                alert("item was not deleted")
-                            }
+                del.addEventListener("click", function () {
+                    if (checkbox.checked) {
+                        let comfirmation = confirm("are you sure you want to delete this item")
+                        if (comfirmation) {
+                            li.remove();
+                            del.remove();
+                            checkbox.remove();
+                            items.pop(item.value);
                         } else {
-                            alert("please check the item you want to delete");
+                            alert("item was not deleted")
                         }
-                    })
+                    } else {
+                        alert("please check the item you want to delete");
+                    }
+                })
 
 
-                }
             }
-        })
-    </script>
-    <hr>
+        }
+    })
+</script>
+<hr>
 </body>
 
 </html>

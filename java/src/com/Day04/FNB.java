@@ -15,38 +15,37 @@ public class FNB implements IBank {
 
     @Override
     public void createAccount() {
-        if(names.contains(this.name)){
+        if (names.contains(this.name)) {
             System.out.println(this.name + " already on the list");
-        }else if(this.age > 40){
-            System.out.println(this.name+ " you are too old for this");
-        }
-        else{
+        } else if (this.age > 40) {
+            System.out.println(this.name + " you are too old for this");
+        } else {
             names.add((this.name));
-            System.out.println("account created for "+ this.name);
+            System.out.println("account created for " + this.name);
         }
     }
 
     @Override
     public void depositFunds(int funds) {
-        if(!names.contains(this.name)){
+        if (!names.contains(this.name)) {
             System.out.println(this.name + " does not have an account with us");
-        }else if(40000 < funds){
+        } else if (40000 < funds) {
             System.out.println("this amount is too much for a savings account");
-        }else{
-            bankBalance = bankBalance+ funds;
-            System.out.println(funds + " was withdrawn, your new balance is "+ bankBalance);
+        } else {
+            bankBalance = bankBalance + funds;
+            System.out.println(funds + " was withdrawn, your new balance is " + bankBalance);
         }
     }
 
     @Override
     public void withDrawFunds(int funds) {
-        if(!names.contains(this.name)){
+        if (!names.contains(this.name)) {
             System.out.println(this.name + " does not have an account with us");
-        }else if(bankBalance < funds){
+        } else if (bankBalance < funds) {
             System.out.println("insufficient funds");
-        }else{
+        } else {
             bankBalance = bankBalance - funds;
-            System.out.println(funds + " was withdrawn, your new balance is "+ this.bankBalance);
+            System.out.println(funds + " was withdrawn, your new balance is " + this.bankBalance);
         }
     }
 }

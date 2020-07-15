@@ -10,58 +10,58 @@
 </head>
 
 <body class="body">
-    <div class="info">
-        <input type="text" name="name" id="name" placeholder="name">
-        <input type="text" name="surname" id="surname" placeholder="surname"><br><br>
-        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio"></textarea>
-        <br><input type="button" value="add" id="add">
-    </div>
+<div class="info">
+    <input type="text" name="name" id="name" placeholder="name">
+    <input type="text" name="surname" id="surname" placeholder="surname"><br><br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="bio"></textarea>
+    <br><input type="button" value="add" id="add">
+</div>
 
-    <div class="table">
-        <table border="1" id="table">
-            <tr>
-                <td>Name</td>
-                <td>surname</td>
-            </tr>
-        </table>
-    </div>
+<div class="table">
+    <table border="1" id="table">
+        <tr>
+            <td>Name</td>
+            <td>surname</td>
+        </tr>
+    </table>
+</div>
 
-    <script>
-        let name = document.getElementById("name");
-        let surname = document.getElementById("surname");
-        let bio = document.getElementById("bio");
-        let add = document.getElementById("add");
-        let table = document.querySelector("#table")
-        let names = [];
+<script>
+    let name = document.getElementById("name");
+    let surname = document.getElementById("surname");
+    let bio = document.getElementById("bio");
+    let add = document.getElementById("add");
+    let table = document.querySelector("#table")
+    let names = [];
 
-        add.addEventListener("click", function() {
-            if (name.value == 0 || surname.value == 0 || bio.value == 0) {
-                alert("please fill in the form");
+    add.addEventListener("click", function () {
+        if (name.value == 0 || surname.value == 0 || bio.value == 0) {
+            alert("please fill in the form");
+        } else {
+            if (names.indexOf(name.value) > -1) {
+                alert("this name is taken")
             } else {
-                if (names.indexOf(name.value) > -1) {
-                    alert("this name is taken")
-                } else {
-                    names.push(name.value);
-                    let tableRow = table.insertRow();
-                    let tableCellOne = tableRow.insertCell();
-                    let tableCellTwo = tableRow.insertCell();
-                    tableCellOne.innerHTML = name.value;
-                    tableCellTwo.innerHTML = surname.value;
-                    table.appendChild(tableRow);
-                    let para = document.createElement("p");
-                    para.innerHTML = bio.value;
-                    table.appendChild(para);
-                    para.style.display = "none";
-                    tableCellOne.addEventListener("click", function() {
-                        if (para.style.display === "none") {
-                            para.style.display = "block";
-                        } else
-                            para.style.display = "none"
-                    })
-                }
+                names.push(name.value);
+                let tableRow = table.insertRow();
+                let tableCellOne = tableRow.insertCell();
+                let tableCellTwo = tableRow.insertCell();
+                tableCellOne.innerHTML = name.value;
+                tableCellTwo.innerHTML = surname.value;
+                table.appendChild(tableRow);
+                let para = document.createElement("p");
+                para.innerHTML = bio.value;
+                table.appendChild(para);
+                para.style.display = "none";
+                tableCellOne.addEventListener("click", function () {
+                    if (para.style.display === "none") {
+                        para.style.display = "block";
+                    } else
+                        para.style.display = "none"
+                })
             }
-        });
-    </script>
+        }
+    });
+</script>
 </body>
 
 </html>

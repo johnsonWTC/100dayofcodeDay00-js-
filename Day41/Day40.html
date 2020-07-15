@@ -8,68 +8,68 @@
 </head>
 
 <body>
-    <input type="text" name="input" id="input" placeholder="Add activity">
-    <input type="button" value="add" id="add" onclick="addElement()">
+<input type="text" name="input" id="input" placeholder="Add activity">
+<input type="button" value="add" id="add" onclick="addElement()">
 
-    <hr>
-    <div class="div"></div>
+<hr>
+<div class="div"></div>
 
-    <script>
-        let input = document.getElementById("input");
-        let add = document.getElementById("add");
-        let div = document.querySelector(".div");
-        let inputs = [];
+<script>
+    let input = document.getElementById("input");
+    let add = document.getElementById("add");
+    let div = document.querySelector(".div");
+    let inputs = [];
 
-        function addElement() {
-            if (input.value.length == 0) {
-                alert("input name is required");
-                input.focus();
+    function addElement() {
+        if (input.value.length == 0) {
+            alert("input name is required");
+            input.focus();
+        } else {
+            if (inputs.indexOf(input.value) > -1) {
+                alert(input.value + " already in the list");
             } else {
-                if (inputs.indexOf(input.value) > -1) {
-                    alert(input.value + " already in the list");
-                } else {
-                    inputs.push(input.value);
-                    let li = document.createElement("li");
-                    let edit = document.createElement("button");
-                    let del = document.createElement("button");
-                    del.innerText = "delete";
-                    edit.innerHTML = "edit";
-                    li.innerHTML = input.value;
-                    li.contentEditable = false;
-                    div.append(li);
-                    div.append(edit);
-                    div.append(del);
-                    input.value = "";
+                inputs.push(input.value);
+                let li = document.createElement("li");
+                let edit = document.createElement("button");
+                let del = document.createElement("button");
+                del.innerText = "delete";
+                edit.innerHTML = "edit";
+                li.innerHTML = input.value;
+                li.contentEditable = false;
+                div.append(li);
+                div.append(edit);
+                div.append(del);
+                input.value = "";
 
-                    edit.addEventListener("click", function() {
-                        let previousState = li.innerText;
-                        li.contentEditable = true;
-                        li.addEventListener("blur", function() {
-                            if (inputs.indexOf(li.innerText) > -1) {
-                                alert(li.innerText + " already on the list");
-                                li.innerText = previousState;
-                            } else {
-                                inputs.pop(previousState);
-                                inputs.push(li.innerText);
-                            }
-                            li.contentEditable = false;
-                        })
-                    })
-                    del.addEventListener("click", function() {
-                        let result = confirm("are you sure want to remove this item");
-                        if (result) {
-                            inputs.pop(li.innerText);
-                            del.remove();
-                            li.remove();
-                            edit.remove();
+                edit.addEventListener("click", function () {
+                    let previousState = li.innerText;
+                    li.contentEditable = true;
+                    li.addEventListener("blur", function () {
+                        if (inputs.indexOf(li.innerText) > -1) {
+                            alert(li.innerText + " already on the list");
+                            li.innerText = previousState;
+                        } else {
+                            inputs.pop(previousState);
+                            inputs.push(li.innerText);
                         }
+                        li.contentEditable = false;
                     })
-                }
-
-
+                })
+                del.addEventListener("click", function () {
+                    let result = confirm("are you sure want to remove this item");
+                    if (result) {
+                        inputs.pop(li.innerText);
+                        del.remove();
+                        li.remove();
+                        edit.remove();
+                    }
+                })
             }
+
+
         }
-    </script>
+    }
+</script>
 </body>
 
 </html>

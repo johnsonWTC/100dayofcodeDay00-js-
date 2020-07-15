@@ -8,76 +8,76 @@
 </head>
 
 <body>
-    <input type="text" name="item" id="item" placeholder="item" oninput="search()">
-    <input type="button" value="add " id="add " onclick="addItem() ">
-    <br>
-    <span id="span"></span>
-    <hr>
-    <div class="div"></div>
-    <script>
-        let add = document.querySelector("#add ");
-        let item = document.querySelector("#item ");
-        let items = [];
-        let div = document.querySelector(".div");
-        let span = document.querySelector("#span");
+<input type="text" name="item" id="item" placeholder="item" oninput="search()">
+<input type="button" value="add " id="add " onclick="addItem() ">
+<br>
+<span id="span"></span>
+<hr>
+<div class="div"></div>
+<script>
+    let add = document.querySelector("#add ");
+    let item = document.querySelector("#item ");
+    let items = [];
+    let div = document.querySelector(".div");
+    let span = document.querySelector("#span");
 
-        function addItem() {
-            if (item.value.length == 0) {
-                alert("Item name is required ");
+    function addItem() {
+        if (item.value.length == 0) {
+            alert("Item name is required ");
+        } else {
+            if (items.indexOf(item.value) > -1) {
+                alert(item.value + " is already on the list ");
             } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert(item.value + " is already on the list ");
-                } else {
-                    items.push(item.value);
-                    let li = document.createElement("li");
-                    let edit = document.createElement("button");
-                    edit.innerText = "edit item";
-                    li.innerText = item.value;
-                    div.append(li);
-                    div.append(edit);
+                items.push(item.value);
+                let li = document.createElement("li");
+                let edit = document.createElement("button");
+                edit.innerText = "edit item";
+                li.innerText = item.value;
+                div.append(li);
+                div.append(edit);
 
-                    edit.addEventListener("click", function() {
-                        let olditem = li.innerText;
-                        li.contentEditable = true;
+                edit.addEventListener("click", function () {
+                    let olditem = li.innerText;
+                    li.contentEditable = true;
 
-                        li.addEventListener("blur", function() {
-                            if (items.indexOf(li.innerText) > -1) {
-                                alert(li.innerText + " is already on the list ");
-                                li.innerText = olditem;
-                            } else {
-                                items.pop(olditem);
-                                items.push(li.innerText);
-                            }
-                            li.contentEditable = false;
-                        })
-                    });
-                }
+                    li.addEventListener("blur", function () {
+                        if (items.indexOf(li.innerText) > -1) {
+                            alert(li.innerText + " is already on the list ");
+                            li.innerText = olditem;
+                        } else {
+                            items.pop(olditem);
+                            items.push(li.innerText);
+                        }
+                        li.contentEditable = false;
+                    })
+                });
             }
-            item.value = "";
+        }
+        item.value = "";
+    }
+
+    function search() {
+
+        let suggestion = searchItem();
+        span.innerText = suggestion;
+        if (item.value.length == 0) {
+            span.innerText = "";
         }
 
-        function search() {
+    }
 
-            let suggestion = searchItem();
-            span.innerText = suggestion;
-            if (item.value.length == 0) {
-                span.innerText = "";
+    function searchItem() {
+        let itemsFound = [];
+        let i = 0;
+        while (items.length > i) {
+            if (items[i].startsWith(item.value)) {
+                itemsFound.push(items[i]);
             }
-
+            i++;
         }
-
-        function searchItem() {
-            let itemsFound = [];
-            let i = 0;
-            while (items.length > i) {
-                if (items[i].startsWith(item.value)) {
-                    itemsFound.push(items[i]);
-                }
-                i++;
-            }
-            return itemsFound;
-        }
-    </script>
+        return itemsFound;
+    }
+</script>
 </body>
 
 </html>

@@ -13,33 +13,33 @@ public class BankBluePrint {
         this.age = age;
     }
 
-    public  void createAccount (){
-        if(bankAccount.contains(this.name)){
+    public void createAccount() {
+        if (bankAccount.contains(this.name)) {
             System.out.println(this.name + " already has an account with use");
-        }else{
+        } else {
             bankAccount.add(this.name);
             System.out.println("Account created for " + this.name);
         }
 
     }
 
-    public void depositFunds(int funds){
-        if(!bankAccount.contains(this.name)){
+    public void depositFunds(int funds) {
+        if (!bankAccount.contains(this.name)) {
             System.out.println(this.name + " does not have an account with us");
-        }else if(funds > 10000){
+        } else if (funds > 10000) {
             System.out.println("The maximum amount that can be deposited is 10000");
-        }else{
+        } else {
             this.bankBalance = this.bankBalance + funds;
             System.out.println(funds + " where deposited into you account, your new balance is " + this.bankBalance);
         }
     }
 
-    public void withdrawFunds(int funds){
-        if(!bankAccount.contains(this.name)){
+    public void withdrawFunds(int funds) {
+        if (!bankAccount.contains(this.name)) {
             System.out.println(this.name + " does not have an account with us");
-        }else if(funds > this.bankBalance){
+        } else if (funds > this.bankBalance) {
             System.out.println("Insufficient fund");
-        }else{
+        } else {
             this.bankBalance = this.bankBalance - funds;
             System.out.println(funds + " where withdrawn from  your account, you new balance is " + this.bankBalance);
         }

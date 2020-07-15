@@ -11,70 +11,70 @@
 </head>
 
 <body>
-    <div class="center">
-        <h1>My search</h1>
-        <input type="text" id="input" placeholder="Search or Add">
-        <input type="button" value="search" id="search">
-        <input type="button" value="Add" id="add">
-    </div>
-    <span id="span" class="suggestion">
+<div class="center">
+    <h1>My search</h1>
+    <input type="text" id="input" placeholder="Search or Add">
+    <input type="button" value="search" id="search">
+    <input type="button" value="Add" id="add">
+</div>
+<span id="span" class="suggestion">
         
     </span>
-    <span class="span" id="searchResult"></span>
-    <ul id="ull" class="ull">
+<span class="span" id="searchResult"></span>
+<ul id="ull" class="ull">
 
-    </ul>
+</ul>
 
 
-    <script>
-        let input = document.querySelector("#input");
-        let search = document.querySelector("#search");
-        let add = document.querySelector("#add");
-        let searchResult = document.querySelector("#searchResult");
-        let span = document.querySelector("#span");
-        let ull = document.querySelector("#ull");
-        let inputs = [];
+<script>
+    let input = document.querySelector("#input");
+    let search = document.querySelector("#search");
+    let add = document.querySelector("#add");
+    let searchResult = document.querySelector("#searchResult");
+    let span = document.querySelector("#span");
+    let ull = document.querySelector("#ull");
+    let inputs = [];
 
-        add.addEventListener("click", function() {
-            if (input.value == 0) {
-                alert("Please fill in item name");
-                input.focus();
-                input.style.backgroundColor = "pink";
+    add.addEventListener("click", function () {
+        if (input.value == 0) {
+            alert("Please fill in item name");
+            input.focus();
+            input.style.backgroundColor = "pink";
+        } else {
+            if (inputs.indexOf(input.value) > -1) {
+                alert(input.value + " is already on the list")
             } else {
-                if (inputs.indexOf(input.value) > -1) {
-                    alert(input.value + " is already on the list")
-                } else {
-                    inputs.push(input.value);
-                    alert(input.value + " added to the list");
-                    let li = document.createElement("li");
-                    li.innerHTML = input.value;
-                    ull.append(li);
-                    input.focus();
-                }
+                inputs.push(input.value);
+                alert(input.value + " added to the list");
+                let li = document.createElement("li");
+                li.innerHTML = input.value;
+                ull.append(li);
+                input.focus();
             }
-        });
-
-        function anigma() {
-            let suggestions = [];
-            let i = 0;
-            while (inputs.length > i) {
-                if (inputs[i].startsWith(input.value)) {
-                    suggestions.push(inputs[i]);
-                }
-                i++;
-            }
-            return suggestions;
         }
+    });
 
-        input.addEventListener("keyup", function() {
-            let suggestions = anigma();
-            if (suggestions.length == 0) {
-                span.innerHTML = "no suggestions";
-            } else
-                span.innerHTML = "suggestions " + suggestions;
+    function anigma() {
+        let suggestions = [];
+        let i = 0;
+        while (inputs.length > i) {
+            if (inputs[i].startsWith(input.value)) {
+                suggestions.push(inputs[i]);
+            }
+            i++;
+        }
+        return suggestions;
+    }
 
-        });
-    </script>
+    input.addEventListener("keyup", function () {
+        let suggestions = anigma();
+        if (suggestions.length == 0) {
+            span.innerHTML = "no suggestions";
+        } else
+            span.innerHTML = "suggestions " + suggestions;
+
+    });
+</script>
 </body>
 
 </html>

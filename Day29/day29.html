@@ -7,46 +7,46 @@
 </head>
 
 <body>
-    <div class="div">
-        <input type="button" value="Add" id="add">
-        <input type="button" value="search" id="search">
-        <input type="text" name="title" id="title" placeholder="title">
-        <input type="text" name="information" id="information" placeholder="information">
-    </div>
-    <ul id="ul"></ul>
-    <script>
-        let add = document.querySelector("#add");
-        let search = document.querySelector("#search");
-        let title = document.querySelector("#title");
-        let information = document.querySelector("#information");
-        let obj = {};
-        let ul = document.querySelector("#ul")
+<div class="div">
+    <input type="button" value="Add" id="add">
+    <input type="button" value="search" id="search">
+    <input type="text" name="title" id="title" placeholder="title">
+    <input type="text" name="information" id="information" placeholder="information">
+</div>
+<ul id="ul"></ul>
+<script>
+    let add = document.querySelector("#add");
+    let search = document.querySelector("#search");
+    let title = document.querySelector("#title");
+    let information = document.querySelector("#information");
+    let obj = {};
+    let ul = document.querySelector("#ul")
 
-        add.addEventListener("click", function() {
-            if (title.value == 0 || information.value == 0) {
-                alert("please fill in the both fields");
-            } else {
-                obj.title = title.value;
-                obj.information = information.value;
-                let li = document.createElement("li");
-                let parah = document.createElement("p");
-                li.innerHTML = obj.title;
-                parah.innerHTML = obj.information;
-                parah.style.display = "none";
-                ul.append(li);
-                ul.append(parah);
-                li.addEventListener("click", function() {
-                    if (parah.style.display === "block") {
-                        parah.style.display = "none";
-                    } else {
-                        parah.style.display = "block";
-                    }
-                });
-                title.value = "";
-                information.value = "";
-            }
-        })
-    </script>
+    add.addEventListener("click", function () {
+        if (title.value == 0 || information.value == 0) {
+            alert("please fill in the both fields");
+        } else {
+            obj.title = title.value;
+            obj.information = information.value;
+            let li = document.createElement("li");
+            let parah = document.createElement("p");
+            li.innerHTML = obj.title;
+            parah.innerHTML = obj.information;
+            parah.style.display = "none";
+            ul.append(li);
+            ul.append(parah);
+            li.addEventListener("click", function () {
+                if (parah.style.display === "block") {
+                    parah.style.display = "none";
+                } else {
+                    parah.style.display = "block";
+                }
+            });
+            title.value = "";
+            information.value = "";
+        }
+    })
+</script>
 </body>
 
 </html>

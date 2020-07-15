@@ -9,50 +9,50 @@
 </head>
 
 <body>
-    <div class="search">
-        <title>Page Title</title>
-        <input type="text" name="name" id="name" placeholder="name">
-        <input type="text" name="surname" id="surname" placeholder="surname">
-        <input type="button" value="add" id="add">
-    </div>
-    <ul id="ul"></ul>
+<div class="search">
+    <title>Page Title</title>
+    <input type="text" name="name" id="name" placeholder="name">
+    <input type="text" name="surname" id="surname" placeholder="surname">
+    <input type="button" value="add" id="add">
+</div>
+<ul id="ul"></ul>
 
-    <script>
-        let add = document.querySelector("#add");
-        let surname = document.querySelector("#surname");
-        let name = document.querySelector("#name");
-        let names = [];
-        let ul = document.getElementById("ul");
+<script>
+    let add = document.querySelector("#add");
+    let surname = document.querySelector("#surname");
+    let name = document.querySelector("#name");
+    let names = [];
+    let ul = document.getElementById("ul");
 
-        add.addEventListener("click", function() {
-            if (name.value == 0 || surname.value == 0) {
-                alert("please fill in both name and surname");
+    add.addEventListener("click", function () {
+        if (name.value == 0 || surname.value == 0) {
+            alert("please fill in both name and surname");
+        } else {
+            if (names.indexOf(name.value) > -1) {
+                alert("user name has already been used")
             } else {
-                if (names.indexOf(name.value) > -1) {
-                    alert("user name has already been used")
-                } else {
-                    names.push(name.value);
-                    let li = document.createElement("li");
-                    li.innerHTML = name.value;
-                    ul.append(li);
-                    let para = document.createElement("p");
-                    ul.append(para);
-                    para.innerHTML = surname.value;
-                    para.style.display = "none";
-                    li.addEventListener("click", function() {
-                        if (para.style.display == "block") {
-                            para.style.display = "none";
-                        } else {
-                            para.style.display = "block";
-                        }
+                names.push(name.value);
+                let li = document.createElement("li");
+                li.innerHTML = name.value;
+                ul.append(li);
+                let para = document.createElement("p");
+                ul.append(para);
+                para.innerHTML = surname.value;
+                para.style.display = "none";
+                li.addEventListener("click", function () {
+                    if (para.style.display == "block") {
+                        para.style.display = "none";
+                    } else {
+                        para.style.display = "block";
+                    }
 
-                    })
-                }
-
-
+                })
             }
-        })
-    </script>
+
+
+        }
+    })
+</script>
 </body>
 
 </html>

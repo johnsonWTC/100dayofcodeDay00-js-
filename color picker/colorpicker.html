@@ -9,20 +9,20 @@
 </head>
 
 <body>
-    <input type="color" id="color">
-    <span id="span"></span>
+<input type="color" id="color">
+<span id="span"></span>
 
-    <script>
-        let color = document.getElementById("color");
-        let span = document.getElementById("span");
-        let colors = []
+<script>
+    let color = document.getElementById("color");
+    let span = document.getElementById("span");
+    let colors = []
 
-        color.addEventListener("input", function() {
-            span.innerHTML = color.value;
-            colors.push(color.value);
-            span.innerHTML = colors
-        });
-    </script>
+    color.addEventListener("input", function () {
+        span.innerHTML = color.value;
+        colors.push(color.value);
+        span.innerHTML = colors
+    });
+</script>
 
 </body>
 

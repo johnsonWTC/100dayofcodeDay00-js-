@@ -10,43 +10,43 @@
 </head>
 
 <body class="body">
-    <br>
-    <input type="text" name="item" id="item" placeholder="item to be done">
-    <input type="button" value="add" id="add">
-    <hr>
-    <div class="todo"></div>
-    <script>
-        let item = document.getElementById("item");
-        let add = document.getElementById("add");
-        let todo = document.querySelector(".todo");
-        let items = [];
+<br>
+<input type="text" name="item" id="item" placeholder="item to be done">
+<input type="button" value="add" id="add">
+<hr>
+<div class="todo"></div>
+<script>
+    let item = document.getElementById("item");
+    let add = document.getElementById("add");
+    let todo = document.querySelector(".todo");
+    let items = [];
 
-        add.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("item name required");
+    add.addEventListener("click", function () {
+        if (item.value.length == 0) {
+            alert("item name required");
+        } else {
+            if (items.indexOf(item.value) > -1) {
+                alert("item already in the list");
             } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert("item already in the list");
-                } else {
-                    items.push(item.value);
-                    let li = document.createElement("li");
-                    let del = document.createElement("input");
-                    let check = document.createElement("input");
-                    del.type = "button";
-                    check.type = "checkbox";
-                    del.innerText = "remove";
-                    li.innerHTML = item.value;
-                    todo.append(li);
-                    todo.append(del);
-                    del.addEventListener("click", function() {
-                        del.remove();
-                        li.remove();
-                        items.pop(item.value);
-                    })
-                }
+                items.push(item.value);
+                let li = document.createElement("li");
+                let del = document.createElement("input");
+                let check = document.createElement("input");
+                del.type = "button";
+                check.type = "checkbox";
+                del.innerText = "remove";
+                li.innerHTML = item.value;
+                todo.append(li);
+                todo.append(del);
+                del.addEventListener("click", function () {
+                    del.remove();
+                    li.remove();
+                    items.pop(item.value);
+                })
             }
-        })
-    </script>
+        }
+    })
+</script>
 </body>
 
 </html>

@@ -9,16 +9,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MainController {
     @ResponseBody
     @GetMapping("test")
-    public String hello(){
+    public String hello() {
         System.out.println("we testing");
         return "hello, we are testing";
     }
 
     @GetMapping("test")
-    public  String wellcome(){
-return  "welcome";
+    public String wellcome() {
+        return "welcome";
     }
-
 
 
 }

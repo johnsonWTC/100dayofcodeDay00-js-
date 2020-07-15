@@ -6,44 +6,44 @@
 </head>
 
 <body id="body">
-    <input type="text" id="item">
-    <button id="addItem">Add item</button>
-    <input type="color" id="picker">
-    <input type="checkbox" id="checkBox">
-    <br><br>
-    <table id="table" border="1">
-        <tr>
-            <td>item</td>
-        </tr>
+<input type="text" id="item">
+<button id="addItem">Add item</button>
+<input type="color" id="picker">
+<input type="checkbox" id="checkBox">
+<br><br>
+<table id="table" border="1">
+    <tr>
+        <td>item</td>
+    </tr>
 
-    </table>
+</table>
 
-    <script>
-        let item = document.getElementById("item");
-        let addItem = document.getElementById("addItem");
-        let color = document.getElementById("color");
-        let checkBox = document.getElementById("checkBox");
-        let body = document.getElementById("body");
-        let table = document.getElementById("table");
-        let items = [];
+<script>
+    let item = document.getElementById("item");
+    let addItem = document.getElementById("addItem");
+    let color = document.getElementById("color");
+    let checkBox = document.getElementById("checkBox");
+    let body = document.getElementById("body");
+    let table = document.getElementById("table");
+    let items = [];
 
-        addItem.addEventListener("click", function() {
-            if (items.indexOf(item.value) > -1) {
-                alert("item is already on the list");
-                body.style.backgroundColor = "red";
+    addItem.addEventListener("click", function () {
+        if (items.indexOf(item.value) > -1) {
+            alert("item is already on the list");
+            body.style.backgroundColor = "red";
+        } else {
+            items.push(item.value);
+            if (checkBox.checked) {
+                body.style.backgroundColor = "yellow";
+                let tableRow = table.insertRow();
+                let tableCell = tableRow.insertCell();
+                tableCell.innerHTML = item.value;
             } else {
-                items.push(item.value);
-                if (checkBox.checked) {
-                    body.style.backgroundColor = "yellow";
-                    let tableRow = table.insertRow();
-                    let tableCell = tableRow.insertCell();
-                    tableCell.innerHTML = item.value;
-                } else {
-                    alert("item added");
-                }
+                alert("item added");
             }
-        })
-    </script>
+        }
+    })
+</script>
 </body>
 
 </html>
