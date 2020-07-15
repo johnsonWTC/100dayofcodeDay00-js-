@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
 
-    <title>JavaScript</title>
+    <title>My to do list </title>
 
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 
@@ -12,9 +12,53 @@
 
 <body>
 
-    <h1>JavaScript</h1>
-    <input type="text" name="input" id="input">
+    <h1>My to do List</h1>
+    <input type="text" name="input" id="item">
     <input type="button" value="Add" id="add">
+    <div class="div"></div>
+    <hr>
+    <div class="list"></div>
+
+    <script>
+        let item = document.getElementById("item");
+        let add = document.getElementById("add");
+        let items = [];
+        let list = document.querySelector(".list");
+        let div = document.querySelector(".div");
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("item name is required");
+                item.focus();
+                item.style.backgroundColor = "red";
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already on the list");
+                    item.style.color = "blue"
+                } else {
+                    items.push(item.value);
+                    let li = document.createElement("li");
+                    let del = document.createElement("button");
+                    del.innerHTML = "Delete"
+                    li.innerHTML = item.value;
+                    list.append(li);
+                    list.append(del);
+
+                    del.addEventListener("click", function() {
+                        let confirmation = confirm("are you sure you want to remove " + li.innerHTML + " from the list")
+                        if (confirmation) {
+                            del.remove();
+                            li.remove();
+                            items.pop(li.innerHTML);
+                            alert(li.innerText + " was removed from the list");
+                        }
+                    })
+
+                }
+
+            }
+        })
+    </script>
 
 </body>
 
