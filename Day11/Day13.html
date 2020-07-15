@@ -8,52 +8,52 @@
 </head>
 
 <body id="body">
-    <input type="text" name="item" id="item">
-    <input type="button" value="Add to list" id="button">
-    <input type="checkbox" name="listItems" id="listItems">
-    <input type="checkbox" name="tableItems" id="tableItams">
-    <script>
-        let item = document.getElementById("item");
-        let button = document.getElementById("button");
-        let listItems = document.getElementById("listItems");
-        let tableItams = document.getElementById("tableItams");
-        let body = document.getElementById("body");
-        let list = [];
-        let table = [];
+<input type="text" name="item" id="item">
+<input type="button" value="Add to list" id="button">
+<input type="checkbox" name="listItems" id="listItems">
+<input type="checkbox" name="tableItems" id="tableItams">
+<script>
+    let item = document.getElementById("item");
+    let button = document.getElementById("button");
+    let listItems = document.getElementById("listItems");
+    let tableItams = document.getElementById("tableItams");
+    let body = document.getElementById("body");
+    let list = [];
+    let table = [];
 
 
-        button.addEventListener("click", function() {
-            if (item.value.length == 0) {
-                alert("this field is required");
-            } else {
-                if (listItems.checked) {
-                    if (list.indexOf(item.value) > -1) {
-                        alert(item.value + " is already in the list");
-                    } else {
-                        list.push(item.value);
-                        alert(item.value + " added to the list");
-                        body.style.backgroundColor = "yellow";
-
-                    }
+    button.addEventListener("click", function () {
+        if (item.value.length == 0) {
+            alert("this field is required");
+        } else {
+            if (listItems.checked) {
+                if (list.indexOf(item.value) > -1) {
+                    alert(item.value + " is already in the list");
+                } else {
+                    list.push(item.value);
+                    alert(item.value + " added to the list");
+                    body.style.backgroundColor = "yellow";
 
                 }
-                if (tableItams.checked) {
-                    if (table.indexOf(item.value) > -1) {
-                        alert(item.value + " is already in the table");
-                    } else {
-                        table.push(item.value);
-                        alert(item.value + " added to the table");
-                        body.style.backgroundColor = "pink";
 
-                    }
+            }
+            if (tableItams.checked) {
+                if (table.indexOf(item.value) > -1) {
+                    alert(item.value + " is already in the table");
+                } else {
+                    table.push(item.value);
+                    alert(item.value + " added to the table");
+                    body.style.backgroundColor = "pink";
 
                 }
+
             }
-            if (!listItems.checked && !table.checked) {
-                alert("please choose where you want to add " + item.value);
-            }
-        });
-    </script>
+        }
+        if (!listItems.checked && !table.checked) {
+            alert("please choose where you want to add " + item.value);
+        }
+    });
+</script>
 </body>
 
 </html>

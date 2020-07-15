@@ -8,67 +8,67 @@
 </head>
 
 <body id="body">
-    <input type="text" name="itemID" id="itemID">
-    <input type="checkbox" name="addtoList" id="addtoList">
-    <input type="checkbox" name="addtoTable" id="addtoTable">
-    <input type="button" value="addItems" id="button">
-    <input type="color" value="">
-    <table border="1" id="table">
-        <tr>
-            <td>items</td>
-        </tr>
-    </table>
+<input type="text" name="itemID" id="itemID">
+<input type="checkbox" name="addtoList" id="addtoList">
+<input type="checkbox" name="addtoTable" id="addtoTable">
+<input type="button" value="addItems" id="button">
+<input type="color" value="">
+<table border="1" id="table">
+    <tr>
+        <td>items</td>
+    </tr>
+</table>
 
-    <script>
-        let itemID = document.getElementById("itemID");
-        let addtoList = document.getElementById("addtoList");
-        let addtoTable = document.getElementById("addtoTable");
-        let button = document.getElementById("button");
-        let body = document.getElementById("body");
-        let table = document.getElementById("table");
-        let listItems = [];
-        let tableItems = [];
+<script>
+    let itemID = document.getElementById("itemID");
+    let addtoList = document.getElementById("addtoList");
+    let addtoTable = document.getElementById("addtoTable");
+    let button = document.getElementById("button");
+    let body = document.getElementById("body");
+    let table = document.getElementById("table");
+    let listItems = [];
+    let tableItems = [];
 
-        button.addEventListener("click", function() {
-            if (itemID.value.length == 0) {
-                alert("please add items");
-            } else {
-                if (addtoList.checked) {
-                    if (listItems.indexOf(itemID.value) > -1) {
-                        alert(itemID.value + " is already on the list");
-                        body.style.backgroundColor = "red";
-                    } else {
-                        listItems.push(itemID.value);
-                        let li = document.createElement("li");
-                        li.innerHTML = itemID.value;
-                        body.style.backgroundColor = "yellow";
-                        alert(itemID.value + " added on the list");
-                        body.appendChild(li);
-                    }
-
-                }
-                if (addtoTable.checked) {
-                    if (tableItems.indexOf(itemID.value) > -1) {
-                        alert(itemID.value + " is already on the table");
-                        body.style.backgroundColor = "red";
-                    } else {
-                        tableItems.push(itemID.value);
-                        let tableRow = table.insertRow();
-                        let tableCell = tableRow.insertCell();
-                        tableCell.innerHTML = itemID.value;
-                        body.style.backgroundColor = "pink";
-                        alert(itemID.value + " added on the table");
-                    }
-
+    button.addEventListener("click", function () {
+        if (itemID.value.length == 0) {
+            alert("please add items");
+        } else {
+            if (addtoList.checked) {
+                if (listItems.indexOf(itemID.value) > -1) {
+                    alert(itemID.value + " is already on the list");
+                    body.style.backgroundColor = "red";
+                } else {
+                    listItems.push(itemID.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = itemID.value;
+                    body.style.backgroundColor = "yellow";
+                    alert(itemID.value + " added on the list");
+                    body.appendChild(li);
                 }
 
             }
-        });
+            if (addtoTable.checked) {
+                if (tableItems.indexOf(itemID.value) > -1) {
+                    alert(itemID.value + " is already on the table");
+                    body.style.backgroundColor = "red";
+                } else {
+                    tableItems.push(itemID.value);
+                    let tableRow = table.insertRow();
+                    let tableCell = tableRow.insertCell();
+                    tableCell.innerHTML = itemID.value;
+                    body.style.backgroundColor = "pink";
+                    alert(itemID.value + " added on the table");
+                }
 
-        itemID.addEventListener("input", function() {
-            body.style.backgroundColor = "white";
-        });
-    </script>
+            }
+
+        }
+    });
+
+    itemID.addEventListener("input", function () {
+        body.style.backgroundColor = "white";
+    });
+</script>
 </body>
 
 </html>

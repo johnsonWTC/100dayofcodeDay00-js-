@@ -8,61 +8,61 @@
 </head>
 
 <body id="body">
-    <input type="text" name="item" id="item">
-    <input type="range" name="numberOfItem" id="numberOfItem">
-    <span id="span">0</span>
-    <input type="checkbox" name="listItem" id="listItem"> Add to list
-    <input type="checkbox" name="tableItem" id="tableItem">Add to table
-    <input type="button" value="Add" id="add">
-    <table border="1" id="table">
-        <tr>
-            <td>Items</td>
-        </tr>
-    </table>
-    <script>
-        let item = document.getElementById("item");
-        let numberOfItem = document.getElementById("numberOfItem");
-        let listItem = document.getElementById("listItem");
-        let tableItem = document.getElementById("tableItem");
-        let tableItemsArray = [];
-        let listItemsArray = [];
-        let span = document.getElementById("span");
-        let add = document.getElementById("add");
-        let body = document.getElementById("body");
-        let table = document.getElementById("table");
+<input type="text" name="item" id="item">
+<input type="range" name="numberOfItem" id="numberOfItem">
+<span id="span">0</span>
+<input type="checkbox" name="listItem" id="listItem"> Add to list
+<input type="checkbox" name="tableItem" id="tableItem">Add to table
+<input type="button" value="Add" id="add">
+<table border="1" id="table">
+    <tr>
+        <td>Items</td>
+    </tr>
+</table>
+<script>
+    let item = document.getElementById("item");
+    let numberOfItem = document.getElementById("numberOfItem");
+    let listItem = document.getElementById("listItem");
+    let tableItem = document.getElementById("tableItem");
+    let tableItemsArray = [];
+    let listItemsArray = [];
+    let span = document.getElementById("span");
+    let add = document.getElementById("add");
+    let body = document.getElementById("body");
+    let table = document.getElementById("table");
 
-        numberOfItem.addEventListener("change", function() {
-            span.innerHTML = numberOfItem.value;
-        });
+    numberOfItem.addEventListener("change", function () {
+        span.innerHTML = numberOfItem.value;
+    });
 
-        add.addEventListener("click", function() {
+    add.addEventListener("click", function () {
 
-            if (listItem.checked) {
-                let i = 0;
-                while (numberOfItem.value > i) {
-                    let li = document.createElement("li");
-                    if (i == 5) {
-                        break;
-                    }
-                    li.innerHTML = item.value;
-                    body.append(li);
-                    i++;
+        if (listItem.checked) {
+            let i = 0;
+            while (numberOfItem.value > i) {
+                let li = document.createElement("li");
+                if (i == 5) {
+                    break;
                 }
+                li.innerHTML = item.value;
+                body.append(li);
+                i++;
             }
-            if (tableItem.checked) {
-                let i = 0;
-                while (numberOfItem.value > i) {
-                    if (i == 5) {
-                        break;
-                    }
-                    let tableRow = table.insertRow();
-                    let tableCell = tableRow.insertCell();
-                    tableCell.innerHTML = item.value;
-                    i++;
+        }
+        if (tableItem.checked) {
+            let i = 0;
+            while (numberOfItem.value > i) {
+                if (i == 5) {
+                    break;
                 }
+                let tableRow = table.insertRow();
+                let tableCell = tableRow.insertCell();
+                tableCell.innerHTML = item.value;
+                i++;
             }
-        });
-    </script>
+        }
+    });
+</script>
 
 </body>
 

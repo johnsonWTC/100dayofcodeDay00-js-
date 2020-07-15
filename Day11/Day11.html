@@ -5,64 +5,64 @@
 
     <title>Page Title</title>
 
-    <body id="body">
-        <div style="padding-left: 25em;">
-            <br><br>
-            <input type="text" id="itemID">
-            <input type="checkbox" id="addtoTable">
-            <input type="checkbox" id="addToList">
-            <input type="button" value="Add Item" id="button">
-            <br><br>
-            <table border="1" id="table">
-                <tr>
-                    <td>Item Name</td>
-                </tr>
-            </table>
-        </div>
-        <script>
-            let itemID = document.getElementById("itemID");
-            let addtoTable = document.getElementById("addtoTable");
-            let addToList = document.getElementById("addToList");
-            let button = document.getElementById("button");
-            let body = document.getElementById("body");
-            let items = [];
+<body id="body">
+<div style="padding-left: 25em;">
+    <br><br>
+    <input type="text" id="itemID">
+    <input type="checkbox" id="addtoTable">
+    <input type="checkbox" id="addToList">
+    <input type="button" value="Add Item" id="button">
+    <br><br>
+    <table border="1" id="table">
+        <tr>
+            <td>Item Name</td>
+        </tr>
+    </table>
+</div>
+<script>
+    let itemID = document.getElementById("itemID");
+    let addtoTable = document.getElementById("addtoTable");
+    let addToList = document.getElementById("addToList");
+    let button = document.getElementById("button");
+    let body = document.getElementById("body");
+    let items = [];
 
-            let table = document.getElementById("table");
+    let table = document.getElementById("table");
 
 
-            button.addEventListener("click", function() {
+    button.addEventListener("click", function () {
 
-                if (itemID.value.length == 0) {
-                    alert("this filled can not be empty");
-                    itemID.style.color == "blue";
-                } else {
-                    if (items.indexOf(itemID.value) > -1) {
-                        alert(itemID.value + " has already been added");
-                        body.style.backgroundColor = "yellow";
-                    } else {
-                        if (addtoTable.checked) {
-                            let tableRow = table.insertRow();
-                            let tableCell = tableRow.insertCell();
-                            tableCell.innerHTML = itemID.value;
-                        }
-                        if (addToList.checked) {
-                            let li = document.createElement("li");
-                            li.innerHTML = itemID.value;
-                            body.appendChild(li);
-                        }
-                        items.push(itemID.value);
-                        alert(itemID.value + " added to the list");
-                        body.style.backgroundColor = "pink";
-                    }
-
+        if (itemID.value.length == 0) {
+            alert("this filled can not be empty");
+            itemID.style.color == "blue";
+        } else {
+            if (items.indexOf(itemID.value) > -1) {
+                alert(itemID.value + " has already been added");
+                body.style.backgroundColor = "yellow";
+            } else {
+                if (addtoTable.checked) {
+                    let tableRow = table.insertRow();
+                    let tableCell = tableRow.insertCell();
+                    tableCell.innerHTML = itemID.value;
                 }
+                if (addToList.checked) {
+                    let li = document.createElement("li");
+                    li.innerHTML = itemID.value;
+                    body.appendChild(li);
+                }
+                items.push(itemID.value);
+                alert(itemID.value + " added to the list");
+                body.style.backgroundColor = "pink";
+            }
 
-            });
+        }
 
-            itemID.addEventListener("input", function() {
-                body.style.backgroundColor = "white";
-            });
-        </script>
-    </body>
+    });
+
+    itemID.addEventListener("input", function () {
+        body.style.backgroundColor = "white";
+    });
+</script>
+</body>
 
 </html>
