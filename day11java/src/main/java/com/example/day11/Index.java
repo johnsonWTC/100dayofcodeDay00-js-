@@ -12,13 +12,6 @@ public class Index {
     public String welcome(){
         return "index.html";
     }
-    @RequestMapping
-    public ModelAndView welcome(@RequestParam(value = "name", defaultValue = "yourName") String name){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject(name,name);
-        modelAndView.setViewName("welcome.html");
-        return modelAndView;
 
-    }
 
 }
