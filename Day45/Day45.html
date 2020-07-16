@@ -47,10 +47,11 @@
                     del.addEventListener("click", function() {
                         let confirmation = confirm("are you sure you want to remove " + li.innerHTML + " from the list")
                         if (confirmation) {
-                            del.remove();
-                            li.remove();
-                            items.pop(li.innerHTML);
-                            alert(li.innerText + " was removed from the list");
+                            //  items.pop(li.innerHTML);
+                            alert(items);
+                            alert(li.innerHTML);
+                            //   del.remove();
+                            //   li.remove();
                         }
                     })
 
@@ -58,6 +59,27 @@
 
             }
         })
+
+
+        item.addEventListener("input", function() {
+            let sug = suggestions();
+            div.innerHTML = sug;
+            if (item.value.length == 0) {
+                div.innerHTML = "";
+            }
+        })
+
+        function suggestions() {
+            let sug = [];
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(item.value)) {
+                    sug.push(items[i]);
+                }
+                i++;
+            }
+            return sug;
+        }
     </script>
 
 </body>
