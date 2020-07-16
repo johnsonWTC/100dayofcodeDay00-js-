@@ -22,6 +22,7 @@
         let sugestion = document.querySelector("#sugestion");
         let item = document.getElementById("item");
         let add = document.getElementById("add");
+        let items = [];
 
         item.addEventListener("input", function() {
 
@@ -29,7 +30,13 @@
 
         function sugestions() {
             let listSugestions = [];
-
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(item.value)) {
+                    listSugestions.push(item.value);
+                }
+                i++;
+            }
             return listSugestions;
         }
     </script>
