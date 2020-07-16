@@ -1,18 +1,12 @@
 package com.example.day12;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-
 public class home {
-    @RequestMapping("home")
-    public ModelAndView home(@RequestParam(value = "name", defaultValue = "User") String name){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("name",name);
-        modelAndView.setViewName("wel.jsp");
-        return modelAndView;
+    @GetMapping("home")
+    public String home (){
+        return "home.html";
     }
 }
