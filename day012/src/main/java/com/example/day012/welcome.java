@@ -9,7 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class welcome {
     @RequestMapping("welcome")
-    public ModelAndView welcome(@RequestParam(value = "name",defaultValue = "item name") String name){
+    public ModelAndView welcome(@RequestParam(value = "items",defaultValue = "item name") String name){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("name", name);
         modelAndView.setViewName("wel.jsp");

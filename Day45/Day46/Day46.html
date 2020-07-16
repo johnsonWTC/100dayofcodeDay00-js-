@@ -5,27 +5,31 @@
 
     <title>Page Title</title>
 
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
 </head>
 
 <body>
 
-    <input type="text" name="item" id="item" placeholder="item name">
+    <input type="text" id="item" placeholder="item name">
     <input type="button" value="Add" id="add">
     <div class="sugestion"></div>
     <hr>
     <div class="list"></div>
 
     <script>
-        let list = document.querySelector("#list");
-        let sugestion = document.querySelector("#sugestion");
+        let list = document.querySelector(".list");
+        let sugestion = document.querySelector(".sugestion");
         let item = document.getElementById("item");
         let add = document.getElementById("add");
         let items = [];
 
         item.addEventListener("input", function() {
-
+            let listSugestions = sugestions();
+            sugestion.innerHTML = listSugestions;
+            if (item.value == 0) {
+                sugestion.innerHTML = "";
+            }
         });
 
         function sugestions() {
@@ -33,12 +37,25 @@
             let i = 0;
             while (items.length > i) {
                 if (items[i].startsWith(item.value)) {
-                    listSugestions.push(item.value);
+                    listSugestions.push(items[i]);
                 }
                 i++;
             }
             return listSugestions;
         }
+
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("Item name is requires");
+                item.focus();
+            } else {
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " is already on the list");
+                } else {
+                    items.push(item.value);
+                }
+            }
+        })
     </script>
 
 
