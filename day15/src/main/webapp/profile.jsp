@@ -9,5 +9,5 @@ ${item}
     let li = document.createElement("li");
     let itemName = document.getElementById("itemName");
     li.innerHTML = itemName.innerText;
-    list.append((li);)
+    list.append((li));
 </script>
