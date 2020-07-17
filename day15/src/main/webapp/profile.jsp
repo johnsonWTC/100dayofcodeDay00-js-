@@ -1,5 +1,5 @@
 <div id="itemName">
-${item}
+${name}
 </div> was added
 
 <hr>

@@ -12,6 +12,6 @@ public class profile {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("name",item);
         modelAndView.setViewName("profile.jsp");
-        return  modelAndView;
+        return modelAndView;
     }
 }
