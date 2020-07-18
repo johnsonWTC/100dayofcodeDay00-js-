@@ -32,6 +32,21 @@
 
         function suggestionList() {
             let sug = [];
+            let i = 0;
+            while (names.length > i) {
+                if (names[i].startsWith(name.value)) {
+                    sug.push(names[i]);
+                }
+                i++;
+            }
+            return sug;
+        }
+
+        function adder() {
+            if (name.value.length == 0) {
+                alert("item name is required");
+                name.focus();
+            }
         }
     </script>
 </body>
