@@ -48,9 +48,12 @@
                 name.focus();
             } else {
                 if (names.indexOf(name.value) > -1) {
-                    alert(name.value + " is already on the list its number " + names.indexOf(name.value));
+                    alert(name.value + " is already on the list its number " + (names.indexOf(name.value) + 1));
                 } else {
                     names.push(name.value);
+                    let li = document.createElement("li");
+                    li.innerHTML = name.value;
+                    list.append(li);
                 }
             }
         }
