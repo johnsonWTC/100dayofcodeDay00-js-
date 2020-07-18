@@ -1,0 +1,1 @@
+hello <div id="name">${igama} </div>
