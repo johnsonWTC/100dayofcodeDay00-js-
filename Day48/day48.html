@@ -52,8 +52,20 @@
                 } else {
                     names.push(name.value);
                     let li = document.createElement("li");
+                    let del = document.createElement("button");
+                    del.innerHTML = "DELETE";
                     li.innerHTML = name.value;
                     list.append(li);
+                    list.append(del);
+
+                    del.addEventListener("click", function() {
+                        let comf = confirm(`Are you sure you want to remove ${li.innerHTML} from the list`);
+                        if (comf) {
+                            li.remove();
+                            del.remove();
+                        }
+                    });
+
                 }
             }
         }
