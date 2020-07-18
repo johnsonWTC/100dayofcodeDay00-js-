@@ -46,6 +46,12 @@
             if (name.value.length == 0) {
                 alert("item name is required");
                 name.focus();
+            } else {
+                if (names.indexOf(name.value) > -1) {
+                    alert(name.value + " is already on the list its number " + names.indexOf(name.value));
+                } else {
+                    names.push(name.value);
+                }
             }
         }
     </script>
