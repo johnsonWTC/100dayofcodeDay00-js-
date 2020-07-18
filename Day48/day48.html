@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <input type="text" name="name" id="name">
-    <input type="button" value="Add" id="add">
+    <input type="text" name="name" id="name" oninput="suggestions()">
+    <input type="button" value="Add" id="add" onclick="adder()">
     <div class="suggestion"></div>
     <hr>
     <div class="list"></div>
@@ -20,6 +20,14 @@
         let names = [];
         let suggestion = document.querySelector(".suggestion");
         let list = document.querySelector(".list");
+
+        function suggestions() {
+            suggestion.innerHTML = "typing";
+            suggestion.style.color = "green";
+            if (name.value.length == 0) {
+                suggestion.innerHTML = "";
+            }
+        }
     </script>
 </body>
 
