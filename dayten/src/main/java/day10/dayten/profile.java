@@ -12,7 +12,7 @@ public class profile {
     public ModelAndView profile(@RequestParam(value = "names",defaultValue = "please insert name") String amagama){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("igama",amagama);
-        modelAndView.setViewName("profile");
+        modelAndView.setViewName("profile.jsp");
         return modelAndView;
     }
 }
