@@ -1,1 +1,1 @@
-hello ${item}
+hello ${namey}

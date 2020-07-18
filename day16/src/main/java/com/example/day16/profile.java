@@ -9,9 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class profile {
 
     @RequestMapping("profile")
-    public ModelAndView proflie(@RequestParam(value = "item", defaultValue = "what is your name vele") String item){
+    public ModelAndView proflie(@RequestParam(value ="item", defaultValue = "what is your name vele") String item){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("name",item);
+        modelAndView.addObject("namey",item);
         modelAndView.setViewName("profile.jsp");
         return modelAndView;
     }
