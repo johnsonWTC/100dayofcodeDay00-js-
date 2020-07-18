@@ -23,12 +23,15 @@
 
         function suggestions() {
             let sug = suggestionList();
-
             suggestion.innerHTML = sug;
             suggestion.style.color = "blue";
             if (name.value.length == 0) {
                 suggestion.innerHTML = "";
             }
+        }
+
+        function suggestionList() {
+            let sug = [];
         }
     </script>
 </body>
