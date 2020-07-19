@@ -7,8 +7,8 @@
 </head>
 
 <body>
-    <input type="text" name="amagama" id="name" onclick="suggestionList()">
-    <input type="button" value="add" id="add">
+    <input type="text" name="amagama" id="name" oninput="suggestionList()">
+    <input type="button" value="add" id="add" onclick="adder()">
     <div class="div"></div>
     <hr>
     <div class="list"></div>
@@ -24,13 +24,17 @@
             let suggetions = [];
             let i = 0;
             while (lists.length > i) {
-                if (lists[i].startsWith(name.value) {
-                        suggetions.push(list[i]);
-                    }
-                    i++;
+                if (lists[i].startsWith(name.value)) {
+                    suggetions.push(list[i]);
                 }
-                div.innerHTML = suggetions;
+                i++;
             }
+            div.innerHTML = suggetions;
+        }
+
+        function adder() {
+            items.push(name.value);
+        }
     </script>
 
 </body>
