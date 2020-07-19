@@ -40,7 +40,9 @@
                 if (lists.indexOf(name.value) > -1) {
                     alert(`${name.value} is already on the list, its number ${(lists.indexOf(name.value) + 1)}`);
                 }
-                let li = document.create("li");
+                let li = document.createElement("li");
+                li.innerHTML = `${(lists.length)+1}. ${name.value} `;
+                list.append(li);
             }
         }
     </script>
