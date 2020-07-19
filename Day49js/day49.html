@@ -37,11 +37,11 @@
                 alert("name is a requred field");
                 name.focus();
             } else {
-                lists.push(name.value);
+                if (lists.indexOf(name.value) > -1) {
+                    alert(`${name.value} is already on the list, its number ${(lists.indexOf(name.value) + 1)}`);
+                }
             }
         }
     </script>
-
-</body>
 
 </html>
