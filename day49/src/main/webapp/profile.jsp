@@ -1,6 +1,6 @@
 <h1>Hello ${name}</h1>
-<input placeholder="item name" id="itemName" onclick="addItems()">
-<button id="add">ADD ITEM</button>
+<input placeholder="item name" id="itemName" >
+<button id="add" onclick="addItems()">ADD ITEM</button>
 <div id="suggestions"></div>
 <hr>
 <div id="list"></div>
@@ -10,7 +10,10 @@
  let items = [];
 
  function  addItems() {
-
+     if(itemName.value.length == 0){
+         alert(("item name is required"));
+         add.focus();
+     }
  }
 
 </script>
