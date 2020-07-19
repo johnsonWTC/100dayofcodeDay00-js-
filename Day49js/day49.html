@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <input type="text" name="amagama" id="name">
+    <input type="text" name="amagama" id="name" onclick="suggestionList()">
     <input type="button" value="add" id="add">
     <div class="div"></div>
     <hr>
@@ -18,7 +18,19 @@
         let add = document.querySelector("#add");
         let div = document.querySelector(".div");
         let list = document.querySelector(".list");
-        let list = [];
+        let lists = [];
+
+        function suggestionList() {
+            let suggetions = [];
+            let i = 0;
+            while (lists.length > i) {
+                if (lists[i].startsWith(name.value) {
+                        suggetions.push(list[i]);
+                    }
+                    i++;
+                }
+                div.innerHTML = suggetions;
+            }
     </script>
 
 </body>
