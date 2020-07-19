@@ -15,8 +15,14 @@
          alert(("item name is required"));
          add.focus();
      }else{
-         let li = document.createElement(li);
-         li.innerText = itemName.value;
+         if(items.indexOf(itemName.value) > -1){
+             alert(`${itemName.value} is already on the list`);
+         }else{
+             items.push(itemName.value);
+             let li = document.createElement("li");
+             li.innerText = itemName.value;
+             list.append(li);
+         }
 
      }
  }
