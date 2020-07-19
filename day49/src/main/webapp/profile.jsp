@@ -8,11 +8,16 @@
  let itemName = document.getElementById("itemName");
  let add = document.getElementById("add");
  let items = [];
+ let list = document.getElementById("list");
 
  function  addItems() {
      if(itemName.value.length == 0){
          alert(("item name is required"));
          add.focus();
+     }else{
+         let li = document.createElement(li);
+         li.innerText = itemName.value;
+
      }
  }
 
