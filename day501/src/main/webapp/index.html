@@ -19,7 +19,9 @@
         if(itemName.value.length == 0){
             alert("item name required");
         }else{
-            if(items.indexOf(itemName.value) > -1 )
+            if(items.indexOf(itemName.value) > -1 ){
+                alert(itemName.value + " already on the list");
+            }
             items.push(itemName.value);
         }
     })
