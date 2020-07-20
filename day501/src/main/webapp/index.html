@@ -25,9 +25,10 @@
                 alert(itemName.value + " already on the list");
             }else {
                 items.push(itemName.value);
+                let num = items.length;
                 let li = document.createElement("li");
                 li.innerHTML = itemName.value;
-                div.append(li);
+                div.append(num + " " + li);
 
             }
         }
