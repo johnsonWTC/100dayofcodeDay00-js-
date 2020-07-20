@@ -9,6 +9,7 @@
 <input type="text" id="itemName">
 <input type="button" id="add" value="Add">
 <hr>
+<div id="div"></div>
 
 <script>
     let add = document.getElementById("add");
@@ -25,6 +26,7 @@
                 items.push(itemName.value);
                 let li = document.createElement("li");
                 li.innerHTML = itemName.value;
+
             }
         }
     })
