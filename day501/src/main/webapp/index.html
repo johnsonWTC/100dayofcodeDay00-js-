@@ -21,8 +21,9 @@
         }else{
             if(items.indexOf(itemName.value) > -1 ){
                 alert(itemName.value + " already on the list");
+            }else {
+                items.push(itemName.value);
             }
-            items.push(itemName.value);
         }
     })
 </script>
