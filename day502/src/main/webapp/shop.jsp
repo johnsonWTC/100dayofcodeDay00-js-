@@ -5,11 +5,15 @@
 <script>
     let itemName = document.getElementById("itemName");
     let addToCart = document.getElementById("addToCart");
+    let itemsOnCart = [];
 
 
     addToCart.addEventListener("click",function () {
         if(itemName.value.length == 0){
             alert("Item name is required");
+        }else{
+            itemsOnCart.push(itemName.value);
+            let li = document.createElement("li");
         }
     })
 </script>
