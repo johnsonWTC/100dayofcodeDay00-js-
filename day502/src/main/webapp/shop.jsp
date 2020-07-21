@@ -18,9 +18,13 @@
             let li = document.createElement("li");
             let more = document.createElement("button");
             let les = document.createElement("button");
+            let del = document.createElement("button");
             let countPerItem = document.createElement("span");
-            more.innerHTML = "More";
-            les.innerHTML = "Less";
+            more.innerHTML = "MORE";
+            les.innerHTML = "LESS";
+            del.innerHTML = "DELETE"
+            let count = 0
+            countPerItem.innerHTML = " "+ count;
             li.innerHTML = itemName.value;
             list.append(li);
             list.append(more);
