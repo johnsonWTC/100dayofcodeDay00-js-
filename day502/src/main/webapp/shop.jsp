@@ -1,0 +1,1 @@
+${shopItem} is now on the list;
