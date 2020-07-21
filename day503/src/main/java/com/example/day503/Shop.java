@@ -11,6 +11,7 @@ public class Shop {
     public ModelAndView shop(@RequestParam(value = "itemName", defaultValue = "the item name goes here") String item){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("shopItem",item);
+        modelAndView.setViewName("shop.jsp");
         return  modelAndView;
     }
 }
