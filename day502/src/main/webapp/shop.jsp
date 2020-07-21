@@ -45,7 +45,11 @@
             })
 
             del.addEventListener("click", function () {
-
+                li.remove();
+                more.remove();
+                les.remove();
+                del.remove();
+                countPerItem.remove();
             })
         }
     })
