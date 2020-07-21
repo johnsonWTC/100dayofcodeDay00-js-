@@ -30,6 +30,18 @@
             list.append(more);
             list.append(les);
             list.append(countPerItem);
+
+            more.addEventListener("click", function () {
+                count++;
+                countPerItem.innerHTML = count;
+            });
+            les.addEventListener("click", function () {
+                count--;
+                if(count < 0){
+                    count = 0;
+                }
+                countPerItem.innerHTML = count;
+            })
         }
     })
 </script>
