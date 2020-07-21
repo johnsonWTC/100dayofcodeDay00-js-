@@ -45,6 +45,10 @@
             })
 
             del.addEventListener("click", function () {
+                let cormfimation = confirm(`are you sure you want to remove+ ${li.innerHTML} from the list`);
+                if(cormfimation){
+
+                }
                 li.remove();
                 more.remove();
                 les.remove();
