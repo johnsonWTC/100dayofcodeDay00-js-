@@ -1,1 +1,1 @@
-${shopItem} is now on the list;
+<h2>${shopItem}</h2> Shop on line
