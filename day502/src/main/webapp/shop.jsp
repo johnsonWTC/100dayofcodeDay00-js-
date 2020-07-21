@@ -22,25 +22,30 @@
             let countPerItem = document.createElement("span");
             more.innerHTML = "MORE";
             les.innerHTML = "LESS";
-            del.innerHTML = "DELETE"
+            del.innerHTML = "REMOVE FROM CART";
             let count = 0
             countPerItem.innerHTML = " "+ count;
             li.innerHTML = itemName.value;
             list.append(li);
             list.append(more);
             list.append(les);
+            list.append(del);
             list.append(countPerItem);
 
             more.addEventListener("click", function () {
                 count++;
-                countPerItem.innerHTML = count;
+                countPerItem.innerHTML = " " +count;
             });
             les.addEventListener("click", function () {
                 count--;
                 if(count < 0){
                     count = 0;
                 }
-                countPerItem.innerHTML = count;
+                countPerItem.innerHTML = " "+count;
+            })
+
+            del.addEventListener("click", function () {
+
             })
         }
     })
