@@ -5,4 +5,11 @@
 <script>
     let itemName = document.getElementById("itemName");
     let addToCart = document.getElementById("addToCart");
+
+
+    addToCart.addEventListener("click",function () {
+        if(itemName.value.length == 0){
+            alert("Item name is required");
+        }
+    })
 </script>
