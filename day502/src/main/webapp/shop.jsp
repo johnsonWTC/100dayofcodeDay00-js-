@@ -17,9 +17,15 @@
             itemsOnCart.push(itemName.value);
             let li = document.createElement("li");
             let more = document.createElement("button");
+            let les = document.createElement("button");
+            let countPerItem = document.createElement("span");
+            more.innerHTML = "More";
+            les.innerHTML = "Less";
             li.innerHTML = itemName.value;
-            let countPerItem = 0;
             list.append(li);
+            list.append(more);
+            list.append(les);
+            list.append(countPerItem);
         }
     })
 </script>
