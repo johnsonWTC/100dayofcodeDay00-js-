@@ -24,7 +24,7 @@
 
         addToCart.addEventListener("click", function() {
             if (itemName.value.length == 0) {
-                alert("Item name is real");
+                alert("Item name is required");
             } else {
                 if (itemsOnTheCart.indexOf(itemName.value) > -1) {
                     alert(itemName.value + " item is already on the list");
