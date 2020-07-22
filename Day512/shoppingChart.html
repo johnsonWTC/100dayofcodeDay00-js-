@@ -31,6 +31,12 @@
                 } else {
                     itemsOnTheCart.push(itemName.value);
                     let li = document.createElement("li");
+                    let del = document.createElement("button");
+                    let more = document.createElement("button");
+                    let les = document.createElement("button");
+                    del.innerText = "DELETE";
+                    more.innerText = "MORE";
+                    les.innerText = "LESS";
                 }
             }
         })
