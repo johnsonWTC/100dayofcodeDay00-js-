@@ -35,7 +35,8 @@
                     let del = document.createElement("button");
                     let more = document.createElement("button");
                     let les = document.createElement("button");
-                    let span = document.createComment("span");
+                    let span = document.createElement("span");
+                    span.innerText = " " + count;
                     li.innerText = itemName.value;
                     del.innerText = "DELETE";
                     more.innerText = "MORE";
@@ -46,6 +47,7 @@
                     div.append(del);
 
                     more.addEventListener("click", function() {
+                        confirmation = confirm("are you sure you want add more " + itemName.value + " to the cart")
                         count++;
                         span.innerText = " " + count;
                     });
