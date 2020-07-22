@@ -45,10 +45,20 @@
                     div.append(more);
                     div.append(les);
                     div.append(del);
+                    div.append(span);
 
                     more.addEventListener("click", function() {
-                        confirmation = confirm("are you sure you want add more " + itemName.value + " to the cart")
                         count++;
+                        span.innerText = " " + count;
+
+                    });
+
+                    les.addEventListener("click", function() {
+                        count--;
+                        if (count < 0) {
+                            count = 0;
+
+                        }
                         span.innerText = " " + count;
                     });
 
