@@ -39,14 +39,14 @@
             les.addEventListener("click", function () {
                 count--;
                 if(count < 0){
-                    count = 0;
+                    count = "";
                 }
                 countPerItem.innerHTML = " "+count;
             })
 
             del.addEventListener("click", function () {
-                let cormfimation = confirm(`are you sure you want to remove ${li.innerHTML} from the list`);
-                if(cormfimation){
+                let confirmation = confirm(`are you sure you want to remove ${li.innerHTML} from the list`);
+                if(confirmation){
                 li.remove();
                 more.remove();
                 les.remove();
