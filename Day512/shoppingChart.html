@@ -35,6 +35,7 @@
                     let del = document.createElement("button");
                     let more = document.createElement("button");
                     let les = document.createElement("button");
+                    let span = document.createComment("span");
                     li.innerText = itemName.value;
                     del.innerText = "DELETE";
                     more.innerText = "MORE";
@@ -45,7 +46,8 @@
                     div.append(del);
 
                     more.addEventListener("click", function() {
-
+                        count++;
+                        span.innerText = " " + count;
                     });
 
 
