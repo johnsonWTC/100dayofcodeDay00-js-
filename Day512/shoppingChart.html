@@ -47,6 +47,7 @@
                     div.append(del);
                     div.append(span);
 
+
                     more.addEventListener("click", function() {
                         count++;
                         span.innerText = " " + count;
@@ -70,6 +71,7 @@
                             more.remove();
                             les.remove();
                             del.remove();
+                            span.remove();
                         }
                     })
                 }
