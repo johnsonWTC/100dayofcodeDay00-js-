@@ -19,7 +19,7 @@
     <script>
         let itemName = document.getElementById("itemName");
         let addToCart = document.getElementById("addToCart");
-        let div = document.getElementById("div");
+        let div = document.querySelector(".div");
         let itemsOnTheCart = [];
 
         addToCart.addEventListener("click", function() {
@@ -40,6 +40,7 @@
                     div.append(li);
                     div.append(more);
                     div.append(les);
+                    div.append(del);
 
                 }
             }
