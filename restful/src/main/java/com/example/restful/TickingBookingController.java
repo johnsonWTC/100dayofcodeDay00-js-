@@ -10,12 +10,12 @@ public class TickingBookingController {
     @Autowired
     private ticketBookingService ticketBookingService;
 
-    @PostMapping("create")
+    @PostMapping("/create")
     public Ticket createTicket(Ticket ticket){
             return ticketBookingService.createTicket(ticket);
     }
 
-    @GetMapping("ticket/ticketId")
+    @GetMapping("/{ticketId}")
     public  Ticket getTicketById(@PathVariable("ticketId") Integer ticketId){
         return ticketBookingService.getTicketId(ticketId);
     }
