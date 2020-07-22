@@ -43,6 +43,16 @@
                     div.append(les);
                     div.append(del);
 
+                    del.addEventListener("click") {
+                        let confirmation = confirm("are tou sure you want to remove " + li.innerText);
+                        if (confirmation) {
+                            li.remove();
+                            more.remove();
+                            les.remove();
+                            del.remove();
+                        }
+                    }
+
                 }
             }
         })
