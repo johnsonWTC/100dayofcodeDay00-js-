@@ -22,7 +22,7 @@
         let div = document.getElementById("div");
         let itemsOnTheCart = [];
 
-        itemName.addEventListener("", function() {
+        itemName.addEventListener("click", function() {
             if (itemName.value.lnegth == 0) {
                 alert("Item name is real");
             } else {
@@ -31,8 +31,6 @@
                 } else {
                     itemsOnTheCart.push(itemName.value);
                 }
-
-
             }
         })
     </script>
