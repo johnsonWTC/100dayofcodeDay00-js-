@@ -22,8 +22,8 @@
         let div = document.getElementById("div");
         let itemsOnTheCart = [];
 
-        itemName.addEventListener("click", function() {
-            if (itemName.value.lnegth == 0) {
+        addToCart.addEventListener("click", function() {
+            if (itemName.value.length == 0) {
                 alert("Item name is real");
             } else {
                 if (itemsOnTheCart.indexOf(itemName.value) > -1) {
