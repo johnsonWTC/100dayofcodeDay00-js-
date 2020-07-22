@@ -20,6 +20,12 @@
         let itemName = document.getElementById("itemName");
         let addToCart = document.getElementById("addToCart");
         let div = document.getElementById("div");
+
+        itemName.addEventListener("", function() {
+            if (itemName.value.lnegth == 0) {
+                alert("Item name is real");
+            }
+        })
     </script>
 
 </body>
