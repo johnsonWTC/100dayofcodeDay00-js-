@@ -20,10 +20,19 @@
         let itemName = document.getElementById("itemName");
         let addToCart = document.getElementById("addToCart");
         let div = document.getElementById("div");
+        let itemsOnTheCart = [];
 
         itemName.addEventListener("", function() {
             if (itemName.value.lnegth == 0) {
                 alert("Item name is real");
+            } else {
+                if (itemsOnTheCart.indexOf(itemName.value) > -1) {
+                    alert(itemName.value + " item is already on the list");
+                } else {
+                    itemsOnTheCart.push(itemName.value);
+                }
+
+
             }
         })
     </script>
