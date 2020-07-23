@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+
+</head>
+
+<body>
+    <input type="text" name="itemName" id="itemName" list="datalist">
+    <datalist id="datalist">
+        <option value=""></option>
+    </datalist>
+    <button id="add">Add</button>
+    <span id="span">span</span>
+
+    <script>
+        let itemName = document.getElementById("itemName");
+        let add = document.getElementById("add");
+        let items = [];
+        let span = document.getElementById("span");
+        let datalist = document.getElementById("datalist");
+
+        add.addEventListener("click", function() {
+            items.push(itemName.value);
+
+        });
+
+        itemName.addEventListener("input", function() {
+            let listItem = []
+            let i = 0;
+            while (items.length > i) {
+                if (items[i].startsWith(itemName.value)) {
+                    listItem.push(items[i]);
+                }
+                i++;
+            }
+            span.innerHTML = listItem;
+            datalist.value = listItem[1];
+        })
+    </script>
+
+</body>
+
+</html>

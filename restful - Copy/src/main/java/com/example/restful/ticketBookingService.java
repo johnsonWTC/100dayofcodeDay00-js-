@@ -8,12 +8,12 @@ public class ticketBookingService {
     @Autowired
     private  TicketBookingDoa ticketBookingDoa;
 
-    public Item createItem(Item item){
-        return ticketBookingDoa.save(item);
+    public Ticket createTicket(Ticket ticket){
+        return ticketBookingDoa.save(ticket);
     }
 
-    public Item getItemById(Integer itemId){
-        return ticketBookingDoa.findById(itemId).orElse(null);
+    public Ticket getTicketId(Integer ticketId){
+        return ticketBookingDoa.findById(ticketId).orElse(null);
     }
 
 }

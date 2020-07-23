@@ -2,21 +2,28 @@ package com.example.restful;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
-@RequestMapping("api/tickets")
+@RequestMapping("items")
 public class TickingBookingController {
 
     @Autowired
     private ticketBookingService ticketBookingService;
 
     @PostMapping("/create")
-    public Ticket createTicket(Ticket ticket){
-            return ticketBookingService.createTicket(ticket);
+    public Item createItem(Item item){
+
+        return ticketBookingService.createItem(item);
     }
 
-    @GetMapping("/{ticketId}")
-    public  Ticket getTicketById(@PathVariable("ticketId") Integer ticketId){
-        return ticketBookingService.getTicketId(ticketId);
+    @GetMapping("/{itemId}")
+    public ModelAndView getItemById(@PathVariable("itemId") Integer itemId){
+        ModelAndView modelAndView = new ModelAndView();
+        Item item = new Item();
+        item =  ticketBookingService.getItemById(itemId);
+        modelAndView.addObject("itemId",item.getItemId());
+        modelAndView.addObject("itemName",item.getItemName());
+        return modelAndView;
     }
 }
