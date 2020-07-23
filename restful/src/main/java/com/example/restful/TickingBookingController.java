@@ -24,6 +24,7 @@ public class TickingBookingController {
         item =  ticketBookingService.getItemById(itemId);
         modelAndView.addObject("itemId",item.getItemId());
         modelAndView.addObject("itemName",item.getItemName());
+        modelAndView.setViewName("item.jsp");
         return modelAndView;
     }
 }
