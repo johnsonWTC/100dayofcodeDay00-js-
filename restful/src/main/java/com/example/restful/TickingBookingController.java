@@ -20,7 +20,7 @@ public class TickingBookingController {
     @GetMapping("/{itemId}")
     public ModelAndView getItemById(@PathVariable("itemId") Integer itemId){
         ModelAndView modelAndView = new ModelAndView();
-        Item item = new Item();
+        Item item;
         item =  ticketBookingService.getItemById(itemId);
         modelAndView.addObject("itemId",item.getItemId());
         modelAndView.addObject("itemName",item.getItemName());
