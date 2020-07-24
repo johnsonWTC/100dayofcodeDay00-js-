@@ -20,7 +20,7 @@
         let li = document.createElement("li");
        let i = fetch("http://localhost:8080/items/"+ itemToFind.value).then(res => res.json()).
        then(data => li.innerHTML = data.itemName))
-
+        div.append(li);
     ;
 
 
