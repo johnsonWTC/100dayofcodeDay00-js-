@@ -18,6 +18,7 @@
     let itemToFind = document.getElementById("itemToFind");
     let div = document.getElementById("div");
     let add = document.getElementById("add");
+    let itemName = document.getElementById("itemName");
 
 
     find.addEventListener("click", function () {
@@ -38,7 +39,7 @@
 
             },
             body: JSON.stringify({
-                itemName: "fromFetch"
+                itemName: itemName.value
             })
         })
 
