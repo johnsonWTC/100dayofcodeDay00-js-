@@ -8,6 +8,7 @@
 
 <input type="number" id="itemToFind" name="itemId">
     <button id="findItem">Find item</button>
+
 <div id="div"></div>
 
 <script>
@@ -19,8 +20,22 @@
     find.addEventListener("click", function () {
         let li = document.createElement("li");
        let i = fetch("http://localhost:8080/items/"+ itemToFind.value).then(res => res.json()).
-       then(data => li.innerHTML = data.itemName)
+       then(data => {
+           li.innerHTML = data.itemName;
         div.append(li);
+       })
+
+    })
+
+    fetch("http://localhost:8080/items/",{
+        method:'POST',
+        headers: {
+            'Content-type' : 'application/json'
+
+        },
+        body: JSON.stringify({
+            itemName: "fromFetch"
+        })
     })
 
 
