@@ -1,10 +1,7 @@
 package com.example.crud52;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ItamController {
@@ -20,6 +17,10 @@ public class ItamController {
     @GetMapping("{itemId}")
     public Item getItem(@PathVariable("itemId")  Integer itemId){
         return itemService.geItemByID(itemId);
+    }
+    @PutMapping ("{itemId}/{itemName}")
+    public Item upDateItem(@PathVariable("itemId")  Integer itemId, @PathVariable("itemName") String itemName){
+        return itemService.UpdateById(itemId,itemName);
     }
 
 }
