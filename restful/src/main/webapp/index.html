@@ -14,9 +14,8 @@
     let itemToFind = document.getElementById("itemToFind");
 
     find.addEventListener("click", function () {
-        let li =document.createElement("li")
        let i = fetch("http://localhost:8080/items/"+ itemToFind.value).then(res => res.json()).
-       then(data => ))
+       then(data =>))
 
         // let li = document.createElement("li");
        // li.innerHTML = i.itemName;
