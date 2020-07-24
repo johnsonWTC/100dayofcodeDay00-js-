@@ -24,6 +24,10 @@ public class ItemController {
     public  Item createItem(Item item){
         return itemService.createItem(item);
     }
+     @DeleteMapping("itemName")
+    public void deleteItem(Item item){
+        itemService.deleteItem(item);
+     }
 
 
 }
