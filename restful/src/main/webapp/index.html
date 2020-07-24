@@ -8,6 +8,7 @@
 
 <input type="number" id="itemToFind" name="itemId">
     <button id="findItem">Find item</button>
+<input type="text" id="itemName">
 <button id="add">Add item</button>
 
 <div id="div"></div>
@@ -30,6 +31,16 @@
     })
 
     add.addEventListener("click", function () {
+        fetch("http://localhost:8080/items/",{
+            method:'POST',
+            headers: {
+                'Content-type' : 'application/json'
+
+            },
+            body: JSON.stringify({
+                itemName: "fromFetch"
+            })
+        })
 
     })
 
