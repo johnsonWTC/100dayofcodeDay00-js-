@@ -19,13 +19,8 @@
     find.addEventListener("click", function () {
         let li = document.createElement("li");
        let i = fetch("http://localhost:8080/items/"+ itemToFind.value).then(res => res.json()).
-       then(data => li.innerHTML = data.itemName))
+       then(data => li.innerHTML = data.itemName)
         div.append(li);
-    ;
-
-
-        // let li = document.createElement("li");
-       // li.innerHTML = i.itemName;
     })
 
 
