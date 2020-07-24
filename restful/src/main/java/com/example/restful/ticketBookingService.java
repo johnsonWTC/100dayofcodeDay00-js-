@@ -18,4 +18,8 @@ public class ticketBookingService {
     public void deleteItemById(Integer itemId){
         ticketBookingDoa.deleteById(itemId);
     }
+
+    public Iterable getAllItems(){
+       return ticketBookingDoa.findAll();
+    }
 }
