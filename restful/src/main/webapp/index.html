@@ -16,6 +16,7 @@
     let  find = document.getElementById("findItem");
     let itemToFind = document.getElementById("itemToFind");
     let div = document.getElementById("div");
+    let add = document.getElementById("add");
 
 
     find.addEventListener("click", function () {
@@ -28,16 +29,10 @@
 
     })
 
-    fetch("http://localhost:8080/items/",{
-        method:'POST',
-        headers: {
-            'Content-type' : 'application/json'
+    add.addEventListener("click", function () {
 
-        },
-        body: JSON.stringify({
-            itemName: "fromFetch"
-        })
     })
+
 
 
 </script>
