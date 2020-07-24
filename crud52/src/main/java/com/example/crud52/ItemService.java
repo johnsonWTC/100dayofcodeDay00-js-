@@ -23,7 +23,8 @@ public class ItemService {
     public  Item UpdateById(Integer itemId, String newItemName){
         Item item = itemDao.findById(itemId).orElse(null);
         item.setItemName(newItemName);
-        return item;
+        return itemDao.save(item);
+
     }
 
 
