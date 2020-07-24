@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("items")
-public class TickingBookingController {
+public class ItemAddingController {
 
     @Autowired
     private ticketBookingService ticketBookingService;
@@ -20,4 +20,10 @@ public class TickingBookingController {
     public Item getItemById(@PathVariable("itemId") Integer itemId){
         return ticketBookingService.getItemById(itemId);
     }
+
+    @DeleteMapping("/{itemId}")
+        public void deleteItemById(@PathVariable("itemId") Integer itemId){
+            ticketBookingService.deleteItemById(itemId);
+        }
+
 }
