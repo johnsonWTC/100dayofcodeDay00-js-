@@ -2,10 +2,7 @@ package com.example.restfulday54;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class ItemController {
@@ -20,6 +17,13 @@ public class ItemController {
 
     @PutMapping("{itemID}/{newItemName}")
     public Item updateItemById(@PathVariable("itemID") Integer itemID, @PathVariable("newItemName") String newItemName){
-
+        return itemService.updateItem(itemID,newItemName);
     }
+
+    @PostMapping("create")
+    public  Item createItem(Item item){
+        return itemService.createItem(item);
+    }
+
+
 }
