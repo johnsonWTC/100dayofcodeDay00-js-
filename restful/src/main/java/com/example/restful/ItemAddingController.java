@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("items")
 public class ItemAddingController {
 
-    int one = 0;
+
 
     @Autowired
     private ticketBookingService ticketBookingService;

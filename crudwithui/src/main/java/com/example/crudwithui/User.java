@@ -12,5 +12,19 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer userID;
+
+
     String userName;
+
+    public Integer getUserID() {
+        return userID;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 }

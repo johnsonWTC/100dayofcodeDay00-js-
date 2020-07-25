@@ -20,12 +20,40 @@
     let add = document.getElementById("add");
     let itemName = document.getElementById("itemName");
 
+    // find.addEventListener("click",function () {
+    //     fetch("http://localhost:8080//items/1").then(function (res) {
+    //       ( res.json()).then(function (data) {
+    //           console.log(data.itemName);
+    //       })
+    //     });
+    // })
+
+    fetch("http://localhost:8080/items/all").then(function (res) {
+        res.json().then(function (data) {
+            let i = 0;
+            while(data.length > i){
+                let li = document.createElement("li");
+                li.innerHTML =data[i].itemName;
+                div.append(li);
+                i++;
+            }
+
+        })
+    })
+
     find.addEventListener("click",function () {
-        fetch("http://localhost:8080//items/1").then(function (res) {
-          ( res.json()).then(function (data) {
-              console.log(data.itemName);
-          })
-        });
+        fetch("http://localhost:8080/items/all").then(function (res) {
+            res.json().then(function (data) {
+                let i = 0;
+                while(data.length > i){
+                    let li = document.createElement("li");
+                    li.innerHTML =data[i].itemName;
+                    div.append(li);
+                    i++;
+                }
+
+            })
+        })
     })
 
 

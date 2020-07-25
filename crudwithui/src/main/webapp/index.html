@@ -16,9 +16,10 @@
 
     add.addEventListener("click", function () {
         let li = document.createElement("li");
-        fetch("http://localhost:8080/1").then(function (res) {
+        fetch("http://localhost:8081/home/"+ username.value).then(function (res) {
             res.json().then(function (data) {
-                li.innerHTML = data.username;
+                li.innerHTML = data.userName;
+                div.append(li);
             })
         })
     })

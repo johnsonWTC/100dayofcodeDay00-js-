@@ -10,10 +10,12 @@ public class UserService {
     UserDao userDao;
 
     public User createUser(User user){
+
         return userDao.save(user);
     }
 
     public  User findUser(Integer userId){
+
         return userDao.findById(userId).orElse(null);
     }
 
