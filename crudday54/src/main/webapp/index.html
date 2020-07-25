@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="getValue"> Fetch</button>
+
+<script>
+    let getValue = document.getElementById("getValue");
+
+    getValue.addEventListener("click", function () {
+        fetch("http://localhost:8080/3").then(function (res) {
+            console.log(res);
+        })
+    })
+
+</script>
+
+</body>
+</html>
