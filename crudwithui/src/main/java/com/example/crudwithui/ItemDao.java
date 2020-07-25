@@ -1,4 +1,4 @@
 package com.example.crudwithui;
 
-public class ItemDao {
+public interface ItemDao {
 }
