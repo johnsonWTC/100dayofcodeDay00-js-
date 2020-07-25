@@ -20,30 +20,38 @@
     let add = document.getElementById("add");
     let itemName = document.getElementById("itemName");
 
-
-    find.addEventListener("click", function () {
-        let li = document.createElement("li");
-       let i = fetch("http://localhost:8080/items/"+ itemToFind.value).then(res => res.json()).
-       then(data => {
-           li.innerHTML = data.itemName;
-        div.append(li);
-       })
-
+    find.addEventListener("click",function () {
+        fetch("http://localhost:8080//items/1").then(function (res) {
+          ( res.json()).then(function (data) {
+              console.log(data.itemName);
+          })
+        });
     })
 
-    add.addEventListener("click", function () {
-        fetch("http://localhost:8080/items/",{
-            method:'POST',
-            headers: {
-                'Content-type' : 'application/json'
 
-            },
-            body: JSON.stringify({
-                itemName: itemName.value
-            })
-        })
+    // find.addEventListener("click", function () {
+    //     let li = document.createElement("li");
+    //    let i = fetch("http://localhost:8080/items/"+ itemToFind.value).then(res => res.json()).
+    //    then(data => {
+    //        li.innerHTML = data.itemName;
+    //     div.append(li);
+    //    })
+    //
+    // })
 
-    })
+    // add.addEventListener("click", function () {
+    //     fetch("http://localhost:8080/items/",{
+    //         method:'POST',
+    //         headers: {
+    //             'Content-type' : 'application/json'
+    //
+    //         },
+    //         body: JSON.stringify({
+    //             itemName: itemName.value
+    //         })
+    //     })
+    //
+    // })
 
 
 
