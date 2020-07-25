@@ -10,7 +10,16 @@
 <div id="div"></div>
 <script>
     let username = document.getElementById("userName");
+    let div = document.getElementById("div");
 
+    username.addEventListener("click", function () {
+        let li = document.createElement("li");
+        fetch("http://localhost:8080/1").then(function (res) {
+            res.json().then(function (data) {
+                li.innerHTML = data.username;
+            })
+        })
+    })
 
 </script>
 
