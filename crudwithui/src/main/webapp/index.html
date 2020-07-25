@@ -7,12 +7,14 @@
 <body>
 <h1>Add User</h1>
 <input type="text" id="userName" placeholder="add User">
+<button id="add">Add</button>
 <div id="div"></div>
 <script>
     let username = document.getElementById("userName");
+    let add = document.getElementById("add");
     let div = document.getElementById("div");
 
-    username.addEventListener("click", function () {
+    add.addEventListener("click", function () {
         let li = document.createElement("li");
         fetch("http://localhost:8080/1").then(function (res) {
             res.json().then(function (data) {
