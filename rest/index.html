@@ -8,6 +8,17 @@
 </head>
 
 <body>
+    <input type="button" value="getItem" id="getItem">
+
+    <script>
+        let getItem = document.getElementById("getItem");
+
+        getItem.addEventListener("click", function() {
+            fetch("http://localhost:8080/1").then(function(res) {
+                console.log(res);
+            })
+        })
+    </script>
 
 </body>
 
