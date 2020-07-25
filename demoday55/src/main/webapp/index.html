@@ -11,7 +11,14 @@
 <script>
     let getUser = document.getElementById("getUser");
     let span = document.getElementById("span");
-    getUser.addEventListener("click", )
+    getUser.addEventListener("click", function () {
+        fetch().then(function (res) {
+            res.json().then(function (data) {
+                let li =document.createElement("li");
+                li.innerHTML = data.username;
+            })
+        })
+    })
 </script>
 </body>
 </html>
