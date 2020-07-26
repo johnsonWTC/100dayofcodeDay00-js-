@@ -7,6 +7,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class ItemService {
 
+    @Autowired
+    ItemDao itemDao;
 
+    public void deleteItem(Item item){
+        return
+    }
 
 }
