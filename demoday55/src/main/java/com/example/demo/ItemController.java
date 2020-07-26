@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("items")
 public class ItemController {
 
     @Autowired
@@ -21,7 +21,9 @@ public class ItemController {
     }
 
     @GetMapping("all")
-    public void findall(){
-        itemService.findAll();
+    public Iterable findall(){
+       return itemService.findAll();
     }
+
+
 }

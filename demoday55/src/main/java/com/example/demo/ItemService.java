@@ -22,8 +22,8 @@ public class ItemService {
         return itemDao.findById(itemID).orElse(null);
     }
 
-    public void findAll(){
-        itemDao.findAll();
+    public Iterable findAll(){
+       return itemDao.findAll();
     }
 
 }
