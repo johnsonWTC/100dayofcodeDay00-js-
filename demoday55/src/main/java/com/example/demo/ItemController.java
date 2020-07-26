@@ -10,22 +10,19 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
-    @RequestMapping("index")
-    public String index(){
-        return "index.html";
-    }
 
-    @PostMapping("create")
+
+    @PostMapping("/create")
     public  Item createItem(Item item){
         return itemService.createItem(item);
     }
 
-    @DeleteMapping("delete")
+    @DeleteMapping("/delete")
     public void deleteItem(Item item){
         itemService.deleteItem(item);
     }
 
-    @GetMapping("all")
+    @GetMapping("/all")
     public Iterable findall(){
        return itemService.findAll();
     }
