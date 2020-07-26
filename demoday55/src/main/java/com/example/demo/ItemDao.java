@@ -2,5 +2,5 @@ package com.example.demo;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface UserDao  extends CrudRepository <User,Integer> {
+public interface ItemDao extends CrudRepository <Item,Integer> {
 }
