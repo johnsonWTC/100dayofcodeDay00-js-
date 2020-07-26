@@ -8,12 +8,24 @@
 <div id="iems"></div>
 <script>
     let items = document.getElementById("iems");
+
     fetch("http://localhost:8080//items/all").then(function (response) {
         response.json().then(function (data) {
             let i = 0;
             while(data.length > i){
                 let li = document.createElement("li");
-                li.innerHTML = data.itemName;
+                let del  = document.createElement("button");
+                del.innerHTML = "Delete item";
+                del.addEventListener("click", function () {
+                    fetch("http://localhost:8080//items/delete").then(function (res) {
+                        res.json().then(function (data) {
+
+                        })
+                    })
+                })
+                li.innerHTML = data[i].itemName;
+                items.append(li);
+                i++;
             }
         })
     })
