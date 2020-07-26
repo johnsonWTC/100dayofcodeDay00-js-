@@ -8,5 +8,9 @@ import javax.persistence.Id;
 @Entity
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    Integer itemId;
 
+    String itemName;
 }
