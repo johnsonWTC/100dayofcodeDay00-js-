@@ -10,6 +10,11 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
+    @RequestMapping("index")
+    public String index(){
+        return "index.html";
+    }
+
     @PostMapping("create")
     public  Item createItem(Item item){
         return itemService.createItem(item);
