@@ -18,6 +18,11 @@ public class ItemService {
         return  itemDao.save(item;
     }
 
+    public  Item findItem(Integer itemID){
+        return itemDao.findById(itemID).orElse(null);
+    }
+
+
 
 
 }
