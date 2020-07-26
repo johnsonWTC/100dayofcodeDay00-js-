@@ -11,7 +11,7 @@ public class ItemService {
     ItemDao itemDao;
 
     public void deleteItem(Item item){
-        return
+        itemDao.delete(item);
     }
 
 }
