@@ -17,9 +17,10 @@ public class ItemController {
         return itemService.createItem(item);
     }
 
-    @DeleteMapping("/delete")
-    public void deleteItem(Item item){
-        itemService.deleteItem(item);
+
+    @DeleteMapping("{itemId}")
+    public void deleteItem(@PathVariable("itemId") Integer itemId){
+        itemService.deleteItem(itemId);
     }
 
     @GetMapping("/all")

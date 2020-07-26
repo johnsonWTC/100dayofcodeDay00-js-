@@ -10,21 +10,28 @@
     let items = document.getElementById("iems");
 
     fetch("http://localhost:8080//items/all").then(function (response) {
+
         response.json().then(function (data) {
             let i = 0;
             while(data.length > i){
                 let li = document.createElement("li");
                 let del  = document.createElement("button");
                 del.innerHTML = "Delete item";
-                del.addEventListener("click", function () {
-                    fetch("http://localhost:8080//items/delete").then(function (res) {
-                        res.json().then(function (data) {
+                li.innerHTML = data[i].itemName + " " + data[i].itemId;
+                let id = data[i].itemId
+               del.addEventListener("click",function () {
+                   fetch(`http://localhost:8080//items/${id}`,{
+                       method:'Delete',
+                       headers: {
+                           'Content-type' : 'application/json'
 
-                        })
-                    })
-                })
-                li.innerHTML = data[i].itemName;
+                       },
+                   })
+                   location.reload();
+               })
+
                 items.append(li);
+                items.append(del);
                 i++;
             }
         })

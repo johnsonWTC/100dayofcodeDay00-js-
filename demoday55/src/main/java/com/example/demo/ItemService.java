@@ -10,8 +10,8 @@ public class ItemService {
     @Autowired
     ItemDao itemDao;
 
-    public void deleteItem(Item item){
-        itemDao.delete(item);
+    public void deleteItem(Integer itemId){
+        itemDao.deleteById(itemId);
     }
 
     public Item createItem(Item item){

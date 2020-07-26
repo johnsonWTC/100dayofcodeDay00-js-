@@ -67,19 +67,19 @@
     //
     // })
 
-    // add.addEventListener("click", function () {
-    //     fetch("http://localhost:8080/items/",{
-    //         method:'POST',
-    //         headers: {
-    //             'Content-type' : 'application/json'
-    //
-    //         },
-    //         body: JSON.stringify({
-    //             itemName: itemName.value
-    //         })
-    //     })
-    //
-    // })
+    add.addEventListener("click", function () {
+        fetch("http://localhost:8080/items/",{
+            method:'POST',
+            headers: {
+                'Content-type' : 'application/json'
+
+            },
+            body: JSON.stringify({
+                itemName: itemName.value
+            })
+        })
+
+    })
 
 
 
