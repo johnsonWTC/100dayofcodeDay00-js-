@@ -7,5 +7,21 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("users")
 public class ItemController {
 
+    @Autowired
+    ItemService itemService;
 
+    @PostMapping("create")
+    public  Item createItem(Item item){
+        return itemService.createItem(item);
+    }
+
+    @DeleteMapping("delete")
+    public void deleteItem(Item item){
+        itemService.deleteItem(item);
+    }
+
+    @GetMapping("all")
+    public void findall(){
+        itemService.findAll();
+    }
 }
