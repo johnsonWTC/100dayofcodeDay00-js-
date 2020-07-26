@@ -12,10 +12,15 @@
     let getUser = document.getElementById("getUser");
     let span = document.getElementById("span");
     getUser.addEventListener("click", function () {
-        fetch().then(function (res) {
+        fetch("http://localhost:8080/users/1").then(function (res) {
             res.json().then(function (data) {
                 let li =document.createElement("li");
-                li.innerHTML = data.username;
+                let id =document.createElement("li");
+
+                li.innerHTML = data.userName;
+                id.innerHTML = data.userID;
+                span.append(li);
+                span.append(id);
             })
         })
     })

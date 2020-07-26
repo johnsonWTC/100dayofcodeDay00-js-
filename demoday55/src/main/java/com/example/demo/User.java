@@ -16,17 +16,18 @@ public class User {
         this.userID = userID;
     }
 
-    public String getUsername() {
-        return Username;
+
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        Username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer userID;
 
-    String Username;
+    String userName;
 }
