@@ -14,4 +14,10 @@ public class ItemService {
         itemDao.delete(item);
     }
 
+    public Item createItem(Item item){
+        return  itemDao.save(item;
+    }
+
+
+
 }
