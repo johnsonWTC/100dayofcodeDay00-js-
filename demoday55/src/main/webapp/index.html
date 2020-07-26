@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<div id="iems"></div>
+<script>
+    let items = document.getElementById("iems");
+    fetch("http://localhost:8080//items/all").then(function (response) {
+        response.json().then(function (data) {
+            let i = 0;
+            while(data.length > i){
+                let li = document.createElement("li");
+                li.innerHTML = data.itemName;
+            }
+        })
+    })
+</script>
 </body>
 </html>
