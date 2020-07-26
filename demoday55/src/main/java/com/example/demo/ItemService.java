@@ -15,7 +15,7 @@ public class ItemService {
     }
 
     public Item createItem(Item item){
-        return  itemDao.save(item;
+        return  itemDao.save(item);
     }
 
     public  Item findItem(Integer itemID){
