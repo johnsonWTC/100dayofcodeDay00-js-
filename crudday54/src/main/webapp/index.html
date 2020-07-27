@@ -7,8 +7,15 @@
 <body>
 <h1>My API</h1>
 <span id="span"></span>
+<input type="text" list="datalist">
+<datalist id="datalist">
+    <option id="options" value=""></option>
+</datalist>
 <script>
     let  span = document.getElementById("span");
+    let datalist = document.getElementById("datalist");
+    let options = document.getElementById("options");
+    options.value = "jam";
     fetch("http://localhost:8080//item/all").then(function (data) {
         data.json().then(function (res) {
             let i = 0;
