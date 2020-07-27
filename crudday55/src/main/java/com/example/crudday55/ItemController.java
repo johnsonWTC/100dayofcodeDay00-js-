@@ -1,10 +1,7 @@
 package com.example.crudday55;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("items")
@@ -22,4 +19,12 @@ public class ItemController {
     public Iterable findItems (){
         return itemservice.findAll();
     }
+
+    @DeleteMapping("delete/{itemID}")
+    public void deleteItem(@PathVariable("itemID") Integer itemID){
+        itemservice.deleteItem(itemID);
+    }
+
+    @PutMapping("{itemID}/newItemName")
+    public
 }

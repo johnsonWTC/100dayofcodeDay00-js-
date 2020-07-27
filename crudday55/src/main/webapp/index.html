@@ -25,7 +25,13 @@
                 let id = data[i].itemID;
                 li.innerHTML = data[i].itemName + " with id "+ id;
                 deleteItem.addEventListener("click", function () {
-                    fetch()
+                    fetch(`http://localhost:8080/items/delete/${id}`,{
+                        method : 'Delete'
+                    })
+                    location.reload();
+                })
+                editItem.addEventListener("click", function () {
+
                 })
                 span.append(li);
                 span.append(deleteItem);
