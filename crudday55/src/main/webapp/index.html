@@ -24,6 +24,9 @@
                 editItem.innerHTML = "EDIT ITEM";
                 let id = data[i].itemID;
                 li.innerHTML = data[i].itemName + " with id "+ id;
+                deleteItem.addEventListener("click", function () {
+                    fetch()
+                })
                 span.append(li);
                 span.append(deleteItem);
                 span.append(editItem);
