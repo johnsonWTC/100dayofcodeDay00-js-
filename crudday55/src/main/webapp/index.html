@@ -44,13 +44,14 @@
 
         let itemName = item.value;
 
-        fetch(`http://localhost:8080/items/`,{
-            method : "post",
+        fetch(`http://localhost:8080/items/edit/1/7`,{
+            method : "PUT",
             headers: {
+                'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
             body : JSON.stringify({
-                itemName: "j",
+                itemName: "jam",
             })
         }).then(function (res) {
             res.json().then(function (data) {
