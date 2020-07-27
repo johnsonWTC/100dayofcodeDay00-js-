@@ -7,15 +7,47 @@
 <body>
 <h1>My API</h1>
 <span id="span"></span>
-<input type="text" list="datalist">
+<input type="text" list="datalist" id="itema">
 <datalist id="datalist">
     <option id="options" value=""></option>
 </datalist>
-<button id="add"></button>
+<button id="add">ADD</button>
 <script>
     let  span = document.getElementById("span");
     let datalist = document.getElementById("datalist");
     let options = document.getElementById("options");
+    let add = document.getElementById("add");
+    let itema  = document.getElementById("itema");
+    let items = [];
+
+    add.addEventListener("click", function () {
+        items.push(itema.value);
+        alert(itema.value + " was added")
+    });
+
+    function similar(){
+        let sim = [];
+        let i = 0;
+        while(items.length > i){
+            if(items[i].startsWith(itema.value)){
+                sim.push(itema.value);
+            }
+            i++;
+        }
+       return sim;
+    }
+
+    itema.addEventListener("input", function () {
+        let sim = similar();
+        let i = 0;
+        while(sim.length > i) {
+            let options = document.createElement("option");
+            options.value = sim[i];
+            datalist.append(options);
+            i++;
+        }
+    })
+
     // options.value = "jam";
     // options.value = "jami";
     // options.value = "jama";
