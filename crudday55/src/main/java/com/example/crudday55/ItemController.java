@@ -25,6 +25,8 @@ public class ItemController {
         itemservice.deleteItem(itemID);
     }
 
-    @PutMapping("{itemID}/newItemName")
-    public
+    @PutMapping("edit/{itemID}/{newItemName}")
+    public Item updateItem(@PathVariable("itemID") Integer itemID, @PathVariable("newItemName") String newItemName){
+       return itemservice.editItem(itemID,newItemName);
+    }
 }
