@@ -17,4 +17,8 @@ public class Itemservice {
         return itemDao.findAll();
     }
 
+    public void deleteItem(Integer itemId){
+        itemDao.deleteById(itemId);
+    }
+
 }
