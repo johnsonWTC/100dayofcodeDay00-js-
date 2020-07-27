@@ -32,6 +32,7 @@
                     location.reload();
                 })
                 editItem.addEventListener("click", function () {
+
                     fetch(`http://localhost:8080/items/edit/${id}/${item.value}`,{
                         method : "Put",
                         body : JSON.stringify(item.value)
