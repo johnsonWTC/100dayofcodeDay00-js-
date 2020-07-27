@@ -13,6 +13,7 @@
 
 <script>
     let span = document.getElementById("span");
+    let item = document.getElementById("item");
     fetch("http://localhost:8080/items/all").then(function (res) {
         res.json().then(function (data) {
             let i = 0;
@@ -31,7 +32,11 @@
                     location.reload();
                 })
                 editItem.addEventListener("click", function () {
-
+                    fetch(`http://localhost:8080/items/edit/${id}/${item.value}`,{
+                        method : "Put",
+                        body : JSON.stringify(item.value)
+                    })
+                    location.reload();
                 })
                 span.append(li);
                 span.append(deleteItem);
