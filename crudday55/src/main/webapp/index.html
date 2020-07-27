@@ -8,7 +8,30 @@
 <h1>Item List</h1>
 <input id="item" placeholder="And item">
 <button id="add"> Add Item</button>
+<span id="span"></span>
 <hr>
+
+<script>
+    let span = document.getElementById("span");
+    fetch("http://localhost:8080/items/all").then(function (res) {
+        res.json().then(function (data) {
+            let i = 0;
+            while(data.length > i){
+                let  li = document.createElement("li");
+                let deleteItem = document.createElement("button");
+                let editItem = document.createElement("button");
+                deleteItem.innerHTML = "DELETE ITEM";
+                editItem.innerHTML = "EDIT ITEM";
+                let id = data[i].itemID;
+                li.innerHTML = data[i].itemName + " with id "+ id;
+                span.append(li);
+                span.append(deleteItem);
+                span.append(editItem);
+                i++;
+            }
+        })
+    })
+</script>
 
 </body>
 </html>
