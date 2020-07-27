@@ -21,4 +21,11 @@ public class Itemservice {
         itemDao.deleteById(itemId);
     }
 
+    public Item editItem(Integer itemId, String newItemName){
+        Item item = itemDao.findById(itemId).orElse(null);
+        item.setItemName(newItemName);
+        itemDao.save(item);
+        return item;
+    }
+
 }
