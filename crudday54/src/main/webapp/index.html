@@ -11,11 +11,14 @@
 <datalist id="datalist">
     <option id="options" value=""></option>
 </datalist>
+<button id="add"></button>
 <script>
     let  span = document.getElementById("span");
     let datalist = document.getElementById("datalist");
     let options = document.getElementById("options");
-    options.value = "jam";
+    // options.value = "jam";
+    // options.value = "jami";
+    // options.value = "jama";
     fetch("http://localhost:8080//item/all").then(function (data) {
         data.json().then(function (res) {
             let i = 0;
