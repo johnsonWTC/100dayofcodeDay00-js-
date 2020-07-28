@@ -34,15 +34,20 @@
 
     function suggestionAlgo(data) {
         let dataArray = [];
-        let i = 0;
-        while(data.length > i){
-            let a = 0;
+        let some = [];
+        let a  = 0;
             while(data.length > a){
                 dataArray.push(data[a].itemName);
                 a++;
             }
-
-        }
+            let i = 0;
+            while (dataArray.length > i){
+                if(dataArray[i].startsWith(itemName.value)){
+                    some.push(dataArray[i]);
+                }
+                i++;
+            }
+            console.log(some)
         return some;
     }
 
