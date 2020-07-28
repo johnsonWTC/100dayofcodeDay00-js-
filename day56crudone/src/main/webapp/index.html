@@ -7,6 +7,23 @@
 <body>
 <input type="text" id="itemName" list="names" placeholder="type name">
 <datalist id="names"></datalist>
+<br>
+<br>
+<span id="span"></span>
 
+<script>
+    let names = document.getElementById("names");
+    let itemName = document.getElementById("itemName");
+    let span = document.getElementById("span");
+
+    fetch("http://localhost:8080//items/all").then(function (res) {
+        res.json().then(function (data) {
+            let i = 0;
+            while(data.length > i){
+
+            }
+        })
+    })
+</script>
 </body>
 </html>
