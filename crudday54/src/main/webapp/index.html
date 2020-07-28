@@ -7,6 +7,7 @@
 <body>
 <h1>My API</h1>
 <span id="span"></span>
+<span id="spantwo"></span>
 <input type="text" list="datalist" id="itema">
 <datalist id="datalist">
     <option id="options" value=""></option>
@@ -14,6 +15,7 @@
 <button id="add">ADD</button>
 <script>
     let  span = document.getElementById("span");
+    let  spantwo = document.getElementById("spantwo");
     let datalist = document.getElementById("datalist");
     let options = document.getElementById("options");
     let add = document.getElementById("add");
@@ -30,7 +32,7 @@
         let i = 0;
         while(items.length > i){
             if(items[i].startsWith(itema.value)){
-                sim.push(itema.value);
+                sim.push(items[i]);
             }
             i++;
         }
@@ -39,6 +41,7 @@
 
     itema.addEventListener("input", function () {
         let sim = similar();
+        spantwo.innerHTML = sim;
         let i = 0;
         while(sim.length > i) {
             let options = document.createElement("option");
