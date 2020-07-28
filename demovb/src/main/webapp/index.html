@@ -18,6 +18,9 @@
     let span = document.getElementById("span");
 
     itemName.addEventListener("input", function () {
+        if(itemName.value.length == 0){
+            suggestions.innerHTML = "";
+        }
         suggestions.innerHTML = "";
         fetch("http://localhost:8080//items/all").then(function (res) {
             res.json().then(function (data) {
