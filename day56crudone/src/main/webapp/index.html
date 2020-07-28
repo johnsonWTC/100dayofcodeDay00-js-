@@ -20,10 +20,42 @@
         res.json().then(function (data) {
             let i = 0;
             while(data.length > i){
-
+                let li = document.createElement("li");
+                li.innerHTML = data[i].itemName;
+                span.append(li);
+                i++;
             }
         })
     })
+
+    function suggestionAlgo(data) {
+        let some = [];
+        let i = 0;
+        while(data.length > i){
+            if(data[i].startsWith(names.value)){
+                some.push(data[i]);
+            }
+            i++;
+        }
+        return some;
+    }
+
+
+    itemName.addEventListener("input", function () {
+        fetch("http://localhost:8080//items/all").then(function (res) {
+            res.json().then(function (data) {
+                let some = suggestionAlgo(data);
+                let i = 0;
+                while(some.length > i){
+                    let options = document.createElement("option");
+
+                }
+
+            })
+        })
+
+    })
+
 </script>
 </body>
 </html>
