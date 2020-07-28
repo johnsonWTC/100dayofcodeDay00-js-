@@ -42,6 +42,13 @@
     itemName.addEventListener("input", function () {
         let autocom = autocomplete();
         spanSuggestions.innerHTML = autocom;
+        let i = 0;
+        while(autocom.length > i ){
+            let options = document.createElement("option");
+            options.value = autocom[i];
+            i++;
+        }
+        suggestion.append(options);
     })
 </script>
 </body>
