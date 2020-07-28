@@ -23,5 +23,8 @@ public class ItemComtroller {
         return itemService.findAll();
     }
 
+    @GetMapping("{itemID}")
+
+
 
 }

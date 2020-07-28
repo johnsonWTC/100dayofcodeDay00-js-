@@ -15,7 +15,7 @@ public class ItemService {
         return itemDao.findAll();
     }
 
-    public Item findItem(Integer itemId){
-        return itemDao.findById(itemId).orElse(null);
+    public Item findItem(Integer itemID){
+        return itemDao.findById(itemID).orElse(null);
     }
 }
