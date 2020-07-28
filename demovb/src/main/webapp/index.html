@@ -7,6 +7,7 @@
 <body>
 <h1>My API</h1>
 <input type="text" id="itemName" list="suggestions" placeholder="itemName">
+<button id="add"></button>
 <datalist id="suggestions"></datalist>
 <br>
 <br>
@@ -16,6 +17,22 @@
     let suggestions = document.getElementById("suggestions");
     let itemName = document.getElementById("itemName");
     let span = document.getElementById("span");
+    let add = document.getElementById("add");
+
+    add.addEventListener("click", function () {
+        fetch("http://localhost:8080/items/create/?itemName=Paper",{
+            method : "Post",
+            headers: {
+                'Content-Type': 'application/json'
+
+            },
+        }).then(function (res) {
+            res.json().then(function (data) {
+                console.log(data);
+            })
+        })
+    })
+
 
     itemName.addEventListener("input", function () {
         if(itemName.value.length == 0){
