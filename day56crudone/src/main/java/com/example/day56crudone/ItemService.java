@@ -9,8 +9,11 @@ public class ItemService {
     @Autowired
     ItemDao itemDao;
 
-    @PostMapping("create")
-    public Item createItem(){
+    public Item createItem(Item item){
+        return itemDao.save(item);
+    }
 
+    public Iterable findAll(){
+        return itemDao.findAll();
     }
 }
