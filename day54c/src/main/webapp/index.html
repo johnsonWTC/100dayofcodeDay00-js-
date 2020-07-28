@@ -5,8 +5,8 @@
     <title>Datalist</title>
 </head>
 <body>
-
-<input type="text" list="suggestion" id="itemName" placeholder="Add item">
+<input type="text" autocomplete="on" id="name">
+<input type="text" list="suggestion" id="itemName" placeholder="Add item" autocomplete="true">
 <datalist id="suggestion"></datalist>
 <span id="spanSuggestions"></span>
 <hr>
@@ -46,8 +46,9 @@
         let i = 0;
         while(autocom.length > i ){
             let options = document.createElement("option");
-            options.value = autocom[i];
-            options.addEventListener("click", function () {
+            options.value = autocom[i] + " jaz";
+            options.innerHTML = autocom[i] + "is the innerHTML"
+            suggestion.addEventListener("click", function () {
                 span.append(options);
             })
             suggestion.append(options);
