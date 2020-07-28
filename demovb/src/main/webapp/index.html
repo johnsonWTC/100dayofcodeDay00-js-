@@ -21,6 +21,15 @@
 
     })
 
+    function autoComplete(dataFromApi) {
+        let dataArray = [];
+        let i = 0;
+        while(dataFromApi.length > i){
+            dataArray.push(dataFromApi[i].itemName);
+
+        }
+    }
+
 
 </script>
 
