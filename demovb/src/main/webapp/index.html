@@ -23,11 +23,20 @@
 
     function autoComplete(dataFromApi) {
         let dataArray = [];
+        let suggestionArray = []
         let i = 0;
         while(dataFromApi.length > i){
             dataArray.push(dataFromApi[i].itemName);
-
+            i++;
         }
+        let a = 0;
+        while(dataArray.length > a){
+            if(dataArray[a].startsWith(itemName.value)){
+                suggestionArray.push(dataArray[a]);
+            }
+            a++;
+        }
+        return suggestionArray;
     }
 
 
