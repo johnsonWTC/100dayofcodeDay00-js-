@@ -10,11 +10,15 @@
 <br>
 <br>
 <span id="span"></span>
+<br>
+<br>
+<span id="spantwo"></span>
 
 <script>
     let names = document.getElementById("names");
     let itemName = document.getElementById("itemName");
     let span = document.getElementById("span");
+    let spantwo = document.getElementById("spantwo");
 
     fetch("http://localhost:8080//items/all").then(function (res) {
         res.json().then(function (data) {
@@ -29,13 +33,15 @@
     })
 
     function suggestionAlgo(data) {
-        let some = [];
+        let dataArray = [];
         let i = 0;
         while(data.length > i){
-            if(data[i].startsWith(names.value)){
-                some.push(data[i]);
+            let a = 0;
+            while(data.length > a){
+                dataArray.push(data[a].itemName);
+                a++;
             }
-            i++;
+
         }
         return some;
     }
@@ -44,11 +50,15 @@
     itemName.addEventListener("input", function () {
         fetch("http://localhost:8080//items/all").then(function (res) {
             res.json().then(function (data) {
+                names.innerHTML = "";
                 let some = suggestionAlgo(data);
                 let i = 0;
                 while(some.length > i){
                     let options = document.createElement("option");
-
+                    options.value = some[i];
+                    names.append(options);
+                    spantwo.innerText = some;
+                    i++;
                 }
 
             })
