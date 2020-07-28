@@ -18,7 +18,15 @@
     let span = document.getElementById("span");
 
     itemName.addEventListener("input", function () {
-
+        fetch("http://localhost:8080//items/all").then(function (res) {
+            res.json().then(function (data) {
+                let autoCom = autoComplete(data);
+                let i = 0;
+                while (autoCom.length > i){
+                    let options = document.createElement("option");
+                }
+            })
+        })
     })
 
     function autoComplete(dataFromApi) {
