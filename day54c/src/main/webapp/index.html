@@ -8,6 +8,7 @@
 
 <input type="text" list="suggestion" id="itemName" placeholder="Add item">
 <datalist id="suggestion"></datalist>
+<span id="spanSuggestions"></span>
 <hr>
 <button id="add">ADD ITEM</button>
 <span id="span"></span>
@@ -17,6 +18,7 @@
     let span  = document.getElementById("span");
     let add = document.getElementById("add");
     let items = [];
+    let spanSuggestions = document.getElementById("spanSuggestions");
 
     add.addEventListener("click", function () {
         items.push(itemName.value);
@@ -25,7 +27,22 @@
         span.append(li);
     })
 
+    function autocomplete() {
+        let toReturn = [];
+        let i = 0;
+        while(items.length > i){
+            if(items[i].startsWith(itemName.value)){
+                toReturn.push(items[i]);
+            }
+            i++;
+        }
+        return toReturn;
+    }
 
+    itemName.addEventListener("input", function () {
+        let autocom = autocomplete();
+        spanSuggestions.innerHTML = autocom;
+    })
 </script>
 </body>
 </html>
