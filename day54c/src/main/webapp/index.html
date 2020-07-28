@@ -40,15 +40,20 @@
     }
 
     itemName.addEventListener("input", function () {
+        suggestion.innerHTML = "";
         let autocom = autocomplete();
-        spanSuggestions.innerHTML = autocom;
+      //  spanSuggestions.innerHTML = autocom;
         let i = 0;
         while(autocom.length > i ){
             let options = document.createElement("option");
             options.value = autocom[i];
+            options.addEventListener("click", function () {
+                span.append(options + " was added via options");
+            })
+            suggestion.append(options);
             i++;
         }
-        suggestion.append(options);
+
     })
 </script>
 </body>
