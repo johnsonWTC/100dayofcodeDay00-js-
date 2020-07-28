@@ -14,4 +14,8 @@ public class ItemService {
     public Iterable findAll(){
         return itemDao.findAll();
     }
+
+    public Item findItem(Integer itemId){
+        return itemDao.findById(itemId).orElse(null);
+    }
 }
