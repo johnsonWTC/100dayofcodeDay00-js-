@@ -18,9 +18,10 @@
 
     itemName.addEventListener("input", function(){
         fetch("http://localhost:8080//items/all").then(function (response) {
+            suggestionList.innerHTML = "";
             response.json().then(function (data) {
-                suggestionList.innerHTML = "";
                let suggestedData =  suggestions(data);
+               console.log(suggestedData)
                let i = 0;
                while(suggestedData.length > i){
                    let options = document.createElement("option");
@@ -33,20 +34,23 @@
     })
 
     function suggestions(data) {
-        suggestionArray = [];
-        dataArray = [];
+       let  suggestionArray = [];
+       let dataArray = [];
         let i = 0;
         while(data.length > i){
-            dataArray.push(data[i]);
+            dataArray.push(data[i].itemName);
             i++;
         }
+
         let a = 0;
-        while(dataArray.length > a){
-            dataArray[i].startsWith(itemName.value);
-            suggestionArray.push(dataArray[i]);
+        while(dataArray.length > a) {
+            if (dataArray[a].startsWith(itemName.value)) {
+            suggestionArray.push(dataArray[a]);
+        }
             a++;
         }
-        return suggestionList;
+        console.log(suggestionArray);
+        return suggestionArray;
     }
 
 
