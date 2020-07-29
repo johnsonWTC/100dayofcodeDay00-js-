@@ -14,6 +14,14 @@ public class Item {
     Integer itemID;
     String itemName;
 
+    @Override
+    public String toString() {
+        return "Item{" +
+                "itemID=" + itemID +
+                ", itemName='" + itemName + '\'' +
+                '}';
+    }
+
     public Integer getItemID() {
         return itemID;
     }

@@ -6,11 +6,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class ItemService {
 
+    public ItemService(ItemDao itemDao) {
+        this.itemDao = itemDao;
+    }
+
     @Autowired
     ItemDao itemDao;
 
     public Item createItem(Item item){
         return itemDao.save(item);
+
     }
 
     public Iterable findAll(){

@@ -12,6 +12,7 @@ public class ItemComtroller {
 
     @PostMapping("create")
     public Item createItem(Item item){
+        System.out.println(item);
         return itemService.createItem(item);
     }
 
