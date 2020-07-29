@@ -18,14 +18,14 @@
     let itemName = document.getElementById("itemName");
     let span = document.getElementById("span");
     let add = document.getElementById("add");
-
+    let create = {itemName: "hi"};
     add.addEventListener("click", function () {
-        fetch("http://localhost:8080/items/create/?itemName=Paper",{
+        fetch("http://localhost:8080/items/create",{
             method : "Post",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data),
+            body: JSON.stringify(create),
         }).then(function (res) {
             res.json().then(function (data) {
                 console.log(data);

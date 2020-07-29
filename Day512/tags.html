@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tag-container">
+            <div class="tag">
+                <span>css</span>
+                <span class="i">x</span>
+            </div>
+            <div class="tag">
+                <span>js</span>
+                <span class="i">x</span>
+            </div>
+            <input>
+        </div>
+    </div>
+
+    <script>
+        let tagContainer = document.querySelector(".tag-container")
+
+        function createTap(label) {
+            let div = document.createElement("div");
+            div.setAttribute("class", "tag")
+            let span = document.createElement("span");
+            span.innerHTML = label
+            let closeBtn = document.createElement("i");
+            i.setAttribute("class", "i");
+            i.innerHTML = "x";
+            div.append(span);
+            div.append(i);
+            return div;
+        }
+
+        tagContainer.prepend(tagContainer("jam"));
+    </script>
+
+</body>
+
+</html>
