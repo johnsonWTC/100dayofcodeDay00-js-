@@ -19,7 +19,15 @@
     itemName.addEventListener("input", function(){
         fetch("http://localhost:8080//items/all").then(function (response) {
             response.json().then(function (data) {
-                console.log(data);
+                suggestionList.innerHTML = "";
+               let suggestedData =  suggestions(data);
+               let i = 0;
+               while(suggestedData.length > i){
+                   let options = document.createElement("option");
+                   options.value = suggestedData[i];
+                   suggestionList.append(options);
+                   i++;
+               }
             })
         })
     })
@@ -38,7 +46,7 @@
             suggestionArray.push(dataArray[i]);
             a++;
         }
-
+        return suggestionList;
     }
 
 
