@@ -16,6 +16,15 @@
     let adder = document.getElementById("adder");
 
 
+    itemName.addEventListener("input", function(){
+        fetch("http://localhost:8080//items/all").then(function (response) {
+            response.json().then(function (data) {
+
+            })
+        })
+    })
+
+
 </script>
 
 
