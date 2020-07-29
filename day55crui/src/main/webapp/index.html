@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>My API</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body>
 <h1>My API</h1>
-<input type="text" list="suggestionList" placeholder="Item Name" id="itemName">
+<div class="tag-container">
+<input type="text" list="suggestionList" placeholder="Item Name" id="input">
+</div>
 <datalist id="suggestionList"></datalist>
 <button id="adder">Add</button>
 
 <script>
-    let itemName = document.getElementById("itemName");
+    let itemName = document.getElementById("input");
     let suggestionList = document.getElementById("suggestionList");
     let adder = document.getElementById("adder");
 
@@ -53,6 +56,35 @@
         return suggestionArray;
     }
 
+
+    let tagContainer = document.querySelector(".tag-container");
+    let input = document.querySelector("input");
+
+    function createTag(label) {
+        let div = document.createElement("div");
+        div.setAttribute("class", "tag")
+        let spanInput = document.createElement("span");
+        spanInput.innerHTML = label
+        let closeBtn = document.createElement("span");
+        closeBtn.addEventListener("click", function() {
+            div.remove();
+        })
+        closeBtn.setAttribute("class", "i");
+        closeBtn.innerHTML = "x";
+        div.append(spanInput);
+        div.append(closeBtn);
+        return div;
+    }
+
+
+
+    input.addEventListener("keyup", function(e) {
+        if (e.keyCode == 32 || e.key === ",") {
+            tagContainer.prepend(createTag(input.value));
+            input.value = "";
+        }
+
+    })
 
 </script>
 

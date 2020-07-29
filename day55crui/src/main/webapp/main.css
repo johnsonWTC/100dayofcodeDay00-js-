@@ -15,14 +15,14 @@
 }
 
 .tag .i {
-    font-size: 16;
+    font-size: 16px;
     margin-left: 5px;
 }
 
 .tag-container input {
     flex: 1;
     padding: 5px;
-    font-size: 16;
+    font-size: 16px;
     outline: none;
     border: 0;
 }
