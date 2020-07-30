@@ -14,13 +14,15 @@
     let suggestions = document.getElementById("suggestions");
 
     input.addEventListener("input", function () {
+        suggestions.innerHTML = "";
        fetch("http://localhost:8080//item/all").then(function (res) {
            res.json().then(function (data) {
                let optionsListArray = suggestionsArray(data);
                let i = 0;
                while(optionsListArray.length > i){
                    let options = document.createElement("option");
-                   options.value = data[i];
+                   options.value = optionsListArray[i];
+                   suggestions.append(options);
                    i++;
                }
            })
