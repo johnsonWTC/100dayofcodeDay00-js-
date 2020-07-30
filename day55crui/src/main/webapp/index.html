@@ -8,10 +8,12 @@
 <h1>API</h1>
 <input id="input" list="suggestions">
 <datalist id="suggestions"></datalist>
+<button id="adder">ADD</button>
 
 <script>
     let input = document.getElementById("input");
     let suggestions = document.getElementById("suggestions");
+    let adder - document.createElement("adder")
 
     input.addEventListener("input", function () {
         suggestions.innerHTML = "";
@@ -47,6 +49,14 @@
        console.log(dataArray);
         return  dataArray;
     }
+
+    adder.addEventListener("click", function () {
+        fetch("http://localhost:8080/item/create?itemName=" + input).then(function (res) {
+            res.json().then(function (data) {
+
+            })
+        })
+    })
 </script>
 </body>
 </html>
