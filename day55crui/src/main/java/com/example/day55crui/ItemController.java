@@ -1,5 +1,6 @@
 package com.example.day55crui;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,5 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("item")
 public class ItemController {
 
+    @Autowired
+    ItemService itemService;
+
     @PostMapping("create")
+    public Item createItem(Item item){
+        return itemService.createItem(item);
+    }
 }
