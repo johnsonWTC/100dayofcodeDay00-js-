@@ -14,7 +14,7 @@
     let suggestions = document.getElementById("suggestions");
 
     input.addEventListener("input", function () {
-       fetch("").then(function (res) {
+       fetch("http://localhost:8080//item/all").then(function (res) {
            res.json().then(function (data) {
                let optionsListArray = suggestionsArray(data);
            })
@@ -26,8 +26,8 @@
         let returnArray = [];
         let a = 0;
         while(data.length > a){
-            returnArray.push(data[i].itemName);
-            i++;
+            returnArray.push(data[a].itemName);
+            a++;
         }
         console.log(returnArray);
         return  returnArray;
