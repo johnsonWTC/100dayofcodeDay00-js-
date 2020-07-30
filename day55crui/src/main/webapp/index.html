@@ -13,7 +13,7 @@
 <script>
     let input = document.getElementById("input");
     let suggestions = document.getElementById("suggestions");
-    let adder - document.createElement("adder")
+    let adder =document.getElementById("adder");
 
     input.addEventListener("input", function () {
         suggestions.innerHTML = "";
@@ -51,7 +51,9 @@
     }
 
     adder.addEventListener("click", function () {
-        fetch("http://localhost:8080/item/create?itemName=" + input).then(function (res) {
+        fetch("http://localhost:8080/item/create?itemName=" + input.value,{
+            method: "Post"
+        }).then(function (res) {
             res.json().then(function (data) {
                 console.log(data);
             })
