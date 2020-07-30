@@ -8,5 +8,18 @@
 <h1>API</h1>
 <input id="input" list="suggestions">
 <datalist id="suggestions"></datalist>
+
+<script>
+    let input = document.getElementById("input");
+    let suggestions = document.getElementById("suggestions");
+
+    input.addEventListener("input", function () {
+       fetch("").then(function (res) {
+           res.json().then(function (data) {
+               let optionsListArray = suggestionsArray();
+           })
+       })
+    })
+</script>
 </body>
 </html>
