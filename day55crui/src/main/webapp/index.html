@@ -16,10 +16,14 @@
     input.addEventListener("input", function () {
        fetch("").then(function (res) {
            res.json().then(function (data) {
-               let optionsListArray = suggestionsArray();
+               let optionsListArray = suggestionsArray(data);
            })
        })
     })
+
+    function  suggestionsArray(data) {
+
+    }
 </script>
 </body>
 </html>
