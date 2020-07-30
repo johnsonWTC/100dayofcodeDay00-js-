@@ -29,7 +29,14 @@
             returnArray.push(data[a].itemName);
             a++;
         }
-
+        let i = 0;
+        while (returnArray.length > i){
+            if(returnArray[i].startsWith(input.value)){
+                dataArray.push(returnArray[i]);
+            }
+            i++;
+        }
+        console.log(returnArray);
         return  returnArray;
     }
 </script>
