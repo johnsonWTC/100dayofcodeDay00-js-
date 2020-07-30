@@ -13,5 +13,7 @@ public class ItemService {
        return itemDao.save(item);
     }
 
-
+    public Iterable findAll(){
+        return itemDao.findAll();
+    }
 }
