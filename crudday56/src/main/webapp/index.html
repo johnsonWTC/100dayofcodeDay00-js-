@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My API</title>
+</head>
+<body>
+<button>hello</button>
+<script>
+    fetch("http://localhost:8080//item/all").then(function (res) {
+        res.json().then(function (data) {
+            console.log(data);
+        })
+    })
+</script>
+
+</body>
+</html>
