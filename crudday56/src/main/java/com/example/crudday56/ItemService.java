@@ -5,5 +5,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class ItemService {
 
-    public
+
+
+    public Item createItem(Item item){
+
+    }
 }
