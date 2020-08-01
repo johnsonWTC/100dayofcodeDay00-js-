@@ -62,7 +62,7 @@
         let suggestionArray = [];
         let i = 0;
         while (data.length >  i){
-            dataArray.push(data[i]);
+            dataArray.push(data[i].itemName);
             i++;
         }
         let a = 0;
@@ -70,7 +70,7 @@
             if(dataArray[a].startsWith(itemName.value)){
                 suggestionArray.push(dataArray[a]);
             }
-            i++;
+            a++;
         }
         return suggestionArray;
     }
