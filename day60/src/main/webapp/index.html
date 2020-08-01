@@ -6,9 +6,10 @@
 
 </head>
 <body>
-<div id="div"></div>
 
 <h1>My API</h1>
+<div id="div"></div>
+
 <script>
     let div = document.getElementById("div");
     fetch("http://localhost:8080//items/all").then(function (res) {
@@ -16,7 +17,7 @@
             let i = 0;
             while(data.length > i){
                 let li =  document.createElement("li");
-                li.innerHTML = data.itemName;
+                li.innerHTML = data[i].itemName;
                 div.append(li);
                 i++;
             }
