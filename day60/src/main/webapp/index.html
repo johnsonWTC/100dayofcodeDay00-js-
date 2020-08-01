@@ -17,6 +17,7 @@
     let div = document.getElementById("div");
     let itemName = document.getElementById("itemName");
     let adder = document.getElementById("adder");
+    let sugg = document.getElementById("sugg");
 
     adder.addEventListener("click",function () {
         fetch("http://localhost:8080/items/create?itemName="+ itemName.value,{
@@ -41,8 +42,16 @@
 
     itemName.addEventListener("input",function () {
         fetch("http://localhost:8080//items/all").then(function (res) {
+            sugg.innerHTML = "";
             res.json().then(function (data) {
                 let suggestionArray = suggestions(data);
+                let i = 0;
+                while(suggestionArray.length > i){
+                    let options = document.createElement("option");
+                    options.value = suggestionArray[i];
+                    sugg.append(options);
+                    i++;
+                }
 
             })
         })
