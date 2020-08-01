@@ -17,6 +17,13 @@
     let itemName = document.getElementById("itemName");
     let adder = document.getElementById("adder");
 
+    adder.addEventListener("click",function () {
+        fetch("http://localhost:8080/items/create?itemName="+ itemName.value,{
+            method : "Post",
+        })
+
+    })
+
     fetch("http://localhost:8080//items/all").then(function (res) {
         res.json().then(function (data) {
             let i = 0;
