@@ -18,4 +18,8 @@ public class ItemService {
         item.setItemName(oldItamName);
         return itemDoa.save(item);
     }
+
+    public Iterable findAll(){
+        return itemDoa.findAll();
+    }
 }
