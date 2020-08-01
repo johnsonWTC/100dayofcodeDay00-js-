@@ -1,5 +1,5 @@
 let tagContainer = document.querySelector(".tag-container");
-let input = document.querySelector("input");
+let input = document.querySelector("#input");
 
 function createTag(label) {
     let div = document.createElement("div");
@@ -10,7 +10,7 @@ function createTag(label) {
     closeBtn.addEventListener("click", function() {
         div.remove();
     })
-    closeBtn.setAttribute("class", "i");
+    closeBtn.setAttribute("class", "close");
     closeBtn.innerHTML = "x";
     div.append(spanInput);
     div.append(closeBtn);
