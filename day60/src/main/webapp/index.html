@@ -6,8 +6,23 @@
 
 </head>
 <body>
+<div id="div"></div>
 
 <h1>My API</h1>
+<script>
+    let div = document.getElementById("div");
+    fetch("http://localhost:8080//items/all").then(function (res) {
+        res.json().then(function (data) {
+            let i = 0;
+            while(data.length > i){
+                let li =  document.createElement("li");
+                li.innerHTML = data.itemName;
+                div.append(li);
+                i++;
+            }
 
+        })
+    })
+</script>
 </body>
 </html>
