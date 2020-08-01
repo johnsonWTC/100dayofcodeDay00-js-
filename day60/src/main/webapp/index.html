@@ -9,7 +9,8 @@
 
 <h1>My API</h1>
 <div id="div"></div>
-<input type="text" id="itemName">
+<input type="text" id="itemName" list="sugg">
+<datalist id="sugg"></datalist>
 <button id="adder">Adder</button>
 
 <script>
@@ -42,6 +43,7 @@
         fetch("http://localhost:8080//items/all").then(function (res) {
             res.json().then(function (data) {
                 let suggestionArray = suggestions(data);
+
             })
         })
     })
