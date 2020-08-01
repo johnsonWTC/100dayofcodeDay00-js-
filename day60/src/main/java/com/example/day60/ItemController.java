@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class ItemController {
 
     @Autowired
-    ItemService itemService
+    ItemService itemService;
 
     @PostMapping("create")
-    public Item createItem(Item item)
+    public Item createItem(Item item){
+        return itemService.createItem(item);
+    }
 }
