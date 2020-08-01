@@ -1,10 +1,7 @@
 package com.example.day60;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("items")
@@ -21,6 +18,11 @@ public class ItemController {
     @GetMapping("all")
     public  Iterable findall(){
         return itemService.findAll();
+    }
+
+    @PutMapping("{itemID}/{newItemName}")
+    public  Item updateItem(@PathVariable("itemID") Integer itemID, @PathVariable("newItemName") String newItemName){
+        return itemService.editItem(itemID,newItemName);
     }
 
 
