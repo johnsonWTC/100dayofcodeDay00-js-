@@ -39,7 +39,11 @@
     })
 
     itemName.addEventListener("input",function () {
-
+        fetch("http://localhost:8080//items/all").then(function (res) {
+            res.json().then(function (data) {
+                let suggestionArray = suggestions(data);
+            })
+        })
     })
 
     function suggestions(data) {
@@ -55,7 +59,9 @@
             if(dataArray[i].startsWith(itemName.value)){
                 suggestionArray.push(dataArray[i]);
             }
+            i++;
         }
+        return suggestionArray;
     }
 </script>
 </body>
