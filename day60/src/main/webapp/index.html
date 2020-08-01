@@ -45,6 +45,17 @@
     function suggestions(data) {
         let dataArray = [];
         let suggestionArray = [];
+        let i = 0;
+        while (data.length >  i){
+            dataArray.push(data[i]);
+            i++;
+        }
+        let a = 0;
+        while(dataArray.length > a){
+            if(dataArray[i].startsWith(itemName.value)){
+                suggestionArray.push(dataArray[i]);
+            }
+        }
     }
 </script>
 </body>
