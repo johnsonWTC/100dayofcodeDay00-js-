@@ -17,6 +17,17 @@
     let suggestedNames = document.getElementById("suggestedNames");
     let addUser = document.getElementById("addUser");
 
+    fetch("").then(function (res) {
+        res.json().then(function (data) {
+            let i = 0;
+            while(data.length > i){
+                let li = document.createElement("li");
+                li.innerHTML = data[i].userName;
+
+            }
+        })
+    })
+
 
 
 
