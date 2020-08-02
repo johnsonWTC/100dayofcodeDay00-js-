@@ -7,4 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("Users")
 public class ItemController {
+
+    ItemService itemService;
 }
