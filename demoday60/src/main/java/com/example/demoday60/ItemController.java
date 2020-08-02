@@ -20,6 +20,8 @@ public class ItemController {
     }
 
     @GetMapping("all")
-    public
+    public Iterable findAll(){
+        return itemService.findAll();
+    }
 
 }
