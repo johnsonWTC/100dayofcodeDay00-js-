@@ -36,7 +36,10 @@
         if(username.value.length == 0){
             alert("user name can not empty");
         }else{
-            fetch()
+            fetch("http://localhost:8080/users/create/?userName="+ username.value,{
+                method: "Post",
+            })
+            location.reload();
         }
     })
 
