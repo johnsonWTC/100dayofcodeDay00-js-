@@ -2,6 +2,7 @@ package com.example.demoday60;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,8 +15,11 @@ public class ItemController {
     ItemService itemService;
 
     @PostMapping("create")
-    public User createUsre(User user){
+    public User createUser(User user){
     return itemService.createUser(user);
     }
+
+    @GetMapping("all")
+    public
 
 }
