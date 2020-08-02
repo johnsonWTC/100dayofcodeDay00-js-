@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("Users")
+@RequestMapping("users")
 public class ItemController {
 
     @Autowired
@@ -18,6 +18,7 @@ public class ItemController {
     public User createUser(User user){
     return itemService.createUser(user);
     }
+
 
     @GetMapping("all")
     public Iterable findAll(){
