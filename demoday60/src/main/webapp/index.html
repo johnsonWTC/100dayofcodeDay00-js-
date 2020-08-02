@@ -18,7 +18,7 @@
     let addUser = document.getElementById("addUser");
     let users = document.getElementById("users");
 
-    fetch("http://localhost:8080/ssers/all").then(function (res) {
+    fetch("http://localhost:8080/users/all").then(function (res) {
         res.json().then(function (data) {
             let i = 0;
             while(data.length > i){
@@ -32,6 +32,9 @@
     })
 
 
+    addUser.addEventListener("click", function () {
+
+    })
 
 
 </script>
