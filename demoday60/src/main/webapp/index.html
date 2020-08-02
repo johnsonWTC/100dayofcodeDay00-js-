@@ -8,7 +8,7 @@
 <h1> My API </h1>
 <input type="text" id="username" list="suggestedNames">
 <datalist id="suggestedNames"></datalist>
-<button id="addUser"></button>
+<button id="addUser">Add User</button>
 
 <div id="users"></div>
 
@@ -16,15 +16,18 @@
     let username = document.getElementById("username");
     let suggestedNames = document.getElementById("suggestedNames");
     let addUser = document.getElementById("addUser");
+    let users = document.getElementById("users");
 
-    fetch("").then(function (res) {
+    fetch("http://localhost:8080/ssers/all").then(function (res) {
         res.json().then(function (data) {
             let i = 0;
             while(data.length > i){
                 let li = document.createElement("li");
                 li.innerHTML = data[i].userName;
-
+                users.append(li);
+                i++;
             }
+
         })
     })
 
