@@ -13,7 +13,9 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
-    PostMapping("create")
-
+    @PostMapping("create")
+    public User createUsre(User user){
+    return itemService.createUser(user);
+    }
 
 }
