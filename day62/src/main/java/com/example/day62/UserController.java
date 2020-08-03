@@ -1,5 +1,6 @@
 package com.example.day62;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,5 +14,10 @@ public class UserController {
     @PostMapping("create")
     public User createUser(User user){
         return userService.createUser(user);
+    }
+
+    @GetMapping("all")
+    public Iterable findAllUsers(){
+
     }
 }
