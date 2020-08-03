@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("users")
 public class UserController {
 
+    UserService userService;
 
     @PostMapping("create")
     public User createUser(User user){
-        return
+        return userService.createUser(user);
     }
 }
