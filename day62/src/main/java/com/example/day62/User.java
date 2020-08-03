@@ -14,6 +14,15 @@ public class User {
     String userName;
     String Name;
     String Surname;
+    String Qualification;
+
+    public String getQualification() {
+        return Qualification;
+    }
+
+    public void setQualification(String qualification) {
+        Qualification = qualification;
+    }
 
     public Integer getUserID() {
         return userID;
