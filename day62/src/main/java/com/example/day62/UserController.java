@@ -18,6 +18,6 @@ public class UserController {
 
     @GetMapping("all")
     public Iterable findAllUsers(){
-
+    return  userService.allUsers();
     }
 }
