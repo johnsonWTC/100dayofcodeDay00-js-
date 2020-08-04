@@ -10,6 +10,6 @@ public class UserService {
     UserDao userDao;
 
     public User createUser(User user){
-
+        userDao.save(user);
     }
 }
