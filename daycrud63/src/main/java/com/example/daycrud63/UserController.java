@@ -17,7 +17,7 @@ public class UserController {
     public User createUser(User user){
         return userService.createUser(user);
     }
-
+@GetMapping("all")
     public Iterable all(){
         return userService.users();
     }
