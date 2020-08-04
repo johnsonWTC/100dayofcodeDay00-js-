@@ -12,4 +12,8 @@ public class UserService {
     public User createUser(User user){
         return userDao.save(user);
     }
+
+    public Iterable users(){
+
+    }
 }
