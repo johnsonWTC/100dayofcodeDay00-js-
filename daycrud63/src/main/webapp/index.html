@@ -7,6 +7,7 @@
 <body>
 <h1>MY API</h1>
 <input type="text" id="input">
+<button id="add">ADD</button>
 <div id="div">
 
 </div>
@@ -14,6 +15,7 @@
 <script>
     let div = document.getElementById("div");
     let input = document.getElementById("input");
+    let add = document.getElementById("add");
 
     fetch("http://localhost:8080/users/all").then(function (res) {
         res.json().then(function (data) {
@@ -25,8 +27,12 @@
             }
         })
     })
-
-
+    add.addEventListener("click", function () {
+        fetch("http://localhost:8080/users/create/?userName=" +input.value + "&Name=Mkhize",{
+            method : "Post",
+        })
+        location.reload();
+    })
 </script>
 </body>
 </html>
