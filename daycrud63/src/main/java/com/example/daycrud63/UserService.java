@@ -9,4 +9,7 @@ public class UserService {
     @Autowired
     UserDao userDao;
 
+    public User createUser(User user){
+
+    }
 }
