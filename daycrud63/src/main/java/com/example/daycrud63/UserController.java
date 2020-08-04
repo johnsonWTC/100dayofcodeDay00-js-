@@ -1,6 +1,7 @@
 package com.example.daycrud63;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,8 +11,12 @@ public class UserController {
 
     UserService userService;
 
-    @GetMapping("create")
-    public createUser(User user){
+    @PostMapping("create")
+    public User createUser(User user){
         return userService.createUser(user);
+    }
+
+    public Iterable all(){
+        return userService.users();
     }
 }
