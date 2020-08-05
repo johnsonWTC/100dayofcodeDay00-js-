@@ -13,7 +13,11 @@
 <script>
     fetch("http://localhost:8000/Items/find").then(function (res) {
         res.json().then(function (data) {
-
+            for(let i = 0; data.length > i ; i++){
+                let li  = document.createElement("li");
+                li.innerHTML = data[i].itemName;
+                i++;
+            }
         })
     })
 </script>
