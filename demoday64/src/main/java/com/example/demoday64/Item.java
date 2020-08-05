@@ -13,4 +13,28 @@ public class Item {
     Integer itemID;
     String itemName;
     Integer itemSize;
+
+    public Integer getItemID() {
+        return itemID;
+    }
+
+    public void setItemID(Integer itemID) {
+        this.itemID = itemID;
+    }
+
+    public String getItemName() {
+        return itemName;
+    }
+
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
+    public Integer getItemSize() {
+        return itemSize;
+    }
+
+    public void setItemSize(Integer itemSize) {
+        this.itemSize = itemSize;
+    }
 }
