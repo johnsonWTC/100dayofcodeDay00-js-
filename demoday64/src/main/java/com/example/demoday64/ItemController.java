@@ -12,6 +12,6 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
-    @PostMapping()
+    @PostMapping("create")
 
 }
