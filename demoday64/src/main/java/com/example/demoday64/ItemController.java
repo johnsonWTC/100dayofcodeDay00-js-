@@ -20,7 +20,7 @@ public class ItemController {
 
     @GetMapping("find")
     public Iterable find(){
-
+        return itemService.findAll();
     }
 
 }
