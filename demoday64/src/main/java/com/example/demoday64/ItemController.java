@@ -18,6 +18,9 @@ public class ItemController {
         return itemService.createItem(item);
     }
 
-    @GetMapping("")
+    @GetMapping("find")
+    public Iterable find(){
+
+    }
 
 }
