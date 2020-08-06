@@ -5,8 +5,8 @@
     <title>myAPI</title>
 </head>
 <body>
-<input id="input" autocomplete="false" list="suggestions">
-<data id="suggestions"></data>
+<input id="input" autocomplete="false" list="suggestions" type="text">
+<datalist id="suggestions"></datalist>
 <button id="adder"> Adder</button>
 <div id="div"></div>
 
@@ -36,12 +36,13 @@
     })
 
     input.addEventListener("keyup", function () {
+        suggestions.innerHTML = "";
         fetch("http://localhost:8081/Items/all").then(function (res) {
             res.json().then(function (data) {
                 let sug = suggestionsList(data);
-                for (let i; data.length > i ; i++){
+                for (let i = 0; sug.length > i ; i++){
                     let autocomplete = document.createElement("option");
-                    autocomplete.value = data[i];
+                    autocomplete.value = sug[i];
                     suggestions.append(autocomplete);
                 }
             })
@@ -50,8 +51,8 @@
 
     function suggestionsList(data) {
         let likes = [];
-        for (let i; data.length > i ; i++){
-            if(data[i].itemName.startsWith(input.value)){
+        for (let i = 0; data.length > i ; i++){
+            if(data[i].itemName.toLowerCase().startsWith(input.value.toLowerCase())){
                 likes.push(data[i].itemName);
             }
             i++;
