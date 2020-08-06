@@ -38,7 +38,10 @@
     input.addEventListener("keyup", function () {
         fetch("http://localhost:8081/Items/all").then(function (res) {
             res.json().then(function (data) {
-                let sug =
+                let sug = suggestionsList(data);
+                for (let i; data.length > i ; i++){
+
+                }
             })
         })
     })
