@@ -35,15 +35,23 @@
         })
     })
 
+    input.addEventListener("keyup", function () {
+        fetch("http://localhost:8081/Items/all").then(function (res) {
+            res.json().then(function (data) {
+                let sug =
+            })
+        })
+    })
 
     function suggestionsList(data) {
         let likes = [];
         for (let i; data.length > i ; i++){
             if(data[i].itemName.startsWith(input.value)){
-                likes.push(data[i]);
-                l
+                likes.push(data[i].itemName);
             }
+            i++;
         }
+        return likes;
     }
 </script>
 </body>
