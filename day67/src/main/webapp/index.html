@@ -8,13 +8,24 @@
 <input id="input" autocomplete="false" list="suggestions">
 <data id="suggestions"></data>
 <button id="adder"> Adder</button>
+<div id="div"></div>
 
 
 <script>
     let input = document.getElementById("input");
     let suggestions = document.getElementById("suggestions");
     let adder = document.getElementById("adder");
+    let div = document.getElementById("div");
 
+    fetch("http://localhost:8081/Items/all").then(function (res) {
+        res.json().then(function (data) {
+            for (let i; data.length > i; i++){
+                let li = document.createElement("li");
+                li.innerHTML = data[i].itemName;
+                div.append(li);
+            }
+        })
+    })
 </script>
 </body>
 </html>
