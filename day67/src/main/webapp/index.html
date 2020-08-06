@@ -17,9 +17,16 @@
     let adder = document.getElementById("adder");
     let div = document.getElementById("div");
 
+
+    adder.addEventListener("click", function () {
+        fetch("http://localhost:8081/Items/create?itemName="+ input.value,{
+            method : "Post",
+        })
+    })
+
     fetch("http://localhost:8081/Items/all").then(function (res) {
         res.json().then(function (data) {
-            for (let i; data.length > i; i++){
+            for (let i = 0; data.length > i; i++){
                 let li = document.createElement("li");
                 li.innerHTML = data[i].itemName;
                 div.append(li);
