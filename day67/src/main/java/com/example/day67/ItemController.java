@@ -1,5 +1,6 @@
 package com.example.day67;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,5 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("Items")
 public class ItemController {
 
+    @PostMapping("create")
+    public Item createItem(Item item){
+        return
+    }
 
 }
