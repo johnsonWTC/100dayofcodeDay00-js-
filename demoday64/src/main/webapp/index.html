@@ -7,15 +7,15 @@
 
 </head>
 <body>
-<div id="items"></div>
-<h1>MY API</h1>
 
+<h1>MY API</h1>
+<div id="items"></div>
 </body>
 <script>
     let items = document.getElementById("items");
     fetch("http://localhost:8000/Items/find").then(function (res) {
         res.json().then(function (data) {
-            for(let i = 0; data.length > i ; i++){
+            for(let i = 0; data.length >= i ; i++){
                 let li  = document.createElement("li");
                 li.innerHTML = data[i].itemName;
                 items.append(li);
