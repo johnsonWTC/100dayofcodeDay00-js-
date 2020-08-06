@@ -13,7 +13,7 @@ public class ItemController {
     ItemService itemService;
     @PostMapping("create")
     public Item createItem(Item item){
-        return
+        return itemService.createItem(item);
     }
 
 }
