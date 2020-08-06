@@ -18,6 +18,10 @@
     let div = document.getElementById("div");
 
 
+    adder.addEventListener("keydown", function () {
+        suggestions.innerHTML = "";
+    })
+
     adder.addEventListener("click", function () {
         fetch("http://localhost:8081/Items/create?itemName="+ input.value,{
             method : "Post",
@@ -52,10 +56,9 @@
     function suggestionsList(data) {
         let likes = [];
         for (let i = 0; data.length > i ; i++){
-            if(data[i].itemName.toLowerCase().startsWith(input.value.toLowerCase())){
+            if(data[i].itemName.toLowerCase().startsWith(input.value.toLowerCase())) {
                 likes.push(data[i].itemName);
             }
-            i++;
         }
         return likes;
     }
