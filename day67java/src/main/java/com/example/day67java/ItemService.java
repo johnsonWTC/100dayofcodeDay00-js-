@@ -14,6 +14,10 @@ public class ItemService {
     }
 
     public Item findItem(Integer id){
+        return itemDao.findById(id).orElse(null);
+    }
+
+    public Item editByName(String currentItemName,String newItemName){
 
     }
 }
