@@ -17,4 +17,9 @@ public class ItemController {
     public Item editItem(@PathVariable("id") Integer itemId, @PathVariable("newItemName") String newItemName){
         return itemService.editByName(itemId,newItemName);
     }
+
+    @DeleteMapping("delete")
+    public  void deleteItem(Item item){
+        itemService.deleteItem(item);
+    }
 }
