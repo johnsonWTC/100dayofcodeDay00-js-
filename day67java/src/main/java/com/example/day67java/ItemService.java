@@ -24,5 +24,8 @@ public class ItemService {
         itemDao.save(item);
         return item;
     }
-    public void deleteItem()
+    public void deleteItem(Item item){
+        itemDao.delete(item);
+        return;
+    }
 }
