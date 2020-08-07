@@ -13,5 +13,7 @@ public class ItemService {
         return itemDao.save(item);
     }
 
+    public Item findItem(Integer id){
 
+    }
 }
