@@ -48,9 +48,10 @@
 
     adder.addEventListener("click", function () {
 
-        fetch(``,{
+        fetch(`http://localhost:8081/items/create?itemName=${name.value}`,{
             method : "post",
         })
+        location.reload();
     })
 </script>
 </body>
