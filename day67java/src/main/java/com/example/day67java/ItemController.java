@@ -28,5 +28,5 @@ public class ItemController {
         public Iterable findAll(){
             return itemService.findAll();
         }
-    }
+
 }
