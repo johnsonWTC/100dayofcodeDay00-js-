@@ -6,9 +6,26 @@
 </head>
 <body>
 <h1>My Items</h1>
-<input placeholder="itemName">
-<button>Add Item</button>
-<button>edit Item </button>
+<input placeholder="itemName" id="name">
+<button id="adder">Add Item</button>
+<button id="auditor">edit Item </button>
 <div id="div"></div>
+
+<script>
+    let name = document.getElementById("name");
+    let adder = document.getElementById("adder");
+    let auditor = document.getElementById("auditor");
+    let div = document.getElementById("div");
+
+    fetch("").then(function (res) {
+        res.json().then(function (data) {
+            for(let i = 0; data.length > i; i++){
+                let li = document.createElement("li");
+            }
+        })
+    })
+</script>
 </body>
+
+
 </html>
