@@ -1,11 +1,13 @@
 package com.example.day67java;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("items")
 public class ItemController {
 
+    @Autowired
     ItemService itemService;
 
     @PostMapping("create")
