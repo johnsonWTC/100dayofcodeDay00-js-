@@ -20,7 +20,8 @@ public class ItemService {
     public Item editByName(Integer itemId,String newItemName){
         Item item;
         item = itemDao.findById(itemId).orElse(null);
-
-
+        item.setItemName(newItemName);
+        itemDao.save(item);
+        return item;
     }
 }
