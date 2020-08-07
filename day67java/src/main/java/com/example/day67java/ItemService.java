@@ -2,6 +2,7 @@ package com.example.day67java;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
 public class ItemService {
@@ -27,5 +28,10 @@ public class ItemService {
     public void deleteItem(Integer itemId){
         itemDao.deleteById(itemId);
         return;
+    }
+
+    @GetMapping("find")
+    public Iterable findAll(){
+        return itemDao.findAll();
     }
 }
