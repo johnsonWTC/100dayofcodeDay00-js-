@@ -24,8 +24,8 @@ public class ItemService {
         itemDao.save(item);
         return item;
     }
-    public void deleteItem(Item item){
-        itemDao.delete(item);
+    public void deleteItem(Integer itemId){
+        itemDao.deleteById(itemId);
         return;
     }
 }
