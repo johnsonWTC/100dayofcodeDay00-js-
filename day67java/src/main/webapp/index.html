@@ -25,6 +25,14 @@
                 li.innerHTML = data[i].itemName;
                 let deleteButton = document.createElement("button");
                 deleteButton.innerHTML = "delete";
+                let editButton = document.createElement("button");
+                editButton.innerHTML = "edit";
+                deleteButton.addEventListener("click",function () {
+                    fetch("http://localhost:8081/items/delete/"+  data[i].itemId,{
+                        method: "delete"
+                    })
+                    location.reload();
+                })
                 div.append(li);
                 div.append(deleteButton);
             }
