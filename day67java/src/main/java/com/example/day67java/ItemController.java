@@ -20,8 +20,8 @@ public class ItemController {
         return itemService.editByName(itemId,newItemName);
     }
 
-    @DeleteMapping("delete")
-    public  void deleteItem(Item item){
-        itemService.deleteItem(item);
+    @DeleteMapping("delete/{id}")
+    public  void deleteItem(@PathVariable("id") Integer itemId){
+        itemService.deleteItem(itemId);
     }
 }
