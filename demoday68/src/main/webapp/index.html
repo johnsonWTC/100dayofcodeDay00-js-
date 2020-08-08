@@ -6,11 +6,14 @@
 </head>
 <body>
 
+<input type="text" id="itemName">
+<button id="adder">ADD</button>
 <div id="div"></div>
 
 
 <script>
     let div = document.getElementById("div");
+    let
 
     fetch("http://localhost:8081/items/all").then(function (res) {
         res.json().then(function (data) {
