@@ -16,6 +16,10 @@ public class ItemService {
     public Item updateItem(Integer itemID,String newItemName){
         Item item = itemDao.findById(itemID).orElse(null);
         item.setName(newItemName);
-        itemDao.save(item);
+      return   itemDao.save(item);
+    }
+
+    public  void deleteItem(Integer itemID){
+        itemDao.deleteById(itemID);
     }
 }
