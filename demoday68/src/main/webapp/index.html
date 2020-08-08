@@ -19,7 +19,9 @@
                 let delElement = document.createElement("button");
                 delElement.innerHTML = "delete";
                 delElement.addEventListener("click", function () {
-
+                    fetch("",{
+                        method : "delete"
+                    })
                 })
                 let updateElement = document.createElement("button");
                 li.innerHTML = data[i].name;
