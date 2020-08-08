@@ -17,6 +17,10 @@
             for (let i = 0;data.length > i ; i++){
                 let li = document.createElement("li");
                 let delElement = document.createElement("button");
+                delElement.innerHTML = "delete";
+                delElement.addEventListener("click", function () {
+
+                })
                 let updateElement = document.createElement("button");
                 li.innerHTML = data[i].name;
                 div.append(li);
