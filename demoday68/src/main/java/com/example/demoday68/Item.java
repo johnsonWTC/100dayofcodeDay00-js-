@@ -9,5 +9,6 @@ import javax.persistence.Id;
 public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-
+    Integer itemID;
+    String Name;
 }
