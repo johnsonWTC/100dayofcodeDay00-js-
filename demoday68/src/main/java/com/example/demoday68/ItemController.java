@@ -23,6 +23,12 @@ public class ItemController {
     @DeleteMapping("{itemId}")
     public void deleteItem(@PathVariable("itemId") Integer itemId){
          itemService.deleteItem(itemId);
+
+    }
+
+    @GetMapping("all")
+    public Iterable allItem(){
+        return itemService.findAllItems();
     }
 
 
