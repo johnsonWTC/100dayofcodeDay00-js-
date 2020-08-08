@@ -16,8 +16,8 @@ public class ItemController {
     }
 
     @PutMapping("{itemID}/{newItemName}")
-    public Item editItem(@PathVariable("itemID") Iterable itemID, @PathVariable("newItemName") String newItemName){
-
+    public Item editItem(@PathVariable("itemID") Integer itemID, @PathVariable("newItemName") String newItemName){
+        return itemService.updateItem(itemID,newItemName);
     }
 
 
