@@ -18,14 +18,17 @@
                 let li = document.createElement("li");
                 let delElement = document.createElement("button");
                 delElement.innerHTML = "delete";
+                delElement.innerHTML = "update"
                 delElement.addEventListener("click", function () {
-                    fetch("",{
+                    fetch(`http://localhost:8081/items/delete/${data[i].itemID}`,{
                         method : "delete"
                     })
                 })
                 let updateElement = document.createElement("button");
                 li.innerHTML = data[i].name;
                 div.append(li);
+                div.append(updateElement);
+                div.append(delElement);
             }
         })
     })
