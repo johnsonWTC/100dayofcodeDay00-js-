@@ -28,7 +28,9 @@
                 let updateElement = document.createElement("button");
                 updateElement.innerHTML = "update";
                 updateElement.addEventListener("click", function () {
-                    fetch(`http://localhost:8081/items/3/shoes`)
+                    fetch(`http://localhost:8081/items/${data[i].itemID}/${itemName}`,{
+                        method : "put"
+                    })
                 })
                 li.innerHTML = data[i].name;
                 div.append(li);
