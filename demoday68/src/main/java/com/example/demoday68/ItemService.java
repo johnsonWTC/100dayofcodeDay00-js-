@@ -22,4 +22,8 @@ public class ItemService {
     public  void deleteItem(Integer itemID){
         itemDao.deleteById(itemID);
     }
+
+    public Iterable findAllItems(){
+        return itemDao.findAll();
+    }
 }
