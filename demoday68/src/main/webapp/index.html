@@ -13,7 +13,8 @@
 
 <script>
     let div = document.getElementById("div");
-    let
+    let itemName = document.getElementById("itemName");
+    let adder = document.getElementById("adder");
 
     fetch("http://localhost:8081/items/all").then(function (res) {
         res.json().then(function (data) {
