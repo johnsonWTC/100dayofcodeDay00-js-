@@ -32,9 +32,10 @@
                 let updateElement = document.createElement("button");
                 updateElement.innerHTML = "update";
                 updateElement.addEventListener("click", function () {
-                    fetch(`http://localhost:8081/items/${data[i].itemID}/${itemName}`,{
+                    fetch(`http://localhost:8081/items/${data[i].itemID}/${itemName.value}`,{
                         method : "put"
                     })
+                   location.reload();
                 })
                 li.innerHTML = data[i].name;
                 div.append(li);
