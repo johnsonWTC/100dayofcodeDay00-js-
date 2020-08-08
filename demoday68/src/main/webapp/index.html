@@ -16,6 +16,13 @@
     let itemName = document.getElementById("itemName");
     let adder = document.getElementById("adder");
 
+    adder.addEventListener("click",function () {
+        fetch(`http://localhost:8081/items/create?name=${itemName.value}`,{
+            method: "post"
+        })
+        location.reload();
+    })
+
     fetch("http://localhost:8081/items/all").then(function (res) {
         res.json().then(function (data) {
             for (let i = 0;data.length > i ; i++){
