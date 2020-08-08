@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+
 <div id="div"></div>
 
 
@@ -15,6 +16,8 @@
         res.json().then(function (data) {
             for (let i = 0;data.length > i ; i++){
                 let li = document.createElement("li");
+                let delElement = document.createElement("button");
+                let updateElement = document.createElement("button");
                 li.innerHTML = data[i].name;
                 div.append(li);
             }
