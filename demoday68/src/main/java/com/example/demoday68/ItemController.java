@@ -20,5 +20,10 @@ public class ItemController {
         return itemService.updateItem(itemID,newItemName);
     }
 
+    @DeleteMapping("{itemId}")
+    public void deleteItem(@PathVariable("itemId") Integer itemId){
+
+    }
+
 
 }
