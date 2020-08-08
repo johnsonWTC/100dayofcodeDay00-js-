@@ -1,10 +1,7 @@
 package com.example.demoday68;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("items")
@@ -19,7 +16,7 @@ public class ItemController {
     }
 
     @PutMapping("{itemID}/{newItemName}")
-    public Item editItem()
+    public Item editItem(@PathVariable("itemID") Iterable itemID, @PathVariable("newItemName") String newItemName)
 
 
 }
