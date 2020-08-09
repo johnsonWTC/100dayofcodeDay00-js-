@@ -2,6 +2,7 @@ package com.example.demoday65;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,5 +16,10 @@ public class ItemController {
     @GetMapping("all")
     public  Iterable all(){
         return itemService.findAllItems();
+    }
+
+    @PostMapping("create")
+    public Item createItem(Item item){
+        return itemService.createItem(item);
     }
 }
