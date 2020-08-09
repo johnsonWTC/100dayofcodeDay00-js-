@@ -17,4 +17,6 @@ public class ItemService {
     public Iterable findAllItems(){
         return itemDao.findAll();
     }
+
+    public void deleteItem(Integer itemID)
 }
