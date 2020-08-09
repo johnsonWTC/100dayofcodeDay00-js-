@@ -8,4 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class ItemController {
 
+    @GetMapping("all")
+    public  Iterable all(){
+
+    }
 }
