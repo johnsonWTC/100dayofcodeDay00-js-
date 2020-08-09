@@ -12,4 +12,20 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer itemID;
     String ItemName;
+
+    public Integer getItemID() {
+        return itemID;
+    }
+
+    public void setItemID(Integer itemID) {
+        this.itemID = itemID;
+    }
+
+    public String getItemName() {
+        return ItemName;
+    }
+
+    public void setItemName(String itemName) {
+        ItemName = itemName;
+    }
 }
