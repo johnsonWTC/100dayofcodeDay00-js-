@@ -21,4 +21,7 @@ public class ItemController {
     }
 
     @DeleteMapping("delete/{itemID}")
+    public  void deleteItem(Integer itemId){
+
+    }
 }
