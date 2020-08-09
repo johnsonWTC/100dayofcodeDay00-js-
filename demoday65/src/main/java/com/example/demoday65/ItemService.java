@@ -15,6 +15,6 @@ public class ItemService {
     }
 
     public Iterable findAllItems(){
-
+        return itemDao.findAll();
     }
 }
