@@ -11,6 +11,6 @@ public class ItemService {
     private ItemDao itemDao;
 
     public Item createItem(Item item){
-
+        return itemDao.save(item);
     }
 }
