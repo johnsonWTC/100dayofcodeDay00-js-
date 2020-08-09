@@ -21,4 +21,8 @@ public class ItemService {
     public void deleteItem(Integer itemID){
         itemDao.deleteById(itemID);
     }
+
+    public Item updateItem(Integer itemId, String newItemName){
+
+    }
 }
