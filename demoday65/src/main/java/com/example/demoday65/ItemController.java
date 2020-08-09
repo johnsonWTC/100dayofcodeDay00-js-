@@ -24,4 +24,7 @@ public class ItemController {
     public  void deleteItem(Integer itemId){
         itemService.deleteItem(itemId);
     }
+
+    @PutMapping("{itemId}/{newItemName}")
+
 }
