@@ -16,4 +16,7 @@ public class ItemController {
     }
 
     @PostMapping("create")
+    public Item createItem(Item item){
+        return itemService.createItem(item);
+    }
 }
