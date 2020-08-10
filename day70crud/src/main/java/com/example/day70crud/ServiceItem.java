@@ -20,4 +20,8 @@ public class ServiceItem {
     public Iterable findAll(){
         return itemDao.findAll();
     }
+
+    public Item updateItem(Integer itemID, String newItemName){
+
+    }
 }
