@@ -8,4 +8,8 @@ public class ServiceItem {
 
     @Autowired
     private  ItemDao itemDa;
+
+    public Item createItem(Item item){
+
+    }
 }
