@@ -10,4 +10,7 @@ public class Item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    Integer itemID;
+
+    String ItemName
 }
