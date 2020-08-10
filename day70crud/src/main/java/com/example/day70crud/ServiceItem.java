@@ -16,4 +16,6 @@ public class ServiceItem {
     public void deleteItem(Integer itemID){
         itemDao.deleteById(itemID);
     }
+
+    public Iterable findAll(){}
 }
