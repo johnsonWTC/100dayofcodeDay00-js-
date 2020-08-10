@@ -6,7 +6,7 @@
 </head>
 <body>
 <input id="itemName">
-<button id="addItem"></button>
+<button id="addItem"> add item</button>
 <div id="root"></div>
 
 <script>
@@ -32,10 +32,13 @@
                 let updateButton = document.createElement("button");
                 updateButton.innerHTML = "update"
                 updateButton.addEventListener("click",function () {
-                    fetch(``,{
-                        method: "put"
-                    })
-                })
+                    let updateItem = confirm("are you sure you want to update this item");
+                    if(updateItem){
+                        fetch(`http://localhost:8080/items/edit/${data[i].itemID}/${itemName.value}`,{
+                            method: "put"
+                        })
+                    }
+                    }
                 li.innerHTML = data[i].itemName;
                 div.append(li);
                 div.append(deleteButton);
