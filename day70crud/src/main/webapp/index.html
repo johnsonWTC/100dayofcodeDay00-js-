@@ -27,7 +27,7 @@
                             method : "delete"
                         })
                     }
-
+                    location.reload();
                 })
                 let updateButton = document.createElement("button");
                 updateButton.innerHTML = "update"
@@ -37,8 +37,9 @@
                         fetch(`http://localhost:8080/items/edit/${data[i].itemID}/${itemName.value}`,{
                             method: "put"
                         })
+                        location.reload();
                     }
-                    }
+                    })
                 li.innerHTML = data[i].itemName;
                 div.append(li);
                 div.append(deleteButton);
@@ -46,6 +47,12 @@
 
             }
         })
+    })
+
+    addItem.addEventListener("click", function () {
+      fetch(`http://localhost:8080/items/create?ItemName=${itemName.value}`,{
+          method: "post"
+      })
     })
 </script>
 </body>
