@@ -18,7 +18,7 @@
                 deleteButton.addEventListener("click", function () {
                     let conf = confirm("are you sure you want to delete this item");
                     if(conf){
-                        fetch("",{
+                        fetch(`http://localhost:8080/items/delete/${data[i].itemID}`,{
                             method : "delete"
                         })
                     }
