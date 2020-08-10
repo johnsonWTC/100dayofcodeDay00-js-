@@ -10,7 +10,7 @@ public class ItemController {
     @Autowired
     ItemService itemService;
 
-    @PutMapping("{itemID}/{itemName}")
+    @PutMapping("edit/{itemID}/{itemName}")
     public Item updateItem(@PathVariable("itemID") Integer itemID, @PathVariable("itemName") String itemName){
         return itemService.updateItem(itemID,itemName);
     }
