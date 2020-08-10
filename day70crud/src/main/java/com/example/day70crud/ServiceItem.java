@@ -12,4 +12,8 @@ public class ServiceItem {
     public Item createItem(Item item){
         return itemDao.save(item);
     }
+
+    public void deleteItem(Integer itemID){
+        itemDao.deleteById(itemID);
+    }
 }
