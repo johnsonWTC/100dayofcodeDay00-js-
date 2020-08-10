@@ -15,9 +15,14 @@
             for (let i = 0; data.length > i; i++){
                 let li = document.createElement("li");
                 let deleteButton = document.createElement("button");
+                deleteButton.addEventListener("click", function () {
+
+                })
                 let updateButton = document.createElement("button");
                 li.innerHTML = data[i].itemName;
                 div.append(li);
+                div.append(deleteButton);
+                div.append(updateButton);
 
             }
         })
