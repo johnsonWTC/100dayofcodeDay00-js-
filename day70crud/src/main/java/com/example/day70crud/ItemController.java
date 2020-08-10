@@ -24,4 +24,8 @@ public class ItemController {
     public  Iterable findAll(){
         return itemService.findAll();
     }
+
+    public void deleteByID(Integer itemID){
+        itemService.deleteItem(itemID);
+    }
 }
