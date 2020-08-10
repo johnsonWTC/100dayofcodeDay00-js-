@@ -21,4 +21,7 @@ public class ItemController {
     }
 
     @GetMapping("all")
+    public  Iterable findAll(){
+        return itemService.findAll();
+    }
 }
