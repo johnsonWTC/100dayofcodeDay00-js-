@@ -30,7 +30,9 @@
                 })
                 let updateButton = document.createElement("button");
                 updateButton.addEventListener("click",function () {
-
+                    fetch(``,{
+                        method: "put"
+                    })
                 })
                 li.innerHTML = data[i].itemName;
                 div.append(li);
