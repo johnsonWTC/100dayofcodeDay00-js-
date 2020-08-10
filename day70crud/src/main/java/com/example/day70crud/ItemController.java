@@ -19,4 +19,6 @@ public class ItemController {
     public Item createItem(Item item){
         return itemService.createItem(item);
     }
+
+    @GetMapping("all")
 }
