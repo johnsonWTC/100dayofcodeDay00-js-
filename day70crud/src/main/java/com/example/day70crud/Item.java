@@ -12,5 +12,5 @@ public class Item {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer itemID;
 
-    String ItemName
+    String ItemName;
 }
