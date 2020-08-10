@@ -25,6 +25,7 @@ public class ItemController {
         return itemService.findAll();
     }
 
+    @DeleteMapping("delete/{itemID}")
     public void deleteByID(Integer itemID){
         itemService.deleteItem(itemID);
     }
