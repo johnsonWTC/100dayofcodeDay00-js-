@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Boostrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<input id="itemName" placeholder="item name">
-<input id="itemSize" type="number" placeholder="item size">
-<input id="itemPrice" type="number" placeholder="item price">
-<button id="addItem"></button>
+<input id="itemName" placeholder="item name"><br>
+<input id="itemSize" type="number" placeholder="item size"><br>
+<input id="itemPrice" type="number" placeholder="item price"><br>
+<button id="addItem">Add Item</button>
 <hr>
+
+<div class="container mt-2 mb2">
+    <table
+    data-toogle ="table"
+    data-pagination = "true"
+    data-search = "true"
+    data-url  = "data.json">
+        <thead>
+        <tr>
+            <th data-field = "itemName" data-sortable="">Item Name</th>
+            <th data-field = "itemSize" data-sortable="">Item Name</th>
+            <th data-field = "itemPrice" data-sortable="">Item Name</th>
+        </tr>
+        </thead>
+
+    </table>
+
+</div>
+
+
+
 <div id="boostrapForm"></div>
 
 <script>

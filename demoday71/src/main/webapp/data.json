@@ -1,0 +1,20 @@
+[
+  {
+    "itemID": 1,
+    "itemPrice": 20,
+    "itemSize": 40,
+    "itemName": "books"
+  },
+  {
+    "itemID": 2,
+    "itemPrice": 10,
+    "itemSize": 50,
+    "itemName": "laptop"
+  },
+  {
+    "itemID": 3,
+    "itemPrice": 100,
+    "itemSize": 5,
+    "itemName": "shoes"
+  }
+]
