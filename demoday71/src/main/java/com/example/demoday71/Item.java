@@ -15,4 +15,36 @@ public class Item {
     String ItemName;
     Integer itemPrice;
     Integer itemSize;
+
+    public Integer getItemID() {
+        return itemID;
+    }
+
+    public void setItemID(Integer itemID) {
+        this.itemID = itemID;
+    }
+
+    public String getItemName() {
+        return ItemName;
+    }
+
+    public void setItemName(String itemName) {
+        ItemName = itemName;
+    }
+
+    public Integer getItemPrice() {
+        return itemPrice;
+    }
+
+    public void setItemPrice(Integer itemPrice) {
+        this.itemPrice = itemPrice;
+    }
+
+    public Integer getItemSize() {
+        return itemSize;
+    }
+
+    public void setItemSize(Integer itemSize) {
+        this.itemSize = itemSize;
+    }
 }
