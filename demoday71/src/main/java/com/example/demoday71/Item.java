@@ -17,5 +17,43 @@ public class Item {
     String BusinessUnitName;
     String PracticeName;
 
+    public Integer getItemID() {
+        return itemID;
+    }
 
+    public void setItemID(Integer itemID) {
+        this.itemID = itemID;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPrimaryRole() {
+        return primaryRole;
+    }
+
+    public void setPrimaryRole(String primaryRole) {
+        this.primaryRole = primaryRole;
+    }
+
+    public String getBusinessUnitName() {
+        return BusinessUnitName;
+    }
+
+    public void setBusinessUnitName(String businessUnitName) {
+        BusinessUnitName = businessUnitName;
+    }
+
+    public String getPracticeName() {
+        return PracticeName;
+    }
+
+    public void setPracticeName(String practiceName) {
+        PracticeName = practiceName;
+    }
 }
