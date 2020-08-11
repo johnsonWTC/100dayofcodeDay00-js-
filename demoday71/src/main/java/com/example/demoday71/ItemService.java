@@ -6,4 +6,8 @@ import org.springframework.stereotype.Service;
 public class ItemService {
 
     private ItemDao itemDao;
+
+    public  item createItem(){
+
+    }
 }
