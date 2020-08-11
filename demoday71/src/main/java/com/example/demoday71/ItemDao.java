@@ -1,4 +1,6 @@
 package com.example.demoday71;
 
-public class ItemDao {
+import org.springframework.data.repository.CrudRepository;
+
+public interface ItemDao extends CrudRepository<Item,Integer> {
 }
