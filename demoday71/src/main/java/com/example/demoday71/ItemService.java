@@ -8,6 +8,6 @@ public class ItemService {
     private ItemDao itemDao;
 
     public  Item createItem(){
-
+        return itemDao.save(Item);
     }
 }
