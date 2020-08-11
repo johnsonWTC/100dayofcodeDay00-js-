@@ -12,7 +12,7 @@ public class ItemService {
     }
 
     public Iterable findItemsByID(){
-
+        return itemDao.findAll();
     }
 
 }
