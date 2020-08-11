@@ -9,4 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ItemController {
 
     @PostMapping("create")
+    public Item createItem(Item item){
+
+    }
 }
