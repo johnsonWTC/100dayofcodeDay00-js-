@@ -8,4 +8,8 @@ public class UserService {
 
     @Autowired
     private UserDao userDao;
+
+    public User createUser(User user){
+        return userDao.save();
+    }
 }
