@@ -1,17 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, Bootstrap Table!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
 </head>
 <body>
-<button id="call">Add item</button>
+
+
+<div id="toolbar">
+    <button id="call" class="btn btn-secondary">load</button>
+</div>
 <table
         id="table"
         data-toggle="table"
         data-toolbar="#toolbar"
         data-height="460"
-style="display: none">
+>
     <thead>
     <tr>
         <th data-field="id">ID</th>
@@ -21,11 +31,29 @@ style="display: none">
     </thead>
 </table>
 
+
+
+
+
 <script>
     let button = document.getElementById("call");
+    let table = document.getElementById("table");
     button.addEventListener("click", function () {
-        $('#table').style.display = "block";
+        table.style.display = "block";
+        $table.bootstrapTable('load', );
     })
+
+
+
+
+    var $table = $('#table')
+    var $button = $('#button')
+
+
+
+    $table.bootstrapTable('load', randomData())
+
+
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
