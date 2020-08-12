@@ -1,3 +1,5 @@
+package com.example.demoday75;
+
 import com.example.demoday75.User;
 import com.example.demoday75.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
