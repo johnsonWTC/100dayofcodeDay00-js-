@@ -20,6 +20,6 @@ public class UserController {
 
     @GetMapping("all")
     public  Iterable all(){
-
+        return  userService.findAll();
     }
 }
