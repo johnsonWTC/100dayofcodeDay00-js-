@@ -1,4 +1,6 @@
 package com.example.demoday75;
 
-public interface UserDao {
+import org.springframework.data.repository.CrudRepository;
+
+public interface UserDao extends CrudRepository<> {
 }
