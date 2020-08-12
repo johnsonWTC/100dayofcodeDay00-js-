@@ -14,4 +14,27 @@ public class Item {
     String userName;
     String businessUnit;
 
+    public Integer getItemID() {
+        return itemID;
+    }
+
+    public void setItemID(Integer itemID) {
+        this.itemID = itemID;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getBusinessUnit() {
+        return businessUnit;
+    }
+
+    public void setBusinessUnit(String businessUnit) {
+        this.businessUnit = businessUnit;
+    }
 }
