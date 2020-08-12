@@ -10,6 +10,6 @@ public class UserService {
     private UserDao userDao;
 
     public User createUser(User user){
-        return userDao.save();
+        return userDao.save(user);
     }
 }
