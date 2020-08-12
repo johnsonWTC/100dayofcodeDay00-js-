@@ -1,20 +1,30 @@
 [
   {
     "itemID": 1,
-    "itemPrice": 20,
-    "itemSize": 40,
-    "itemName": "books"
+    "userName": "Johnson Dubula",
+    "primaryRole": "Software Engineer",
+    "businessUnitName": "TE",
+    "practiceName": "TE"
   },
   {
     "itemID": 2,
-    "itemPrice": 10,
-    "itemSize": 50,
-    "itemName": "laptop"
+    "userName": "Mbali Mabuza",
+    "primaryRole": "BA",
+    "businessUnitName": "PI",
+    "practiceName": "PI"
   },
   {
     "itemID": 3,
-    "itemPrice": 100,
-    "itemSize": 5,
-    "itemName": "shoes"
+    "userName": "Sizwe",
+    "primaryRole": "BA",
+    "businessUnitName": "TE",
+    "practiceName": "TE"
+  },
+  {
+    "itemID": 4,
+    "userName": "Mark Dube",
+    "primaryRole": "BI",
+    "businessUnitName": "HP",
+    "practiceName": "HP"
   }
 ]
