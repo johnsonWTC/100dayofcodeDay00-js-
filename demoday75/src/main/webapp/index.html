@@ -74,46 +74,48 @@
     let columns =  [];
     let columnsToPush =  [{
         field: 'businessUnitName',
-        title: 'businessUnitName'
+        title: 'Business Unit Name'
     }, {
         field: 'itemID',
-        title: 'itemID'
+        title: 'Item ID'
     },{
         field: 'practiceName',
-        title: 'practiceName'
+        title: 'Practice Name'
     }, {
         field: 'primaryRole',
-        title: 'primaryRole'
+        title: 'Primary Role'
     }, {
         field: 'userName',
-        title: 'userName'
+        title: 'User Name'
     }
     ];
 
     button.addEventListener("click", function () {
 
-        let display = []
+
         fetch("http://localhost:8080/users/all").then(function (res) {
             res.json().then(function (dataf) {
-                display = dataf;
-                console.log(display)
-                console.log(data)
+             //   console.dir(dataf);
+             //   console.dir(columnsToPush)
                 createC(columns,dataf);
             })
         })
-        $table.bootstrapTable('load', display);
+       // $table.bootstrapTable('load', display);
     })
 
     function createC(columns,columnsToPush){
-      //     console.log(columnsToPush);
-        for(let i = 0;columnsToPush.length > i; i++){
-            for(key in columnsToPush[i]){
-                columns.push({
-                                field: columnsToPush[i][key],
-                                title: columnsToPush[i][key]
-                            });
-            }
+       // console.log(columnsToPush);
+        for (let i = 0;columnsToPush.length > i;i++){
+            console.log(columnsToPush[i])
+            // columns.push({
+            //     field: columnsToPush[i].title,
+            //     title: columnsToPush[i].title
+            // });
         }
+
+
+
+
 
        // for (let objectInsideTheArray in columnsToPush){
        //    // console.log(columnsToPush[objectInsideTheArray])
