@@ -71,49 +71,39 @@
             }
         ]
 
-    let columns  =  [{
-        field: 'businessUnitName',
-        title: 'Business Unit Name'
-    }, {
-        field: 'itemID',
-        title: 'Item ID'
-    },{
-        field: 'practiceName',
-        title: 'Practice Name'
+    let columns =  [{
+        field: 'userName',
+        title: 'userName'
     }, {
         field: 'primaryRole',
-        title: 'Primary Role'
+        title: 'primaryRole'
     }, {
-        field: 'userName',
-        title: 'User Name'
-    }
-    ];
+        field: 'businessUnitName',
+        title: 'Item businessUnitName'
+    }]
+
 
 
     button.addEventListener("click", function () {
        console.log("jam")
+        myColumns(columns)
      $table.bootstrapTable('load', data);
+
+
     })
+
+    function myColumns(varbleCol){
+        return varbleCol;
+    }
+
+
 
     $('#table').bootstrapTable({
 
         pagination: true,
         search: true,
-        columns,
+        columns : createC()
     })
-
-
-
-
-
-
-
-    // $('#table').bootstrapTable({
-    //
-    //     pagination: true,
-    //     search: true,
-    //     columns : createC()
-    // })
 
 </script>
 
