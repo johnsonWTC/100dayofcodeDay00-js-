@@ -12,7 +12,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer itemID;
     String userName;
-    String businessUnit;
+    String businessUnitName;
+    String practiceName;
+    String primaryRole;
 
     public Integer getItemID() {
         return itemID;
@@ -30,11 +32,27 @@ public class User {
         this.userName = userName;
     }
 
-    public String getBusinessUnit() {
-        return businessUnit;
+    public String getBusinessUnitName() {
+        return businessUnitName;
     }
 
-    public void setBusinessUnit(String businessUnit) {
-        this.businessUnit = businessUnit;
+    public void setBusinessUnitName(String businessUnitName) {
+        this.businessUnitName = businessUnitName;
+    }
+
+    public String getPracticeName() {
+        return practiceName;
+    }
+
+    public void setPracticeName(String practiceName) {
+        this.practiceName = practiceName;
+    }
+
+    public String getPrimaryRole() {
+        return primaryRole;
+    }
+
+    public void setPrimaryRole(String primaryRole) {
+        this.primaryRole = primaryRole;
     }
 }

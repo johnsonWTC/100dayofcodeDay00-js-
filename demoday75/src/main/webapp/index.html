@@ -85,36 +85,47 @@
         field: 'primaryRole',
         title: 'primaryRole'
     }, {
-        field: 'businessUnitName',
-        title: 'Item businessUnitName'
+        field: 'businessUnit',
+        title: 'businessUnit'
     }
     ];
 
     button.addEventListener("click", function () {
 
-
+        let display = []
         fetch("http://localhost:8080/users/all").then(function (res) {
-            res.json().then(function (data) {
-
-                createC(columns,data);
+            res.json().then(function (dataf) {
+                display = dataf;
+                console.log(display)
+                console.log(data)
+                createC(columns,dataf);
             })
         })
-        $table.bootstrapTable('load', data);
+        $table.bootstrapTable('load', display);
     })
 
     function createC(columns,columnsToPush){
-
-        for(let i = 0;columnsToPush.length > i ; i++){
-         //   console.log(columnsToPush[i])
-            for(let j = 0;columnsToPush[i].length > j; j++){
-                console.log(columnsToPush[i][j]);
+      //     console.log(columnsToPush);
+        for(let i = 0;columnsToPush.length > i; i++){
+            for(key in columnsToPush[i]){
+                columns.push({
+                                field: columnsToPush[i][key],
+                                title: columnsToPush[i][key]
+                            });
             }
         }
+
+       // for (let objectInsideTheArray in columnsToPush){
+       //    // console.log(columnsToPush[objectInsideTheArray])
+       //     for(key in columnsToPush[objectInsideTheArray]){
+       //         console.log(columnsToPush[objectInsideTheArray][key])
+       //     }
+       // }
 
         // for(let i in columnsToPush){
         //     let key = i;
         //     var val = columnsToPush[i];
-        //     console.log(val)
+        //   //  console.log(val)
         //
         //     for(var j in val){
         //

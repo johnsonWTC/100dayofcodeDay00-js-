@@ -131,6 +131,21 @@
         columns : createC()
     })
 
+</script><script>
+    //    console.log(columnsToPush);
+    let create = [];
+    for(let i = 0;columnsToPush.length > i; i++){
+        for(key in columnsToPush[i]){
+
+            if(create.indexOf(columnsToPush[i][key]) > -1){
+
+            }else {
+                create.push(columnsToPush[i][key]);
+
+            }
+        }
+    }
+    console.log(create);
 </script>
 
 </body>
