@@ -27,11 +27,11 @@
 
 
 <script>
-    var $table = $('#table')
-    var $button = $('#button')
+
 
     let button = document.getElementById("call");
-    let table = document.getElementById("table");
+    let  $table = $('#table')
+
 
 
        let data = [
@@ -71,8 +71,7 @@
             }
         ]
 
-    let columns =  [];
-    let columnsToPush =  [{
+    let columns  =  [{
         field: 'businessUnitName',
         title: 'Business Unit Name'
     }, {
@@ -90,96 +89,22 @@
     }
     ];
 
+
     button.addEventListener("click", function () {
-
-
-        fetch("http://localhost:8080/users/all").then(function (res) {
-            res.json().then(function (dataf) {
-             //   console.dir(dataf);
-             //   console.dir(columnsToPush)
-                createC(columns,dataf);
-            })
-        })
-       // $table.bootstrapTable('load', display);
+       console.log("jam")
+     $table.bootstrapTable('load', data);
     })
-
-    function createC(columns,columnsToPush){
-       // console.log(columnsToPush);
-        for (let i = 0;columnsToPush.length > i;i++){
-            console.log(columnsToPush[i])
-            // columns.push({
-            //     field: columnsToPush[i].title,
-            //     title: columnsToPush[i].title
-            // });
-        }
-
-
-
-
-
-       // for (let objectInsideTheArray in columnsToPush){
-       //    // console.log(columnsToPush[objectInsideTheArray])
-       //     for(key in columnsToPush[objectInsideTheArray]){
-       //         console.log(columnsToPush[objectInsideTheArray][key])
-       //     }
-       // }
-
-        // for(let i in columnsToPush){
-        //     let key = i;
-        //     var val = columnsToPush[i];
-        //   //  console.log(val)
-        //
-        //     for(var j in val){
-        //
-        //         var sub_key = j;
-        //         var sub_val = val[j];
-        //         columns.push({
-        //             field: val[j],
-        //             title: val[j]
-        //         });
-        //     }
-        // }
-
-        return columns
-    }
 
     $('#table').bootstrapTable({
 
         pagination: true,
         search: true,
-        columns :  createC(columns,columnsToPush)
+        columns,
     })
 
 
-    // let columns =  [{
-    //     field: 'userName',
-    //     title: 'userName'
-    // }, {
-    //     field: 'primaryRole',
-    //     title: 'primaryRole'
-    // }, {
-    //     field: 'businessUnitName',
-    //     title: 'Item businessUnitName'
-    // }]
-    // let columnsToPush =  [{
-    //     field: 'toolset',
-    //     title: 'toolset'
-    // }, {
-    //     field: 'education',
-    //     title: 'education'
-    // }]
-    //
-    // function createC(){
-    //     let i = 0;
-    //     while(columnsToPush.length> i){
-    //         columns.push({
-    //             field: columnsToPush[i].field,
-    //             title: columnsToPush[i].field
-    //         });
-    //         i++;
-    //     }
-    //     return columns
-    // }
+
+
 
 
 
