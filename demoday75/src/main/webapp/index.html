@@ -71,36 +71,39 @@
             }
         ]
 
-    let columns =  [{
+    let columnsTwo =  [{
         field: 'userName',
         title: 'userName'
-    }, {
-        field: 'primaryRole',
-        title: 'primaryRole'
-    }, {
-        field: 'businessUnitName',
-        title: 'Item businessUnitName'
     }]
 
 
 
+
     button.addEventListener("click", function () {
-        let columnstry =  [{
+        let columns =  columnsTwo;
+        let realColumn = [[{
             field: 'userName',
-            title: 'userName try'
+            title: 'userName'
         }, {
             field: 'primaryRole',
-            title: 'primaryRole try'
+            title: 'primaryRole'
         }, {
             field: 'businessUnitName',
-            title: 'Item  try'
-        }]
+            title: 'Item businessUnitName'
+        }]];
+
+         for(let i = 0; realColumn.length > i; i++){
+             columns.push({
+                 field: i,
+                 title: i
+             })
+         }
 
         $('#table').bootstrapTable({
 
             pagination: true,
             search: true,
-            columnstry,
+            columns,
         })
      $table.bootstrapTable('load', data);
 
