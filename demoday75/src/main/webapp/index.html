@@ -71,20 +71,14 @@
             }
         ]
 
-    button.addEventListener("click", function () {
-
-
-        console.log(columns)
-        $table.bootstrapTable('load', data);
-    })
-
-    fetch("http://localhost:8080/users/all").then(function (res) {
-        res.json().then(function (data) {
-
-        })
-    })
-
-    let columns =  [{
+    let columns =  [];
+    let columnsToPush =  [{
+        field: 'toolset',
+        title: 'toolset'
+    }, {
+        field: 'education',
+        title: 'education'
+    },{
         field: 'userName',
         title: 'userName'
     }, {
@@ -93,35 +87,90 @@
     }, {
         field: 'businessUnitName',
         title: 'Item businessUnitName'
-    }]
-    let columnsToPush =  [{
-        field: 'toolset',
-        title: 'toolset'
-    }, {
-        field: 'education',
-        title: 'education'
-    }]
+    }
+    ];
 
-    function createC(){
-        let i = 0;
-        while(columnsToPush.length> i){
-            columns.push({
-                field: columnsToPush[i].field,
-                title: columnsToPush[i].field
-            });
-            i++;
+    button.addEventListener("click", function () {
+
+
+        fetch("http://localhost:8080/users/all").then(function (res) {
+            res.json().then(function (data) {
+
+                createC(columns,data);
+            })
+        })
+        $table.bootstrapTable('load', data);
+    })
+
+    function createC(columns,columnsToPush){
+
+        for(var i in columnsToPush){
+            let key = i;
+            var val = columnsToPush[i];
+            console.log(val)
+
+            for(var j in val){
+
+                var sub_key = j;
+                var sub_val = val[j];
+                columns.push({
+                    field: val[j],
+                    title: val[j]
+                });
+
+
+            }
         }
+
         return columns
     }
-
-
 
     $('#table').bootstrapTable({
 
         pagination: true,
         search: true,
-        columns : createC()
+        columns :  createC(columns,columnsToPush)
     })
+
+
+    // let columns =  [{
+    //     field: 'userName',
+    //     title: 'userName'
+    // }, {
+    //     field: 'primaryRole',
+    //     title: 'primaryRole'
+    // }, {
+    //     field: 'businessUnitName',
+    //     title: 'Item businessUnitName'
+    // }]
+    // let columnsToPush =  [{
+    //     field: 'toolset',
+    //     title: 'toolset'
+    // }, {
+    //     field: 'education',
+    //     title: 'education'
+    // }]
+    //
+    // function createC(){
+    //     let i = 0;
+    //     while(columnsToPush.length> i){
+    //         columns.push({
+    //             field: columnsToPush[i].field,
+    //             title: columnsToPush[i].field
+    //         });
+    //         i++;
+    //     }
+    //     return columns
+    // }
+
+
+
+    // $('#table').bootstrapTable({
+    //
+    //     pagination: true,
+    //     search: true,
+    //     columns : createC()
+    // })
 
 </script>
 
