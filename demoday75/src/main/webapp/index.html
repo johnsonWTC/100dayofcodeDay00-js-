@@ -85,25 +85,36 @@
 
 
     button.addEventListener("click", function () {
+        let columnstry =  [{
+            field: 'userName',
+            title: 'userName try'
+        }, {
+            field: 'primaryRole',
+            title: 'primaryRole try'
+        }, {
+            field: 'businessUnitName',
+            title: 'Item businessUnitName'
+        }]
        console.log("jam")
-        myColumns(columns)
+        myColumns(columnstry)
+        $('#table').bootstrapTable({
+
+            pagination: true,
+            search: true,
+            columns : myColumns()
+        })
      $table.bootstrapTable('load', data);
 
 
     })
 
-    function myColumns(varbleCol){
-        return varbleCol;
+    function myColumns(){
+        return columns;
     }
 
 
 
-    $('#table').bootstrapTable({
 
-        pagination: true,
-        search: true,
-        columns : createC()
-    })
 
 </script>
 
