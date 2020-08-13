@@ -78,8 +78,8 @@
         $table.bootstrapTable('load', data);
     })
 
-    fetch("http://localhost:8080/users/all").then(function () {
-
+    fetch("http://localhost:8080/users/all").then(function (res) {
+        res.json().then()
     })
 
     let columns =  [{
