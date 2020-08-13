@@ -81,7 +81,7 @@
 
     button.addEventListener("click", function () {
         let columns =  columnsTwo;
-        let realColumn = [[{
+        let realColumn = [{
             field: 'userName',
             title: 'userName'
         }, {
@@ -90,12 +90,12 @@
         }, {
             field: 'businessUnitName',
             title: 'Item businessUnitName'
-        }]];
+        }];
 
          for(let i = 0; realColumn.length > i; i++){
              columns.push({
-                 field: i,
-                 title: i
+                 field: 'userName',
+                 title: realColumn[i].field
              })
          }
 
