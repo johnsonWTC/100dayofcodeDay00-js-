@@ -104,23 +104,28 @@
 
     function createC(columns,columnsToPush){
 
-        for(let i in columnsToPush){
-            let key = i;
-            var val = columnsToPush[i];
-            console.log(val)
-
-            for(var j in val){
-
-                var sub_key = j;
-                var sub_val = val[j];
-                columns.push({
-                    field: val[j],
-                    title: val[j]
-                });
-
-
+        for(let i = 0;columnsToPush.length > i ; i++){
+         //   console.log(columnsToPush[i])
+            for(let j = 0;columnsToPush[i].length > j; j++){
+                console.log(columnsToPush[i][j]);
             }
         }
+
+        // for(let i in columnsToPush){
+        //     let key = i;
+        //     var val = columnsToPush[i];
+        //     console.log(val)
+        //
+        //     for(var j in val){
+        //
+        //         var sub_key = j;
+        //         var sub_val = val[j];
+        //         columns.push({
+        //             field: val[j],
+        //             title: val[j]
+        //         });
+        //     }
+        // }
 
         return columns
     }
