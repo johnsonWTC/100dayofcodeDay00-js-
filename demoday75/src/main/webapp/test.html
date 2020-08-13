@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My json test</title>
+    <title>Hello, Bootstrap Table!</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -13,10 +13,24 @@
 <body>
 
 
- <br>
-    <button id="call">load</button>
-    <hr>
-    <table id="table"></table>
+
+<button id="call" class="btn btn-primary">load</button>
+<hr>
+<table id="table"></table>
+<!--<table-->
+<!--        id="table"-->
+<!--        data-toggle="table"-->
+
+<!--        data-pagination="true"-->
+<!--        data-search="true">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th data-field="itemID">Item ID</th>-->
+<!--        <th data-field="userName">User Name</th>-->
+<!--        <th data-field="primaryRole">Primary Role</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--</table>-->
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
@@ -34,7 +48,7 @@
     let table = document.getElementById("table");
 
 
-       let data = [
+    let data = [
         {
             "itemID": 1,
             "userName": "Johnson Dubula",
@@ -42,34 +56,34 @@
             "businessUnitName": "TE",
             "practiceName": "TE"
         },
-            {
-                "itemID": 2,
-                "userName": "Mbali Mabuza",
-                "primaryRole": "BA",
-                "businessUnitName": "PI",
-                "practiceName": "PI"
-            },
-            {
-                "itemID": 3,
-                "userName": "Sizwe",
-                "primaryRole": "BA",
-                "businessUnitName": "TE",
-                "practiceName": "TE",
-                "toolset": "PlayStation",
-                "education": "Wits",
-            },
-            {
-                "itemID": 4,
-                "userName": "Mark Dube",
-                "primaryRole": "BI",
-                "businessUnitName": "HP",
-                "practiceName": "HP",
-                "toolset": "Git",
-                "education": "WTC",
-                "work": "Git",
-                "hobbie": "WTC"
-            }
-        ]
+        {
+            "itemID": 2,
+            "userName": "Mbali Mabuza",
+            "primaryRole": "BA",
+            "businessUnitName": "PI",
+            "practiceName": "PI"
+        },
+        {
+            "itemID": 3,
+            "userName": "Sizwe",
+            "primaryRole": "BA",
+            "businessUnitName": "TE",
+            "practiceName": "TE",
+            "toolset": "PlayStation",
+            "education": "Wits",
+        },
+        {
+            "itemID": 4,
+            "userName": "Mark Dube",
+            "primaryRole": "BI",
+            "businessUnitName": "HP",
+            "practiceName": "HP",
+            "toolset": "Git",
+            "education": "WTC",
+            "work": "Git",
+            "hobbie": "WTC"
+        }
+    ]
 
     button.addEventListener("click", function () {
 
