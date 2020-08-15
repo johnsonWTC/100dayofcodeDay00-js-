@@ -14,6 +14,10 @@ public class UserService {
         return userDao.save(user);
     }
 
+    public Iterable findAll(){
+        return userDao.findAll();
+    }
+
 
 
 
