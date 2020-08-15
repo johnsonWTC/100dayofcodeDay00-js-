@@ -71,7 +71,7 @@
             }
         ]
 
-    let columnsTwo =  [{
+    let defaultColumn =  [{
         field: 'userName',
         title: 'userName'
     }]
@@ -80,32 +80,48 @@
 
 
     button.addEventListener("click", function () {
-        let columns =  columnsTwo;
-        let realColumn = [{
-            field: 'userName',
-            title: 'userName'
-        }, {
-            field: 'primaryRole',
-            title: 'primaryRole'
-        }, {
-            field: 'businessUnitName',
-            title: 'Item businessUnitName'
-        }];
+        fetch("http://localhost:8080/users/all").then(function (res) {
+            res.json().then(function (fromJson) {
+                let columns =  defaultColumn;
+                let myKeys = [];
 
-         for(let i = 0; realColumn.length > i; i++){
-             columns.push({
-                 field: 'userName',
-                 title: realColumn[i].field
-             })
-         }
+                fromJson.forEach(getKeys);
 
-        $('#table').bootstrapTable({
+                function getKeys(keys, index) {
+                  for(let i in keys){
+                      if(myKeys.indexOf(i) > -1 || i == "itemID"){
+                      }else{
+                          myKeys.push(i);
+                      }
+                  }
+                }
+                for(let i = 0; myKeys.length > i; i++){
+                    let title;
+                    if(myKeys[i] == "userName"){
+                         title = "User Name"
+                    }if(myKeys[i] == "businessUnitName"){
+                        title = "Business Unit Name"
+                    }if(myKeys[i] == "primaryRole"){
+                        title = "PrimaryRole"
+                    }if(myKeys[i] == "practiceName"){
+                        title = "Practice Name"
+                    }
+                    columns.push({
+                        field: myKeys[i],
+                        title: title
+                    })
+                }
+                $('#table').bootstrapTable({
 
-            pagination: true,
-            search: true,
-            columns,
+                    pagination: true,
+                    search: true,
+                    columns,
+                })
+                $table.bootstrapTable('load', fromJson);
+
+            })
         })
-     $table.bootstrapTable('load', data);
+
 
 
     })
