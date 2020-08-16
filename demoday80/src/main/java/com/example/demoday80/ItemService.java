@@ -10,6 +10,6 @@ public class ItemService {
     ItemDao itemDao;
 
     public Item createItem(Item item){
-
+        return itemDao.save(item);
     }
 }
