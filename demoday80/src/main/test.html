@@ -2,9 +2,272 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+@model IQ.CV.ModelsDTO.SearchDto
+
+@{
+ViewData["Title"] = "Search";
+Layout = "_UpdateLayout";
+ViewData["Tab"] = "Search";
+}
+
+@*<h1>Search</h1>
+<p>Only the fields in the structured search below will be considered</p>
+<h2></h2>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SearchGeneral">
+
+            <div class="form-group">
+                <input asp-for="FullName" class="form-control"  />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr />*@
+
+
+<h2>Global Search</h2>
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="SearchGeneral" id="Searchform">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h5>
+                Area searched:
+            </h5>
+            <p>
+                Full Name,
+                Work Approach,
+                Primary Role,
+                Summary,
+                Current Development,
+                Display Skills,
+                Metaskill,
+                Methodology,
+                Toolset,
+                Industry,
+                Education,
+                Project,
+                Work Experience
+            </p>
+
+            <div class="form-group">
+                <div class="tag-container">
+                    <div hidden id="hiddenRoleList">@ViewData["PrimaryRoleList"]</div>
+                    @*<label asp-for="Global" class="control-label"></label>*@
+                    <input asp-for="Global" class="form-control" placeholder="SearchText" list="suggestions" autocomplete="off" UseSubmitBehavior="False"/>
+                    <datalist id="suggestions"></datalist>
+                    <span asp-validation-for="Global" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" id="submit" />
+            </div>
+        </form>
+    </div>
+</div>
+<hr />
+
+<h2>Structured search</h2>
+<p style="margin-bottom:0px">All search Parameters are optional</p>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <h3>General</h3>
+            <div class="form-group">
+                <label asp-for="PrimaryRole" class="control-label"></label>
+                <select asp-for="PrimaryRole" class="form-control" asp-items="ViewBag.PrimaryRole">
+                    <option value="" selected> - None - </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <input asp-for="FullName" class="form-control" placeholder="Full or partial" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <h3>Skills/attributes</h3>
+
+            @*<div class="form-group">
+            <label asp-for="Methodology" class="control-label"></label>
+            <select asp-for="Methodology" class="form-control" asp-items="ViewBag.Methodology">
+                <option  selected> - None - </option>
+            </select>
+        </div>
+            <div class="form-group">
+                <label asp-for="MetaSkill" class="control-label"></label>
+                <select asp-for="MetaSkill" class="form-control" asp-items="ViewBag.MetaSkill">
+                    <option  selected> - None - </option>
+                </select>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Toolset" class="control-label"></label>
+                <select asp-for="Toolset" class="form-control" asp-items="ViewBag.Toolset">
+                    <option selected> - None - </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Industry" class="control-label"></label>
+                <select asp-for="Industry" class="form-control" asp-items="ViewBag.Industry">
+                    <option selected> - None - </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Specialisation" class="control-label"></label>
+                <input asp-for="Specialisation" class="form-control" placeholder="Eg. Accounting" />
+                <span asp-validation-for="Specialisation" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    let input = document.getElementById("Global");
+    let tagContainer = document.querySelector(".tag-container");
+    let suggestions = document.getElementById("suggestions");
+    let submit = document.getElementById("submit");
+    let searchParams = []
+    let Searchform = document.getElementById("Searchform");
+    let defaultValue = "";
+
+    // to send tags to the backend
+    Searchform.onsubmit = function () {
+        // input.value = searchParams;
+        console.log(searchParams);
+        return false; // to verify search params
+    }
+
+    // to create a tag from a selected list value
+    input.addEventListener("change", function () {
+        let splittedInput = input.value.split("-");
+        let inputObject = {
+            Type: splittedInput[1].trim(),
+            Value: splittedInput[0].trim(),
+        }
+        tagContainer.prepend(createTag(splittedInput[0]));
+        searchParams.push(inputObject);
+        input.value = "";
+        suggestions.innerHTML = "";
+    })
+
+    // to create a tag from enter
+    input.addEventListener("keydown", function (e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            let splittedInput = defaultValue.split("-");
+            let inputObject = {
+                Type: splittedInput[1].trim(),
+                Value: splittedInput[0].trim(),
+            }
+            tagContainer.prepend(createTag(splittedInput[0]));
+            searchParams.push(inputObject);
+            tagContainer.prepend(createTag(defaultValue));
+            input.value = "";
+            suggestions.innerHTML = "";
+            return false;
+        }
+    })
+
+    // to create suggestion list and tag from key
+    input.addEventListener("keyup", function (e) {
+        let autoComplete = suggestionList(input.value);
+        suggestions.innerHTML = "";
+
+        for (let i = 0; autoComplete.length > i; i++) {
+            let options = document.createElement("option");
+            let typeSplit = autoComplete[i].Type.split(/(?=[A-Z])/);
+            let type = "";
+
+            //spliting type to display it properly
+            for (let i = 0; typeSplit.length > i; i++) {
+                type = type + " " + typeSplit[i];
+            }
+
+            options.value = `${autoComplete[i].Value} - ${type}`;
+            suggestions.append(options);
+            if (i == 0) {
+                defaultValue = options.value;
+            }
+        }
+
+        if (e.keyCode == 16 || e.which == 16) {
+            if (input.value.length > 1) {
+                let splittedInput = input.value.split("-");
+                let inputObject = {
+                    Type: "free text",
+                    Value: splittedInput[0].trim(),
+                }
+                tagContainer.prepend(createTag(splittedInput[0]));
+                searchParams.push(inputObject);
+                input.value = "";
+            }
+        }
+    })
+
+    // to create a suggestion list
+    function suggestionList(val) {
+        let hiddenRoleList = document.getElementById("hiddenRoleList").innerHTML;
+        let primaryRoles = JSON.parse(hiddenRoleList);
+        let autoComplete = [];
+
+
+        // to remove autocomplete when the is no input
+        if (val.length < 1) {
+            return;
+        }
+
+        for (i = 0; i < primaryRoles.length; i++) {
+            if (primaryRoles[i].Value.toLowerCase().startsWith(val.toLowerCase())) {
+                autoComplete.push(primaryRoles[i]);
+                console.log(primaryRoles[i].Value)
+
+            }
+        }
+
+        return autoComplete;
+    }
+
+    // to create tags from input values
+    function createTag(label) {
+        let div = document.createElement("div");
+        div.setAttribute("class", "btn btn-info tag-btn");
+        div.style.marginLeft = "5px";
+        let spanInput = document.createElement("span");
+        spanInput.innerHTML = label
+        let closeBtn = document.createElement("span");
+        closeBtn.addEventListener("click", function () {
+            let indexOfArray = searchParams.indexOf(spanInput.innerHTML);
+            searchParams.splice(indexOfArray, 1);
+            //    console.log(searchParams); // testing the deleted value
+            div.remove();
+        })
+        closeBtn.setAttribute("class", "close");
+        closeBtn.innerHTML = "x";
+        div.append(spanInput);
+        div.append(closeBtn);
+        return div;
+    }
+</script>
+
+
+
+
+
+
 </body>
 </html>
