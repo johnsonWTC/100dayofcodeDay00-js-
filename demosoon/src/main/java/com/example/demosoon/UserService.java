@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
     private  UserDao userDao;
+
+    public  User
 }
