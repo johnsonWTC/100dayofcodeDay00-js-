@@ -8,5 +8,7 @@ public class UserService {
 
     private  UserDao userDao;
 
-    public  User
+    public  User CreateUser(User user){
+
+    }
 }
