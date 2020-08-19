@@ -19,4 +19,5 @@ public class UserController {
     }
 
     @GetMapping("all")
+    public Iterable findAllUser()
 }
