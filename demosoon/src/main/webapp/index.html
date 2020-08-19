@@ -14,7 +14,7 @@
     let adder = document.getElementById("adder");
     let div = document.getElementById("div");
 
-    fetch("").then(function (res) {
+    fetch("http://localhost:8080/users/all").then(function (res) {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 let li = document.createElement("li");
