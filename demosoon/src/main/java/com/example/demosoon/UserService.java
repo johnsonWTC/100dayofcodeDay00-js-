@@ -13,6 +13,6 @@ public class UserService {
     }
 
     public  Iterable findAll(){
-
+        return userDao.findAll();
     }
 }
