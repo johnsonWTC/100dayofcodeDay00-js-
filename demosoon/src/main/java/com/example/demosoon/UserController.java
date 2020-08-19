@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @Autowired
-    UserService userService
+    UserService userService;
 
     @GetMapping("create")
     public User createUser(User user){
-
+        return userService.CreateUser(user);
     }
 }
