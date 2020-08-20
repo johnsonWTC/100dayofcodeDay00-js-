@@ -9,4 +9,8 @@ public class ItemService {
     @Autowired
     private  ItemDao itemDao;
 
+    public Items createItem(){
+
+    }
+
 }
