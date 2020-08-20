@@ -9,8 +9,8 @@ public class ItemService {
     @Autowired
     private  ItemDao itemDao;
 
-    public Items createItem(){
-
+    public Items createItem(Items item){
+        return itemDao.save(item);
     }
 
 }
