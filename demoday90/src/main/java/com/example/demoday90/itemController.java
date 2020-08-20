@@ -16,5 +16,7 @@ public class itemController {
         return itemService.createItem(item);
     }
 
-    public Iterable
+    public Iterable all(){
+
+    }
 }
