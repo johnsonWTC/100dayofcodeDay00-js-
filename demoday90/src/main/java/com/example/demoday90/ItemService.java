@@ -7,10 +7,14 @@ import org.springframework.stereotype.Service;
 public class ItemService {
 
     @Autowired
-    private  ItemDao itemDao;
+    private ItemDao itemDao;
 
-    public Items createItem(Items item){
+    public Item createItem(Item item) {
         return itemDao.save(item);
+    }
+
+    public  Iterable findAll(){
+
     }
 
 }
