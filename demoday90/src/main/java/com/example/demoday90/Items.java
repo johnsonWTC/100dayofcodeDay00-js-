@@ -8,11 +8,8 @@ import javax.persistence.Id;
 @Entity
 public class Items {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer iteID;
     String itemName;
-
-
 }
