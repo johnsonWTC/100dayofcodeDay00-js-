@@ -17,6 +17,6 @@ public class itemController {
     }
 
     public Iterable all(){
-
+        return itemService.findAll();
     }
 }
