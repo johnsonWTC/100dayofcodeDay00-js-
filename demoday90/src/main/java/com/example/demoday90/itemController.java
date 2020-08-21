@@ -26,7 +26,7 @@ public class itemController {
 
     @PutMapping("{itemID}/{newItemName}")
     public Item updateItem(@PathVariable("itemID") Integer itemID,@PathVariable("newItemName") String newItemName){
-
+        return  itemService.updateItem(itemID,newItemName);
     }
 
 
