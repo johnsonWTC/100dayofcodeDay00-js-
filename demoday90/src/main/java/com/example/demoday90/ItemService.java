@@ -18,7 +18,7 @@ public class ItemService {
     }
 
     public void deleteItemById(Integer itemID){
-        itemDao.delete(itemID);
+        itemDao.deleteById(itemID);
     }
 
 }
