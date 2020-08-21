@@ -22,6 +22,11 @@
              let li = document.createElement("li");
              let update = document.createElement("button");
              update.innerHTML = "Update";
+             update.addEventListener("click",function () {
+                 fetch("",{
+                     method : "Put"
+                 })
+             })
              let deleteButton = document.createElement("button");
              li.innerHTML = data[i].itemName;
 
