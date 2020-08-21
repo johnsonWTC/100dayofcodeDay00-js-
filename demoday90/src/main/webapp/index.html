@@ -18,9 +18,9 @@
 
  fetch("http://localhost:8080/users/all").then(function (res) {
      res.json().then(function (data) {
-         for (let i = 0; data.length > i;i++){
+         for (let i = 1; data.length > i;i++){
              let li = document.createElement("li");
-             li.innerHTML = data[i];
+             li.innerHTML = data[i].itemName;
              div.append(li);
          }
      })
