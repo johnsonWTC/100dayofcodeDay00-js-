@@ -23,9 +23,10 @@
              let update = document.createElement("button");
              update.innerHTML = "Update";
              update.addEventListener("click",function () {
-                 fetch("",{
+                 fetch(`http://localhost:8080/users/${data[i].itemID}/${itemName.value}`,{
                      method : "Put"
                  })
+                 location.reload();
              })
              let deleteButton = document.createElement("button");
              li.innerHTML = data[i].itemName;
