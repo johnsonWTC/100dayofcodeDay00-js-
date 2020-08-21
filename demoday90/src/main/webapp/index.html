@@ -23,7 +23,7 @@
              let update = document.createElement("button");
              update.innerHTML = "Update";
              update.addEventListener("click",function () {
-                 fetch(`http://localhost:8080/users/${data[i].itemID}/${itemName.value}`,{
+                 fetch(`http://localhost:8080/users/${data[i].iteID}/${itemName.value}`,{
                      method : "Put"
                  })
                  location.reload();
