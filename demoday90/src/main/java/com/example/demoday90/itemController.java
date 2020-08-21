@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("users")
+@RequestMapping("items")
 public class itemController {
 
     @Autowired
@@ -19,7 +19,7 @@ public class itemController {
         return itemService.findAll();
     }
 
-    @DeleteMapping("{itemID}")
+    @DeleteMapping("delete/{itemID}")
     public void deleteItemById(@PathVariable("itemID") Integer itemID){
         itemService.deleteItemById(itemID);
     }

@@ -16,14 +16,14 @@
  let itemName = document.getElementById("itemName");
  let adder = document.getElementById("adder");
 
- fetch("http://localhost:8080/users/all").then(function (res) {
+ fetch("http://localhost:8080/items/all").then(function (res) {
      res.json().then(function (data) {
-         for (let i = 1; data.length > i;i++){
+         for (let i = 0; data.length > i;i++){
              let li = document.createElement("li");
              let update = document.createElement("button");
              update.innerHTML = "Update";
              update.addEventListener("click",function () {
-                 fetch(`http://localhost:8080/users/${data[i].iteID}/${itemName.value}`,{
+                 fetch(`http://localhost:8080/items/${data[i].iteID}/${itemName.value}`,{
                      method : "Put"
                  })
                  location.reload();
@@ -31,9 +31,11 @@
              let deleteButton = document.createElement("button");
              deleteButton.innerHTML = "Delete Item";
              deleteButton.addEventListener("click",function () {
-                 fetch(``,{
+                 fetch(`http://localhost:8080/items/delete/1`,{
                      method : "Delete"
                  });
+
+                 location.reload()
              })
              li.innerHTML = data[i].itemName;
 
