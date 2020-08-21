@@ -22,7 +22,8 @@ public class ItemService {
     }
 
     public Item updateItem(Integer itemID,String ItemName){
-        Item item = new Item();
+        Item item = itemDao.findById(itemID).orElse(null);
+
 
 
     }
