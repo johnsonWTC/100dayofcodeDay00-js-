@@ -16,7 +16,7 @@
  let itemName = document.getElementById("itemName");
  let adder = document.getElementById("adder");
 
- fetch("").then(function (res) {
+ fetch("http://localhost:8080/users/all").then(function (res) {
      res.json().then(function (data) {
          for (let i = 0; data.length > i;i++){
              let li = document.createElement("li");
