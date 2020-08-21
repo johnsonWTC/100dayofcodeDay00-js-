@@ -29,6 +29,12 @@
                  location.reload();
              })
              let deleteButton = document.createElement("button");
+             deleteButton.innerHTML = "Delete Item";
+             deleteButton.addEventListener("click",function () {
+                 fetch(``,{
+                     method : "Delete"
+                 });
+             })
              li.innerHTML = data[i].itemName;
 
              div.append(li);
