@@ -25,7 +25,7 @@ public class itemController {
     }
 
     @PutMapping("{itemID}/{newItemName}")
-    public Item updateItem(){
+    public Item updateItem(@PathVariable("itemID") Integer itemID,@PathVariable("newItemName") String newItemName){
 
     }
 
