@@ -19,9 +19,13 @@
  fetch("http://localhost:8080/items/all").then(function (res) {
      res.json().then(function (data) {
          for (let i = 0; data.length > i;i++){
+             let contentDiv = document.createElement("div");
+
              let li = document.createElement("li");
+             li.style.display = "inlineBlock"
              let update = document.createElement("button");
              update.innerHTML = "Update";
+             update.style.display = "inlineBlock"
              update.addEventListener("click",function () {
                  fetch(`http://localhost:8080/items/${data[i].iteID}/${itemName.value}`,{
                      method : "Put"
@@ -30,6 +34,8 @@
              })
              let deleteButton = document.createElement("button");
              deleteButton.innerHTML = "Delete Item";
+             deleteButton.style.margin= "5px"
+             deleteButton.style.display = "inlineBlock"
              deleteButton.addEventListener("click",function () {
                  fetch(`http://localhost:8080/items/delete/1`,{
                      method : "Delete"
@@ -39,9 +45,10 @@
              })
              li.innerHTML = data[i].itemName;
 
-             div.append(li);
-             div.append(update);
-             div.append(deleteButton);
+             contentDiv.append(li);
+             contentDiv.append(update);
+             contentDiv.append(deleteButton);
+             div.append(contentDiv)
          }
      })
  })
