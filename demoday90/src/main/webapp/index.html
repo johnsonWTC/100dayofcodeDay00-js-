@@ -20,11 +20,13 @@
      res.json().then(function (data) {
          for (let i = 0; data.length > i;i++){
              let contentDiv = document.createElement("div");
+             contentDiv.style.display= "flex"
 
              let li = document.createElement("li");
              li.style.display = "inlineBlock"
              let update = document.createElement("button");
              update.innerHTML = "Update";
+             update.style.margin= "5px"
              update.style.display = "inlineBlock"
              update.addEventListener("click",function () {
                  fetch(`http://localhost:8080/items/${data[i].iteID}/${itemName.value}`,{
