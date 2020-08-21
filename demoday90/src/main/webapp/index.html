@@ -20,7 +20,9 @@
      res.json().then(function (data) {
          for (let i = 1; data.length > i;i++){
              let li = document.createElement("li");
+             let update = document.createElement("button");
              li.innerHTML = data[i].itemName;
+
              div.append(li);
          }
      })
