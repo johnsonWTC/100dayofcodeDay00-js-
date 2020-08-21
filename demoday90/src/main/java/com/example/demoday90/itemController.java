@@ -21,7 +21,7 @@ public class itemController {
 
     @DeleteMapping("{itemID}")
     public void deleteItemById(@PathVariable("itemID") Integer itemID){
-        i
+        itemService.deleteItemById(itemID);
     }
 
 
