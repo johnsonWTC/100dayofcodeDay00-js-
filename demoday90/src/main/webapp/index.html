@@ -23,7 +23,9 @@
              contentDiv.style.display= "flex"
 
              let li = document.createElement("li");
+             li.style.margin ="5px"
              li.style.display = "inlineBlock"
+       //      li.style.padding = "5px"
              let update = document.createElement("button");
              update.innerHTML = "Update";
              update.style.margin= "5px"
@@ -39,7 +41,7 @@
              deleteButton.style.margin= "5px"
              deleteButton.style.display = "inlineBlock"
              deleteButton.addEventListener("click",function () {
-                 fetch(`http://localhost:8080/items/delete/1`,{
+                 fetch(`http://localhost:8080/items/delete/${data[i].iteID}`,{
                      method : "Delete"
                  });
 
