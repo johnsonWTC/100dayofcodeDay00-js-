@@ -16,7 +16,7 @@ namespace dotnetapp.Controllers
         {
             var movie = new Movies { Name = "Shrek", id = 1, };
             
-            return View();
+            return View(movie);
 
         }
 
