@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace dotnetapp.Models
 {
-    public class Class
+    public class Movies
     {
         public int id { get; set; }
         public string Name { get; set; }

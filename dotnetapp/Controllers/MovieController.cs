@@ -4,12 +4,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using dotnetapp.Models;
 
 namespace dotnetapp.Controllers
 {
     public class MovieController : Controller
     {
         // GET: MovieController
+
+        public ActionResult Random()
+        {
+            var movie = new Movies { Name = "Shrek", id = 1, };
+            
+            return View();
+
+        }
+
+
         public ActionResult Index()
         {
             return View();
