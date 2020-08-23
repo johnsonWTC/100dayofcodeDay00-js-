@@ -12,7 +12,8 @@ namespace aspdontwithjs.Controllers
         public IActionResult Random()
         {
             var movie = new Movie { Name = "Shrek", Id = 1 };
-            return View(movie);
+            ViewData["Movie"] = movie;
+            return View();
         }
 
         public ActionResult Edit (int id)
