@@ -12,7 +12,7 @@ namespace aspdontwithjs.Controllers
         public IActionResult Random()
         {
             var movie = new Movie { Name = "Shrek", Id = 1 };
-            return View();
+            return View(movie);
         }
     }
 }

@@ -108,3 +108,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\aspdontwithjs\obj\Debug\netcoreap
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\aspdontwithjs\obj\Debug\netcoreapp3.1\aspdontwithjs.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\aspdontwithjs\obj\Debug\netcoreapp3.1\aspdontwithjs.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\aspdontwithjs\obj\Debug\netcoreapp3.1\aspdontwithjs.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\aspdontwithjs\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Movie.cshtml.g.cs
