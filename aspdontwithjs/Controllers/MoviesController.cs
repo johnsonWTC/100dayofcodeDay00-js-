@@ -14,5 +14,11 @@ namespace aspdontwithjs.Controllers
             var movie = new Movie { Name = "Shrek", Id = 1 };
             return View(movie);
         }
+
+        public ActionResult Edit (int id)
+        {
+
+            return View();
+        }
     }
 }
