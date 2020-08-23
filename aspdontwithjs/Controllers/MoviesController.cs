@@ -8,7 +8,7 @@ namespace aspdontwithjs.Controllers
 {
     public class MoviesController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Random()
         {
             return View();
         }
