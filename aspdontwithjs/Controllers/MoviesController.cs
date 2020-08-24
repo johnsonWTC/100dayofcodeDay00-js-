@@ -13,6 +13,7 @@ namespace aspdontwithjs.Controllers
         {
             var movie = new Movie { Name = "Shrek", Id = 1 };
             ViewData["Movie"] = movie;
+
             return View();
         }
 
