@@ -22,7 +22,12 @@
             for (let i = 0; input.legnth > i; i++) {
                 if (name[i].indexOf(input.value) > -1) {
                     alert(`${input.value} already on the list`);
-                } else {
+                }
+            }
+
+
+            
+               else {
                     let item = document.createElement("li");
                     item.innerHTML = input.value;
                     div.append(item);
