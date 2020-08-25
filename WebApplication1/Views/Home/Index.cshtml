@@ -13,14 +13,18 @@
     let adder = document.getElementById("adder");
     let input = document.getElementById("input");
     let div = document.getElementById("div");
+    let name = [];
 
     adder.addEventListener("click", function () {
         if (input.value.legnth == 0) {
             alert("Input is required");
         } else {
-            let item = document.createElement("li");
-            item.innerHTML = input.value;
-            div.append(item);
+            if (name[i].indexOf(input.value) > -1) {
+                let item = document.createElement("li");
+                item.innerHTML = input.value;
+                div.append(item);
+            }
+            
         }
     })
 </script>
