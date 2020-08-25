@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "WebApplication1/1.0.0": {
         "dependencies": {
+          "ConvertApi": "3.0.5",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -312,6 +313,31 @@
         },
         "compile": {
           "WebApplication1.dll": {}
+        }
+      },
+      "ConvertApi/3.0.5": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/ConvertApi.dll": {
+            "assemblyVersion": "3.0.5.0",
+            "fileVersion": "3.0.5.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/ConvertApi.dll": {}
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2013,6 +2039,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "ConvertApi/3.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tmhtuOH/lG+qSpFobTVEA0p4+GU/Hylnzn5ddRDhdyWGY3Er7yWrJ2l0FSdCkxKHVyFHtlT1VfIKKxjzYddFjQ==",
+      "path": "convertapi/3.0.5",
+      "hashPath": "convertapi.3.0.5.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

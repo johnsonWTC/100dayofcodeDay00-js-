@@ -33,3 +33,7 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.genruntimeconfig.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\bin\Debug\netcoreapp3.1\ConvertApi.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
