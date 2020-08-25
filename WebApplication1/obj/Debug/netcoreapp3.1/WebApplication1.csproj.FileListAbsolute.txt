@@ -12,8 +12,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\bin\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csprojAssemblyReference.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfoInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.AssemblyInfo.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.csproj.CoreCompileInputs.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.RazorAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication1\obj\Debug\netcoreapp3.1\WebApplication1.TagHelpers.input.cache
