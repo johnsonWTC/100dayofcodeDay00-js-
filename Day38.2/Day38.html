@@ -8,52 +8,52 @@
 </head>
 
 <body>
-<br>
-<input type="text" name="item" id="item" placeholder="item">
-<input type="button" value="add" id="add">
-<hr>
-<ul id="list">
-</ul>
-<script>
-    let item = document.getElementById("item");
-    let add = document.getElementById("add");
-    let items = [];
-    let list = document.getElementById("list");
+    <br>
+    <input type="text" name="item" id="item" placeholder="item">
+    <input type="button" value="add" id="add">
+    <hr>
+    <ul id="list">
+    </ul>
+    <script>
+        let item = document.getElementById("item");
+        let add = document.getElementById("add");
+        let items = [];
+        let list = document.getElementById("list");
 
 
-    add.addEventListener("click", function () {
-        if (item.value.length == 0) {
-            alert("item name is required");
-            item.focus();
-        } else {
-            if (items.indexOf(item.value) > -1) {
-                alert(item.value + " already on the list");
+        add.addEventListener("click", function() {
+            if (item.value.length == 0) {
+                alert("item name is required");
+                item.focus();
             } else {
-                items.push(item.value);
-                let li = document.createElement("li");
-                li.contentEditable = true;
-                li.innerHTML = item.value;
-                list.append(li);
+                if (items.indexOf(item.value) > -1) {
+                    alert(item.value + " already on the list");
+                } else {
+                    items.push(item.value);
+                    let li = document.createElement("li");
+                    li.contentEditable = true;
+                    li.innerHTML = item.value;
+                    list.append(li);
 
-                while
+                    while
                     let oldLists = list.childNodes;
-                console.dir(oldLists);
-                let oldLi = li.innerHTML;
+                    console.dir(oldLists);
+                    let oldLi = li.innerHTML;
 
-                li.addEventListener("blur", function () {
-                    if (oldLists.indexOf(li.innerHTML) > -1) {
-                        alert(li.innerHTML + " already on the list");
-                        li.innerHTML = oldLi;
-                    } else {
-                        items.pop(oldLi);
-                        items.push(li.innerHTML);
+                    li.addEventListener("blur", function() {
+                        if (oldLists.indexOf(li.innerHTML) > -1) {
+                            alert(li.innerHTML + " already on the list");
+                            li.innerHTML = oldLi;
+                        } else {
+                            items.pop(oldLi);
+                            items.push(li.innerHTML);
 
-                    }
-                })
+                        }
+                    })
+                }
             }
-        }
-    })
-</script>
+        })
+    </script>
 </body>
 
 </html>
