@@ -7,15 +7,17 @@
 
 <body>
     <input type="text" name="itemName" id="itemName">
-    <input type="button" value="ADD">
+    <input type="button" value="ADD" id="ADD">
 
 
     <script>
         let itemName = document.getElementById("itemName");
-        let button = document.getElementById("ADD");
+        let add = document.getElementById("ADD");
 
-        button.addEventListener("click", function() {
-
+        add.addEventListener("click", function() {
+            if (itemName.value.length == 0) {
+                alert("Name is required");
+            }
         });
     </script>
 </body>
