@@ -13,11 +13,11 @@
     <div class="div"></div>
 
     <script>
-        let input = document.getElementById("input").value;
+        let input = document.getElementById("input");
         let add = document.getElementById("add");
 
         add.addEventListener("click", function() {
-            if (input.length == 0) {
+            if (input.value.length == 0) {
                 alert("input name is required");
                 input.focus();
             }
