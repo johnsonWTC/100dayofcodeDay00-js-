@@ -20,8 +20,12 @@
         let div = document.querySelector("div");
         let showContent = document.getElementById("showContent");
 
-        showContent.addEventListener("toggle", function() {
-            div.style.display = "hide"
+        showContent.addEventListener("click", function() {
+            if (div.style.display = "hide") {
+                div.style.display = "block"
+            } else {
+                div.style.display = "hide"
+            }
         })
 
         add.addEventListener("click", function() {
