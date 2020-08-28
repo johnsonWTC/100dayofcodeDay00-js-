@@ -21,7 +21,10 @@
             if (itemName.value == 0) {
                 alert("item name is required")
             } else {
-                item.push(itemName.value);
+                if (item.indexOf(itemName.value) > -1) {
+                    alert(`${itemName.value} is already on the list`)
+                } else
+                    item.push(itemName.value);
             }
         })
     </script>
