@@ -22,8 +22,11 @@
             } else {
                 if (inputs.indexOf(input.value) > -1) {
                     alert(` ${input.value} is already on the list`);
-                } else
+                } else {
                     inputs.push(input.value);
+                    let li = document.createElement("li");
+
+                }
             }
         })
     </script>
