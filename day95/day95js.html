@@ -21,10 +21,10 @@
                 alert("input name is required")
             } else {
                 if (inputs.indexOf(input.value) > -1) {
-                    input.value);
+                    alert(`$(input.value) is already on the list`);
+                }
+                inputs.push(input.value);
             }
-            inputs.push(input.value);
-        }
         })
     </script>
 
