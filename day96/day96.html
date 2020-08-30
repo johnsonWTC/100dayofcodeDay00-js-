@@ -2,37 +2,16 @@
 <html>
 
 <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 
 <body>
-    <input type="text" id="input" placeholder="Item Name" autocomplete="false">
-    <input type="button" value="ADD ITEM" id="adder">
-    <div class="div"></div>
 
-    <script>
-        let item = document.getElementById("input");
-        let adder = document.getElementById("adder");
-        let div = document.querySelector("div");
-        let items = [];
-
-        adder.addEventListener("click", function() {
-            if (input.value == 0) {
-                alert("item name is required")
-            } else {
-                if (items.indexOf(item.value) > -1) {
-                    alert(`${item.value} is already on the list`)
-                } else {
-                    items.push(item.value);
-                    let li = document.createElement("li");
-                    li.innerHTML = item.value;
-                    div.append(li);
-                }
-
-            }
-
-        })
-    </script>
 </body>
 
 </html>
