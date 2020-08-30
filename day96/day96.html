@@ -21,8 +21,10 @@
                 alert("item name is required");
                 focus();
             } else {
-                if (items.indexOf(itemName.value) > -1)
-                    items.push(itemName.value);
+                if (items.indexOf(itemName.value) > -1) {
+                    alert(``);
+                }
+                items.push(itemName.value);
             }
         })
     </script>
