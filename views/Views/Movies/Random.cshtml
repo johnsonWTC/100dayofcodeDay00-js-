@@ -1,5 +1,10 @@
-﻿@model views.Models.Movie
-@{ 
+﻿@model views.ViewModel.RandomMovieViewModel
     ViewBag.Tittle = "Random";
 }
-<h2>@Model.name</h2>
+<h2>@Model.Movie.name</h2>
+
+
+
+<h2>@(((Movie)ViewData["Movies"]).name)</h2>
+
+
