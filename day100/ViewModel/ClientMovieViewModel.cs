@@ -9,8 +9,6 @@ namespace day100.ViewModel
     public class ClientMovieViewModel
     {
         public Movie movie { get; set; }
-        prop
-
-
+        public List<Clients> clients { get; set; }
     }
 }
