@@ -11,6 +11,7 @@ namespace views.Controllers
     {
         public IActionResult Index()
         {
+            var movie = new Movie() {name = "The rise of jam"};
             
             return View();
         }
