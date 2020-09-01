@@ -13,8 +13,7 @@ namespace day100.Controllers
         {
             var movie = new Movie();
             movie.MovieName = "Day 100";
-            { MovieName = "Day 100"};
-            return View(Movie);
+            return View(movie);
         }
     }
 }
