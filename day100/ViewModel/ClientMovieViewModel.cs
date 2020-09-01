@@ -8,8 +8,8 @@ namespace day100.ViewModel
 {
     public class ClientMovieViewModel
     {
-        Clients Client = new Clients();
-        Movie movie = new Movie();
+        public Movie movie { get; set; }
+        prop
 
 
     }
