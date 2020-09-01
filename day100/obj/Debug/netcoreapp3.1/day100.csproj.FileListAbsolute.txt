@@ -108,3 +108,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100\bin\Debug\netcoreapp3.1\zh
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100\obj\Debug\netcoreapp3.1\day100.Views.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100\obj\Debug\netcoreapp3.1\day100.csproj.CopyComplete
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100\obj\Debug\netcoreapp3.1\day100.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Random.cshtml.g.cs
