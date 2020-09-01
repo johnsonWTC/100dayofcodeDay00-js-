@@ -16,12 +16,13 @@ namespace day100.Controllers
             movie.MovieName = "Day 100";
             var clientList = new List<Clients>();
             Clients johnson = new Clients();
+            johnson.ClientName = "johnson";
+            clientList.Add(johnson);
+            Clients thandwelihle = new Clients();
 
-            client.Add()
-            client.ClientName = "Thandwelihle";
             ClientMovieViewModel clientMovieViewModel = new ClientMovieViewModel();
             clientMovieViewModel.movie = movie;
-            clientMovieViewModel.clients = client;
+       
 
             return View(movie);
 
