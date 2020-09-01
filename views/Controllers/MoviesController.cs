@@ -13,7 +13,7 @@ namespace views.Controllers
         {
             var movie = new Movie() {name = "The rise of jam"};
             
-            return View();
+            return View(movie);
         }
     }
 }
