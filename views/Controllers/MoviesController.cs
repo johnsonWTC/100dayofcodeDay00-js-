@@ -9,7 +9,7 @@ namespace views.Controllers
 {
     public class MoviesController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Random()
         {
             var movie = new Movie() {name = "The rise of jam"};
             
