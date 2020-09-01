@@ -19,6 +19,7 @@ namespace day100.Controllers
             johnson.ClientName = "johnson";
             clientList.Add(johnson);
             Clients thandwelihle = new Clients();
+            thandwelihle.ClientName = "thandwelihle";
 
             ClientMovieViewModel clientMovieViewModel = new ClientMovieViewModel();
             clientMovieViewModel.movie = movie;
