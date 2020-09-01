@@ -11,8 +11,8 @@ namespace day100.Controllers
     {
         public IActionResult Random()
         {
-            var movie = new Movie { MovieName : "Day 100"};
-            return View();
+            var movie = new Movie () { MovieName :"Day 100"};
+            return View(Movie);
         }
     }
 }
