@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using day100.Models;
+using day100.ViewModel;
 
 namespace day100.Controllers
 {
@@ -16,6 +17,7 @@ namespace day100.Controllers
             var client = new Clients();
             client.ClientName = "johnson";
             client.ClientName = "Thandwelihle";
+            var clientMovieViewModel = new Cli
 
             return View(movie);
 
