@@ -7,5 +7,7 @@ namespace day100.Models
 {
     public class Movie
     {
+        public int MovieID { get; set; }
+
     }
 }
