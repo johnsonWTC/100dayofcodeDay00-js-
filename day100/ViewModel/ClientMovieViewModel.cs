@@ -8,6 +8,9 @@ namespace day100.ViewModel
 {
     public class ClientMovieViewModel
     {
+        Clients Client = new Clients();
+        Movie movie = new Movie();
+
 
     }
 }
