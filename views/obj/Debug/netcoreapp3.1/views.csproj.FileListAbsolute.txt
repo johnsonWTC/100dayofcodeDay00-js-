@@ -1,0 +1,12 @@
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.AssemblyInfoInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.AssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.RazorAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.RazorAssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.TagHelpers.input.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.TagHelpers.output.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.RazorCoreGenerate.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\views\obj\Debug\netcoreapp3.1\views.pdb
