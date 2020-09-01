@@ -17,7 +17,9 @@ namespace day100.Controllers
             var client = new Clients();
             client.ClientName = "johnson";
             client.ClientName = "Thandwelihle";
-            var clientMovieViewModel = new Cli
+            ClientMovieViewModel clientMovieViewModel = new ClientMovieViewModel();
+            clientMovieViewModel.movie = movie;
+            clientMovieViewModel.clients = Clients;
 
             return View(movie);
 
