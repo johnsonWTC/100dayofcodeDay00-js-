@@ -13,7 +13,12 @@ namespace day100.Controllers
         {
             var movie = new Movie();
             movie.MovieName = "Day 100";
+            var client = new Clients();
+            client.ClientName = "johnson";
+            client.ClientName = "Thandwelihle";
+
             return View(movie);
+
         }
     }
 }
