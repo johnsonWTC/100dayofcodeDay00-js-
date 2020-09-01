@@ -8,7 +8,7 @@ namespace day100.Controllers
 {
     public class MovieController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Random()
         {
             return View();
         }
