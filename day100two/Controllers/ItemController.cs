@@ -17,11 +17,15 @@ namespace day100two.Controllers
             userTwo.userName = "johnson";
 
             Item item = new Item();
-            Item itemTwo = new Item();
-
             item.itemName = "books";
 
+            Item itemTwo = new Item();
+            itemTwo.itemName = "laptop";
+
             
+           
+
+
 
             return View();
         }
