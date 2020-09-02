@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using views.Models;
-using views.NewFolder;
+using views.ViewModel;
 
 namespace views.Controllers
 {
