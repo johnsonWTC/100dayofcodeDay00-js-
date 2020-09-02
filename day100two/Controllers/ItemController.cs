@@ -24,6 +24,13 @@ namespace day100two.Controllers
             Item itemTwo = new Item();
             itemTwo.itemName = "laptop";
 
+
+            List<User> usersList = new List<User>();
+            usersList.Add(user);
+            usersList.Add(userTwo);
+
+            
+
             
            
 
