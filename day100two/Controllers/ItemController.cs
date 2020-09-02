@@ -17,6 +17,10 @@ namespace day100two.Controllers
             User userTwo = new User();
             userTwo.userName = "johnson";
 
+            List<User> usersList = new List<User>();
+            usersList.Add(user);
+            usersList.Add(userTwo);
+
 
             //items
             Item item = new Item();
@@ -24,10 +28,7 @@ namespace day100two.Controllers
             Item itemTwo = new Item();
             itemTwo.itemName = "laptop";
 
-
-            List<User> usersList = new List<User>();
-            usersList.Add(user);
-            usersList.Add(userTwo);
+            List<Item> itemList = new List<Item>();
 
             
 
