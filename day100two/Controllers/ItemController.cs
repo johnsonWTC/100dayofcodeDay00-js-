@@ -17,7 +17,10 @@ namespace day100two.Controllers
             user.userName = "Thandwelihle";
             User userTwo = new User();
             userTwo.userName = "johnson";
-            ViewBag.itemParam = "";
+            ViewBag.itemParam = String.IsNullOrEmpty(sortOder) ? "itemDesc" : "";
+
+
+
 
             List<User> usersList = new List<User>();
             usersList.Add(user);
@@ -33,6 +36,15 @@ namespace day100two.Controllers
             List<Item> itemList = new List<Item>();
             itemList.Add(item);
             itemList.Add(itemTwo);
+
+
+            if (sortOder == "itemDesc")
+            {
+                itemList = itemList.OrderByDescending((o => o.itemName)).ToList();
+            }
+            else{
+                itemList = itemList.OrderBy(o => o.itemName).ToList();
+            }
 
             UserClientViewModel userClientViewModel = new UserClientViewModel();
 
