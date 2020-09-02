@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace day100two.Models
 {
-    public class Items
+    public class Item
     {
         public int itemID { get; set; }
         public string itemName { get; set; }

@@ -11,6 +11,11 @@ namespace day100two.Controllers
     {
         public IActionResult Index()
         {
+            User user = new User();
+            Item item = new Item();
+
+            item.itemName = "books";
+
             return View();
         }
     }
