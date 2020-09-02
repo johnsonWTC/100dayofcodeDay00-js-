@@ -12,12 +12,15 @@ namespace day100two.Controllers
         public IActionResult Index()
         {
             User user = new User();
+            user.userName = "Thandwelihle";
+            User userTwo = new User();
+            userTwo.userName = "johnson";
+
             Item item = new Item();
 
             item.itemName = "books";
 
-            User userTwo = new User();
-            userTwo.userName = "johnson";
+            
 
             return View();
         }
