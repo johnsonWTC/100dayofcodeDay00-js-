@@ -33,6 +33,13 @@ namespace day100two.Controllers
             itemList.Add(item);
             itemList.Add(itemTwo);
 
+            UserClientViewModel userClientViewModel = new UserClientViewModel();
+
+            userClientViewModel.item = item;
+            userClientViewModel.Items = itemList;
+
+            userClientViewModel.user = user;
+            userClientViewModel.Users = usersList;
            
 
             return View();
