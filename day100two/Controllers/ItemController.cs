@@ -38,6 +38,13 @@ namespace day100two.Controllers
             itemList.Add(itemTwo);
 
 
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                itemList = itemList.Where(o => o.itemName.Contains(searchString)).ToList();
+            }
+
+
+
             if (sortOder == "itemDesc")
             {
                 itemList = itemList.OrderByDescending((o => o.itemName)).ToList();
