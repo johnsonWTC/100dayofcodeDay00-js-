@@ -42,7 +42,7 @@ namespace day100two.Controllers
             userClientViewModel.Users = usersList;
            
 
-            return View();
+            return View(userClientViewModel);
         }
     }
 }
