@@ -32,13 +32,6 @@ namespace day100two.Controllers
             itemList.Add(item);
             itemList.Add(itemTwo);
 
-            
-
-            
-           
-
-
-
             return View();
         }
     }
