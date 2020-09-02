@@ -16,6 +16,9 @@ namespace day100two.Controllers
 
             item.itemName = "books";
 
+            User userTwo = new User();
+            userTwo.userName = "johnson";
+
             return View();
         }
     }
