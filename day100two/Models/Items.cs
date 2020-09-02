@@ -9,5 +9,6 @@ namespace day100two.Models
     {
         public int itemID { get; set; }
         public string itemName { get; set; }
+        public string itemColor { get; set; }
     }
 }
