@@ -10,7 +10,7 @@ namespace day100two.Controllers
 {
     public class ItemController : Controller
     {
-        public IActionResult Index(string sortOder)
+        public IActionResult Index(string sortOder, string searchString)
         {
             //users
             User user = new User();
