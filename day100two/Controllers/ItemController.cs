@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using day100two.Models;
+using day100two.ViewModel;
 
 namespace day100two.Controllers
 {
@@ -31,6 +32,8 @@ namespace day100two.Controllers
             List<Item> itemList = new List<Item>();
             itemList.Add(item);
             itemList.Add(itemTwo);
+
+           
 
             return View();
         }

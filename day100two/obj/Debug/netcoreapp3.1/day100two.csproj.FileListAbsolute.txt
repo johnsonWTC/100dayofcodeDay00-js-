@@ -108,3 +108,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100two\bin\Debug\netcoreapp3.1
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100two\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100two\obj\Debug\netcoreapp3.1\day100two.Views.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100two\obj\Debug\netcoreapp3.1\day100two.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\day100two\obj\Debug\netcoreapp3.1\Razor\Views\Item\Index.cshtml.g.cs
