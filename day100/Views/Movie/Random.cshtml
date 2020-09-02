@@ -1,9 +1,23 @@
-﻿@model day100.Models.Movie
+﻿@model day100.ViewModel.ClientMovieViewModel
 @{
     ViewData["Title"] = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>@Model.MovieName</h1>
+<h1>@Model.movie.MovieName</h1>
+
+@if (Model.clients.Count == 0)
+{
+
+}
+else
+{
+}
+@foreach (var client in Model.clients)
+{
+    <li>@client.ClientName</li>
+}
+
+
 
 
