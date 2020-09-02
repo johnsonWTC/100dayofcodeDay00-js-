@@ -43,6 +43,12 @@ namespace day100two.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 itemList = itemList.Where(o => o.itemName.Contains(searchString)).ToList();
+                if (itemList.Count() > 0)
+                {
+                    itemList = itemList.Where(o => o.itemColor.Contains(searchString)).ToList();
+                }
+               
+               
             }
 
 
