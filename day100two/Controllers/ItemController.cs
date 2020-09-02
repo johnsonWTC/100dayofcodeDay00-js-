@@ -30,8 +30,10 @@ namespace day100two.Controllers
             //items
             Item item = new Item();
             item.itemName = "books";
+            item.itemColor = "red";
             Item itemTwo = new Item();
             itemTwo.itemName = "laptop";
+            itemTwo.itemColor = "blue";
 
             List<Item> itemList = new List<Item>();
             itemList.Add(item);
