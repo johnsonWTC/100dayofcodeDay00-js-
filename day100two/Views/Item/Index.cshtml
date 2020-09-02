@@ -8,6 +8,28 @@
 
 @foreach (var itemo in Model.Items)
 {
-    <li>@itemo.itemName</li>
+    <li><a asp-action="Index" asp-route-sortOder="ViewBag.itemParam">@itemo.itemName</a></li>
 }
+<hr />
+
+
+<table border="1">
+
+   
+
+
+    <tr>
+        <th>Item name</th>
+    </tr>
+
+    @foreach (var item in Model.Items)
+    {
+<tr>
+
+    <td>@item.itemName</td>
+
+</tr>
+    }
+
+    </table>
 

@@ -10,13 +10,14 @@ namespace day100two.Controllers
 {
     public class ItemController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string sortOder)
         {
             //users
             User user = new User();
             user.userName = "Thandwelihle";
             User userTwo = new User();
             userTwo.userName = "johnson";
+            ViewBag.itemParam = "";
 
             List<User> usersList = new List<User>();
             usersList.Add(user);
