@@ -46,7 +46,8 @@
     itemColor.addEventListener("click", function () {
       
         fetch("https://localhost:44377/Item?sortOder=itemDesc", {
-            method: "Post"
+        }).then(function (res) {
+            res.json()
         })
     })
 </script>
