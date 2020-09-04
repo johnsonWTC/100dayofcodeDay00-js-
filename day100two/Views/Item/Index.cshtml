@@ -44,11 +44,14 @@
     let itemColor = document.getElementById("itemColor");
 
     itemColor.addEventListener("click", function () {
-      
-        fetch("https://localhost:44377/Item?sortOder=itemDesc", {
-        }).then(function (res) {
-            res.json()
+
+        fetch("https://localhost:44377/Item?sortOder=itemDesc").then(function (res) {
+            res.json().then(function (data) {
+                console(data);
+            })
         })
-    })
+
+
+
 </script>
 
