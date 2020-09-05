@@ -32,6 +32,9 @@ namespace test01.Controllers
             cup.itemName = "cup";
             List<item> items = new List<item>();
 
+            items.Add(cup);
+            items.Add(book);
+
             return View();
         }
     }
