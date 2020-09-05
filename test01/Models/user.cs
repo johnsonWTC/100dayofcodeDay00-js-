@@ -7,5 +7,7 @@ namespace test01.Models
 {
     public class user
     {
+        public int userID { get; set; }
+        public string userName { get; set; }
     }
 }
