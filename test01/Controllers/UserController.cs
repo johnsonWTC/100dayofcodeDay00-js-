@@ -16,7 +16,7 @@ namespace test01.Controllers
             johnson.userName = "johnson";
 
             user thandwelihle = new user();
-
+            thandwelihle.userName = "thandwelihle";
             return View();
         }
     }
