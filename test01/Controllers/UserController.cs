@@ -20,6 +20,8 @@ namespace test01.Controllers
             thandwelihle.userID = 2;
 
             List<user> users = new List<user>();
+            users.Add(johnson);
+            users.Add(thandwelihle);
 
             item book = new item();
             book.itemID = 1;
