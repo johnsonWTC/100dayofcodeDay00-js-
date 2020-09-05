@@ -30,8 +30,8 @@ namespace test01.Controllers
             item cup = new item();
             cup.itemID = 2;
             cup.itemName = "cup";
-            List<item> items = new List<item>();
 
+            List<item> items = new List<item>();
             items.Add(cup);
             items.Add(book);
 
