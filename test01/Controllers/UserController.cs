@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using test01.Models;
 
 namespace test01.Controllers
 {
@@ -10,6 +11,7 @@ namespace test01.Controllers
     {
         public IActionResult Index()
         {
+            user johnson = new user();
             return View();
         }
     }
