@@ -21,7 +21,11 @@ namespace test01.Controllers
 
             item book = new item();
             book.itemID = 1;
-            book.itemName = 2;
+            book.itemName = "book";
+
+            item cup = new item();
+            cup.itemID = 2;
+            cup.itemName = "cup";
             return View();
         }
     }
