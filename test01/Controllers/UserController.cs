@@ -12,6 +12,11 @@ namespace test01.Controllers
         public IActionResult Index()
         {
             user johnson = new user();
+            johnson.userID = 1;
+            johnson.userName = "johnson";
+
+            user thandwelihle = new user();
+
             return View();
         }
     }
