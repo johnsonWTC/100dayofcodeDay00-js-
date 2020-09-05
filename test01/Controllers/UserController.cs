@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using test01.Models;
+using test01.ViewModel
 
 namespace test01.Controllers
 {
@@ -35,7 +36,13 @@ namespace test01.Controllers
             items.Add(cup);
             items.Add(book);
 
-            return View();
+
+            UserItemViewModel userItemViewModel = new UserItemViewModel();
+            userItemViewModel.items = items;
+            userItemViewModel.users = users;
+
+
+            return View(userItemViewModel);
         }
     }
 }

@@ -8,6 +8,7 @@ namespace test01.ViewModel
 {
     public class UserItemViewModel
     {
-        public user MyProperty { get; set; }
+        public List<user> users { get; set; }
+        public List<item> items { get; set; }
     }
 }
