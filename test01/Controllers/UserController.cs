@@ -18,6 +18,10 @@ namespace test01.Controllers
             user thandwelihle = new user();
             thandwelihle.userName = "thandwelihle";
             thandwelihle.userID = 2;
+
+            item book = new item();
+            book.itemID = 1;
+            book.itemName = 2;
             return View();
         }
     }
