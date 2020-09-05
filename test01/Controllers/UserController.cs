@@ -17,6 +17,7 @@ namespace test01.Controllers
 
             user thandwelihle = new user();
             thandwelihle.userName = "thandwelihle";
+            thandwelihle.userID = 2;
             return View();
         }
     }
