@@ -7,5 +7,7 @@ namespace test01.Models
 {
     public class item
     {
+        public int itemID { get; set; }
+        public string itemName { get; set; }
     }
 }
