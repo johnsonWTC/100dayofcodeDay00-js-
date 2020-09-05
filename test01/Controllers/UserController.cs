@@ -19,6 +19,8 @@ namespace test01.Controllers
             thandwelihle.userName = "thandwelihle";
             thandwelihle.userID = 2;
 
+            List<user> users = new List<user>();
+
             item book = new item();
             book.itemID = 1;
             book.itemName = "book";
