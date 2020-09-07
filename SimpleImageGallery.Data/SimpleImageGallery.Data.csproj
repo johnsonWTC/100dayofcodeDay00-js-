@@ -18,8 +18,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SimpleImageGallary\SimpleImageGallary.csproj" />
-  </ItemGroup>
-
 </Project>
