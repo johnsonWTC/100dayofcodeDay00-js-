@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SimpleImageGallery.Data.Models
 {
-    class ImageTag
+   public class ImageTag
     {
         public int Id { get; set; }
         public string Discription { get; set; }
