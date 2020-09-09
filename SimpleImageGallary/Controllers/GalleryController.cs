@@ -19,11 +19,13 @@ namespace SimpleImageGallary.Controllers
         public IActionResult Index()
         {
             var hickingImages = new List<ImageTag>();
-
             var imageList = _imageService.GetAll();
             var galleryIndexModel = new GalleryIndexModel();
             galleryIndexModel.Images = imageList;
             return View(galleryIndexModel);
         }
+
+
+        public 
     }
 }
