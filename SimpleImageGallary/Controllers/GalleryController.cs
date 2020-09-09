@@ -29,7 +29,14 @@ namespace SimpleImageGallary.Controllers
         public IActionResult Deatils( int id)
         {
             var image = _imageService.GetGalleryById(id);
-            var ImageViewModel = 
+            var ImageViewModel = new ImageViewModel();
+            ImageViewModel.Created = image.Created;
+            ImageViewModel.Id = image.Id;
+            ImageViewModel.Title = image.Title;
+            ImageViewModel.url = image.url;
+            ImageViewModel.Created = image.Created;
+            ImageViewModel.Created = image.Created;
+            return View(ImageViewModel);
         }
     }
 }
