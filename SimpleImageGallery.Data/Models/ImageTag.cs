@@ -6,5 +6,6 @@ namespace SimpleImageGallery.Data.Models
 {
     class ImageTag
     {
+        prop
     }
 }
