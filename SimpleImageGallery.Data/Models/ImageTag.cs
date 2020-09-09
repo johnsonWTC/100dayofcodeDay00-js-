@@ -6,6 +6,6 @@ namespace SimpleImageGallery.Data.Models
 {
     class ImageTag
     {
-        public int MyProperty { get; set; }
+        public int Id { get; set; }
     }
 }
