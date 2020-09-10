@@ -7,16 +7,15 @@ using System.Threading.Tasks;
 
 namespace Service.Data
 {
-    public class Context :DbContext
+    public class Context : DbContext
     {
         public Context(DbContextOptions options) : base(options)
-    {
+        {
+
+        }
+
+        public DbSet<User> Users { get; set; }
 
     }
+}
 
-    public DbSet<User> Users { get; set; }
-   
-}
-{
-    }
-}
