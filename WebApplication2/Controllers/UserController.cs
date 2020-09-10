@@ -13,6 +13,7 @@ namespace WebApplication2.Controllers
         {
             Item book = new Item();
             List<Item> Books = new List<Item>();
+            Books.Add(book);
             return View();
         }
     }
