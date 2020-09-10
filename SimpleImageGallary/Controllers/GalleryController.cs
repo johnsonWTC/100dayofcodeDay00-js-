@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SimpleImageGallary.Controllers
 {
-    public class Gallery : Controller
+    public class GalleryController : Controller
     {
         public IActionResult Index()
         {
+            var model
             return View();
         }
     }
