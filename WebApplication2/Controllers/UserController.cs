@@ -15,7 +15,10 @@ namespace WebApplication2.Controllers
             Item book = new Item();
             List<Item> Books = new List<Item>();
             Books.Add(book);
-            return View();
+            ItemViewModel itemViewModel = new ItemViewModel();
+            itemViewModel.items = Books;
+          
+            return View(itemViewModel);
         }
     }
 }
