@@ -3,6 +3,7 @@ using SimpleImageGallery.Data;
 using SimpleImageGallery.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace SimpleImageGallery.Services
 {
@@ -22,7 +23,7 @@ namespace SimpleImageGallery.Services
 
         public GalleryImage GetGalleryById(int id)
         {
-            throw new NotImplementedException();
+            return _context.GalleryImages.FirstOrDefault(e => e.Id == id);
         }
 
         public IEnumerable<GalleryImage> GetWithTag(string tag)
