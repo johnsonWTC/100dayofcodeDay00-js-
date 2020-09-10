@@ -11,10 +11,10 @@ namespace SimpleImageGallary.Controllers
 {
     public class GalleryController : Controller
     {
-        private readonly Image imageService;
+        private readonly Image _imageService;
         public GalleryController(Image imageService)
         {
-            _image
+            _imageService = imageService;
         }
         public IActionResult Index()
         {
