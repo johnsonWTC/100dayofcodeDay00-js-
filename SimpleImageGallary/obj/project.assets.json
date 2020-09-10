@@ -1534,6 +1534,19 @@
         "runtime": {
           "bin/placeholder/SimpleImageGallery.Data.dll": {}
         }
+      },
+      "SimpleImageGallery.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "SimpleImageGallery.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SimpleImageGallery.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SimpleImageGallery.Services.dll": {}
+        }
       }
     }
   },
@@ -5807,6 +5820,11 @@
       "type": "project",
       "path": "../SimpleImageGallery.Data/SimpleImageGallery.Data.csproj",
       "msbuildProject": "../SimpleImageGallery.Data/SimpleImageGallery.Data.csproj"
+    },
+    "SimpleImageGallery.Services/1.0.0": {
+      "type": "project",
+      "path": "../SimpleImageGallery.Services/SimpleImageGallery.Services.csproj",
+      "msbuildProject": "../SimpleImageGallery.Services/SimpleImageGallery.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5815,7 +5833,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.1",
-      "SimpleImageGallery.Data >= 1.0.0"
+      "SimpleImageGallery.Data >= 1.0.0",
+      "SimpleImageGallery.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5850,6 +5869,9 @@
           "projectReferences": {
             "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\SimpleImageGallery.Data\\SimpleImageGallery.Data.csproj": {
               "projectPath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\SimpleImageGallery.Data\\SimpleImageGallery.Data.csproj"
+            },
+            "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\SimpleImageGallery.Services\\SimpleImageGallery.Services.csproj": {
+              "projectPath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\SimpleImageGallery.Services\\SimpleImageGallery.Services.csproj"
             }
           }
         }

@@ -7,16 +7,16 @@ using System.Linq;
 
 namespace SimpleImageGallery.Services
 {
-    public class ImaageService : Image
+    public class ImageService : Image
     {
         private readonly SimpleImageGalleryDbContext _context;
 
-        public ImaageService(SimpleImageGalleryDbContext context)
+        public ImageService(SimpleImageGalleryDbContext context)
         {
             _context = context;
         }
 
-        public IEnumerable<GalleryImage> GellAll()
+        public IEnumerable<GalleryImage> GetAll()
         {
            return _context.GalleryImages.Include(e => e.Tags);
         }
@@ -28,7 +28,7 @@ namespace SimpleImageGallery.Services
 
         public IEnumerable<GalleryImage> GetWithTag(string tag)
         {
-            throw new NotImplementedException();
+            return GetAll().Where(img => img.Tags.Any(t => t.Discription == tag));
         }
     }
 }

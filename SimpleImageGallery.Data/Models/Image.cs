@@ -6,7 +6,7 @@ namespace SimpleImageGallery.Data.Models
 {
     public interface Image
     {
-        IEnumerable<GalleryImage> GellAll();
+        IEnumerable<GalleryImage> GetAll();
         IEnumerable<GalleryImage> GetWithTag(string tag);
         GalleryImage GetGalleryById(int id);
 
