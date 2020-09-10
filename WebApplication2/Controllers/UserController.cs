@@ -11,6 +11,8 @@ namespace WebApplication2.Controllers
     {
         public IActionResult Index()
         {
+            Item book = new Item();
+            List<Item> Books = new List<Item>();
             return View();
         }
     }
