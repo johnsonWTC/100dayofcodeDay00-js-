@@ -10,6 +10,6 @@ namespace SimpleImageGallery.Data.Models
         public  string Title { get; set; }
         public DateTime Created { get; set; }
         public string url { get; set; }
-        public IEnumerable<string> Tags { get; set; }
+        public virtual IEnumerable<Tag> Tags { get; set; }
     }
 }

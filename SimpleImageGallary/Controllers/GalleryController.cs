@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SimpleImageGallary.Models;
 
 namespace SimpleImageGallary.Controllers
 {
@@ -11,7 +12,7 @@ namespace SimpleImageGallary.Controllers
         public IActionResult Index()
         {
             var model = new GalleryIndexModel();
-            return View();
+            return View(model);
         }
     }
 }
