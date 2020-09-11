@@ -6,7 +6,7 @@ namespace SimpleImageGallery.Data.Models
 {
    public class GalleryImage
     {
-        public int MyProperty { get; set; }
+        public int Id { get; set; }
         public  string Title { get; set; }
         public DateTime Created { get; set; }
         public string url { get; set; }
