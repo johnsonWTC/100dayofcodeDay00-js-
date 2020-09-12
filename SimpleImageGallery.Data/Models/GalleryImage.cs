@@ -8,6 +8,6 @@ namespace SimpleImageGallery.Data.Models
     {
         public  string Title { get; set; }
         public DateTime Created { get; set; }
-        public int MyProperty { get; set; }
+        public string MyProperty { get; set; }
     }
 }
