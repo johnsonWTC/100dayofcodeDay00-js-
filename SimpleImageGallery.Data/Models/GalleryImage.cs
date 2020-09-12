@@ -9,6 +9,6 @@ namespace SimpleImageGallery.Data.Models
         public  string Title { get; set; }
         public DateTime Created { get; set; }
         public string url { get; set; }
-        prop
+        public IEnumerable MyProperty { get; set; }
     }
 }
