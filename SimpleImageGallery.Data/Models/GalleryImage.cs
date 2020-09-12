@@ -7,6 +7,6 @@ namespace SimpleImageGallery.Data.Models
    public class GalleryImage
     {
         public  string Title { get; set; }
-        public DateTime { get; set; }
+        public DateTime Created { get; set; }
     }
 }
