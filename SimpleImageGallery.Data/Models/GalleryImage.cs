@@ -7,6 +7,6 @@ namespace SimpleImageGallery.Data.Models
    public class GalleryImage
     {
         public  string Title { get; set; }
-        prop
+        public int MyProperty { get; set; }
     }
 }
