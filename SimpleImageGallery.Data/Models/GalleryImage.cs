@@ -6,6 +6,6 @@ namespace SimpleImageGallery.Data.Models
 {
    public class GalleryImage
     {
-        public  string MyProperty { get; set; }
+        public  string Title { get; set; }
     }
 }
