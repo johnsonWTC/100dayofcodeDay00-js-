@@ -13,10 +13,10 @@ namespace WebApplication3.Controllers
         {
             Items book = new Items();
             book.itemName = "book";
-            List<Items> items = new List<Items>();
-            items.Add(book);
+          
 
-            return View(items);
+
+            return View(book);
         }
     }
 }
