@@ -24,7 +24,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\WebApplication3.RazorTargetAssemblyInfo.cache
@@ -36,3 +35,5 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\WebApplication3.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\WebApplication3.genruntimeconfig.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\WebApplication3.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication3\obj\Debug\netcoreapp3.1\Razor\Views\Item\index.cshtml.g.cs
