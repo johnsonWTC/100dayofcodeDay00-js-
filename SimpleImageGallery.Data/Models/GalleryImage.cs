@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SimpleImageGallery.Data.Models
 {
-    class GalleryImage
+   public class GalleryImage
     {
     }
 }
