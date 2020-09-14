@@ -5,6 +5,6 @@ using System.Text;
 namespace SimpleImageGallery.Data.Models
 {
    public class GalleryImage
-    {
+    { prop
     }
 }
