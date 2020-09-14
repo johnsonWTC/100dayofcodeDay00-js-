@@ -13,7 +13,7 @@ namespace WebApplication3.Models
         {
             User userOne = new User();
             userOne.userName = "johnson";
-            return View();
+            return View(userOne);
         }
     }
 }
