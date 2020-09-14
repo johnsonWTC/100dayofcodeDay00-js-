@@ -1,3 +1,8 @@
-﻿@model WebApplication3.Models.Items
+﻿@model WebApplication3.ModelView.ItemModelView
 
-    <h1>Hello @Model.</h1>
+@foreach (var item in Model.Items)
+{
+    <h1>@item</h1>
+}
+<hr />
+    <h1>Hello @Model.Items.</h1>
