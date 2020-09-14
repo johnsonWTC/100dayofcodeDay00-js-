@@ -11,6 +11,8 @@ namespace WebApplication3.Models
     {
         public IActionResult Index()
         {
+            User userOne = new User();
+            userOne.userName = "johnson";
             return View();
         }
     }
