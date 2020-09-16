@@ -108,3 +108,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication2\obj\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication2\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs

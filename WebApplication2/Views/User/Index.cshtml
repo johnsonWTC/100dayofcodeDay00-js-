@@ -3,5 +3,11 @@
     ViewData["Title"] = "View";
 }
 
+<h1>@Model.item.itemName</h1>
 <h1>@Model.items.Count</h1>
+
+@foreach (var item in Model.items)
+{
+<h1>@item.itemName</h1>
+}
 

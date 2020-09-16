@@ -8,7 +8,7 @@ namespace WebApplication3.ModelView
 {
     public class ItemModelView
     {
-        public List<Items> Items { get; set; }
-        public List<User> Users { get; set; }
+        public List<Items> ItemList { get; set; }
+       
     }
 }

@@ -13,10 +13,16 @@ namespace WebApplication2.Controllers
         public IActionResult Index()
         {
             Item book = new Item();
+            Item booktwo = new Item();
+            booktwo.itemName = "Bookies";
+            book.itemName = "Herry Porter";
             List<Item> Books = new List<Item>();
+
             Books.Add(book);
+            Books.Add(booktwo);
             ItemViewModel itemViewModel = new ItemViewModel();
             itemViewModel.items = Books;
+            itemViewModel.item = book;
           
             return View(itemViewModel);
         }

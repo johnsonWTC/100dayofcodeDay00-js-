@@ -17,10 +17,14 @@ namespace WebApplication3.Controllers
             Items laptop = new Items();
             laptop.itemName = "laptop";
 
+            List<Items> items = new List<Items>();
+            items.Add(book);
+            items.Add(laptop);
+
 
             ItemModelView itemModelView = new ItemModelView();
-            itemModelView.Items.Add(book);
-            itemModelView.Items.Add(laptop);
+            itemModelView.ItemList = items;
+          
           
 
 
