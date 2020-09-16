@@ -8,11 +8,28 @@
     <h1>@item.ItemName</h1>
 
 }
-<input type="text" id=" input"/>
+<input type="text" id="input"/>
 <button id="add">Add</button>
 <hr />
 
+<div id="div">
+
+</div>
+
+
 <script>
+    let input = document.getElementById("input");
+    let add = document.getElementById("add");
+    let div = document.getElementById("div");
+    let i;
+
+    add.addEventListener("click", function () {
+        if (input.value.length == 0) {
+            alert("Input can not be empty")
+        }
+    })
+
+    div.style.display = "none";
 
 </script>
 
