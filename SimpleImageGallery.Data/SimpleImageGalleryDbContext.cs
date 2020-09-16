@@ -10,6 +10,6 @@ namespace SimpleImageGallery.Data
 
         }
 
-        public DbSet<> MyProperty { get; set; }
+        public DbSet<GalleryImage> MyProperty { get; set; }
     }
 }
