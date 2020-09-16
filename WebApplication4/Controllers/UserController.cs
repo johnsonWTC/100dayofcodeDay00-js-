@@ -11,6 +11,10 @@ namespace WebApplication4.Controllers
     {
         public IActionResult Index()
         {
+            var userOne = new User();
+            userOne.userName = "jam";
+
+            var itemOne = new Item();
             return View();
         }
     }
