@@ -14,8 +14,36 @@ namespace WebApplication4.Controllers
             var userOne = new User();
             userOne.userName = "jam";
 
+            var userTwo = new User();
+            userTwo.userName = "johnson";
+            var userList = new List<User>();
+            userList.Add(userOne);
+            userList.Add(userTwo);
+
+
+
+
+
+
             var itemOne = new Item();
-            return View();
+            itemOne.ItemName = "book";
+
+            var itemTwo = new Item();
+            itemTwo.ItemName = "laptop";
+            var itemList = new List<Item>();
+            itemList.Add(itemOne);
+            itemList.Add(itemTwo);
+
+
+
+
+
+
+
+            TestViewModel testViewModel = new TestViewModel();
+            testViewModel.ListOfItems = itemList;
+            
+            return View(testViewModel);
         }
     }
 }
