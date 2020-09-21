@@ -8,6 +8,6 @@ namespace SimpleImageGallary.Models
     public class GalleryIndelModel
     {
         public IEnumerable<GalleryImage> Images { get; set; }
-        public string MyProperty { get; set; }
+        public string SearchQuery { get; set; }
     }
 }
