@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WebApplication7.Models;
+using WebApplication7.ViewModel;
 
 namespace WebApplication7.Controllers
 {
@@ -15,6 +17,7 @@ namespace WebApplication7.Controllers
 
         public IActionResult UserItem()
         {
+            Ite
             return View();
         }
     }
