@@ -20,8 +20,17 @@ namespace WebApplication7.Controllers
             Item item = new Item();
             item.itemName = "book";
 
+            Item itemTwo = new Item();
+            itemTwo.itemName = "Laptop";
+            List<Item> items = new List<Item>();
+            items.Add(item);
+            items.Add(itemTwo);
+
             User user = new User();
             user.userName = "Johnson";
+
+
+
             return View();
         }
     }
