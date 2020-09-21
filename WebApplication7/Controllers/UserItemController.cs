@@ -22,14 +22,18 @@ namespace WebApplication7.Controllers
 
             Item itemTwo = new Item();
             itemTwo.itemName = "Laptop";
-            List<Item> items = new List<Item>();
-            items.Add(item);
-            items.Add(itemTwo);
+            List<Item> itemsFromList = new List<Item>();
+            itemsFromList.Add(item);
+            itemsFromList.Add(itemTwo);
 
-            UserItemViewModel userItemViewModel = new UserItemViewModel();
+           
 
             User user = new User();
             user.userName = "Johnson";
+
+            UserItemViewModel userItemViewModel = new UserItemViewModel();
+            userItemViewModel.items = itemsFromList;
+            userItemViewModel.user = user;
 
 
 
