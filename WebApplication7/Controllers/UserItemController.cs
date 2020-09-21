@@ -26,6 +26,8 @@ namespace WebApplication7.Controllers
             items.Add(item);
             items.Add(itemTwo);
 
+            UserItemViewModel userItemViewModel = new UserItemViewModel();
+
             User user = new User();
             user.userName = "Johnson";
 
