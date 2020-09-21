@@ -10,5 +10,8 @@ namespace WebApplication7.ViewModel
     {
         public User user { get; set; }
         public Item item { get; set; }
+
+        public List<Item>  items{ get; set; }
+      
     }
 }

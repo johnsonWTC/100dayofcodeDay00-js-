@@ -17,7 +17,11 @@ namespace WebApplication7.Controllers
 
         public IActionResult UserItem()
         {
-            Ite
+            Item item = new Item();
+            item.itemName = "book";
+
+            User user = new User();
+            user.userName = "Johnson";
             return View();
         }
     }
