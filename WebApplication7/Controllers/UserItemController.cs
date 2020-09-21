@@ -15,7 +15,7 @@ namespace WebApplication7.Controllers
             return View();
         }
 
-        public IActionResult UserItem()
+        public IActionResult User()
         {
             Item item = new Item();
             item.itemName = "book";
@@ -35,9 +35,7 @@ namespace WebApplication7.Controllers
             userItemViewModel.items = itemsFromList;
             userItemViewModel.user = user;
 
-
-
-            return View();
+            return View(userItemViewModel);
         }
     }
 }
