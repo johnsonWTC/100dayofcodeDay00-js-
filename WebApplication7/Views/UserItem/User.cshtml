@@ -1,1 +1,9 @@
-﻿
+﻿@model WebApplication7.ViewModel.UserItemViewModel
+
+<h1>@Model.user.userName</h1>
+<hr />
+@foreach (var item in Model.items)
+{
+    <h1>@item.itemName</h1>
+
+}
