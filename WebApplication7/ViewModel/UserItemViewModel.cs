@@ -6,7 +6,7 @@ using WebApplication7.Models;
 
 namespace WebApplication7.ViewModel
 {
-    public class UserViewModel
+    public class UserItemViewModel
     {
         public User user { get; set; }
         public Item item { get; set; }
