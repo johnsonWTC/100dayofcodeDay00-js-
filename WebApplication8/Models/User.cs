@@ -9,5 +9,7 @@ namespace WebApplication8.Models
     {
         public int userID { get; set; }
         public string userName { get; set; }
+
+        public int userAge { get; set; }
     }
 }
