@@ -12,12 +12,36 @@ namespace WebApplication8.Controllers
         public IActionResult Index()
         {
             User userOne = new User();
+            userOne.userID = 1;
+            userOne.userName = "jam";
+            userOne.userAge = 20;
+
             User userTwo = new User();
+            userTwo.userID = 2;
+            userTwo.userName = "jamizzy";
+            userTwo.userAge = 22;
+
             User userThree = new User();
+            userThree.userID = 3;
+            userThree.userName = "johnson";
+            userThree.userAge = 23;
+
+
             User userFour = new User();
-            User userFive = new User();
-            User userSix = new User();
-            User userSeven = new User();
+            userFour.userID = 4;
+            userFour.userName = "thandwelihle";
+            userFour.userAge = 3;
+
+ 
+
+            List<User> users = new List<User>();
+            users.Add(userOne);
+            users.Add(userTwo);
+            users.Add(userThree);
+            users.Add(userFour);
+          
+       
+
             return View();
         }
     }
