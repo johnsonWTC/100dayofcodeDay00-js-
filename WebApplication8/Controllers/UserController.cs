@@ -42,7 +42,7 @@ namespace WebApplication8.Controllers
           
        
 
-            return View();
+            return View(users);
         }
     }
 }
