@@ -9,7 +9,7 @@ namespace WebApplication8.Controllers
 {
     public class UserController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Users()
         {
             User userOne = new User();
             userOne.userID = 1;
@@ -39,6 +39,8 @@ namespace WebApplication8.Controllers
             users.Add(userTwo);
             users.Add(userThree);
             users.Add(userFour);
+
+            
           
        
 

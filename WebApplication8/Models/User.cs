@@ -11,5 +11,7 @@ namespace WebApplication8.Models
         public string userName { get; set; }
 
         public int userAge { get; set; }
+
+       
     }
 }
