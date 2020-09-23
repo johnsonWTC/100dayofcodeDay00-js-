@@ -2,7 +2,7 @@
 
 namespace SimpleImageGallery.Data
 {
-    public class name
+    public class SimpleImageGallery
     {
     }
 }
