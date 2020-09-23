@@ -2,7 +2,7 @@
 
 namespace SimpleImageGallery.Data
 {
-    public class SimpleImageGalleryDbContext
+    public class SimpleImageGalleryDbContext :DbContext
     {
     }
 }
