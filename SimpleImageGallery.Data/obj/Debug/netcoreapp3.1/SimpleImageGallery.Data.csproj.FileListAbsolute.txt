@@ -3,3 +3,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Data\bin\Debug
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Data\obj\Debug\netcoreapp3.1\SimpleImageGallery.Data.AssemblyInfoInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Data\obj\Debug\netcoreapp3.1\SimpleImageGallery.Data.AssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Data\obj\Debug\netcoreapp3.1\SimpleImageGallery.Data.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Data\bin\Debug\netcoreapp3.1\SimpleImageGallery.Data.runtimeconfig.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Data\bin\Debug\netcoreapp3.1\SimpleImageGallery.Data.runtimeconfig.dev.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Data\obj\Debug\netcoreapp3.1\SimpleImageGallery.Data.genruntimeconfig.cache
