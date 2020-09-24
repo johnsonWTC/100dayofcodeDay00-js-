@@ -5,5 +5,6 @@ namespace SimpleImageGallery.Data
 {
     public class SimpleImageGalleryDbContext : DbContext
     {
+        public 
     }
 }
