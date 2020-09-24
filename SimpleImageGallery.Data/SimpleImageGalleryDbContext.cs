@@ -5,7 +5,7 @@ namespace SimpleImageGallery.Data
 {
     public class SimpleImageGalleryDbContext : DbContext
     {
-        public SimpleImageGalleryDbContext(DbContextOptions options) : 
+        public SimpleImageGalleryDbContext(DbContextOptions options) : base
         {
 
         }
