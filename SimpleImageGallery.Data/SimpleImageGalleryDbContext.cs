@@ -10,6 +10,6 @@ namespace SimpleImageGallery.Data
 
         }
 
-       prop
+        public int MyProperty { get; set; }
     }
 }
