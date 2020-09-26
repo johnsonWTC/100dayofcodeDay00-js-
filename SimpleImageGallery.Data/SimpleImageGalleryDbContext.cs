@@ -9,5 +9,7 @@ namespace SimpleImageGallery.Data
         {
 
         }
+
+       prop
     }
 }
