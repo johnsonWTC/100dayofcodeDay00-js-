@@ -2,50 +2,60 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication12.Models;
+
+// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebApplication12.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CharacterController : ControllerBase
+    public class UserController : ControllerBase
     {
+        // GET: api/<UserController>
 
-        private static List<User> Users = new List<User>() {
+        private static List<User> users = new List<User>() {
         new User(),
         new User{Name = "Thandelihle" ,id =1 }
 
 
       };
-        public IActionResult Getall()
+
+        [HttpGet]
+        public List<User> Get()
         {
-            return Ok(Users);
+            return users;
         }
 
+        // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public IActionResult getById(int id)
+        public User Get(int id)
         {
-            return Ok(Users.FirstOrDefault(c => c.id == id));
+            User user = (users.FirstOrDefault(c => c.id == id));
+            return user;
         }
 
+        // POST api/<UserController>
         [HttpPost]
-        public IActionResult addCharector(User user)
+        public void Post([FromBody] User user)
         {
-            Users.Add(user);
-            return Ok(Users);
+            users.Add(user);
         }
 
-        [HttpPut("{id}/{name}")]
-        public IActionResult editCharacter(string name, int id)
+        // PUT api/<UserController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string name)
         {
-            User character = Users.FirstOrDefault(c => c.id == id);
-            character.Name = name;
-            return Ok(character);
+            User user = (users.FirstOrDefault(c => c.id == id));
+            user.Name = name;
+           
         }
 
-
+        // DELETE api/<UserController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
+        {
+        }
     }
-
 }
