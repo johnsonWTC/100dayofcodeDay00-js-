@@ -44,8 +44,8 @@ namespace WebApplication12.Controllers
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string name)
+        [HttpPut("{id}/{name}")]
+        public void Put(int id,string name)
         {
             User user = (users.FirstOrDefault(c => c.id == id));
             user.Name = name;
