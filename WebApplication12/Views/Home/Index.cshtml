@@ -4,9 +4,36 @@
 <button id="adder">Add user</button>
 
 <script>
+
+
     let div = document.getElementById("div");
     let name = document.getElementById("name");
     let adder = document.getElementById("adder");
+
+    adder.addEventListener("click", function () {
+       
+            fetch("https://localhost:44353/api/user", {
+                method: "post",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify( {
+                
+                    "name": name.value
+                })
+
+            }, function () {
+                    location.reload();
+            }
+             
+        )
+       
+      
+    })
+
+
+
     fetch("https://localhost:44353/api/user").then(function (data) {
         data.json().then(function (display) {
             for (let i = 0; display.length > i; i++) {

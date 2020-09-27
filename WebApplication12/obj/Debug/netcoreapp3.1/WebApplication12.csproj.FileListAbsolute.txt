@@ -34,3 +34,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication12\obj\Debug\netcor
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication12\obj\Debug\netcoreapp3.1\WebApplication12.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication12\obj\Debug\netcoreapp3.1\WebApplication12.genruntimeconfig.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication12\obj\Debug\netcoreapp3.1\WebApplication12.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication12\obj\Debug\netcoreapp3.1\WebApplication12.csprojAssemblyReference.cache
