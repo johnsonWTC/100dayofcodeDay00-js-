@@ -1,8 +1,20 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<h1>Hello</h1>
+<div id="div"></div>
+<input id="name"/>
+<button id="adder">Add user</button>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<script>
+    let div = document.getElementById("div");
+    let name = document.getElementById("name");
+    let adder = document.getElementById("adder");
+    fetch("https://localhost:44353/api/user").then(function (data) {
+        data.json().then(function (display) {
+            for (let i = 0; display.length > i; i++) {
+                let li = document.createElement("li");
+                li.innerHTML = display[i].name;
+                div.append(li);
+
+            }
+        })
+    })
+</script>
