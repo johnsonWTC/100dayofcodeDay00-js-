@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3iNCNBplq6OJPRUK4lOouxGfje+twS+lkn2phicx8FaLUrVV8RCNXwkfd85Y1nYl7YqPh7i2AKdh3FRMoPEeew==",
+  "dgSpecHash": "STHBAFuKJxsp2zfmXOkf6BObGfM4mk+wHKFSk9XCN6FDTJZmRVd88jKLZ21wUJ/KFXFNBz1oVTKOcktJpmp1ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\WebApplication8\\WebApplication8.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\jdubula\\.nuget\\packages\\jquery\\3.5.1\\jquery.3.5.1.nupkg.sha512"
+  ],
   "logs": []
 }

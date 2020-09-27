@@ -28,6 +28,8 @@ namespace coreAPI
             services.AddControllers();
         }
 
+
+
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -37,6 +39,8 @@ namespace coreAPI
             }
 
       //      app.UseHttpsRedirection();
+
+
 
             app.UseRouting();
 

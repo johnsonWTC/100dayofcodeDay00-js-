@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebApplication8.Models;
+using WebApplication8.ViewModel;
 
 namespace WebApplication8.Controllers
 {
@@ -34,17 +35,18 @@ namespace WebApplication8.Controllers
 
  
 
+
             List<User> users = new List<User>();
             users.Add(userOne);
             users.Add(userTwo);
             users.Add(userThree);
             users.Add(userFour);
 
-            
-          
-       
+            UserViewModel userViewModel = new UserViewModel();
+            userViewModel.Users = users;
 
-            return View(users);
+
+            return View(userViewModel);
         }
     }
 }

@@ -7,3 +7,16 @@
     <h1>@item.itemName</h1>
 
 }
+<br />
+<br />
+
+<table border="1">
+    @foreach (var tableHeader in Model.items)
+    {
+        <tr>
+            <th>@tableHeader.itemName</th>
+        </tr>
+
+    }
+   
+</table>

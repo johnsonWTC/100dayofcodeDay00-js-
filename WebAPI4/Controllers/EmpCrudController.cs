@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Ajax.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,6 +11,14 @@ namespace WebAPI4.Controllers
 {
     public class EmpCrudController : ApiController
     {
-        CrudEntities CrudEntities = new CrudEntities();
+     public IHttpActionResult getEmp()
+        {
+
+            CrudEntities crudEntities = new CrudEntities();
+            var employees = crudEntities.Newempregs.ToList();
+            return Ok(employees); 
+
+        }
+        
     }
 }

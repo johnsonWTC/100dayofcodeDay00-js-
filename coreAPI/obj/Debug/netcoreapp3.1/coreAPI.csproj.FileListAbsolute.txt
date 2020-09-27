@@ -7,7 +7,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\bin\Debug\netcoreapp3.1\c
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\bin\Debug\netcoreapp3.1\coreAPI.runtimeconfig.dev.json
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\bin\Debug\netcoreapp3.1\coreAPI.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\bin\Debug\netcoreapp3.1\coreAPI.pdb
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.csprojAssemblyReference.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.AssemblyInfoInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.AssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.csproj.CoreCompileInputs.cache
@@ -18,3 +17,15 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\s
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\bin\Debug\netcoreapp3.1\coreAPI.Views.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\bin\Debug\netcoreapp3.1\coreAPI.Views.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.RazorAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.RazorAssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.TagHelpers.input.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.TagHelpers.output.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.RazorCoreGenerate.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\Razor\Index.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.RazorTargetAssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.Views.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\coreAPI\obj\Debug\netcoreapp3.1\coreAPI.csproj.CopyComplete

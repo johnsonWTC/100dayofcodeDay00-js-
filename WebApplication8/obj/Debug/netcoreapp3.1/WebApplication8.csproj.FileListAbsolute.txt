@@ -9,7 +9,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\bin\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\bin\Debug\netcoreapp3.1\WebApplication8.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\bin\Debug\netcoreapp3.1\WebApplication8.Views.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\bin\Debug\netcoreapp3.1\WebApplication8.Views.pdb
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\obj\Debug\netcoreapp3.1\WebApplication8.csprojAssemblyReference.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\obj\Debug\netcoreapp3.1\WebApplication8.AssemblyInfoInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\obj\Debug\netcoreapp3.1\WebApplication8.AssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication8\obj\Debug\netcoreapp3.1\WebApplication8.csproj.CoreCompileInputs.cache

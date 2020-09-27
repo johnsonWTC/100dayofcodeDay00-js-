@@ -10,6 +10,7 @@
 }
 <input type="text" id="input"/>
 <button id="add">Add</button>
+<button id="remove">Remove</button>
 <hr />
 
 <div id="div">
@@ -21,15 +22,29 @@
     let input = document.getElementById("input");
     let add = document.getElementById("add");
     let div = document.getElementById("div");
-    let i;
+    let names = [];
+    let remove = document.getElementById("remove");
+
+    div.style.display = "none";
+
+    remove.addEventListener("click", function () {
+        div.style.display = "none";
+    })
 
     add.addEventListener("click", function () {
         if (input.value.length == 0) {
-            alert("Input can not be empty")
+            alert("Input can not be empty");
+        } else {
+            names.push(input.value);
+            let li = document.createElement("li");
+            li.innerHTML = input.value
+            div.append(li);
+            div.style.display = "block";
+
         }
     })
 
-    div.style.display = "none";
+   
 
 </script>
 
