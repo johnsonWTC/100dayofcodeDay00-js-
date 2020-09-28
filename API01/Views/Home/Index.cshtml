@@ -14,7 +14,9 @@
     let input = document.getElementById("input");
 
     add.addEventListener("click", function () {
-
+        if (input.value.length == 0) {
+            alert("input name is required");
+        }
     });
 
 
