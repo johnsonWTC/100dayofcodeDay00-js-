@@ -17,22 +17,33 @@ namespace API01.Controllers
 
         // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            if(users.Count()  == 0)
+            {
+                User defaultUser = new User();
+                defaultUser.userName = "defultsUser";
+                defaultUser.userID = 0;
+                users.Add(defaultUser);
+            }
+          
+            return users;
         }
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+
+            User user = (users.FirstOrDefault(c => c.userID == id));
+            return user;
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User user)
         {
+            users.Add(user);
         }
 
         // PUT api/<UserController>/5
