@@ -15,12 +15,19 @@
     input.addEventListener("keydown", function () {
         fetch("").then(function (res) {
             res.json().then(function (data) {
-                for (let i = 0; data.length > i; i++) {
+                let results = search(data);
+                for (let i = 0; results.length > i; i++) {
                     list[i].innerHTML = data[i].userName;
                 }
             })
         })
     })
+
+    function search(data) {
+        for (let i = 0; data.length > i; i++) {
+
+        }
+    }
 
 
 </script>
