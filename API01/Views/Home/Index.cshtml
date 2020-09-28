@@ -22,14 +22,20 @@
         } else {
             fetch("https://localhost:44340/api/user", {
                 method: "Post",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
                 body: JSON.stringify({
-                    "id": i++,
-                    "userName": input.value;
+                    "id": id++,
+                    "userName": input.value,
                 })
 
             })
+            location.reload();
 
         }
+
     });
 
     fetch("https://localhost:44340/api/user").then(function (data) {

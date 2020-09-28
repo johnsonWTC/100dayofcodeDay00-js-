@@ -13,21 +13,29 @@ namespace API01.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        public static List<User> users = new List<User>();
+
+        MyDbContext _context;
+        public UserController()
+        {
+           
+           _context = new MyDbContext();
+        }
+
 
         // GET: api/<UserController>
         [HttpGet]
         public List<User> Get()
         {
-            if(users.Count()  == 0)
+            
+            if(_context.Users.Count()  == 0)
             {
                 User defaultUser = new User();
                 defaultUser.userName = "defultsUser";
                 defaultUser.userID = 0;
-                users.Add(defaultUser);
+                _context.Users.Add(defaultUser);
             }
           
-            return users;
+            return _context.Users.ToList();
         }
 
         // GET api/<UserController>/5
@@ -35,7 +43,7 @@ namespace API01.Controllers
         public User Get(int id)
         {
 
-            User user = (users.FirstOrDefault(c => c.userID == id));
+            User user = (_context.Users.FirstOrDefault(c => c.userID == id));
             return user;
         }
 
@@ -43,7 +51,8 @@ namespace API01.Controllers
         [HttpPost]
         public void Post([FromBody] User user)
         {
-            users.Add(user);
+            
+            _context.Users.Add(user);
         }
 
         // PUT api/<UserController>/5
