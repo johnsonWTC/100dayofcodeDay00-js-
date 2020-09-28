@@ -2,7 +2,7 @@
 
 <input id="input" list ="list"/>
 <datalist id="list"></datalist>
-<button id="add"></button>
+<button id="add">Add</button>
 <hr />
 <div id="div"></div>
 
@@ -13,7 +13,13 @@
     let list = document.getElementById("list");
 
     input.addEventListener("keydown", function () {
-
+        fetch("").then(function (res) {
+            res.json().then(function (data) {
+                for (let i = 0; data.length > i; i++) {
+                    list[i].innerHTML = data[i].userName;
+                }
+            })
+        })
     })
 
 
