@@ -5,27 +5,38 @@
 
 <input id="input"/>
 <button id="add">Add Item</button>
-<div id="div"></div>
+
 <hr />
+<div id="div"></div>
 
 <script>
     let div = document.getElementById("div");
     let add = document.getElementById("add");
     let input = document.getElementById("input");
+    let id = 0;
 
     add.addEventListener("click", function () {
         if (input.value.length == 0) {
             alert("input name is required");
+            focus();
         } else {
+            fetch("https://localhost:44340/api/user", {
+                method: "Post",
+                body: JSON.stringify({
+                    "id": i++,
+                    "userName": input.value;
+                })
+
+            })
 
         }
     });
 
-    fetch("").then(function (data) {
+    fetch("https://localhost:44340/api/user").then(function (data) {
         data.json().then(function (res) {
             for (let i = 0; res.length > i; i++) {
                 let li = document.createElement("li");
-                li.innerHTML = res[i].name;
+                li.innerHTML = res[i].userName;
                 div.append(li);
             }
         })
