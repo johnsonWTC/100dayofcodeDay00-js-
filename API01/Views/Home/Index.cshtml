@@ -21,6 +21,18 @@
         }
     });
 
+    fetch("").then(function (data) {
+        data.json().then(function (res) {
+            for (let i = 0; res.length > i; i++) {
+                let li = document.createElement("li");
+                li.innerHTML = res[i].name;
+                div.append(li);
+            }
+           
+        })
+    })
+
+
 
 </script>
  
