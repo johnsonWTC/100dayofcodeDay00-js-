@@ -27,9 +27,10 @@
         let startwithArray = [];
         for (let i = 0; data.length > i; i++) {
             if (data[i].userName.startWith(input.value)) {
-                startwithArray.push(data[i].userName)
+                startwithArray.push(data[i].userName);
             }
         }
+        return startwithArray;
     }
 
 
