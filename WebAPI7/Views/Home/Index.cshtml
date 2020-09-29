@@ -59,13 +59,15 @@
 
 
    
-    fetch("https://localhost:44353/api/user").then(function (res) {
+    fetch(`https://localhost:44353/api/user`).then(function (res) {
         res.json().then(function (data) {
             let suggestions = search(data);
             for (let i = 0; suggestions.length > i; i++) {
                 let options = document.createElement("li");
+                let buttonUpdate = document.createElement("button");
                 let buttonDelete = document.createElement("button");
-                buttonDelete.innerHTML = "delete";
+                buttonUpdate.innerHTML = "update";
+                buttonUpdate.innerHTML = "delete";
                 buttonDelete.addEventListener("click", function () {
                     fetch(`https://localhost:44353/api/user/${id}/${input.value}`, {
                         method: "Put",
@@ -75,7 +77,17 @@
                         },  
                     })
                 })
-                let buttonUpdate = document.createElement("button");
+               
+               
+                buttonDelete.addEventListener("click", function () {
+                    fetch(`https://localhost:44353/api/user/${id}/`, {
+                        method: "Delete",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                    })
+                })
                 options.innerHTML = suggestions[i];
                 div.append(options);
             }
