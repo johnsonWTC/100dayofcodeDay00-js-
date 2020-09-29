@@ -13,7 +13,7 @@ namespace WebAPI7.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        List<User> users = new List<User>();
+        public static List<User> users = new List<User>();
         // GET: api/<UserController>
         [HttpGet]
         public List<User> Get()
@@ -48,6 +48,8 @@ namespace WebAPI7.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
+            users.Remove(user);
         }
     }
 }
