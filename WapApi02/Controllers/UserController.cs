@@ -46,7 +46,7 @@ namespace WapApi02.Controllers
         public void Put(int id, string name)
         {
             User user = users.FirstOrDefault(c => c.userID == id);
-            user.UerName = name;
+            user.UserName = name;
         }
 
         // DELETE api/<UserController>/5

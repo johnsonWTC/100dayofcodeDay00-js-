@@ -8,6 +8,6 @@ namespace WapApi02.Models
     public class User
     {
         public int userID { get; set; } = 0;
-        public string UerName { get; set; } = "johnson";
+        public string UserName { get; set; } = "johnson";
     }
 }

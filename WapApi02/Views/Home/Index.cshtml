@@ -13,11 +13,15 @@
     let list = document.getElementById("list");
 
     input.addEventListener("keydown", function () {
-        fetch("").then(function (res) {
+        list.innerHTML = "";
+        fetch("https://localhost:44334/api/user").then(function (res) {
             res.json().then(function (data) {
                 let results = search(data);
                 for (let i = 0; results.length > i; i++) {
-                    list[i].innerHTML = data[i].userName;
+                    let option = document.createElement("option");
+                    option.value = results[i];
+                    console.log(results[i])
+                    list.append(option);
                 }
             })
         })
@@ -26,9 +30,12 @@
     function search(data) {
         let startwithArray = [];
         for (let i = 0; data.length > i; i++) {
-            if (data[i].userName.startWith(input.value)) {
+           
+            if (data[i].userName.startsWith(input.value)) {
+                console.log(data[i].userName);
                 startwithArray.push(data[i].userName);
             }
+          
         }
         return startwithArray;
     }
