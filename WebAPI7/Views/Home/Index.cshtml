@@ -1,6 +1,8 @@
 ﻿<h1>Hello welcome to My API</h1>
 
-<input id="input"/><button id="adder">Add</button>
+<input id="input" list="sug"/>
+<datalist id="sug"></datalist>
+<button id="adder">Add</button>
 <hr />
 <div id="div"></div>
 <script>
@@ -29,11 +31,17 @@
 
     fetch("https://localhost:44353/api/user").then(function (res) {
         res.json().then(function (data) {
-
+            let suggestion = search(data);
         })
     })
 
     function search(data) {
         result = [];
+        for (let i = 0; data.length > i; i++) {
+            if (data[i].userName.startsWith(input.value)) {
+                result.push(data[i].userName);
+            }
+        }
+        return result;
     }
 </script>
