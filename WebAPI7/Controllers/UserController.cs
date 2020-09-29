@@ -40,7 +40,8 @@ namespace WebAPI7.Controllers
         [HttpPut("{id}/{newName}")]
         public void Put(int id, string newName)
         {
-
+            User user = users.FirstOrDefault(a => a.userID == id);
+            user.userName = newName;
         }
 
         // DELETE api/<UserController>/5
