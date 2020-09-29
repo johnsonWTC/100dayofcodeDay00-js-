@@ -12,7 +12,7 @@
     let input = document.getElementById("input");
     let div = document.getElementById("div");
     let adder = document.getElementById("adder");
-    let sug = document.createElement("sug");
+    let sug = document.getElementById("sug");
     let id = 0;
 
     adder.addEventListener("click", function () {
@@ -30,15 +30,22 @@
         location.reload();
     })
 
+
+     // create suggestion list
+
     fetch("https://localhost:44353/api/user").then(function (res) {
+        sug.innerHTML = "";
         res.json().then(function (data) {
             let suggestions = search(data);
             for (let i = 0; suggestions.length > i; i++) {
                 let options = document.createElement("option");
                 options.value = suggestions[i];
+                sug.append(options);
             }
         })
     })
+
+
 
     function search(data) {
         result = [];
@@ -51,13 +58,30 @@
     }
 
 
-
+   
     fetch("https://localhost:44353/api/user").then(function (res) {
         res.json().then(function (data) {
             let suggestions = search(data);
             for (let i = 0; suggestions.length > i; i++) {
                 let options = document.createElement("li");
+                let buttonDelete = document.createElement("button");
+                buttonDelete.innerHTML = "delete";
+                buttonDelete.addEventListener("click", function () {
+                    fetch(` https://localhost:44353/api/user/${id}/${input.value} `, {
+                        method: "Put",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            "id": id++,
+                            "userName": input.value,
+                        })
+                    })
+                })
+                let buttonUpdate = document.createElement("button");
                 options.innerHTML = suggestions[i];
+                div.append(options);
             }
         })
     })
