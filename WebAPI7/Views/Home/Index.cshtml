@@ -32,7 +32,11 @@
 
     fetch("https://localhost:44353/api/user").then(function (res) {
         res.json().then(function (data) {
-            let suggestion = search(data);
+            let suggestions = search(data);
+            for (let i = 0; suggestions.length > i; i++) {
+                let options = document.createElement("option");
+                options.value = suggestions[i];
+            }
         })
     })
 
@@ -45,4 +49,16 @@
         }
         return result;
     }
+
+
+
+    fetch("https://localhost:44353/api/user").then(function (res) {
+        res.json().then(function (data) {
+            let suggestions = search(data);
+            for (let i = 0; suggestions.length > i; i++) {
+                let options = document.createElement("li");
+                options.innerHTML = suggestions[i];
+            }
+        })
+    })
 </script>
