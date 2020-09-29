@@ -67,16 +67,12 @@
                 let buttonDelete = document.createElement("button");
                 buttonDelete.innerHTML = "delete";
                 buttonDelete.addEventListener("click", function () {
-                    fetch(` https://localhost:44353/api/user/${id}/${input.value} `, {
+                    fetch(`https://localhost:44353/api/user/${id}/${input.value}`, {
                         method: "Put",
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            "id": id++,
-                            "userName": input.value,
-                        })
+                        },  
                     })
                 })
                 let buttonUpdate = document.createElement("button");
