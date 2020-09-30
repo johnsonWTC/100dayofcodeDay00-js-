@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using Entity00.Models;
 
 namespace Entity00.Models
 {
     public class MyDbContext : DbContext
     {
-        public MyDbContext()
-        {
-        }
-
         public DbSet<User> Users { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+           => options.UseSqlite("Data Source=blogging.db");
+
+
 
     }
 }

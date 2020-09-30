@@ -16,6 +16,7 @@
     let id = 0;
 
     adder.addEventListener("click", function () {
+        id++;
         fetch("https://localhost:44353/api/user", {  
             method: "Post",
             headers: {
@@ -23,10 +24,11 @@
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                "id": id++,
+                "id": id,
                 "userName": input.value,
             })
         })
+   
         location.reload();
     })
 
@@ -67,8 +69,8 @@
                 let buttonUpdate = document.createElement("button");
                 let buttonDelete = document.createElement("button");
                 buttonUpdate.innerHTML = "update";
-                buttonUpdate.innerHTML = "delete";
-                buttonDelete.addEventListener("click", function () {
+                buttonDelete.innerHTML = "delete";
+                buttonUpdate.addEventListener("click", function () {
                     fetch(`https://localhost:44353/api/user/${id}/${input.value}`, {
                         method: "Put",
                         headers: {
@@ -76,6 +78,7 @@
                             'Content-Type': 'application/json'
                         },  
                     })
+                    location.reload();
                 })
                
                
@@ -87,9 +90,12 @@
                             'Content-Type': 'application/json'
                         },
                     })
+                    location.reload();
                 })
                 options.innerHTML = suggestions[i];
                 div.append(options);
+                div.append(buttonDelete);
+                div.append(buttonUpdate);
             }
         })
     })
