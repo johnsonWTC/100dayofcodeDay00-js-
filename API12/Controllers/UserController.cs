@@ -39,7 +39,7 @@ namespace API12.Controllers
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}/userName")]
+        [HttpPut("{id}/{userName}")]
         public void Put(int id, string newName)
         {
             User user = users.FirstOrDefault(e => e.userID == id);
@@ -50,6 +50,8 @@ namespace API12.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
+            users.Remove(user);
         }
     }
 }
