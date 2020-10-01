@@ -18,6 +18,16 @@
             for (let i = 0; data.length > i; i++) {
                 let li = document.createElement("li");
                 let editButton = document.createElement("button");
+                editButton.innerHTML = "edit";
+                editButton.addEventListener("click", function () {
+                    fetch(`https://localhost:44321/api/user/{data[i].userID}/{input.value}`, {
+                        method: "PUT",
+                        headers: {
+                            "accept": "application/json",
+                            "content-type" : "application/json",
+                        }
+                    })
+                })
                 let deleteButton = document.createElement("button");
                 li.innerHTML = data[i].userName;
                 div.append(li);
