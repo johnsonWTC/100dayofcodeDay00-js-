@@ -29,6 +29,15 @@
                     })
                 })
                 let deleteButton = document.createElement("button");
+                deleteButton.addEventListener("click", function () {
+                    fetch(`https://localhost:44321/api/user/{data[i].userID}`, {
+                        method: "PUT",
+                        headers: {
+                            "Accept": "application/json",
+                            "Content-type": "application/json",
+                        }
+                    })
+                })
                 li.innerHTML = data[i].userName;
                 div.append(li);
                 div.append(editButton);
