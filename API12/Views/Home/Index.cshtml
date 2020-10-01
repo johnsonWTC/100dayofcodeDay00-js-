@@ -4,7 +4,7 @@
 
 <h1>Hello, Welcome to My api</h1>
 <input id="input"/>
-<button id="add"></button>
+<button id="add">Add</button>
 <hr />
 <div id="div"></div>
 
@@ -12,4 +12,18 @@
     let input = document.getElementById("input");
     let add = document.getElementById("add");
     let div = document.querySelector("#div");
+
+    fetch("https://localhost:44321/api/user").then(function (res) {
+        res.json().then(function (data) {
+            for (let i = 0; data.length > i; i++) {
+                let li = document.createElement("li");
+                let editButton = document.createElement("button");
+                let deleteButton = document.createElement("button");
+                li.innerHTML = data[i].userName;
+                div.append(li);
+                div.append(editButton);
+                div.append(deleteButton);
+            }
+        })
+    })
 </script>
