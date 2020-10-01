@@ -27,19 +27,23 @@ namespace API12.Controllers
         public User Get(int id)
         {
             User user = users.FirstOrDefault(e => e.userID == id);
-            return;
+            return user;
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User user)
         {
+            users.Add(user);
+
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}/userName")]
+        public void Put(int id, string newName)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
+            user.userName = newName;
         }
 
         // DELETE api/<UserController>/5
