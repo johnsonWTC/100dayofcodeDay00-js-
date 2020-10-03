@@ -40,6 +40,8 @@ namespace API.Controllers
         [HttpPut("{id}/{newName}")]
         public void Put(int id, string newName)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
+            users.Remove(user);
         }
 
         // DELETE api/<UserController>/5
