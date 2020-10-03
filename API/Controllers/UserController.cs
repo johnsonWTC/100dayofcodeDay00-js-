@@ -23,20 +23,22 @@ namespace API.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+            User user = users.FirstOrDefault(e => e.userID == id);
+            return user;
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User user)
         {
+            users.Add(user);
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}/{newName}")]
+        public void Put(int id, string newName)
         {
         }
 
