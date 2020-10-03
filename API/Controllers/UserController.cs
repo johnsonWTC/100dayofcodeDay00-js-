@@ -41,13 +41,15 @@ namespace API.Controllers
         public void Put(int id, string newName)
         {
             User user = users.FirstOrDefault(e => e.userID == id);
-            users.Remove(user);
+            user.UserName = newName;
         }
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
+            users.Remove(user);
         }
     }
 }
