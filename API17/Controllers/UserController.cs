@@ -40,6 +40,7 @@ namespace API17.Controllers
         [HttpPut("{id}/{newName}")]
         public void Put(int id, string newName)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
         }
 
         // DELETE api/<UserController>/5
