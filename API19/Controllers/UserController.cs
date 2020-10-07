@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API19.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace API19.Controllers
 {
+
+   
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
+        public static List<User> users = new List<User>();
         // GET: api/<UserController>
         [HttpGet]
         public IEnumerable<string> Get()
