@@ -9,8 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API19.Controllers
 {
-
-   
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -25,27 +23,32 @@ namespace API19.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+            User user = users.FirstOrDefault(e => e.userID == id);
+            return user;
         }
 
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User user)
         {
+            users.Add(user);
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}/{newName}")]
+        public void Put(int id,  string newName)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
+            user.userName = newName;
         }
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void Delete(User user)
         {
+            users.Remove(user);
         }
     }
 }
