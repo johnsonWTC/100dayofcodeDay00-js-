@@ -23,9 +23,10 @@ namespace API13.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+            User user = users.FirstOrDefault(e => e.userID == id);
+            return user;
         }
 
         // POST api/<UserController>
