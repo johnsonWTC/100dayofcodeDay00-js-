@@ -2,7 +2,31 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<textarea id="input"  rows="4" cols="50"></textarea>
+
+
+<span id="span"></span>
+<span id="spanCount"></span>
+
+
+
+<script>
+    let input = document.getElementById("input");
+    let span = document.getElementById("span");
+    let spanCount = document.getElementById("spanCount");
+    let count = 0;
+    let countLine = 0;
+    let currentInput = [];
+
+
+    input, addEventListener("keyup", function () {
+
+        if (input.value.match(/\n/g)) {
+            countLine++;
+            spanCount.innerHTML = countLine;
+        }
+        count++;
+        span.innerHTML = count;
+    })
+
+</script>

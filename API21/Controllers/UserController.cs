@@ -37,7 +37,7 @@ namespace API21.Controllers
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}/newName")]
+        [HttpPut("{id}/{newName}")]
         public void Put(int id,  string newName)
         {
             User user = users.FirstOrDefault(e => e.userID == id);
