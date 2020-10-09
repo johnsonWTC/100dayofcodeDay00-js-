@@ -13,7 +13,7 @@ namespace API13.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        List<User> users = new List<User>();
+       public static List<User> users = new List<User>();
         // GET: api/<UserController>
         [HttpGet]
         public List<User> Get()
@@ -25,7 +25,7 @@ namespace API13.Controllers
         [HttpGet("{id}")]
         public User Get(int id)
         {
-            User user = users.FirstOrDefault(e => e.userID == id);
+             User user = users.FirstOrDefault(e => e.userID == id);
             return user;
         }
 
