@@ -17,16 +17,21 @@
     let count = 0;
     let countLine = 0;
     let currentInput = [];
+    let words = [];
 
 
-    input, addEventListener("keyup", function () {
 
-        if (input.value.match(/\n/g)) {
+
+
+    input, addEventListener("keyup", function (e) {
+        if (e.keyCode == "\n" || e.keyCode == 13) {
+            count = 0;
             countLine++;
-            spanCount.innerHTML = countLine;
+            spanCount.innerHTML = countLine + " lines";
+        } else {
+            count++;
+            span.innerHTML = count + " chars";
         }
-        count++;
-        span.innerHTML = count;
     })
 
 </script>
