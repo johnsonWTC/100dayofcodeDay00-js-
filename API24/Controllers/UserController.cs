@@ -37,9 +37,11 @@ namespace API24.Controllers
         }
 
         // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}/{newName}")]
+        public void Put(int id,  string newName)
         {
+            User user = users.FirstOrDefault(e => e.userID == id);
+            user.userName = newName;
         }
 
         // DELETE api/<UserController>/5
