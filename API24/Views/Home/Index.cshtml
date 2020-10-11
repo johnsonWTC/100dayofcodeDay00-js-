@@ -4,15 +4,23 @@
 
 <textarea id="text"></textarea>
 <span id="span"></span>
+<span id="spanTwo"></span>
 
 <script>
     let count = 0;
+    let countTwo = 0;
     let text = document.getElementById("text");
     let span = document.getElementById("span");
+    let spanTwo = document.getElementById("spanTwo");
 
     text.addEventListener("keyup", function () {
-        count++;
-        span.innerHTML = count;
-    })
+        if (text.value == "\n") {
+            spanTwo
+        } else {
+            count++;
+            span.innerHTML = count;
+        }
+        
+        })
 
 </script>
