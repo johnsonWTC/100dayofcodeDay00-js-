@@ -16,9 +16,9 @@ namespace API24.Controllers
         public static List<User> users = new List<User>();
         // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<User> Get()
         {
-            return new string[] { "value1", "value2" };
+            return users;
         }
 
         // GET api/<UserController>/5
