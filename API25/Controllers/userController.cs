@@ -33,8 +33,9 @@ namespace API25.Controllers
 
         // POST api/<userController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User  user)
         {
+            users.Add(user);
         }
 
         // PUT api/<userController>/5
