@@ -13,9 +13,11 @@
     let div = document.getElementById("div");
 
     fetch("").then(function (res) {
-        res.json().then(data){
+        res.json().then(function (data) {
+            for (let i = 0; data.length > i; i++) {
 
-        }
+            }
+        })
     })
 </script>
 
