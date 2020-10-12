@@ -51,6 +51,7 @@ namespace API25.Controllers
         public void Delete(int id)
         {
             User user = users.FirstOrDefault(e => e.userID == id);
+            users.Remove(user);
         }
     }
 }
