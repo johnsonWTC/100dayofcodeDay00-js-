@@ -7,20 +7,36 @@
 <span id="spanTwo"></span>
 
 <script>
-    let count = 0;
+   
     let countTwo = 0;
     let text = document.getElementById("text");
+    text.innerHTML = "Line 1\\nLine 2"
     let span = document.getElementById("span");
     let spanTwo = document.getElementById("spanTwo");
+    
 
-    text.addEventListener("keyup", function () {
-        if (text.value == "\n") {
+    text.addEventListener("keyup", function (e) {
+        let count = text.value.length;
+        if (e.keyCode == 13) {
             countTwo++;
-            
         }
-            count++;
         span.innerHTML = count;
         spanTwo.innerHTML = countTwo;
     })
+
+    window.onload = function () {
+        alert("hello")
+        let count = text.value.length; 
+        let textTwo = "Line 1\\nLine 2"
+        let newString = textTwo.split("");
+        console.log(newString);
+        for (let i = 0; newString.length > i; i++) {
+            if (newString[i] === "\n") {
+                countTwo++;
+            }
+        }
+        span.innerHTML = count;
+        spanTwo.innerHTML = countTwo;
+    }
 
 </script>
