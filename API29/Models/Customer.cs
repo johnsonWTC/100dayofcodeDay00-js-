@@ -7,6 +7,7 @@ namespace API29.Models
 {
     public class Customer
     {
+#nullable  enable
         public int id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -14,6 +15,7 @@ namespace API29.Models
 
         public string ? Phone { get; set; }
 
+#nullable disable
         public ICollection<Orders> Orders { get; set; }
 
     }
