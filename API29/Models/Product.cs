@@ -9,7 +9,8 @@ namespace API29.Models
 {
     public class Product
     {
-        public int id { get; set; }
+        [Key]
+        public int Id { get; set; }
         [Required]
         public string name { get; set; }
 
