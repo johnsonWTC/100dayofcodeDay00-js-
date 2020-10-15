@@ -9,7 +9,7 @@ namespace API29.Models
 
         public int id { get; set; }
         public DateTime orderPlaced { get; set; }
-        public DateTime orderFullFilled { get; set; }
+        public DateTime ? orderFullFilled { get; set; }
 
         public int customerId { get; set; }
         public Customer Customer { get; set; }
