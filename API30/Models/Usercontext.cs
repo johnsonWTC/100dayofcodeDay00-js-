@@ -9,12 +9,12 @@ namespace API30.Models
     public class Usercontext : DbContext
     {
 
-
+        public DbSet<User> Users { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=ASSET-10422\\SQLEXPRESS;Initial Catalog=New;Integrated Security=True");
+            optionsBuilder.UseSqlServer("Data Source=ASSET-10422\\SQLEXPRESS;Initial Catalog=API30;Integrated Security=True");
             // optionsBuilder.UseSqlServer("server=.;database=dataTest;trusted_connection=true;");
             // "Data Source=ASSET-10422\\SQLEXPRESS;Initial Catalog=New;Integrated Security=True"
         }
