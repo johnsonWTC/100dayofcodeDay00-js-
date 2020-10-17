@@ -7,5 +7,7 @@ namespace API30.Models
 {
     public class User
     {
-    }
+        public int userID { get; set; }
+        public string userName { get; set; }
+    }   
 }
