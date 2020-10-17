@@ -8,6 +8,10 @@ namespace API30.Models
 {
     public class Usercontext : DbContext
     {
+        public Usercontext(DbContextOptions<Usercontext> options) :base(options)
+        {
+        }
+
 
         public DbSet<User> Users { get; set; }
 
