@@ -19,8 +19,9 @@ namespace API29.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = localdb\\MSSQLLocalDB; Initial Catalog=dataTest;Integrated Security=True");
-           // optionsBuilder.UseSqlServer("server=.;database=myDb;trusted_connection=true;");
-        } 
+              optionsBuilder.UseSqlServer("Data Source=ASSET-10422\\SQLEXPRESS;Initial Catalog=New;Integrated Security=True");
+           // optionsBuilder.UseSqlServer("server=.;database=dataTest;trusted_connection=true;");
+           // "Data Source=ASSET-10422\\SQLEXPRESS;Initial Catalog=New;Integrated Security=True"
+        }
     }
 }
