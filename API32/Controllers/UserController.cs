@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API29.Data;
 using API32.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,15 +25,27 @@ namespace API32.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+          
+           
+            using (var _context = new Context())
+            {
+                User user = _context.Users.FirstOrDefault(e => e.userID == id);
+                return user;
+            }
+          
+
+        
         }
 
         // POST api/<UserController>
         [HttpPost]
         public void Post([FromBody] User user)
         {
+            using ( var _context = new Context()){
+                _context.Add(user);
+            }
         }
 
         // PUT api/<UserController>/5
