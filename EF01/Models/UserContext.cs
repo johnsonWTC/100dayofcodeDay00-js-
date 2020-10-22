@@ -6,19 +6,11 @@ using System.Threading.Tasks;
 
 namespace EF01.Models
 {
-    public class UserContext : DbContext
+    public class UserContext
     {
       
 
-        public DbSet<User> Users { get; set; }
-      
 
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=API32;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            // optionsBuilder.UseSqlServer("server=.;database=dataTest;trusted_connection=true;");
-            // "Data Source=ASSET-10422\\SQLEXPRESS;Initial Catalog=New;Integrated Security=True"
-        }
+       
     }
 }
