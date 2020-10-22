@@ -167,3 +167,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\API32\obj\Debug\netcoreapp3.1\sta
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\API32\obj\Debug\netcoreapp3.1\API32.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\API32\obj\Debug\netcoreapp3.1\API32.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\API32\obj\Debug\netcoreapp3.1\API32.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\API32\obj\Debug\netcoreapp3.1\API32.csprojAssemblyReference.cache

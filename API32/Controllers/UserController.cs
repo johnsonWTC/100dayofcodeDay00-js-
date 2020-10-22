@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using API29.Data;
 using API32.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,48 +11,37 @@ namespace API32.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrdersController : ControllerBase
+    public class UserController : ControllerBase
     {
-        
-        public static List<Product> products = new List<Product>();
+        public static LinkedList<User> users = new LinkedList<User>();
 
-
-       // using ( var _context = new Context());
-        // GET: api/<OrdersController>
+        // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IEnumerable<string> Get()
         {
-            using (var _context = new Context()) 
-
-            return products;
+            return new string[] { "value1", "value2" };
         }
 
-        // GET api/<OrdersController>/5
+        // GET api/<UserController>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<OrdersController>
+        // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] Product product)
+        public void Post([FromBody] string value)
         {
-            using (var _context = new Context())
-            {
-                _context.Add(product);
-            }
-            products.Add(product);
-
         }
 
-        // PUT api/<OrdersController>/5
+        // PUT api/<UserController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<OrdersController>/5
+        // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
