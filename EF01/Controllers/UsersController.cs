@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EF01.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,16 +15,27 @@ namespace EF01.Controllers
     {
         // GET: api/<UsersController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<User> Get()
         {
+            using (var _context = new UserContext())
+            {
+                User user = _context.Users.FirstOrDefault(e => e.userID = id);
+                _context.Users;
+            }
             return new string[] { "value1", "value2" };
         }
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+            using (var _context = new UserContext())
+            {
+                User user = _context.Users.FirstOrDefault(e => e.userID == id);
+                return user;
+              
+            }
+           
         }
 
         // POST api/<UsersController>
