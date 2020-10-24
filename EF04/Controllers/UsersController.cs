@@ -13,29 +13,30 @@ namespace EF04.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+
+        UserContext _context = new UserContext();
         // GET: api/<UsersController>
         [HttpGet]
         public IEnumerable<User> Get()
         {
-            using (var _context = new UserContext())
-            {
-                return _context.Users.ToList();
-            }
-
-          
+           
+           return _context.Users.ToList();
+ 
         }
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+            User user = _context.Users.FirstOrDefault(e => e.userID == id);
+            return user;
         }
 
         // POST api/<UsersController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User user)
         {
+            _context.Users.Add(user);
         }
 
         // PUT api/<UsersController>/5
