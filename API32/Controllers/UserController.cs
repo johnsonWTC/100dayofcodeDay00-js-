@@ -44,7 +44,8 @@ namespace API32.Controllers
         public void Post([FromBody] User user)
         {
             using ( var _context = new Context()){
-                _context.Add(user);
+                _context.Users.Add(user);
+                _context.SaveChanges();
             }
         }
 

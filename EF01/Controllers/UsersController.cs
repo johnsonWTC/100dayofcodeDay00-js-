@@ -14,16 +14,18 @@ namespace EF01.Controllers
     public class UsersController : ControllerBase
     {
         // GET: api/<UsersController>
+       public static List<User> usersList = new List<User>();
         [HttpGet]
         public IEnumerable<User> Get()
         {
             using (var _context = new UserContext())
             {
-                User user = _context.Users.FirstOrDefault(e => e.userID = id);
-                _context.Users;
+                List<User> users = _context.Users.ToList();
+
             }
-            return new string[] { "value1", "value2" };
+            return usersList;
         }
+
 
         // GET api/<UsersController>/5
         [HttpGet("{id}")]
@@ -40,8 +42,13 @@ namespace EF01.Controllers
 
         // POST api/<UsersController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User user)
         {
+            using (var _context = new UserContext())
+            {
+                _context.Users.Add(user);
+                _context.SaveChanges();
+            }
         }
 
         // PUT api/<UsersController>/5
