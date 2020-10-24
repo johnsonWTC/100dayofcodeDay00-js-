@@ -8,6 +8,6 @@ namespace EF04.Models
     public class User
     {
         public int userID { get; set; }
-        public string UserName { get; set; }
+        public string UserName { get; set; }    
     }
 }
