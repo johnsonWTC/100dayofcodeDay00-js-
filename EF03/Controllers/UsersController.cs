@@ -27,14 +27,20 @@ namespace EF03.Controllers
             using (var context = new UserContext()){
 
                 User user = context.Users.FirstOrDefault(e => e.userID == id);
+                return user;
             }
            
         }
 
         // POST api/<UsersController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User user)
         {
+            using (var userContext = new UserContext())
+            {
+                userContext.Add(user);
+                userContext.SaveChanges();
+            }
         }
 
         // PUT api/<UsersController>/5
