@@ -11,17 +11,38 @@
     let add = document.getElementById("add");
     let div = document.getElementById("div");
 
+    var data = {
+        "userName" : userName.value,
+    }
+
     add.addEventListener("click", function () {
-        alert("clicked");
+       
+        fetch("https://localhost:44321/api/users", {
+            method: "post",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        }).then(response => response.json())
+            .then(data => {
+                console.log('Success:', data)
+            })
+            .catch((error) => {
+               
+            })
+      
     })
 
     fetch("https://localhost:44321/api/users").then(function (res) {
-        res.json.then(function (data) {
+        res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 let li = document.createElement("li");
                 li.innerHTML = data[i].userName;
+                div.append(li);
             }
         })
     })
+
+
 </script>
 
