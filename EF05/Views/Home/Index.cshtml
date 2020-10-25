@@ -4,6 +4,16 @@
 
 <input id="userName"/>
 <hr />
+<div id="div"></div>
 <script>
+    let userName = document.getElementById("userName");
+    let div = document.getElementById("div");
 
+    fetch("").then(function (res) {
+        res.json().then(function (data) {
+            for (let i = 0; data.length > i; i++) {
+
+            }
+        })
+    })
 </script>
