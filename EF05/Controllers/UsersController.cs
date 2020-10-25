@@ -35,6 +35,7 @@ namespace EF05.Controllers
         public void Post([FromBody] User User)
         {
             _context.Users.Add(User);
+            _context.SaveChanges();  
         }
 
         // PUT api/<UsersController>/5
