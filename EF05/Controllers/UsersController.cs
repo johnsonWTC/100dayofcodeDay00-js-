@@ -32,8 +32,9 @@ namespace EF05.Controllers
 
         // POST api/<UsersController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] User User)
         {
+            _context.Users.Add(User);
         }
 
         // PUT api/<UsersController>/5
