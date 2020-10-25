@@ -61,3 +61,17 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\runt
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\obj\Debug\netcoreapp3.1\EF05.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\EF05.deps.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\EF05.runtimeconfig.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\EF05.runtimeconfig.dev.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\EF05.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\EF05.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\EF05.Views.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\EF05.Views.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\obj\Debug\netcoreapp3.1\EF05.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\obj\Debug\netcoreapp3.1\EF05.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\obj\Debug\netcoreapp3.1\EF05.Views.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\obj\Debug\netcoreapp3.1\EF05.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\obj\Debug\netcoreapp3.1\EF05.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF05\obj\Debug\netcoreapp3.1\EF05.genruntimeconfig.cache
