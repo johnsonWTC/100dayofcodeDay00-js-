@@ -3,16 +3,20 @@
 }
 
 <input id="userName"/>
+<button id="adder"></button>
 <hr />
 <div id="div"></div>
 <script>
     let userName = document.getElementById("userName");
     let div = document.getElementById("div");
+    let adder = document.getElementById("adder");
 
-    fetch("").then(function (res) {
+    fetch("https://localhost:44386/api/users/").then(function (res) {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
-
+                let li = document.createElement("li");
+                li.innerHTML = data[i].userName;
+                div.append(li);
             }
         })
     })
