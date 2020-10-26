@@ -15,6 +15,7 @@
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 let li = document.createElement("li");
+                li.innerHTML = data[i].bookName;
                 let updateB = document.createElement("button");
                 updateB.innerHTML = "Update";
                 updateB.addEventListener("click", function () {
@@ -45,7 +46,7 @@
                     })
                     location.reload();
                 })
-                li.innerHTML = data[i].bookName;
+               
                 div.append(li);
                 div.append(updateB);
                 div.append(deleteB);
@@ -55,7 +56,7 @@
     })
 
 
-    add..addEventListener("click", function () {
+    add.addEventListener("click", function () {
         if (BookName.value.length == 0) {
             alert("New Book name required");
         } else {
@@ -66,7 +67,7 @@
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    "userName": BookName.value,
+                    "bookName": BookName.value,
                 })
             })
             location.reload();
