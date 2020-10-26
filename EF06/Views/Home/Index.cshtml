@@ -29,21 +29,26 @@
                             },
                         })
                     }
+                    location.reload();
                 })
                 let deleteB = document.createElement("button");
                 deleteB.innerHTML = "Delete";
                 deleteB.addEventListener("click", function () {
-                    fetch("https://localhost:44399/api/books/${data[i].booksID", {
+                    fetch(`https://localhost:44399/api/books/${data[i].booksID}` , {
                         method: "delete",
                         headers: {
                             'Accept': 'application/json',
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
                         },
-                       
-                    }
+
+                    })
+                    location.reload();
                 })
                 li.innerHTML = data[i].bookName;
                 div.append(li);
+                div.append(updateB);
+                div.append(deleteB);
+            }
                
         })
     })

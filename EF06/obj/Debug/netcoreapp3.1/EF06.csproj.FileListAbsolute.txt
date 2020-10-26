@@ -74,3 +74,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\stat
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.csprojAssemblyReference.cache
