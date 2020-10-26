@@ -15,9 +15,9 @@
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 let li = document.createElement("li");
-                let update = document.createElement("button");
-                update.innerHTML = "Update";
-                update.addEventListener("click", function () {
+                let updateB = document.createElement("button");
+                updateB.innerHTML = "Update";
+                updateB.addEventListener("click", function () {
                     if (BookName.value.length == 0) {
                         alert("New Book name required");
                     } else {
@@ -30,20 +30,20 @@
                         })
                     }
                 })
-
-                fetch("https://localhost:44340/api/user", {
-                    method: "Post",
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        "id": id++,
-                        "userName": input.value,
-                    })
+                let deleteB = document.createElement("button");
+                deleteB.addEventListener("click", function () {
+                    fetch("https://localhost:44340/api/user", {
+                        method: "delete",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                       
+                    }
+                })
                 li.innerHTML = data[i].bookName;
                 div.append(li);
-            }
+               
         })
     })
 </script>
