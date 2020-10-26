@@ -31,20 +31,28 @@ namespace EF06.Controllers
 
         // POST api/<BooksController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Books   book)
         {
+            _context.Books.Add(book);
+            _context.SaveChanges();
         }
 
         // PUT api/<BooksController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}/newName")]
+        public void Put(int id, [FromBody] string newName)
         {
+            Books book = _context.Books.FirstOrDefault(e => e.bookID == id);
+            book.BookName = newName;
+            _context.SaveChanges();
         }
 
         // DELETE api/<BooksController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            Books book = _context.Books.FirstOrDefault(e => e.bookID == id);
+            _context.Remove(book);
+            _context.SaveChanges();
         }
     }
 }
