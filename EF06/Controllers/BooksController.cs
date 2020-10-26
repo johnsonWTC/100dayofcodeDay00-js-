@@ -25,7 +25,7 @@ namespace EF06.Controllers
         [HttpGet("{id}")]
         public Books Get(int id)
         {
-            Books book = _context.Books.FirstOrDefault(e => e.bookID == id);
+            Books book = _context.Books.FirstOrDefault(e => e.booksID == id);
             return book;
         }
 
@@ -38,10 +38,10 @@ namespace EF06.Controllers
         }
 
         // PUT api/<BooksController>/5
-        [HttpPut("{id}/newName")]
-        public void Put(int id, [FromBody] string newName)
+        [HttpPut("{id}/{newName}")]
+        public void Put(int id, string newName)
         {
-            Books book = _context.Books.FirstOrDefault(e => e.bookID == id);
+            Books book = _context.Books.FirstOrDefault(e => e.booksID == id);
             book.BookName = newName;
             _context.SaveChanges();
         }
@@ -50,7 +50,7 @@ namespace EF06.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            Books book = _context.Books.FirstOrDefault(e => e.bookID == id);
+            Books book = _context.Books.FirstOrDefault(e => e.booksID == id);
             _context.Remove(book);
             _context.SaveChanges();
         }
