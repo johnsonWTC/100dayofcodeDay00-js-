@@ -8,5 +8,6 @@ namespace EF06.Models
 {
     public class BookContext : DbContext
     {
+        public DbSet<Books> Books { get; set; }
     }
 }
