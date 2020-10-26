@@ -7,5 +7,6 @@ namespace EF06.Models
 {
     public class Books
     {
+        public string BookName { get; set; }
     }
 }
