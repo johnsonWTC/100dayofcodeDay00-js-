@@ -28,13 +28,14 @@
                                 'Content-Type': 'application/json'
                             },
                         })
+                        location.reload();
                     }
-                    location.reload();
+
                 })
                 let deleteB = document.createElement("button");
                 deleteB.innerHTML = "Delete";
                 deleteB.addEventListener("click", function () {
-                    fetch(`https://localhost:44399/api/books/${data[i].booksID}` , {
+                    fetch(`https://localhost:44399/api/books/${data[i].booksID}`, {
                         method: "delete",
                         headers: {
                             'Accept': 'application/json',
@@ -49,7 +50,27 @@
                 div.append(updateB);
                 div.append(deleteB);
             }
-               
+
         })
+    })
+
+
+    add..addEventListener("click", function () {
+        if (BookName.value.length == 0) {
+            alert("New Book name required");
+        } else {
+            fetch(`https://localhost:44399/api/books/`, {
+                method: "Post",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    "userName": BookName.value,
+                })
+            })
+            location.reload();
+        }
+
     })
 </script>
