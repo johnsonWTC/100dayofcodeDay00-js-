@@ -3,7 +3,7 @@
 }
 
 <input autocomplete="off" id="BookName"/>
-<button id="add"></button>
+<button id="add">ADD</button>
 <hr />
 <div id="div"></div>
 <script>
@@ -11,10 +11,38 @@
     let add = document.getElementById("add");
     let div = document.getElementById("div");
 
-    fetch("").then(function (data) {
-        data.json().then(function (res) {
+    fetch("https://localhost:44399/api/books/").then(function (res) {
+        res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
+                let li = document.createElement("li");
+                let update = document.createElement("button");
+                update.innerHTML = "Update";
+                update.addEventListener("click", function () {
+                    if (BookName.value.length == 0) {
+                        alert("New Book name required");
+                    } else {
+                        fetch(`https://localhost:44399/api/books/${data[i].booksID}/${BookName.value}`, {
+                            method: "Put",
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            },
+                        })
+                    }
+                })
 
+                fetch("https://localhost:44340/api/user", {
+                    method: "Post",
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        "id": id++,
+                        "userName": input.value,
+                    })
+                li.innerHTML = data[i].bookName;
+                div.append(li);
             }
         })
     })

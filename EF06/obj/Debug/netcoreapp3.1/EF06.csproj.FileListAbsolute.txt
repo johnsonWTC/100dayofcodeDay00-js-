@@ -1,9 +1,3 @@
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.AssemblyInfoInputs.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.AssemblyInfo.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.csproj.CoreCompileInputs.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.RazorAssemblyInfo.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.RazorAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -55,6 +49,12 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\bin\Debug\netcoreapp3.1\runt
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.AssemblyInfoInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.AssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.RazorAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.RazorAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.TagHelpers.input.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.TagHelpers.output.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF06\obj\Debug\netcoreapp3.1\EF06.RazorCoreGenerate.cache
