@@ -33,7 +33,7 @@
                 let deleteB = document.createElement("button");
                 deleteB.innerHTML = "Delete";
                 deleteB.addEventListener("click", function () {
-                    fetch("https://localhost:44340/api/user", {
+                    fetch("https://localhost:44399/api/books/${data[i].booksID", {
                         method: "delete",
                         headers: {
                             'Accept': 'application/json',
