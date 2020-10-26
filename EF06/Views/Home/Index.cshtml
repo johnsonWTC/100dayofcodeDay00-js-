@@ -31,6 +31,7 @@
                     }
                 })
                 let deleteB = document.createElement("button");
+                deleteB.innerHTML = "Delete";
                 deleteB.addEventListener("click", function () {
                     fetch("https://localhost:44340/api/user", {
                         method: "delete",
