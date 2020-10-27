@@ -32,20 +32,29 @@ namespace EF07.Controllers
 
         // POST api/<BooksController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Book book)
         {
+            bookContext.Books.Add(book);
+            bookContext.SaveChanges();
         }
 
         // PUT api/<BooksController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}/{newName}")]
+        public void Put(int id,  string newName)
         {
+            Book book = bookContext.Books.FirstOrDefault(e => e.bookID == id);
+            book.BookName = newName;
+            bookContext.SaveChanges();
+
         }
 
         // DELETE api/<BooksController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            Book book = bookContext.Books.FirstOrDefault(e => e.bookID == id);
+            bookContext.Remove(book);
+            bookContext.SaveChanges();
         }
     }
 }
