@@ -7,7 +7,7 @@ namespace EF08.Models
 {
     public class Shoe
     {
-        public int shoesID { get; set; }
+        public int shoeID { get; set; }
         public string shoeName { get; set; }
     }
 }
