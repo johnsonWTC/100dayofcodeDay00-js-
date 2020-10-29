@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EF08.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,11 +13,13 @@ namespace EF08.Controllers
     [ApiController]
     public class ShoesController : ControllerBase
     {
+
+        ShoeContext _context = new ShoeContext();
         // GET: api/<ShoesController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Shoe> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _context.shoes.ToList();
         }
 
         // GET api/<ShoesController>/5
