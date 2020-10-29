@@ -39,9 +39,13 @@ namespace EF08.Controllers
         }
 
         // PUT api/<ShoesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}{newName}")]
+        public void Put(int id,string newName)
         {
+            Shoe shoe = _context.shoes.FirstOrDefault(e => e.shoeID == id);
+            shoe.shoeName = newName;
+            _context.SaveChanges();
+
         }
 
         // DELETE api/<ShoesController>/5
