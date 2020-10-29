@@ -24,9 +24,10 @@ namespace EF08.Controllers
 
         // GET api/<ShoesController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Shoe Get(int id)
         {
-            return "value";
+            Shoe shoe = _context.shoes.FirstOrDefault(e => e.shoeID == id);
+            return shoe;
         }
 
         // POST api/<ShoesController>
