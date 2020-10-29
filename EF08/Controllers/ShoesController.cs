@@ -32,8 +32,10 @@ namespace EF08.Controllers
 
         // POST api/<ShoesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Shoe shoe)
         {
+            _context.Add(shoe);
+            _context.SaveChanges();
         }
 
         // PUT api/<ShoesController>/5
