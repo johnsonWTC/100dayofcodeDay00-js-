@@ -34,7 +34,7 @@ namespace EF08.Controllers
         [HttpPost]
         public void Post([FromBody] Shoe shoe)
         {
-            _context.Add(shoe);
+           
             _context.SaveChanges();
         }
 
@@ -52,6 +52,9 @@ namespace EF08.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            Shoe shoe = _context.shoes.FirstOrDefault(e => e.shoeID == id);
+            _context.Remove(shoe);
+            _context.SaveChanges();
         }
     }
 }
