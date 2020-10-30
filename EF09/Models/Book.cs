@@ -8,6 +8,6 @@ namespace EF09.Models
     public class Book
     {
         public int bookID { get; set; }
-        public string BookName { get; set; }
+        public string BookName { get; set; }    
     }
 }
