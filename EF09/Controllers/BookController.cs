@@ -33,8 +33,9 @@ namespace EF09.Controllers
 
         // POST api/<BookController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Book book)
         {
+            bookContext.Books.Add(book);
         }
 
         // PUT api/<BookController>/5
