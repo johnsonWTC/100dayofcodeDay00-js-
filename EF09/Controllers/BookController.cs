@@ -36,18 +36,25 @@ namespace EF09.Controllers
         public void Post([FromBody] Book book)
         {
             bookContext.Books.Add(book);
+            bookContext.SaveChanges();
         }
 
         // PUT api/<BookController>/5
         [HttpPut("{id}/{newName}")]
-        public void Put(int id,Book book)
+        public void Put(int id,string newName)
         {
+            Book book = bookContext.Books.FirstOrDefault(e => e.bookID == id);
+            book.BookName = newName;
+            bookContext.SaveChanges();
         }
 
         // DELETE api/<BookController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            Book book = bookContext.Books.FirstOrDefault(e => e.bookID == id);
+            bookContext.Books.Remove(book);
+            bookContext.SaveChanges();
         }
     }
 }
