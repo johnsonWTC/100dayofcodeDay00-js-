@@ -34,12 +34,13 @@ namespace EF08.Controllers
         [HttpPost]
         public void Post([FromBody] Shoe shoe)
         {
-           
+            _context.Add(shoe);
+
             _context.SaveChanges();
         }
 
         // PUT api/<ShoesController>/5
-        [HttpPut("{id}{newName}")]
+        [HttpPut("{id}/{newName}")]
         public void Put(int id,string newName)
         {
             Shoe shoe = _context.shoes.FirstOrDefault(e => e.shoeID == id);
