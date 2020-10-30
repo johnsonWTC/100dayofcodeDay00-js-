@@ -40,7 +40,7 @@ namespace EF09.Controllers
 
         // PUT api/<BookController>/5
         [HttpPut("{id}/{newName}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id,Book book)
         {
         }
 
