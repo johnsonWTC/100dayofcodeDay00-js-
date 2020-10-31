@@ -30,8 +30,10 @@ namespace EF10.Models
 
         // POST api/<StudentController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Student student)
         {
+            _context.students.Add(student);
+            _context.SaveChanges();
         }
 
         // PUT api/<StudentController>/5
