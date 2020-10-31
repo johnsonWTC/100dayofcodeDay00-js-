@@ -9,5 +9,9 @@ namespace EF10.Models
     {
         public int studentID { get; set; }
         public string studentName { get; set; }
+
+        public int departmentID { get; set; }
+
+        public Department department { get; set; }
     }
 }
