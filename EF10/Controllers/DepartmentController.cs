@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EF10.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -13,10 +14,13 @@ namespace EF10.Controllers
     public class DepartmentController : ControllerBase
     {
         // GET: api/<DepartmentController>
+
+        SchoolContext _context = new SchoolContext();
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Department> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _context.departments.ToList();
         }
 
         // GET api/<DepartmentController>/5
