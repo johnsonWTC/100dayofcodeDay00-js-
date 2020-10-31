@@ -33,8 +33,10 @@ namespace EF10.Controllers
 
         // POST api/<DepartmentController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Department  department)
         {
+            _context.departments.Add(department);
+            _context.SaveChanges();
         }
 
         // PUT api/<DepartmentController>/5
