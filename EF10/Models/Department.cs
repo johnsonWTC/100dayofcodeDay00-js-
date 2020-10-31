@@ -9,5 +9,6 @@ namespace EF10.Models
     {
         public int departmentID { get; set; }
         public string departmentName { get; set; }
+        public int departmentFloor { get; set; }
     }
 }
