@@ -9,5 +9,6 @@ namespace EF10.Models
     public class SchoolContext : DbContext
     {
         public DbSet<Student> students { get; set; }
+        public DbSet<Department> departments { get; set; }
     }
 }
