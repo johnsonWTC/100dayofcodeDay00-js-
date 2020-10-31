@@ -10,7 +10,7 @@ namespace EF10.Models
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class SchoolController : ControllerBase
+    public class StudentController : ControllerBase
     {
         // GET: api/<StudentController>
         [HttpGet]

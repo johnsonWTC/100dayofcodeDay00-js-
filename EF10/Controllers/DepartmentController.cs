@@ -25,9 +25,10 @@ namespace EF10.Controllers
 
         // GET api/<DepartmentController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Department Get(int id)
         {
-            return "value";
+            Department department = _context.departments.FirstOrDefault(e => e.departmentID == id);
+            return department;
         }
 
         // POST api/<DepartmentController>
