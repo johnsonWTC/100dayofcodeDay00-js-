@@ -12,11 +12,12 @@ namespace EF10.Models
     [ApiController]
     public class StudentController : ControllerBase
     {
-        // GET: api/<StudentController>
+        SchoolContext _context = new SchoolContext();
+        // GET: api/<StudentController> 
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Student> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _context.students.ToList();
         }
 
         // GET api/<StudentController>/5
