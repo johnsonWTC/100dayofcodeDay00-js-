@@ -26,7 +26,8 @@ namespace WAPI12.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return "value";
+            Student student = _context.students.FirstOrDefault(e => e.studentID == id);
+            return student;
         }
 
         // POST api/<StudentsController>
