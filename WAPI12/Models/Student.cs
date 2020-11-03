@@ -9,7 +9,7 @@ namespace WAPI12.Models
     {
         public int studentID { get; set; }
 
-    
+        public string studentName { get; set; }
         public Faculty faculty { get; set; }
     }
 }
