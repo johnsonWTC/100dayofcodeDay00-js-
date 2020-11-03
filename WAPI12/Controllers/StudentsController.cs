@@ -24,7 +24,7 @@ namespace WAPI12.Controllers
 
         // GET api/<StudentsController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Student Get(int id)
         {
             Student student = _context.students.FirstOrDefault(e => e.studentID == id);
             return student;
@@ -32,8 +32,9 @@ namespace WAPI12.Controllers
 
         // POST api/<StudentsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Student student)
         {
+            _context.students.Add(student);
         }
 
         // PUT api/<StudentsController>/5
