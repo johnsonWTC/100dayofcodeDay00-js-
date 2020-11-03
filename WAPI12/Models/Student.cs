@@ -8,6 +8,8 @@ namespace WAPI12.Models
     public class Student
     {
         public int studentID { get; set; }
+
+        public string facultyName { get; set; }
         public Faculty faculty { get; set; }
     }
 }
