@@ -38,9 +38,11 @@ namespace WAPI12.Controllers
         }
 
         // PUT api/<StudentsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id}/{newName}")]
+        public void Put(int id, string newName)
         {
+            Student student = _context.students.FirstOrDefault(e => e.studentID == id);
+            student.studentName = newName;
         }
 
         // DELETE api/<StudentsController>/5
