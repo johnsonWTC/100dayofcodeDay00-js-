@@ -11,7 +11,7 @@ namespace EF12.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentsController : ControllerBase
+    public class DepartmentController : ControllerBase
     {
         StudentContext studentContext = new StudentContext();
         // GET: api/<StudentsController>
@@ -32,6 +32,8 @@ namespace EF12.Controllers
         [HttpPost]
         public void Post([FromBody] Department department)
         {
+            studentContext.Departments.Add(department);
+            studentContext.SaveChanges();
         }
 
         // PUT api/<StudentsController>/5
