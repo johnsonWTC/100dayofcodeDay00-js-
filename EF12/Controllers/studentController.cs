@@ -18,7 +18,7 @@ namespace EF12.Controllers
         [HttpGet]
         public IEnumerable<Student> Get()
         {
-            return new string[] { "value1", "value2" };
+            return studentContext.Students.ToList();
         }
 
         // GET api/<studentController>/5
