@@ -7,5 +7,7 @@ namespace EF12.Models
 {
     public class Student
     {
+        public int studentID { get; set; }
+        public string studentName { get; set; }
     }
 }
