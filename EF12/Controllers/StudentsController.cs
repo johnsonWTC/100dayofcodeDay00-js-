@@ -30,7 +30,7 @@ namespace EF12.Controllers
 
         // POST api/<StudentsController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Department department)
         {
         }
 
