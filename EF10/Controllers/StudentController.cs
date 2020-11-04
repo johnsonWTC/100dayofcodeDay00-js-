@@ -33,6 +33,7 @@ namespace EF10.Models
         public void Post([FromBody] Student student)
         {
             _context.students.Add(student);
+
             _context.SaveChanges();
         }
 

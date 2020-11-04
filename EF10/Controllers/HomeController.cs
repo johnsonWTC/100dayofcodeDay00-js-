@@ -12,15 +12,20 @@ namespace EF10.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        SchoolContext schoolContext = new SchoolContext();
         public HomeController(ILogger<HomeController> logger)
         {
+           
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            return View();
+
+            Student student = new Student();
+            student.studentName = "thandwelihle";
+         
+            return View(student);
         }
 
         public IActionResult Privacy()

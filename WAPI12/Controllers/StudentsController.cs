@@ -35,6 +35,7 @@ namespace WAPI12.Controllers
         public void Post([FromBody] Student student)
         {
             _context.students.Add(student);
+            _context.SaveChanges();
         }
 
         // PUT api/<StudentsController>/5
@@ -43,12 +44,16 @@ namespace WAPI12.Controllers
         {
             Student student = _context.students.FirstOrDefault(e => e.studentID == id);
             student.studentName = newName;
+            _context.SaveChanges();
+
         }
 
         // DELETE api/<StudentsController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            Student student = _context.students.FirstOrDefault(e => e.studentID == id);
+            _context.Remove(student);
         }
     }
 }

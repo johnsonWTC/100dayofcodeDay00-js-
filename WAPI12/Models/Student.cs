@@ -10,6 +10,8 @@ namespace WAPI12.Models
         public int studentID { get; set; }
 
         public string studentName { get; set; }
+
+        public int FacultyID { get; set; }
         public Faculty faculty { get; set; }
     }
 }
