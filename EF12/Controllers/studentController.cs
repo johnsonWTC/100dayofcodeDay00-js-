@@ -14,6 +14,9 @@ namespace EF12.Controllers
     public class studentController : ControllerBase
     {
         // GET: api/<studentController>
+
+
+
         StudentContext studentContext = new StudentContext();
         [HttpGet]
         public IEnumerable<Student> Get()
@@ -23,15 +26,19 @@ namespace EF12.Controllers
 
         // GET api/<studentController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Student Get(int id)
         {
-            return "value";
+            Student student = studentContext.Students.FirstOrDefault(e => e.studentID == id);
+           
+            return student;
         }
 
         // POST api/<studentController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Student student)
         {
+            studentContext.Students.Add(student);
+            studentContext.SaveChanges();
         }
 
         // PUT api/<studentController>/5

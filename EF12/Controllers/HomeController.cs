@@ -20,7 +20,9 @@ namespace EF12.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            StudentContext studentContext = new StudentContext();
+            Student student = studentContext.Students.FirstOrDefault(e => e.studentID == 1);
+            return View(student);
         }
 
         public IActionResult Privacy()
