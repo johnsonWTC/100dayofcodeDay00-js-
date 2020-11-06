@@ -24,11 +24,11 @@ namespace EF13.Controllers
 
         public IActionResult Index()
         {
-           
-           
+
+            ViewModel viewModel = new ViewModel();
             var studentlist = _context.students.ToList();
 
-            return View();
+            return View(studentlist);
         }
 
         public IActionResult Privacy()
