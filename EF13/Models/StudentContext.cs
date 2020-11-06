@@ -8,6 +8,11 @@ namespace EF13.Models
 {
     public class StudentContext : DbContext
     {
+        public StudentContext(DbContextOptions<StudentContext> options)
+    : base(options)
+        { 
+        }
+
         public DbSet<Student> students { get; set; }
         public DbSet<RoomNumber> roomNumbers { get; set; }
 

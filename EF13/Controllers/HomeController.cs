@@ -12,14 +12,22 @@ namespace EF13.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly StudentContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+       
+
+        public HomeController(ILogger<HomeController> logger, StudentContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
+           
+           
+            var studentlist = _context.students.ToList();
+
             return View();
         }
 
