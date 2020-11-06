@@ -1,10 +1,13 @@
-﻿@model EF13.Models.Student
+﻿@model IEnumerable<EF13.Models.Student>
 
 @{
     ViewData["Title"] = "Home Page";
 }
 
-@foreach(var item in Model)
+@foreach (var item in Model)
 {
-
+    <h1>@item.studentName</h1>
+    <h1></h1>
+    <h1>@item.roomNumberID</h1>
+    <hr />
 }
