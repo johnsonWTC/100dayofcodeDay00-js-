@@ -8,7 +8,7 @@ namespace PostAndComments.Models
 {
     public class postContext : DbContext
     {
-        public postContext(DbContextOptions<postContext> options): base(options)
+        public postContext(DbContextOptions<postContext> options) : base(options)
         {
         }
 
@@ -21,5 +21,6 @@ namespace PostAndComments.Models
 
         }
     }
+}
 
     
