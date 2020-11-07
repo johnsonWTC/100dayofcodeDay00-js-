@@ -9,6 +9,6 @@ namespace PostAndComments.Models
     {
         public int postID { get; set; }
         public string postContent { get; set; }
-        public List<Comment> Comments { get; set; }
+        public List<Comment> Comments { get; set; } 
     }
 }
