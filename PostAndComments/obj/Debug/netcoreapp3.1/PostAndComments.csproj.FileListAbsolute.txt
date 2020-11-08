@@ -168,13 +168,3 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\PostAndComments.Views.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\PostAndComments.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\PostAndComments.pdb
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Create.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Delete.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Details.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Edit.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Index.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Create.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Delete.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Details.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Edit.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Index.cshtml.g.cs
