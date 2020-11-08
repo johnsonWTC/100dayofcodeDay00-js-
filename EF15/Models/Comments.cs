@@ -7,5 +7,7 @@ namespace EF15.Models
 {
     public class Comments
     {
+        public int commentID { get; set; }
+        public string comment { get; set; }
     }
 }
