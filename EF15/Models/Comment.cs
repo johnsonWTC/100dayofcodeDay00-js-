@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace EF15.Models
 {
-    public class Comments
+    public class Comment
     {
         public int commentID { get; set; }
         public string comment { get; set; }
