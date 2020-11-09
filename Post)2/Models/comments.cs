@@ -7,5 +7,7 @@ namespace Post_2.Models
 {
     public class comments
     {
+        public int commentID { get; set; }
+        public string comment { get; set; }
     }
 }
