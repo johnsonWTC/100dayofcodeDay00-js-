@@ -14,7 +14,7 @@ namespace Post_2.Models
         }
 
         public DbSet<Post> Posts { get; set; }
-        public DbSet<comments> comments { get; set; }
+        public DbSet<comment> comments { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
