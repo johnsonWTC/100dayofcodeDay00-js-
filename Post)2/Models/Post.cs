@@ -7,5 +7,7 @@ namespace Post_2.Models
 {
     public class Post
     {
+        public int postID { get; set; }
+
     }
 }
