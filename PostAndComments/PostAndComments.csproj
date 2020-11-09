@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\Comments1Controller.cs" />
+    <Compile Remove="Controllers\PostsController.cs" />
   </ItemGroup>
 
   <ItemGroup>

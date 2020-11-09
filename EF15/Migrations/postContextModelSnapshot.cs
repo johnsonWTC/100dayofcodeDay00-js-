@@ -56,7 +56,7 @@ namespace EF15.Migrations
             modelBuilder.Entity("EF15.Models.Comment", b =>
                 {
                     b.HasOne("EF15.Models.Post", "post")
-                        .WithMany("Comments")
+                        .WithMany()
                         .HasForeignKey("postID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

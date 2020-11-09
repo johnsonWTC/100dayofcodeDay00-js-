@@ -167,3 +167,9 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcore
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\PostAndComments.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\PostAndComments.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\PostAndComments.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\PostAndComments.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments1\Create.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments1\Delete.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments1\Details.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments1\Edit.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PostAndComments\obj\Debug\netcoreapp3.1\Razor\Views\Comments1\Index.cshtml.g.cs

@@ -1,3 +1,5 @@
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -12,7 +14,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\EF15
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
@@ -38,7 +39,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Micr
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
@@ -142,6 +142,7 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\runt
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.csprojAssemblyReference.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.AssemblyInfoInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.AssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.csproj.CoreCompileInputs.cache
@@ -151,11 +152,6 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.TagHelpers.input.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.TagHelpers.output.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.RazorCoreGenerate.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Create.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Delete.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Details.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Edit.cshtml.g.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Index.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -172,4 +168,13 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\stat
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.genruntimeconfig.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\EF15.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Create.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Delete.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Details.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Edit.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Index.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Create.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Delete.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Details.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Edit.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\EF15\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Index.cshtml.g.cs
