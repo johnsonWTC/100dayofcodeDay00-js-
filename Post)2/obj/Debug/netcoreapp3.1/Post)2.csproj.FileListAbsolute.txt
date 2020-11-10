@@ -178,3 +178,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Ra
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Details.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Edit.cshtml.g.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Index.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Razor\Views\Post\Index.cshtml.g.cs
