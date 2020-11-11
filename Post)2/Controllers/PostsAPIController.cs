@@ -24,7 +24,6 @@ namespace Post_2.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
         {
-          
             return await _context.Posts.ToListAsync();
         }
 

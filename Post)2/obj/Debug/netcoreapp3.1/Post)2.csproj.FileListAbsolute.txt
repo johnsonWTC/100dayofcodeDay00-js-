@@ -178,3 +178,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Po
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\staticwebassets\Post)2.StaticWebAssets.Manifest.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\staticwebassets\Post)2.StaticWebAssets.xml
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Post)2.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Post)2.csprojAssemblyReference.cache
