@@ -4,11 +4,21 @@
 
 @foreach (var post in Model)
 {
+<div id="div">
     <h1>@post.postContent</h1>
+    @foreach (var b in post.comments)
+    {
+        
+<form asp-controller="comments" asp-action="Delete" >
+    
+    <h4>@b.commentContent</h4>
+   @{ 
+      
+   }
+    <input type="submit" value="Delete" class="btn btn-danger"  id="id" asp-for="@b.commentID">
+    </form>
+    }
 
-       @foreach (var b in post.comments)
-       {
-           <h4>@b.commentContent</h4>
-       }
 
- }
+</div>
+}
