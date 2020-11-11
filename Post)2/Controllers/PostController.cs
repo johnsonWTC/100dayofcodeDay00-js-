@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Post_2.Models;
 
 namespace Post_2.Controllers
@@ -15,14 +16,10 @@ namespace Post_2.Controllers
         {
             _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-           
-
-
-            
-            return View(_context.Posts.ToList());
-
+            var postContext = _context.Posts.Include(c => c.comments);
+            return View(await postContext.ToListAsync());
         }
     }
 }

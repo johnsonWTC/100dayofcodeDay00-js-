@@ -1,7 +1,14 @@
 ﻿@model IEnumerable<Post_2.Models.Post>
 
-@foreach (var item in Model)
+
+
+@foreach (var post in Model)
 {
-<h1>@item.postContent</h1>
-<h1>@item.comments</h1>
-}
+    <h1>@post.postContent</h1>
+
+       @foreach (var b in post.comments)
+       {
+           <h4>@b.commentContent</h4>
+       }
+
+ }
