@@ -21,7 +21,9 @@ window.onload = function () {
                 let post = document.createElement("h2");
                 let postContent = document.createElement("p");
                 postContent.spellcheck = "true";
-                postContent = data[i].postContent;  
+                postContent.innerHTML = data[i].postContent;
+                commentButton = document.createElement("button");
+                commentButton.innerHTML = "Comment";
                 post.innerHTML = data[i].postTitle;             
                 div.append(post);
             }      
