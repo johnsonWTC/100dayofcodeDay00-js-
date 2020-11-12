@@ -26,18 +26,18 @@ window.onload = function () {
                 postContent.innerHTML = data[i].postContent;
                 let viewComment = document.createElement("button");
 
-                div.append()
+                div.append(postTitle)
+                div.append(postContent)
+                div.append(viewComment)
                
                 viewComment.innerHTML = "Comments";
                 viewComment.addEventListener("click", function () {
                     let commentDiv = document.createElement("div");
                     let commentArea = document.createElement("textarea");
                     let commentButton = document.createElement("button");
-
                     div.append(commentDiv);
                     commentDiv.append(commentArea);
                     commentDiv.append(commentButton);
-
                 })
                 commentButton.addEventListener("click", function () {
                     fetch("", {
