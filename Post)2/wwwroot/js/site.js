@@ -42,16 +42,26 @@ window.onload = function () {
             },
 
         })
-    ])
-fetch("https://localhost:44381/api/pageViews").then(function (res) {
-    res.json().then(function (data) {
-        for (let i = 0; data.length > i; i++) {
-            views = data[i].views
-        }
-        views++
-        PostViews.innerHTML = views;
-    })
-}).then
+    ]);
+
+    await Promise.all([
+        fetch("https://localhost:44381/api/pageViews").then(function (res) {
+            res.json().then(function (data) {
+                for (let i = 0; data.length > i; i++) {
+                    views = data[i].views
+                }
+                views++
+                PostViews.innerHTML = views;
+            })
+        
+]).then(fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
+    method: "Put",
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+
+}))
 }
 
 
