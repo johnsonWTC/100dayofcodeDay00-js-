@@ -35,24 +35,24 @@ window.onload = function () {
                     let commentDiv = document.createElement("div");
                     let commentArea = document.createElement("textarea");
                     let commentButton = document.createElement("button");
+                    commentButton.innerHTML = "Add comment"
                     div.append(commentDiv);
                     commentDiv.append(commentArea);
                     commentDiv.append(commentButton);
-                })
-                commentButton.addEventListener("click", function () {
-                    fetch("", {
-                        method: "Post",
-                        headers: {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            "comment": commentArea.value,
+                    commentButton.addEventListener("click", function () {
+                        fetch("", {
+                            method: "Post",
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                "comment": commentArea.value,
+                            })
                         })
                     })
+
                 })
-                post.innerHTML = data[i].postTitle;             
-                div.append(post);
             }      
         })
     })
