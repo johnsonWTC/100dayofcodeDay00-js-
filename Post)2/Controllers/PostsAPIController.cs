@@ -24,6 +24,7 @@ namespace Post_2.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Post>>> GetPosts()
         {
+            var postContext = _context.Posts.Include(c => c.comments);
             return await _context.Posts.ToListAsync();
         }
 
