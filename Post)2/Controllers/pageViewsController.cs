@@ -50,9 +50,7 @@ namespace Post_2.Controllers
 
             pageViews pageViews = _context.pageViews.FirstOrDefault(e => id == e.ID);
             pageViews.views = numberNumber;
-            vi
-          
-
+            _context.SaveChanges();
         }
            
 
