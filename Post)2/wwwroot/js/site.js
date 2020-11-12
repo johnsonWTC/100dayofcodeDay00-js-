@@ -33,4 +33,12 @@ fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
     })
 })
 
+window.onload = function () {
+    fetch().then(function (res) {
+        res.json().then(function (data) {
+            
+        })
+    })
+}
+
 
