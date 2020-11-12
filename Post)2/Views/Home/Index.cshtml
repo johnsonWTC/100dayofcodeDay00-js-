@@ -5,14 +5,4 @@
 <div id="div">
 
 </div>
-<script>
-    fetch("").then(function (res) {
-        res.json.then(function (data) {
-            for (let i = 0; data.legth > i; i++) {
-                let post = document.createElement("h2");
-                post.innerHTML = data[i].postContent;
 
-            }
-        })
-    })
-</script>

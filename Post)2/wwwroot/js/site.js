@@ -1,4 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿let div = document.getElementById("div");
+fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
+    res.json().then(function (data) {
+        for (let i = 0; data.length > i; i++) {
+            let post = document.createElement("h2");
+            //data[i].postContent;
+            post.innerHTML = data[i].postContent
+            div.append(post);
+        }
+    })
+})
