@@ -3,6 +3,16 @@
 
 
 let div = document.getElementById("div");
+let textarea = document.getElementById("textarea");
+let addContent = document.getElementById("addContent");
+
+addContent.addEventListener("click", function () {
+    fetch("", {
+
+    })
+})
+
+
 fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
     res.json().then(function (data) {
         for (let i = 0; data.length > i; i++) {
