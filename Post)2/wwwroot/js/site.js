@@ -30,9 +30,13 @@ window.onload = function () {
                
                 viewComment.innerHTML = "Comments";
                 viewComment.addEventListener("click", function () {
-                    let div = document.createElement("div");
+                    let commentDiv = document.createElement("div");
                     let commentArea = document.createElement("textarea");
                     let commentButton = document.createElement("button");
+
+                    div.append(commentDiv);
+                    commentDiv.append(commentArea);
+                    commentDiv.append(commentButton);
 
                 })
                 commentButton.addEventListener("click", function () {
