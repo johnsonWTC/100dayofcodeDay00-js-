@@ -19,7 +19,9 @@ window.onload = function () {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 let post = document.createElement("h2");
-                let postContent =
+                let postContent = document.createElement("p");
+                postContent.spellcheck = "true";
+                postContent = data[i].postContent;  
                 post.innerHTML = data[i].postTitle;             
                 div.append(post);
             }      
