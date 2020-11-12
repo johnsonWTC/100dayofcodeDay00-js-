@@ -24,10 +24,14 @@ window.onload = function () {
                 let postContent = document.createElement("p");
                 postContent.spellcheck = "true";
                 postContent.innerHTML = data[i].postContent;
-                let commentButton = document.createElement("button");
-                let commentArea = document.createElement("textarea");
-                commentButton.innerHTML = "Comment";
-                commentButton.addEventListener("click", function () {
+                let viewComment = document.createElement("button");
+               
+                viewComment.innerHTML = "Comments";
+                viewComment.addEventListener("click", function () {
+                    let commentArea = document.createElement("textarea");
+                    let commentButton = document.createElement("button");
+                })
+                viewComment.addEventListener("click", function () {
                     fetch("", {
                         method: "Post",
                         headers: {
