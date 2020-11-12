@@ -5,6 +5,9 @@
 let div = document.getElementById("div");
 let textarea = document.getElementById("textarea");
 let addContent = document.getElementById("addContent");
+let PostViews = document.getElementById("PostViews");
+
+
 
 
 
@@ -30,7 +33,16 @@ window.onload = function () {
             }      
         })
     })
+    await Promise.all([
+        fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
+            method: "Put",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
 
+        })
+    ])
 fetch("https://localhost:44381/api/pageViews").then(function (res) {
     res.json().then(function (data) {
         for (let i = 0; data.length > i; i++) {
@@ -39,19 +51,9 @@ fetch("https://localhost:44381/api/pageViews").then(function (res) {
         views++
         PostViews.innerHTML = views;
     })
-})
-
-fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
-    method: "Put",
-    headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        "views": PostViews.innerHTML,
-    })
-})
-  
+}).then
 }
+
+
 
 
