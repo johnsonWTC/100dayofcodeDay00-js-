@@ -13,7 +13,12 @@ namespace Post_2.Models
 
         public DateTime timeUpdate { get; set; }
 
+        public int postLike { get; set; }
+
+        public int numberofviews { get; set; }  
+
         public List<comment> comments { get; set; }
+
 
 
 
