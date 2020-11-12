@@ -1,18 +1,7 @@
-﻿
-
-
-
-let div = document.getElementById("div");
+﻿let div = document.getElementById("div");
 let textarea = document.getElementById("textarea");
 let addContent = document.getElementById("addContent");
 let PostViews = document.getElementById("PostViews");
-
-
-
-
-
-
-
 
 window.onload = function () {
     let div = document.getElementById("div");
@@ -45,8 +34,9 @@ fetch("https://localhost:44381/api/pageViews").then(function (res) {
     })
 })
 
-    setTimeout()
+    setTimeout(callfetch, 1000);
     function callfetch() {
+
         fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
             method: "Put",
             headers: {
