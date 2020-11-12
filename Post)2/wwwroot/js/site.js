@@ -36,7 +36,12 @@ fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
 window.onload = function () {
     fetch().then(function (res) {
         res.json().then(function (data) {
-            
+            for (let i = 0; data.length > i; i++) {
+                let post = document.createElement("h2");
+                //data[i].postContent;
+                post.innerHTML = data[i].postTitle
+                div.append(post);
+            }
         })
     })
 }
