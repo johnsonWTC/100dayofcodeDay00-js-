@@ -28,10 +28,11 @@ window.onload = function () {
                
                 viewComment.innerHTML = "Comments";
                 viewComment.addEventListener("click", function () {
+                    let div = document.createElement("div");
                     let commentArea = document.createElement("textarea");
                     let commentButton = document.createElement("button");
                 })
-                viewComment.addEventListener("click", function () {
+                commentButton.addEventListener("click", function () {
                     fetch("", {
                         method: "Post",
                         headers: {
