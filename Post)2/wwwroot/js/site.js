@@ -20,17 +20,20 @@ window.onload = function () {
     fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
-                let post = document.createElement("h2");
+                let postTitle = document.createElement("h2");
                 let postContent = document.createElement("p");
                 postContent.spellcheck = "true";
                 postContent.innerHTML = data[i].postContent;
                 let viewComment = document.createElement("button");
+
+                div.append()
                
                 viewComment.innerHTML = "Comments";
                 viewComment.addEventListener("click", function () {
                     let div = document.createElement("div");
                     let commentArea = document.createElement("textarea");
                     let commentButton = document.createElement("button");
+
                 })
                 commentButton.addEventListener("click", function () {
                     fetch("", {
