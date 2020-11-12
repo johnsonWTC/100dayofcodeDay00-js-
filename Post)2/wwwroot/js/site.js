@@ -15,6 +15,8 @@ window.onload = function () {
     
     let views = 0;
 
+
+
     fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
@@ -22,8 +24,21 @@ window.onload = function () {
                 let postContent = document.createElement("p");
                 postContent.spellcheck = "true";
                 postContent.innerHTML = data[i].postContent;
-                commentButton = document.createElement("button");
+                let commentButton = document.createElement("button");
+                let commentArea = document.createElement("textarea");
                 commentButton.innerHTML = "Comment";
+                commentButton.addEventListener("click", function () {
+                    fetch("", {
+                        method: "Post",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            "comment": commentArea.value,
+                        })
+                    })
+                })
                 post.innerHTML = data[i].postTitle;             
                 div.append(post);
             }      
