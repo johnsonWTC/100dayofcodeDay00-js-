@@ -31,31 +31,27 @@ window.onload = function () {
         })
     })
 
-
-    fetch(`https://localhost:44381/api/pageViews/1/{$views}`, {
-        method: "Post",
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "views": views
-        })
+fetch("https://localhost:44381/api/pageViews").then(function (res) {
+    res.json().then(function (data) {
+        for (let i = 0; data.length > i; i++) {
+            views = data[i].views
+        }
+        views++
+        PostViews.innerHTML = views;
     })
+})
 
-
-
-    fetch("https://localhost:44381/api/pageViews").then(function (res) {
-        res.json().then(function (data) {
-            for (let i = 0; data.length > i; i++) {
-                views = data[i].views
-            }
-            views++
-            PostViews.innerHTML = views;
-        })
+fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
+    method: "Put",
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        "views": PostViews.innerHTML,
     })
-
-
+})
+  
 }
 
 
