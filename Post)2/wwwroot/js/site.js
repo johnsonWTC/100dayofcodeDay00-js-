@@ -1,4 +1,8 @@
-﻿let div = document.getElementById("div");
+﻿
+
+
+
+let div = document.getElementById("div");
 fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
     res.json().then(function (data) {
         for (let i = 0; data.length > i; i++) {
@@ -9,3 +13,5 @@ fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
         }
     })
 })
+
+
