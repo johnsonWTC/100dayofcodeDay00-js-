@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Post_2.Models
@@ -11,6 +12,8 @@ namespace Post_2.Models
         public string commentContent { get; set; }
 
         public int postID { get; set; }
+
+        [JsonIgnore]
         public Post post { get; set; }
     }
 }
