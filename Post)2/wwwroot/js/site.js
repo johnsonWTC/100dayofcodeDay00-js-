@@ -45,14 +45,16 @@ fetch("https://localhost:44381/api/pageViews").then(function (res) {
     })
 })
 
-fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
+    setTimeout()
+    function callfetch() {
+        fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
             method: "Put",
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-
         })
+    }
 }
 
 
