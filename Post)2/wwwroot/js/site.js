@@ -7,9 +7,18 @@ let textarea = document.getElementById("textarea");
 let addContent = document.getElementById("addContent");
 
 addContent.addEventListener("click", function () {
-    fetch("", {
-
+    fetch("https://localhost:44381/api/PostsAPI/", {
+        method: "Post",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "postContent": textarea.value
+        })
     })
+    location.reload();
+
 })
 
 
