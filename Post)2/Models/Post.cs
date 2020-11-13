@@ -11,9 +11,7 @@ namespace Post_2.Models
         public string postTitle { get; set; }
         public string postContent { get; set; }
 
-        public DateTime timeUpdate { get; set; }
-
-        public int postLike { get; set; }
+        public int postLike { get; set;} 
 
         public int numberofviews { get; set; }  
 

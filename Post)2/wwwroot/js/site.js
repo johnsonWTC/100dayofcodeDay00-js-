@@ -6,14 +6,34 @@ let postTitle = document.getElementById("postTitle");
 
 
 
+addContent.addEventListener("click", function () {
+    fetch("https://localhost:44381/api/commentsAPI", {
+        method: "Post",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "postTitle": commentArea.valued,
+            "postContent": commentArea.valued,
+            "postLike": commentArea.valued,
+            "numberofviews": commentArea.valued,
+            "commentContent": commentArea.valued,
+        })
+    })
+})
+
+
+
+
+
+
+
 
 
 window.onload = function () {
     let div = document.getElementById("div");
-    let textarea = document.getElementById("textarea");
-    let addContent = document.getElementById("addContent");
     let PostViews = document.getElementById("PostViews");
-    
     let views = 0;
 
 
@@ -45,7 +65,7 @@ window.onload = function () {
                     commentDiv.append(commentArea);
                     commentDiv.append(commentButton);
                     commentButton.addEventListener("click", function () {
-                        fetch("", {
+                        fetch("https://localhost:44381/api/commentsAPI", {
                             method: "Post",
                             headers: {
                                 'Accept': 'application/json',
