@@ -31,9 +31,12 @@ window.onload = function () {
                 div.append(postTitle)
                 div.append(postContent)
                 div.append(viewComment)
-               
+
+
+                // to view and add comment
                 viewComment.innerHTML = "Comments";
                 viewComment.addEventListener("click", function () {
+                    // to add comment
                     let commentDiv = document.createElement("div");
                     let commentArea = document.createElement("textarea");
                     let commentButton = document.createElement("button");
@@ -49,7 +52,7 @@ window.onload = function () {
                                 'Content-Type': 'application/json'
                             },
                             body: JSON.stringify({
-                                "comment": commentArea.value,
+                                "commentContent": commentArea.value,
                             })
                         })
                     })
