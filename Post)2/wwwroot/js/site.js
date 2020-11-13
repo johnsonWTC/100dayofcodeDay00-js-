@@ -2,6 +2,7 @@
 let textarea = document.getElementById("textarea");
 let addContent = document.getElementById("addContent");
 let PostViews = document.getElementById("PostViews");
+let postTitle = document.getElementById("postTitle");
 
 
 
