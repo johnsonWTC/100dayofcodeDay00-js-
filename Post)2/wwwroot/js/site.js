@@ -27,6 +27,7 @@ window.onload = function () {
                 postContent.innerHTML = data[i].postContent;
                 let viewComment = document.createElement("button");
 
+                // post from db
                 div.append(postTitle)
                 div.append(postContent)
                 div.append(viewComment)
