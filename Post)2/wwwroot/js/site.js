@@ -1,5 +1,5 @@
 ﻿let div = document.getElementById("div");
-let commentArea = document.getElementById("textarea");
+let postContent = document.getElementById("textarea");
 let addContent = document.getElementById("addContent");
 let PostViews = document.getElementById("PostViews");
 let postTitle = document.getElementById("postTitle");
@@ -14,11 +14,10 @@ addContent.addEventListener("click", function () {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "postTitle": "Title",
-            "postContent": "Post Content",
+            "postTitle": postTitle.value,
+            "postContent": postContent.value,
             "postLike": 0,
             "numberofviews": 0,
-            "commentContent": commentArea.valued,
         })
     })
 })
