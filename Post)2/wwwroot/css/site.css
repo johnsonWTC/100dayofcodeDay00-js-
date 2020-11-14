@@ -62,6 +62,8 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -70,15 +72,26 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
-.title{
-
+.title {
+padding:6px 6px 6px 6px;
+position:absolute;
+background-color:aqua;
 }
 
 .content {
+    position:absolute;
+    padding: 6px 6px 6px 6px;
 }
 
 .comment {
+    padding: 6px 6px 6px 6px;
 }
 
 .view {
+    padding: 6px 6px 6px 6px;
+}
+
+.post {
+    position: relative;
+    
 }
