@@ -14,10 +14,10 @@ addContent.addEventListener("click", function () {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "postTitle": commentArea.valued,
-            "postContent": commentArea.valued,
-            "postLike": commentArea.valued,
-            "numberofviews": commentArea.valued,
+            "postTitle": "Title",
+            "postContent": "Post Content",
+            "postLike": 0,
+            "numberofviews": 0,
             "commentContent": commentArea.valued,
         })
     })
@@ -48,15 +48,20 @@ window.onload = function () {
                 // get post from db
                 let postTitleFromDb = document.createElement("h2");
                 let PostViewsFromDb = document.createElement("span");
-                let postContent = document.createElement("p");
-                postContent.spellcheck = "true";
-                postContent.innerHTML = data[i].postContent;
+                let postContentFromDb = document.createElement("p");
+                postContentFromDb.spellcheck = "true";
+                postContentFromDb.innerHTML = data[i].postContent;
+                postContentFromDb.innerHTML = data[i].postContent;
+                postContentFromDb.innerHTML = data[i].postContent;
+                postContentFromDb.innerHTML = data[i].postContent;
                 let viewComment = document.createElement("button");
 
                 // post from db
-                div.append(postTitle)
-                div.append(postContent)
+                div.append(postTitleFromDb)
+                div.append(PostViewsFromDb)
+                div.append(postContentFromDb)
                 div.append(viewComment)
+ 
 
 
                 // to view and add comment
