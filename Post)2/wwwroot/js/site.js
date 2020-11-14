@@ -46,7 +46,8 @@ window.onload = function () {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 // get post from db
-                let postTitleFrom = document.createElement("h2");
+                let postTitleFromDb = document.createElement("h2");
+                let PostViewsFromDb = document.createElement("span");
                 let postContent = document.createElement("p");
                 postContent.spellcheck = "true";
                 postContent.innerHTML = data[i].postContent;
