@@ -1,5 +1,5 @@
 ﻿let div = document.getElementById("div");
-let textarea = document.getElementById("textarea");
+let commentArea = document.getElementById("textarea");
 let addContent = document.getElementById("addContent");
 let PostViews = document.getElementById("PostViews");
 let postTitle = document.getElementById("postTitle");
@@ -7,7 +7,7 @@ let postTitle = document.getElementById("postTitle");
 
 
 addContent.addEventListener("click", function () {
-    fetch("https://localhost:44381/api/commentsAPI", {
+    fetch("https://localhost:44381/api/PostsAPI", {
         method: "Post",
         headers: {
             'Accept': 'application/json',
@@ -41,6 +41,7 @@ window.onload = function () {
     fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
+                // get post from db
                 let postTitle = document.createElement("h2");
                 let postContent = document.createElement("p");
                 postContent.spellcheck = "true";
