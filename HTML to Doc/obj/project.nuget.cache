@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "RC/iAbyaMmo+5xVmpgzcDMzMwBZpi7+Kk1+YYNpUlV5S8OJ3v93LIV/e7ev37RC0qxSiVUOeY+JAzQ+4Iu1tzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\HTML to Doc\\HTML to Doc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jdubula\\.nuget\\packages\\convertapi\\3.0.5\\convertapi.3.0.5.nupkg.sha512",
+    "C:\\Users\\jdubula\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

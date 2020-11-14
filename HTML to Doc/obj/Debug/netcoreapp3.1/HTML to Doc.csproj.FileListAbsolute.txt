@@ -1,0 +1,39 @@
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.exe
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.deps.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.runtimeconfig.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.runtimeconfig.dev.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.Views.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\HTML to Doc.Views.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\ConvertApi.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.AssemblyInfoInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.AssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.RazorAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.RazorAssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.TagHelpers.input.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.TagHelpers.output.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.RazorCoreGenerate.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.RazorTargetAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.RazorTargetAssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.Views.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\staticwebassets\HTML to Doc.StaticWebAssets.Manifest.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\staticwebassets\HTML to Doc.StaticWebAssets.xml
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\HTML to Doc\obj\Debug\netcoreapp3.1\HTML to Doc.csprojAssemblyReference.cache
