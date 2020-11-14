@@ -38,11 +38,15 @@ window.onload = function () {
 
 
 
+    let PostViewsFromDb = document.getElementById("PostViews");
+    let postTitleFromDb = document.getElementById("postTitle");
+
+
     fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 // get post from db
-                let postTitle = document.createElement("h2");
+                let postTitleFrom = document.createElement("h2");
                 let postContent = document.createElement("p");
                 postContent.spellcheck = "true";
                 postContent.innerHTML = data[i].postContent;
