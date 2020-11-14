@@ -49,18 +49,20 @@ window.onload = function () {
                 let postTitleFromDb = document.createElement("h2");
                 let PostViewsFromDb = document.createElement("span");
                 let postContentFromDb = document.createElement("p");
+                let postLike = document.createElement("p");
                 postContentFromDb.spellcheck = "true";
                 postContentFromDb.innerHTML = data[i].postContent;
-                postContentFromDb.innerHTML = data[i].postContent;
-                postContentFromDb.innerHTML = data[i].postContent;
-                postContentFromDb.innerHTML = data[i].postContent;
+                postTitleFromDb.innerHTML = data[i].postTitle;
+                PostViewsFromDb.innerHTML = data[i].numberofviews;
+                postLike.innerHTML = data[i].postLike;
                 let viewComment = document.createElement("button");
 
                 // post from db
-                div.append(postTitleFromDb)
-                div.append(PostViewsFromDb)
-                div.append(postContentFromDb)
-                div.append(viewComment)
+                div.append(postTitleFromDb);
+                div.append(PostViewsFromDb);
+                div.append(postContentFromDb);
+                div.append(postLike);
+                div.append(viewComment);
  
 
 
