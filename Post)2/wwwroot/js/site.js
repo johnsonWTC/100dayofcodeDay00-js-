@@ -58,8 +58,8 @@ window.onload = function () {
 
                 // post from db
                 div.append(postTitleFromDb);
-                div.append(PostViewsFromDb);
                 div.append(postContentFromDb);
+                div.append(PostViewsFromDb);
                 div.append(postLike);
                 div.append(viewComment);
  
