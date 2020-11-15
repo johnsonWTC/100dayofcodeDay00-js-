@@ -49,6 +49,10 @@ namespace Post_2.Controllers
         {
 
             pageViews pageViews = _context.pageViews.FirstOrDefault(e => id == e.ID);
+            if (numberNumber.Equals(null) || numberNumber.Equals(0))
+            {
+                numberNumber = 1;
+            }
             pageViews.views = numberNumber;
             _context.SaveChanges();
         }

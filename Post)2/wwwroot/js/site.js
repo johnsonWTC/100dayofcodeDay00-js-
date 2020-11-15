@@ -84,7 +84,8 @@ window.onload = function () {
                                 'Content-Type': 'application/json'
                             },
                             body: JSON.stringify({
-                                "commentContent": commentArea.value,
+                                "commentContent": "comment one",
+                                "postID": data[i].postID,
                             })
                         })
                     })
