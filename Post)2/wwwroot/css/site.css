@@ -74,13 +74,22 @@ body {
 
 .title {
     padding: 6px 6px 6px 6px;
-    background-color:aqua;
-  
-
 }
 
 .content {
-    position: absolute;
+    padding: 5px 5px 5px 5px;
+    margin-top : -15px;
+    margin-bottom:-3px;
+    background-color:cadetblue;
+
+}
+
+.postlikes {
+    margin-top: -20px;
+    margin-left: 400px;
+}
+.view {
+    margin-top: -10px;
 }
 
 
@@ -88,11 +97,12 @@ body {
     padding: 6px 6px 6px 6px;
 }
 
-.view {
-    padding: 6px 6px 6px 6px;
-}
+
 
 .post {
     position: relative;
     
 }
+
+
+
