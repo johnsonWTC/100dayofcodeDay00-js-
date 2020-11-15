@@ -98,22 +98,21 @@ body {
 }
 
 .post {
-    padding:150px 20px 20px 20px;
-    position:absolute;
+    padding:150px 20px 20px 20px;   
     background-color:aqua;
 }
 
 .titlePost {
-    margin-bottom : -1000px;
-   
+    background-color:rebeccapurple;
+    margin-top:-100px;  
 }
 
 .contentPost {
-  
+ 
 }
 
 .commentPost {
-
+  
 }
 
 .viewPost {
