@@ -1,4 +1,6 @@
-﻿let div = document.getElementById("div");
+﻿import { post } from "jquery";
+
+let div = document.getElementById("div");
 let postContent = document.getElementById("textarea");
 let addContent = document.getElementById("addContent");
 let PostViews = document.getElementById("PostViews");
@@ -50,6 +52,10 @@ window.onload = function () {
                 let postContentFromDb = document.createElement("p");
                 let postLike = document.createElement("p");
                 postContentFromDb.spellcheck = "true";
+                postContent.classList.add(content);
+                PostViewsFromDb.classList.add(view);
+                postTitleFromDb.classList.add(title);
+                postLike.classList.add();
                 postContentFromDb.innerHTML = data[i].postContent;
                 postTitleFromDb.innerHTML = data[i].postTitle;
                 PostViewsFromDb.innerHTML = data[i].numberofviews;
