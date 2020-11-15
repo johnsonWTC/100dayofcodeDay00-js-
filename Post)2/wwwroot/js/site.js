@@ -36,9 +36,6 @@ window.onload = function () {
     let div = document.getElementById("div");
     let PostViews = document.getElementById("PostViews");
     let views = 0;
-
-
-
     let PostViewsFromDb = document.getElementById("PostViews");
     let postTitleFromDb = document.getElementById("postTitle");
 
