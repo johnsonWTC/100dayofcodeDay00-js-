@@ -62,6 +62,7 @@ window.onload = function () {
                 div.append(PostViewsFromDb);
                 div.append(postLike);
                 div.append(viewComment);
+                div.classList.add()
  
 
 
@@ -106,7 +107,7 @@ fetch("https://localhost:44381/api/pageViews").then(function (res) {
     })
 })
 
-    setTimeout(callfetch, 1000);
+  //  setTimeout(callfetch, 1000);
     function callfetch() {
 
         fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
