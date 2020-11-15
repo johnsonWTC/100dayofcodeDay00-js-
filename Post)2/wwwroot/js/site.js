@@ -65,9 +65,6 @@ window.onload = function () {
                 div.append(PostViewsFromDb);
                 div.append(postLike);
                 div.append(viewComment);
-                div.classList.add()
- 
-
 
                 // to view and add comment
                 viewComment.innerHTML = "Comments";
