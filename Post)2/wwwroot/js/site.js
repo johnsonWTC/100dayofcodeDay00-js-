@@ -48,6 +48,7 @@ window.onload = function () {
                 let PostViewsFromDb = document.createElement("span");
                 let postContentFromDb = document.createElement("p");
                 let postLike = document.createElement("p");
+                let hr = document.createElement("hr");
                 postContentFromDb.spellcheck = "true";
                 postContent.classList.add("content");
                 PostViewsFromDb.classList.add("view");
@@ -55,8 +56,8 @@ window.onload = function () {
                 postLike.classList.add("postlikes");
                 postContentFromDb.innerHTML = data[i].postContent;
                 postTitleFromDb.innerHTML = data[i].postTitle;
-                PostViewsFromDb.innerHTML = data[i].numberofviews;
-                postLike.innerHTML = data[i].postLike;
+                PostViewsFromDb.innerHTML ="Post Views "+  data[i].numberofviews;
+                postLike.innerHTML = "Post Like "+ data[i].postLike;
                 let viewComment = document.createElement("button");
 
                 // post from db
