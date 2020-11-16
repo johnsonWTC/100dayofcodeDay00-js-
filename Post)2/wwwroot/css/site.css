@@ -103,8 +103,7 @@ body {
 }
 
 .titlePost {
-    padding: 5px 20px 20px 20px;
-    margin:-120px 140px -10px 15px;
+ padding-bottom:4px;
 }
 
 .contentPost {
@@ -112,7 +111,7 @@ body {
 }
 
 .commentPost {
-    margin: -12px 14px -10px 15px;
+    
 }
 
 .viewPost {

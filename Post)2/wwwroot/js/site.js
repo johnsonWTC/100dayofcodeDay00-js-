@@ -22,6 +22,7 @@ addContent.addEventListener("click", function () {
             "numberofviews": 0,
         })
     })
+    location.reload();
 })
 
 
@@ -50,7 +51,7 @@ window.onload = function () {
                 let postLike = document.createElement("p");
                 let hr = document.createElement("hr");
                 postContentFromDb.spellcheck = "true";
-                postContent.classList.add("content");
+                postContentFromDb .classList.add("content");
                 PostViewsFromDb.classList.add("view");
                 postTitleFromDb.classList.add("title");
                 postLike.classList.add("postlikes");
