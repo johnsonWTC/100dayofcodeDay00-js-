@@ -74,9 +74,9 @@ window.onload = function () {
                
                 fetch("https://localhost:44381/api/commentsAPI").then(function (ress) {
                     ress.json().then(function (datar) {
-                        for (let i = 0; datar.length > i; i++) {
+                        for (let a = 0; datar.length > a; a++) {
                             let commentContentFromDb = document.createElement("p");
-                            if (datar[i].postID == data[i].postID) {
+                            if (datar[a].postID == data[i].postID) {
                                 commentContentFromDb.innerHTML = datar[i].commentContent;
                                 commentDiv.append(commentContentFromDb);
                                 
