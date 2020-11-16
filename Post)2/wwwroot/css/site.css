@@ -23,14 +23,16 @@
 
 .Viewcomment {
     padding: 6px 6px 6px 6px;
-    // position: absolute;
     margin-left: 20px;
     margin-top: 10px;
 }
 
 
 .titlePost {
-    padding-top: 80px;
+    padding-top: 20px;
+    margin-top: -40px;
+    margin-left: 170px;
+    width: 500px;
 }
 
 
@@ -43,7 +45,10 @@
     padding: 2px 0px 5px 1px;
 }
 
-.commentPost {
+.postButton {
+    margin-top: -350px;
+    margin-left: 550px;
+    width: 200px;
 }
 
 
@@ -89,6 +94,8 @@
     border-radius: 15px/15px;
 }
 
+.postT {
+}
 
 .post10 {
     top: 270px;
@@ -111,5 +118,5 @@
     background: #e9f0f2;
     width: 580px;
     margin-top: 20px;
-    margin-left: 250px;
+    margin-left: 170px;
 }

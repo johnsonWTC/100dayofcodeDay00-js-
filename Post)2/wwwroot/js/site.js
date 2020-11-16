@@ -1,7 +1,7 @@
 ﻿
 
 let div = document.getElementById("div");
-let postContent = document.getElementById("textarea");
+let postContent = document.getElementById("postbox");
 let addContent = document.getElementById("addContent");
 let PostViews = document.getElementById("PostViews");
 let postTitle = document.getElementById("postTitle");
@@ -78,6 +78,7 @@ window.onload = function () {
                     })
 
                     location.reload();
+                    focus();
                 })
 
                 // [HttpPost("{postID}/{likeID}/{postViews}")]
@@ -166,6 +167,7 @@ window.onload = function () {
                         })
 
                         location.reload();
+                        focus();
                     })
 
                 })

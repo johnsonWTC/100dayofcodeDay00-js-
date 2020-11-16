@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Identity.Models.Post>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.postTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.postContent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.postLike)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numberofviews)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            if (item.User.UserName == User.Identity.Name)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.postTitle)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.postContent)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.postLike)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.numberofviews)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Id)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.postID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.postID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.postID">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+
+</table>
+

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Post_2.Areas.Identity.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Post_2.Models
 {
@@ -16,6 +18,11 @@ namespace Post_2.Models
         public int numberofviews { get; set; }  
 
         public List<comment> comments { get; set; }
+
+        public int id { get; set; }
+
+        [JsonIgnore]
+        public Post_2User Post_2User { get; set; }
 
 
 
