@@ -72,11 +72,14 @@ window.onload = function () {
 
                 //comments from db
                
-                fetch("https://localhost:44381/api/commentsAPI").then(function (res) {
-                    res.json().then(function (data) {
+                fetch("https://localhost:44381/api/commentsAPI").then(function (ress) {
+                    ress.json().then(function (datar) {
                         for (let i = 0; data.length > i; i++) {
                             let commentContentFromDb = document.createElement("p");
-                            commentContentFromDb.innerHTML = 
+                            if (datar[i].postID == data[i].postID) {
+                                commentContentFromDb.innerHTML = datar[i].commentContent;
+                            }
+                            
                         }
                     })
                 })
