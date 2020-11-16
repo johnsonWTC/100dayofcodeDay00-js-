@@ -69,6 +69,17 @@ window.onload = function () {
                 commentDiv.append(commentButton);
                 commentDiv.style.display = "none";
 
+
+                //comments from db
+                let commentContentFromDb = document.createElement("p");
+                fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
+                    res.json().then(function (data) {
+
+                    })
+                })
+                
+
+
                 // post from db
                 div.append(postTitleFromDb);
                 div.append(postContentFromDb);
@@ -77,6 +88,10 @@ window.onload = function () {
                 div.append(viewComment);
                 div.append(commentDiv);
                 div.append(hr);
+
+
+                
+
 
                 // to view and add comment
                 viewComment.innerHTML = "Comments";
