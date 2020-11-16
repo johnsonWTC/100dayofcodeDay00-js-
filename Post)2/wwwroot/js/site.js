@@ -61,25 +61,30 @@ window.onload = function () {
                 postLike.innerHTML = "Post Like "+ data[i].postLike;
                 let viewComment = document.createElement("button");
 
+                let commentDiv = document.createElement("div");
+                let commentArea = document.createElement("textarea");
+                let commentButton = document.createElement("button");
+                commentButton.innerHTML = "Add comment";
+                commentDiv.append(commentArea);
+                commentDiv.append(commentButton);
+                commentDiv.style.display = "none";
+
                 // post from db
                 div.append(postTitleFromDb);
                 div.append(postContentFromDb);
                 div.append(PostViewsFromDb);
                 div.append(postLike);
                 div.append(viewComment);
+                div.append(commentDiv);
                 div.append(hr);
 
                 // to view and add comment
                 viewComment.innerHTML = "Comments";
                 viewComment.addEventListener("click", function () {
                     // to add comment
-                    let commentDiv = document.createElement("div");
-                    let commentArea = document.createElement("textarea");
-                    let commentButton = document.createElement("button");
-                    commentButton.innerHTML = "Add comment"
-                    div.append(commentDiv);
-                    commentDiv.append(commentArea);
-                    commentDiv.append(commentButton);
+                    commentDiv.style.display = "block";
+                    
+                 
                     commentButton.addEventListener("click", function () {
                         fetch("https://localhost:44381/api/commentsAPI", {
                             method: "Post",
