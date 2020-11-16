@@ -67,17 +67,19 @@ window.onload = function () {
                 commentButton.innerHTML = "Add comment";
                 commentDiv.append(commentArea);
                 commentDiv.append(commentButton);
-                commentDiv.style.display = "none";
+
 
 
                 //comments from db
                
                 fetch("https://localhost:44381/api/commentsAPI").then(function (ress) {
                     ress.json().then(function (datar) {
-                        for (let i = 0; data.length > i; i++) {
+                        for (let i = 0; datar.length > i; i++) {
                             let commentContentFromDb = document.createElement("p");
                             if (datar[i].postID == data[i].postID) {
                                 commentContentFromDb.innerHTML = datar[i].commentContent;
+                                commentDiv.append(commentContentFromDb);
+                                
                             }
                             
                         }
@@ -94,6 +96,7 @@ window.onload = function () {
                 div.append(viewComment);
                 div.append(commentDiv);
                 div.append(hr);
+                commentDiv.style.display = "none";
 
 
                 
