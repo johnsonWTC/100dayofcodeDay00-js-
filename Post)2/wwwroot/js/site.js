@@ -72,9 +72,9 @@ window.onload = function () {
 
                 //comments from db
                 let commentContentFromDb = document.createElement("p");
-                fetch("https://localhost:44381/api/PostsAPI/").then(function (res) {
+                fetch("https://localhost:44381/api/commentsAPI").then(function (res) {
                     res.json().then(function (data) {
-
+                        for (let i = 0; data.length > i; i++) {
                     })
                 })
                 
