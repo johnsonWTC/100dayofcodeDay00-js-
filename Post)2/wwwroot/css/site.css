@@ -122,6 +122,30 @@ body {
 
 }
 
+.titletwo {
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+}
+
+.contenttwo {
+    padding: 5px 5px 5px 5px;
+    margin-top: -15px;
+    margin-bottom: -3px;
+}
+
+.postlikestwo {
+    margin-top: 120px;
+    margin-left: 30px;
+    width: 90px;
+}
+.viewtwo {
+    margin-top: -10px;
+}
+
+.comments {
+    margin-top: -10px;
+}
+
 
 
 
