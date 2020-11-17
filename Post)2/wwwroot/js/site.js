@@ -48,7 +48,7 @@ window.onload = function () {
                 let postTitleFromDb = document.createElement("h2");
                 let PostViewsFromDb = document.createElement("span");
                 let postContentFromDb = document.createElement("p");
-                let postLike = document.createElement("p");
+                let postLike = document.createElement("button");
                 let hr = document.createElement("hr");
                 postContentFromDb.spellcheck = "true";
                 postContentFromDb .classList.add("content");

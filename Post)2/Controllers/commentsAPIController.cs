@@ -106,7 +106,6 @@ namespace Post_2.Controllers
             return _context.comments.Any(e => e.commentID == id);
         }
 
-
         [HttpPut("{id}")]
         public void  Putcomment(int id)
         {
