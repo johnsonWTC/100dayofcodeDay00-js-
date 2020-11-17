@@ -60,6 +60,7 @@ window.onload = function () {
                 PostViewsFromDb.innerHTML ="Post Views "+  data[i].numberofviews;
                 postLike.innerHTML = "Post Like "+ data[i].postLike;
                 let viewComment = document.createElement("button");
+                viewComment.classList.add("Viewcomment");
 
                
                

@@ -85,16 +85,20 @@ body {
 }
 
 .postlikes {
-    margin-top: -20px;
-    margin-left: 400px;
+    margin-top: 120px;
+    margin-left: 30px;
+    width:90px;
 }
 .view {
     margin-top: -10px;
 }
 
 
-.comment {
+.Viewcomment {
     padding: 6px 6px 6px 6px;
+   position:absolute;
+    margin-left: -220px;
+
 }
 
 .post {
