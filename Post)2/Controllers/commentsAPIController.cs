@@ -108,11 +108,10 @@ namespace Post_2.Controllers
 
 
         [HttpPut("{id}")]
-        public int  Putcomment(int id)
+        public void  Putcomment(int id)
         {
             var comment = _context.comments.FirstOrDefault(e => e.commentID == id);
-            comment.commentLikes = comment.commentLikes++;
-            return comment.commentLikes;
+            comment.commentLikes = comment.commentLikes++;    
         }
     }
 }
