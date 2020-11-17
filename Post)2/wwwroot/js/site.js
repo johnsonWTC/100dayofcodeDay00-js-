@@ -61,12 +61,8 @@ window.onload = function () {
                 postLike.innerHTML = "Post Like "+ data[i].postLike;
                 let viewComment = document.createElement("button");
 
-                let commentDiv = document.createElement("div");
-                let commentArea = document.createElement("textarea");
-                let commentButton = document.createElement("button");
-                commentButton.innerHTML = "Add comment";
-                commentDiv.append(commentArea);
-                commentDiv.append(commentButton);
+               
+               
 
 
 
@@ -77,7 +73,7 @@ window.onload = function () {
                         for (let a = 0; datar.length > a; a++) {
                             let commentContentFromDb = document.createElement("p");
                             if (datar[a].postID == data[i].postID) {
-                                commentContentFromDb.innerHTML = datar[i].commentContent;
+                                commentContentFromDb.innerHTML = datar[a].commentContent;
                                 commentDiv.append(commentContentFromDb);
                                 
                             }
@@ -85,7 +81,13 @@ window.onload = function () {
                         }
                     })
                 })
-                
+
+                let commentDiv = document.createElement("div");
+                let commentArea = document.createElement("textarea");
+                let commentButton = document.createElement("button");
+                commentButton.innerHTML = "Add comment";
+                commentDiv.append(commentArea);
+                commentDiv.append(commentButton);
 
 
                 // post from db
@@ -99,14 +101,24 @@ window.onload = function () {
                 commentDiv.style.display = "none";
 
 
-                
+                function view() {
+                    if (commentDiv.style.display == "block") {
+
+                        commentDiv.style.display = "none";
+                        location.reload();
+                        return;
+                    }
+                    else if (commentDiv.style.display == "none") {
+
+                        commentDiv.style.display = "block";
+                    }
+                }
 
 
                 // to view and add comment
-                viewComment.innerHTML = "Comments";
+                viewComment.innerHTML = "View Comments";
                 viewComment.addEventListener("click", function () {
-                    // to add comment
-                    commentDiv.style.display = "block";
+                    view();
                     
                  
                     commentButton.addEventListener("click", function () {
@@ -121,6 +133,8 @@ window.onload = function () {
                                 "postID": data[i].postID,
                             })
                         })
+
+                        location.reload();
                     })
 
                 })

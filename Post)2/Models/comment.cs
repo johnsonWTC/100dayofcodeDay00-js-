@@ -11,6 +11,8 @@ namespace Post_2.Models
         public int commentID { get; set; }
         public string commentContent { get; set; }
 
+        public int commentLikes { get; set; }
+
         public int postID { get; set; }
 
         [JsonIgnore]
