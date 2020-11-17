@@ -105,5 +105,14 @@ namespace Post_2.Controllers
         {
             return _context.comments.Any(e => e.commentID == id);
         }
+
+
+        [HttpPut("{id}")]
+        public int  Putcomment(int id)
+        {
+            var comment = _context.comments.FirstOrDefault(e => e.commentID == id);
+            comment.commentLikes = comment.commentLikes++;
+            return comment.commentLikes;
+        }
     }
 }
