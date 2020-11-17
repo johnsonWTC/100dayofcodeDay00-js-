@@ -13,6 +13,8 @@ namespace Post_2.Models
 
         public int commentLikes { get; set; }
 
+        public int commentViews { get; set; }
+
         public int postID { get; set; }
 
         [JsonIgnore]
