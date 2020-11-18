@@ -37,7 +37,7 @@
 }
 
 .sumitform {
-    margin-top: 10%;
+    margin-top: 4%;
     margin-left: 10%;
 }
 
@@ -47,4 +47,12 @@
     margin-bottom: 10px;
 }
 
-.postContent {}
+.postContent {
+    padding-bottom: 50px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.Addbutton {
+    width: 20%;
+}
