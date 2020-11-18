@@ -38,7 +38,11 @@
 
 .sumitform {
     margin-top: 10%;
-    margin-left: 30%;
+    margin-left: 10%;
 }
 
-.title {}
+.title {
+    padding-bottom: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
