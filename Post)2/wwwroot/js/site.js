@@ -35,6 +35,7 @@ addContent.addEventListener("click", function () {
 
 window.onload = function () {
     let div = document.getElementById("div");
+    div.classList.add("post10");
     let PostViews = document.getElementById("PostViews");
     let views = 0;
     let PostViewsFromDb = document.getElementById("PostViews");
@@ -45,14 +46,12 @@ window.onload = function () {
         res.json().then(function (data) {
             for (let i = 0; data.length > i; i++) {
                 // get post from db
-                let divfromDB = document.createElement("div");
                 let postTitleFromDb = document.createElement("h2");
                 let PostViewsFromDb = document.createElement("span");
                 let postContentFromDb = document.createElement("p");
                 let postLike = document.createElement("button");
                 let hr = document.createElement("hr");
                 postContentFromDb.spellcheck = "true";
-                divfromDB.classList.add("post1");
                 postContentFromDb .classList.add("content");
                 PostViewsFromDb.classList.add("view");
                 postTitleFromDb.classList.add("title");

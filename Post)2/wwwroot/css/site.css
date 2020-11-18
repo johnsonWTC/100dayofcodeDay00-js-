@@ -207,316 +207,7 @@ body {
     font-family: verdana sans-serif;
 }
 
-.bodyn {
-    top: 70px;
-    left: 30px;
-    position: absolute;
-    width: 200px;
-    height: 740px;
-    font-family: verdana;
-}
 
-#side1 {
-    top: 0px;
-    left: 10px;
-    width: 160px;
-    height: 25px;
-    font-size: 20px;
-    color: #868383;
-}
-
-#side2 {
-    top: 30px;
-    left: 10px;
-    width: 180px;
-    height: 25px;
-    font-size: 15px;
-    color: #868383;
-}
-
-#side3 {
-    top: 60px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side4 {
-    top: 85px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side5 {
-    top: 110px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side6 {
-    top: 145px;
-    left: 10px;
-    width: 180px;
-    height: 30px;
-    font-size: 20px;
-    color: #868383;
-    padding-top: 5px;
-}
-
-#side7 {
-    top: 175px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side8 {
-    top: 200px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side9 {
-    top: 225px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side10 {
-    top: 250px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side11 {
-    top: 285px;
-    left: 10px;
-    width: 180px;
-    height: 30px;
-    font-size: 20px;
-    color: #868383;
-    padding-top: 5px;
-}
-
-#side12 {
-    top: 315px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side13 {
-    top: 340px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side14 {
-    top: 375px;
-    left: 10px;
-    width: 180px;
-    height: 30px;
-    font-size: 20px;
-    color: #868383;
-    padding-top: 5px;
-}
-
-#side15 {
-    top: 405px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side16 {
-    top: 430px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side17 {
-    top: 455px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side18 {
-    top: 490px;
-    left: 10px;
-    width: 180px;
-    height: 30px;
-    font-size: 20px;
-    color: #868383;
-    padding-top: 5px;
-}
-
-#side19 {
-    top: 520px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side20 {
-    top: 545px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side21 {
-    top: 580px;
-    left: 10px;
-    width: 180px;
-    height: 30px;
-    font-size: 20px;
-    color: #868383;
-    padding-top: 5px;
-}
-
-#side22 {
-    top: 610px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side23 {
-    top: 645px;
-    left: 10px;
-    width: 180px;
-    height: 30px;
-    font-size: 20px;
-    color: #868383;
-    padding-top: 5px;
-}
-
-#side24 {
-    top: 675px;
-    left: 15px;
-    width: 160px;
-    height: 25px;
-    font-size: 15px;
-    color: #363030;
-    padding-top: 5px;
-    padding-left: 20px;
-}
-
-#side1:hover {
-    background: #e9f0f2;
-}
-
-#side2:hover {
-    background: #e9f0f2;
-}
-
-#side4:hover {
-    background: #e9f0f2;
-}
-
-#side5:hover {
-    background: #e9f0f2;
-}
-
-#side6:hover {
-    background: #e9f0f2;
-}
-
-#side7:hover {
-    background: #e9f0f2;
-}
-
-#side8:hover {
-    background: #e9f0f2;
-}
-
-#side9:hover {
-    background: #e9f0f2;
-}
-
-#side10:hover {
-    background: #e9f0f2;
-}
-
-#side11:hover {
-    background: #e9f0f2;
-}
-
-#side12:hover {
-    background: #e9f0f2;
-}
-
-#side13:hover {
-    background: #e9f0f2;
-}
 
 #side14:hover {
     background: #e9f0f2;
@@ -538,29 +229,7 @@ body {
     background: #e9f0f2;
 }
 
-#side19:hover {
-    background: #e9f0f2;
-}
 
-#side20:hover {
-    background: #e9f0f2;
-}
-
-#side21:hover {
-    background: #e9f0f2;
-}
-
-#side22:hover {
-    background: #e9f0f2;
-}
-
-#side23:hover {
-    background: #e9f0f2;
-}
-
-#side24:hover {
-    background: #e9f0f2;
-}
 
 .post00 {
     top: 70px;
@@ -578,47 +247,16 @@ body {
     position: absolute;
     background: white;
     width: 580px;
-    height: 600px;
+    height: auto;
     border-radius: 3px/3px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
 }
 
-.header0001 {
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    background: #142170;
-    top: 0;
-    left: 0;
-    color: white;
-    z-index: 6;
-    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-}
 
-.sideboxxx {
-    top: 70px;
-    left: 1000px;
-    width: 220px;
-    height: 550;
-    position: absolute;
-    font-family: verdana;
-    color: #363030;
-    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-    font-size: 15px;
-}
 
-.sideboxxxx2 {
-    top: 500px;
-    left: 1000px;
-    width: 220px;
-    height: 380px;
-    position: absolute;
-    font-family: verdana;
-    color: #363030;
-    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-}
+
 
 .post {
     top: 70px;
@@ -644,7 +282,7 @@ body {
     padding-top: 10px;
 }
 
-#postpos {
+.postpos {
     left: 450px;
     top: 160px;
     width: 85px;
