@@ -7,6 +7,6 @@ namespace Movie.Models
 {
     public class Movie
     {
-        public string MyProperty { get; set; }
+        public string NameMovie { get; set; }
     }
 }
