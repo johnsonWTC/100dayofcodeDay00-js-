@@ -10,6 +10,7 @@ namespace Movie.Controllers
     {
         public IActionResult Random()
         {
+            var 
             return View();
         }
     }
