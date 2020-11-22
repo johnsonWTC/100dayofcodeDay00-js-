@@ -7,5 +7,6 @@ namespace SimpleImageGallary.Models
 {
     public class GalleryIndelModel
     {
+        prop
     }
 }
