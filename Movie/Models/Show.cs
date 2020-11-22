@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Movie.Models
 {
-    public class Movie
+    public class Show
     {
         public string Name { get; set; }
         public int Id { get; set; }
