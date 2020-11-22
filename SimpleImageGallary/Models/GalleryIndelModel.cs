@@ -7,6 +7,6 @@ namespace SimpleImageGallary.Models
 {
     public class GalleryIndelModel
     {
-        prop
+        public IEnumerable<> MyProperty { get; set; }
     }
 }
