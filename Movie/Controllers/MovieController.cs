@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Movie.Models;
 
 namespace Movie.Controllers
 {
@@ -10,7 +11,7 @@ namespace Movie.Controllers
     {
         public IActionResult Random()
         {
-            var movie = 
+            Movie m
             return View();
         }
     }
