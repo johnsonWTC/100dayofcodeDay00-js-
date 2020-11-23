@@ -11,7 +11,7 @@ namespace Movie.Controllers
     {
         public IActionResult Random()
         {
-            Show movie = 
+            Show show =
             return View();
         }
     }
