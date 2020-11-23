@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JokesApp.Data;
 using JokesApp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JokesApp.Controllers
 {
