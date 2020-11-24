@@ -33,7 +33,7 @@ namespace JokesApp.Controllers
 
         public  async IActionResult ShowSerachResult(string SearchPhrase)
         {
-            return View("Index",await _context.Joke.Where()    Where.Contains(SearchPhrase));
+            return View("Index",await _context.Joke.Where(j => j.JokeQuestion.Contains)    Where.Contains(SearchPhrase));
         }   
 
 
