@@ -31,7 +31,7 @@ namespace JokesApp.Controllers
         }
 
 
-        public  async IActionResult ShowSerachResult(string SearchPhrase)
+        public  async Task<IActionResult> ShowSerachResult(string SearchPhrase)
         {
             return View("Index", await _context.Joke.Where(j => j.JokeQuestion.Contains(SearchPhrase)).ToListAsync());
         }   
