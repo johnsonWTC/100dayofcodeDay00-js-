@@ -56,6 +56,8 @@ namespace JokesApp.Controllers
         }
 
         // GET: Jokes/Create
+
+        [Athorize]
         public IActionResult Create()
         {
             return View();
