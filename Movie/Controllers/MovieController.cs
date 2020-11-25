@@ -12,7 +12,7 @@ namespace Movie.Controllers
         public IActionResult Random()
         {
             Show show = new Show();
-            show.Name
+            show.Name =  ""
             return View();
         }
     }
