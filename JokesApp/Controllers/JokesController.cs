@@ -33,7 +33,7 @@ namespace JokesApp.Controllers
 
         public  async IActionResult ShowSerachResult(string JokeAnswer)
         {
-            return View("Index",);
+            return View("Index",await _context.Joke);
         }
 
 
