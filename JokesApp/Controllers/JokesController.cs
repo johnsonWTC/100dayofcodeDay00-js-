@@ -32,6 +32,9 @@ namespace JokesApp.Controllers
 
 
         public  IActionResult ShowSerachResult()
+        {
+            return
+        }
 
 
         // GET: Jokes/Details/5
