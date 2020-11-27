@@ -31,7 +31,7 @@ namespace JokesApp.Controllers
         }
 
 
-        public  IActionResult ShowSerachResult(string)
+        public  IActionResult ShowSerachResult(string JokeAnswer)
         {
             return View();
         }
