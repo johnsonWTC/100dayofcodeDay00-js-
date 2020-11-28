@@ -31,7 +31,7 @@ namespace JokesApp.Controllers
         }
 
 
-        public
+        public IActionResult
          
 
         // GET: Jokes/Details/5
