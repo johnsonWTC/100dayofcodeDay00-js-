@@ -30,6 +30,10 @@ namespace JokesApp.Controllers
             return View();
         }
 
+
+
+        prop
+
         // GET: Jokes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
