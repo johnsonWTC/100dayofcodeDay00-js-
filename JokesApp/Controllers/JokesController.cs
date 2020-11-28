@@ -31,8 +31,8 @@ namespace JokesApp.Controllers
         }
 
 
-        public  IActionResult
-         
+        public  IActionResult ShowSerachResult()
+
 
         // GET: Jokes/Details/5
         public async Task<IActionResult> Details(int? id)
