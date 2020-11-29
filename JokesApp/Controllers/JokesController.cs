@@ -25,7 +25,7 @@ namespace JokesApp.Controllers
             return View(await _context.Joke.ToListAsync());
         }
 
-        public async Task<IActionResult> ShowSearchForm()
+        public IActionResult ShowSearchForm()
         {
             return View();
         }
