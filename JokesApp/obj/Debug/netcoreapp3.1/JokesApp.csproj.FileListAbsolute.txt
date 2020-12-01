@@ -185,3 +185,8 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\bin\Debug\netcoreapp3.1\
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\JokesApp.csproj.CoreCompileInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\JokesApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\JokesApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\Razor\Views\Jokes\Create.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\Razor\Views\Jokes\Delete.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\Razor\Views\Jokes\Details.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\Razor\Views\Jokes\Edit.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\JokesApp\obj\Debug\netcoreapp3.1\Razor\Views\Jokes\Index.cshtml.g.cs
