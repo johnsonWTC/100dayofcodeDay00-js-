@@ -10,5 +10,9 @@ namespace JokesApp.Models
         public int Id { get; set; }
         public string JokeQuestion { get; set; }
         public int JokeAnswer { get; set; }
-    }
+        public Joke()
+        {
+
+        }
+    }   
 }
