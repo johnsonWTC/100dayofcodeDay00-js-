@@ -13,7 +13,7 @@ namespace Movie.Controllers
         {
             Show show = new Show();
             show.Name = "Mad Man";
-            show
+            show.Id = 0;
             return View(show);
         }
     }
