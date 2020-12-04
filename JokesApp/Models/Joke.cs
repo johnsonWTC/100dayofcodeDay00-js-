@@ -8,6 +8,6 @@ namespace JokesApp.Models
     public class Joke
     {
         public int Id { get; set; }
-        public string Joke { get; set; }
+        public string JokeName { get; set; }
     }
 }
