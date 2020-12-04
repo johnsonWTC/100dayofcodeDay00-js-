@@ -7,6 +7,6 @@ namespace JokesApp.Models
 {
     public class Joke
     {
-        public int MyProperty { get; set; }
+        public int Id { get; set; }
     }
 }
