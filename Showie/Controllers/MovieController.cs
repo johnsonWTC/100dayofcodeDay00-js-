@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Showie.Data;
 using Showie.Models;
 using Showie.ShowViewModel;
 
@@ -116,6 +117,17 @@ namespace Showie.Controllers
             {
                 return View();
             }
+        }
+
+        public void AddFollower()
+        {
+            FollowTable followTable = new FollowTable();
+            int FollowedID = 4;
+            int FollowerID = 5;
+            followTable.FollowedID = FollowedID;
+            followTable.FollowerID = FollowerID;
+            _context.followTables.Add(followTable);
+
         }
     }
 }
