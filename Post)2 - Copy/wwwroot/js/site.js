@@ -94,8 +94,8 @@ window.onload = function () {
                 // post from db
                 div.append(postTitleFromDb);
                 div.append(postContentFromDb);
-                div.append(PostViewsFromDb);
-                div.append(postLike);
+               
+           //     div.append(postLike);
                 div.append(viewComment);
                 div.append(commentDiv);
                 div.append(hr);

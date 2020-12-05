@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FnXNRs9clIkPNmdPDphcIXnYXHcNA1voam72h0iO8h8dZnjr6Le9YQOUQ+KaZQoGlXJs7DFum5pLs2JUD6lxVg==",
+  "dgSpecHash": "e70p4K8XMqI0+n5mDmyZxXA4Kq9ndXmKSVmbfqGxR+TwEFev5fAhO4Fij7tIRDWfXv24SspICoJXced8+Ky4Qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2\\Post)2.csproj",
+  "projectFilePath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2 - Copy\\Post)2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

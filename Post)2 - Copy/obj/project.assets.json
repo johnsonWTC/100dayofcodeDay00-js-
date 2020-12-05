@@ -8828,11 +8828,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2\\Post)2.csproj",
+      "projectUniqueName": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2 - Copy\\Post)2.csproj",
       "projectName": "Post)2",
-      "projectPath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2\\Post)2.csproj",
+      "projectPath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2 - Copy\\Post)2.csproj",
       "packagesPath": "C:\\Users\\jdubula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2\\obj\\",
+      "outputPath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\Post)2 - Copy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

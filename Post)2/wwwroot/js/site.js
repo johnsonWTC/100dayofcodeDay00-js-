@@ -56,6 +56,7 @@ window.onload = function () {
                 PostViewsFromDb.classList.add("view");
                 postTitleFromDb.classList.add("title");
                 postLike.classList.add("postlikes");
+                hr.classList.add("hr");
                 postContentFromDb.innerHTML = data[i].postContent;
                 postTitleFromDb.innerHTML = data[i].postTitle;
                 PostViewsFromDb.innerHTML ="Post Views "+  data[i].numberofviews;
@@ -88,6 +89,8 @@ window.onload = function () {
                 let commentArea = document.createElement("textarea");
                 let commentButton = document.createElement("button");
                 commentButton.innerHTML = "Add comment";
+                commentArea.classList.add("commentArea");
+                commentButton.classList.add("commentButton");
                 commentDiv.append(commentArea);
                 commentDiv.append(commentButton);
 
