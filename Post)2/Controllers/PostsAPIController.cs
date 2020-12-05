@@ -107,6 +107,7 @@ namespace Post_2.Controllers
             return _context.Posts.Any(e => e.postID == id);
         }
 
+        [HttpPost("{postID}")]
         public async Task<ActionResult<Post>> PostLikes(int postID)
         {
             var post = await _context.Posts.FindAsync(postID);
@@ -114,8 +115,8 @@ namespace Post_2.Controllers
             {
                 return NotFound();
             }
+            post.postLike = post.postLike++;
 
-            _context.Posts.Remove(post);
             await _context.SaveChangesAsync();
 
             return post;
