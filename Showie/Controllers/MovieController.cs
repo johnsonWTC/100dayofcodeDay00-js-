@@ -11,6 +11,8 @@ namespace Showie.Controllers
 {
     public class MovieController : Controller
     {
+
+        ApplicationDbContext _context = new ApplicationDbContext();
         // GET: RandomController
         public ActionResult Random(int id)
         {

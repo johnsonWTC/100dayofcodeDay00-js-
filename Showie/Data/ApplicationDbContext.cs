@@ -9,6 +9,11 @@ namespace Showie.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        public ApplicationDbContext()
+        {
+
+        }
+
         public DbSet<Movie> movies { get; set; }
         public DbSet<Customer> customers { get; set; }
         public DbSet<MemberShipType> memberShipTypes { get; set; }
