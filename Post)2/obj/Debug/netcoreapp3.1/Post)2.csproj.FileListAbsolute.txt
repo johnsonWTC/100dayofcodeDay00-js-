@@ -182,3 +182,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\st
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Post)2.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Post)2.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Post)2.genruntimeconfig.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Post)2\obj\Debug\netcoreapp3.1\Post)2.csprojAssemblyReference.cache

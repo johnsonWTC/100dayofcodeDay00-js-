@@ -66,19 +66,18 @@ window.onload = function () {
 
 
                 postLike.addEventListener("click", function () {
-                    fetch(`https://localhost:44381/api/PostsAPI/${data[i].postID}`, {
-                        //method: "Post",
-                        //headers: {
-                        //    'Accept': 'application/json',
-                        //    'Content-Type': 'application/json'
-                        //},
-                        //body: JSON.stringify({
-                        //    "commentContent": commentArea.value,
-                        //    "postID": data[i].postID,
-                        //})
+                    fetch(`https://localhost:44381/api/PostsAPI/${data[i].postID}/1`, {
+                        method: "Post",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            "postLike": data[i].postLike,
+                        })
                     })
 
-                 //   location.reload();
+                    location.reload();
                 })
                
 

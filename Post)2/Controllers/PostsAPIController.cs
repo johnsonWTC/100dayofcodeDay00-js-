@@ -115,7 +115,7 @@ namespace Post_2.Controllers
             {
                 return NotFound();
             }
-            post.postLike = post.postLike++;
+            post.postLike = post.postLike + 1;
 
             await _context.SaveChangesAsync();
 
