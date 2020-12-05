@@ -108,7 +108,7 @@ namespace Post_2.Controllers
         }
 
         [HttpPost("{postID}")]
-        public async Task<ActionResult<Post>> PostLikes(int postID)
+        public async Task<ActionResult<int>> PostLikes(int postID)
         {
             var post = await _context.Posts.FindAsync(postID);
             if (post == null)
@@ -119,7 +119,7 @@ namespace Post_2.Controllers
 
             await _context.SaveChangesAsync();
 
-            return post;
+            return postID;
         }
     }
 }
