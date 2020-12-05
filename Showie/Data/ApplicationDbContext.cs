@@ -12,7 +12,7 @@ namespace Showie.Data
         public DbSet<Movie> movies { get; set; }
         public DbSet<Customer> customers { get; set; }
         public DbSet<MemberShipType> memberShipTypes { get; set; }
-        public DbSet<Movie> Movie { get; set; }
+        public DbSet<FollowTable> followTables { get; set; }
         public DbSet<Movie> Movie { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
