@@ -66,7 +66,7 @@ window.onload = function () {
 
 
                 postLike.addEventListener("click", function () {
-                    fetch("https://localhost:44381/api/commentsAPI", {
+                    fetch(`https://localhost:44381/api/PostsAPI/${data[i].postID}`, {
                         method: "Post",
                         headers: {
                             'Accept': 'application/json',
