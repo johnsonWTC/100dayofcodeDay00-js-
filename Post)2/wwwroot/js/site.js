@@ -64,7 +64,10 @@ window.onload = function () {
                 let viewComment = document.createElement("button");
                 viewComment.classList.add("Viewcomment");
 
-               
+
+                postLike.addEventListener("click", function () {
+
+                })
                
 
 
