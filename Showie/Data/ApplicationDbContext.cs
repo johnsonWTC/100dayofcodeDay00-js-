@@ -8,6 +8,7 @@ namespace Showie.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        public DbSet<Movie> Movie { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
