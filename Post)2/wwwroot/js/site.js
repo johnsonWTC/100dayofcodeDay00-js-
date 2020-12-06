@@ -80,16 +80,16 @@ window.onload = function () {
                     location.reload();
                 })
 
-
+                // [HttpPost("{postID}/{likeID}/{postViews}")]
             
-                fetch(`https://localhost:44381/api/PostsAPI/${data[i].numberofviews}/1/1`, {
+                fetch(`https://localhost:44381/api/PostsAPI/${data[i].postID}/1/${data[i].numberofviews}`, {
                         method: "Post",
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            "postLike": data[i].numberofviews,
+                         //   "postLike": data[i].numberofviews,
                         })
                     })
 
@@ -151,7 +151,7 @@ window.onload = function () {
                 viewComment.addEventListener("click", function () {
                     view();
                     
-                 
+                 // Add a comment
                     commentButton.addEventListener("click", function () {
                         fetch("https://localhost:44381/api/commentsAPI", {
                             method: "Post",
@@ -174,27 +174,27 @@ window.onload = function () {
     })
   
 
-fetch("https://localhost:44381/api/pageViews").then(function (res) {
-    res.json().then(function (data) {
-        for (let i = 0; data.length > i; i++) {
-            views = data[i].views
-        }
-        views++
-        PostViews.innerHTML = views;
-    })
-})
+//fetch("https://localhost:44381/api/pageViews").then(function (res) {
+//    res.json().then(function (data) {
+//        for (let i = 0; data.length > i; i++) {
+//            views = data[i].views
+//        }
+//        views++
+//        PostViews.innerHTML = views;
+//    })
+//})
 
   //  setTimeout(callfetch, 1000);
-    function callfetch() {
+    //function callfetch() {
 
-        fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
-            method: "Put",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-        })
-    }
+    //    fetch(`https://localhost:44381/api/pageViews/1/${views}`, {
+    //        method: "Put",
+    //        headers: {
+    //            'Accept': 'application/json',
+    //            'Content-Type': 'application/json'
+    //        },
+    //    })
+    //}
 }
 
 
