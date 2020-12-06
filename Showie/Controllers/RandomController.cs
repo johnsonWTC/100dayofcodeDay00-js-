@@ -38,7 +38,7 @@ namespace Showie.Controllers
 
 
 
-            ViewModel showViewModel = new ViewModel();
+            ViewModel viewModel = new ViewModel();
 
          
             viewModel.Movie = movie;
