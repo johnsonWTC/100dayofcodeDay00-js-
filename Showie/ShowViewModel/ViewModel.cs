@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Showie.ShowViewModel
 {
-    public class ShowViewModel
+    public class ViewModel
     {
         public List<Movie> Movies { get; set; }
         public List<Customer> Customers { get; set; }
