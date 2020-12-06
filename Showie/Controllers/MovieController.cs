@@ -9,7 +9,7 @@ using Showie.ShowViewModel;
 
 namespace Showie.Controllers
 {
-    public class RandomController : Controller
+    public class MovieController : Controller
     {
         // GET: RandomController
         public ActionResult Random(int id)
