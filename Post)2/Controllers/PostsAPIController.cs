@@ -121,5 +121,20 @@ namespace Post_2.Controllers
 
             return postID;
         }
+
+        [HttpPost("{postID}/{likeID}/{postViews}")]
+        public async Task<ActionResult<int>> PostViews(int postID)
+        {
+            var post = await _context.Posts.FindAsync(postID);
+            if (post == null)
+            {
+                return NotFound();
+            }
+            post.numberofviews = post.numberofviews + 1;
+
+            await _context.SaveChangesAsync();
+
+            return postID;
+        }
     }
 }

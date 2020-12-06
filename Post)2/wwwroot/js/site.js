@@ -79,7 +79,19 @@ window.onload = function () {
 
                     location.reload();
                 })
-               
+
+
+            
+                    fetch(`https://localhost:44381/api/PostsAPI/${data[i].postID}/1`, {
+                        method: "Post",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            "postLike": data[i].postLike,
+                        })
+                    })
 
 
 
