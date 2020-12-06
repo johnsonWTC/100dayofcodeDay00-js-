@@ -125,19 +125,19 @@ namespace Showie.Controllers
             }
         }
 
-        public void AddFollower()
-        {
-            FollowTable followTable = new FollowTable();
-            int FollowedID = 2;
-            int FollowerID = 4;
-            followTable.FollowedID = FollowedID;
-            followTable.FollowerID = FollowerID;
+        //public void AddFollower()
+        //{
+        //    FollowTable followTable = new FollowTable();
+        //    int FollowedID = 2;
+        //    int FollowerID = 4;
+        //    followTable.FollowedID = FollowedID;
+        //    followTable.FollowerID = FollowerID;
 
-            var userProfiles = _context.followTables.Where(x => x.FollowerID == 4);
+        //    var userProfiles = _context.followTables.Where(x => x.FollowerID == 4);
                
-            _context.followTables.Add(followTable);
-            _context.SaveChanges();
+        //    _context.followTables.Add(followTable);
+        //    _context.SaveChanges();
 
-        }
+        //}
     }
 }
