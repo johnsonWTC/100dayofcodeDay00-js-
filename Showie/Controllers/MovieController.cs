@@ -7,13 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 using Showie.Data;
 using Showie.Models;
 using Showie.ShowViewModel;
+using Microsoft.EntityFrameworkCore;
 
 namespace Showie.Controllers
 {
     public class MovieController : Controller
     {
 
-        ApplicationDbContext _context = new ApplicationDbContext();
+        private readonly ApplicationDbContext _context;
+
+        public MovieController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
         // GET: RandomController
         public ActionResult Random(int id)
         {
@@ -122,11 +128,15 @@ namespace Showie.Controllers
         public void AddFollower()
         {
             FollowTable followTable = new FollowTable();
-            int FollowedID = 4;
-            int FollowerID = 5;
+            int FollowedID = 2;
+            int FollowerID = 4;
             followTable.FollowedID = FollowedID;
             followTable.FollowerID = FollowerID;
+
+            var userProfiles = _context.followTables.Where(x => x.FollowerID == 4);
+               
             _context.followTables.Add(followTable);
+            _context.SaveChanges();
 
         }
     }
