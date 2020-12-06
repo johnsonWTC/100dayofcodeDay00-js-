@@ -73,7 +73,7 @@ window.onload = function () {
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            "postLike": data[i].numberofviews,
+                            "postLike": data[i].postLike,
                         })
                     })
 
@@ -82,14 +82,14 @@ window.onload = function () {
 
 
             
-                    fetch(`https://localhost:44381/api/PostsAPI/${data[i].postID}/1/1`, {
+                fetch(`https://localhost:44381/api/PostsAPI/${data[i].numberofviews}/1/1`, {
                         method: "Post",
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({
-                            "postLike": data[i].postViews,
+                            "postLike": data[i].numberofviews,
                         })
                     })
 
