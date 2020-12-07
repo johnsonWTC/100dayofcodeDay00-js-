@@ -7,5 +7,10 @@ namespace Showie.Models
 {
     public class FollowTable
     {
+        public int Id { get; set; }
+
+        public int FollowerID { get; set; }
+
+        public int FollowedID { get; set; }
     }
 }
