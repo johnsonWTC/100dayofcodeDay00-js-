@@ -7,5 +7,9 @@ namespace Showie.ShowViewModel
 {
     public class ShowViewModel
     {
+        public List<Movie> Movies { get; set; }
+        public List<Customer> Customers { get; set; }
+
+        public Movie Movie { get; set; }
     }
 }
