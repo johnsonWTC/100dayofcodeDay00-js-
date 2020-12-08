@@ -7,5 +7,6 @@ namespace JokesApp.Models
 {
     public class Joke
     {
+        prop
     }
 }
