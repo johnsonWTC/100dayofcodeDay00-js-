@@ -16,5 +16,7 @@ namespace Movie.Controllers
             show.Id = 0;
             return View(show);
         }
+
+        public
     }
 }
