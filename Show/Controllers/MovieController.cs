@@ -130,6 +130,7 @@ namespace Show.Controllers
             int FollowedID = 4;
             int FollowerID = 5;
             followTable.FollowedID = FollowedID;
+            followTable.FollowerID =FollowerID
 
             applicationDBContect.followTables.Add()
 
