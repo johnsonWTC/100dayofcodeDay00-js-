@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Fluent.Infrastructure.FluentModel;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Show.Data;
 using Show.Models;
 using Show.ViewModel;
 
@@ -13,7 +14,12 @@ namespace Show.Controllers
 {
     public class MovieController : Controller
     {
-        private
+        private ApplicationDbContext applicationDBContect;
+
+        public MovieController()
+        {
+            applicationDBContect = new ApplicationDbContext();
+        }
        
         // GET: MovieController
         public ActionResult Index()
