@@ -11,6 +11,8 @@ namespace Show.Models
 
         public int FollowerID { get; set; }
 
+        public int FollowedID { get; set; }
+
 
     }
 }
