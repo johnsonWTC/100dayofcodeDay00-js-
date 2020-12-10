@@ -10,6 +10,11 @@ namespace Show.Data
     public class ApplicationDbContext : IdentityDbContext
     {
 
+        public ApplicationDbContext()
+        
+        {
+        }
+
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Movie> Movies { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
