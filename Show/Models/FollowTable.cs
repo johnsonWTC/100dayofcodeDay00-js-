@@ -9,6 +9,8 @@ namespace Show.Models
     {
         public int Id { get; set; }
 
-        public int MyProperty { get; set; }
+        public int FollowerID { get; set; }
+
+
     }
 }
