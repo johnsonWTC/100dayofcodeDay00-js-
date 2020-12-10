@@ -127,10 +127,11 @@ namespace Show.Controllers
         public void AddFollower()
         {
             FollowTable followTable = new FollowTable();
-            applicationDBContect.followTables.Add()
+            followTable
             int FollowedID = 4;
             int FollowerID = 5;
 
+            applicationDBContect.followTables.Add()
 
         }
     }
