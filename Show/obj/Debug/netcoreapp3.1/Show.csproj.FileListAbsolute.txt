@@ -1,8 +1,5 @@
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.AssemblyInfoInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.AssemblyInfo.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.csproj.CoreCompileInputs.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.RazorAssemblyInfo.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.RazorAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Show\obj\Debug\netcoreapp3.1\Show.TagHelpers.input.cache

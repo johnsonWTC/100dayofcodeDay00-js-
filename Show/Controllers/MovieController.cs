@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Fluent.Infrastructure.FluentModel;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Show.Models;
 using Show.ViewModel;
@@ -11,6 +13,8 @@ namespace Show.Controllers
 {
     public class MovieController : Controller
     {
+        private
+       
         // GET: MovieController
         public ActionResult Index()
         {
@@ -112,6 +116,15 @@ namespace Show.Controllers
             {
                 return View();
             }
+        }
+
+        public void AddFollower()
+        {
+            
+            int FollowedID = 4;
+            int FollowerID = 5;
+
+
         }
     }
 }
