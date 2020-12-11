@@ -7,5 +7,8 @@ namespace Show.Models
 {
     public class FollowTable
     {
+        public int Id { get; set; }
+
+        public int MyProperty { get; set; }
     }
 }
