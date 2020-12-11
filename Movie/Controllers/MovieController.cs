@@ -17,6 +17,6 @@ namespace Movie.Controllers
             return View(show);
         }
 
-        public ActionResult Edit(int )
+        public ActionResult Edit(int id)
     }
 }
