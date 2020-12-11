@@ -34,7 +34,7 @@ namespace Movie.Controllers
 
 
 
-            return View(randomMovieVieModel);
+            return View(randomMovieVieModel );
 
           
 
@@ -49,9 +49,11 @@ namespace Movie.Controllers
             return Content("id = "+ id);  
         }
 
-        [Route("Movies/Released")]
-        public ActionResult Released(int date)
+    
+        public ActionResult Details(int id)
         {
+
+
             return View();
         }
     }
