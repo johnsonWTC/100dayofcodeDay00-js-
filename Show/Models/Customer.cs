@@ -13,6 +13,6 @@ namespace Show.Models
 
         public MemberShipType MemberShipType { get; set; }
 
-        public int MemberShipTypeId { get; set; }
+        public short MemberShipTypeId { get; set; }
     }
 }
