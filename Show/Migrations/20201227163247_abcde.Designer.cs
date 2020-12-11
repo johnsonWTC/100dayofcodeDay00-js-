@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Show.Data;
 
-namespace Show.Data.Migrations
+namespace Show.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201227162732_abcd")]
-    partial class abcd
+    [Migration("20201227163247_abcde")]
+    partial class abcde
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -228,8 +228,8 @@ namespace Show.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("MemberShipTypeId")
-                        .HasColumnType("int");
+                    b.Property<short>("MemberShipTypeId")
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -246,9 +246,9 @@ namespace Show.Data.Migrations
 
             modelBuilder.Entity("Show.Models.MemberShipType", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<short>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("smallint")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int>("DiscountInRate")

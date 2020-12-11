@@ -3,17 +3,15 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Show.Data;
 
-namespace Show.Data.Migrations
+namespace Show.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201227162622_abc")]
-    partial class abc
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -228,10 +226,7 @@ namespace Show.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("MemberShipTypeId")
-                        .HasColumnType("int");
-
-                    b.Property<short?>("MemberShipTypeid")
+                    b.Property<short>("MemberShipTypeId")
                         .HasColumnType("smallint");
 
                     b.Property<string>("Name")
@@ -242,7 +237,7 @@ namespace Show.Data.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("MemberShipTypeid");
+                    b.HasIndex("MemberShipTypeId");
 
                     b.ToTable("Customers");
                 });
@@ -338,7 +333,9 @@ namespace Show.Data.Migrations
                 {
                     b.HasOne("Show.Models.MemberShipType", "MemberShipType")
                         .WithMany()
-                        .HasForeignKey("MemberShipTypeid");
+                        .HasForeignKey("MemberShipTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
