@@ -37,7 +37,7 @@ namespace Show.Controllers
 
 
 
-           
+            ShowViewModel viewModel = new ShowViewModel();
                 return View(movie);
         }
 
