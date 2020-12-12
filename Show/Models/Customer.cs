@@ -8,6 +8,7 @@ namespace Show.Models
     public class Customer
     {
         public int id { get; set; }
-        public string Name { get; set; }
+        public string Name  { get; set; }
+        public bool isSubsribedToNewsLetter { get; set; }
     }
 }
