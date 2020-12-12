@@ -36,7 +36,7 @@ namespace Show.Controllers
             customerTwo.Name = "Thandwelihle";
 
 
-            List
+            List<Customer>
 
 
 
