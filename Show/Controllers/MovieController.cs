@@ -36,11 +36,16 @@ namespace Show.Controllers
             customerTwo.Name = "Thandwelihle";
 
 
-            List<Customer>
+            List<Customer> customers = new List<Customer>();
+            customers.Add(customer);
+            customers.Add(customerTwo);
+
+
 
 
 
             ShowViewModel viewModel = new ShowViewModel();
+            viewModel.Movie = movie;
             
                 return View(movie);
         }
