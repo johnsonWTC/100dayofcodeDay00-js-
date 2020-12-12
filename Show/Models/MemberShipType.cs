@@ -7,5 +7,6 @@ namespace Show.Models
 {
     public class MemberShipType
     {
+        public int signUpFee { get; set; }
     }
 }
