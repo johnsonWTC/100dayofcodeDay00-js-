@@ -36,8 +36,12 @@ namespace Show.Controllers
             customerTwo.Name = "Thandwelihle";
 
 
+            List
+
+
 
             ShowViewModel viewModel = new ShowViewModel();
+            
                 return View(movie);
         }
 
