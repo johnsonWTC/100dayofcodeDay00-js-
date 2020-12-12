@@ -46,8 +46,9 @@ namespace Show.Controllers
 
             ShowViewModel viewModel = new ShowViewModel();
             viewModel.Movie = movie;
-            
-                return View(movie);
+            viewModel.Customers = customers;
+
+             return View(viewModel);
         }
 
         // GET: MovieController/Create
