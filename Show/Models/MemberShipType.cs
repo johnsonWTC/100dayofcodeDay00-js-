@@ -9,6 +9,7 @@ namespace Show.Models
     {
         public int SignUpFee { get; set; }
         public int DurationInMonths { get; set; }
+        public int DiscountInRate { get; set; }
 
     }
 }
