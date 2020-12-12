@@ -1,6 +1,6 @@
 ﻿@model Movie.ViewModels.RandomMovieVieModel
 
-<h1></h1>
+<h1>@Model.Movie.Name</h1>
 @foreach (var item in Model.Customers)
 {
     <h3>@item.Name</h3>
