@@ -27,7 +27,16 @@ namespace Show.Controllers
 
 
 
-            var customer = 
+            var customer = new Customer();
+            customer.Name = "Johnson";
+
+
+            var customerTwo = new Customer();
+            customerTwo.Name = "Thandwelihle";
+
+
+
+            ViewModel viewModel = new ViewModel();
                 return View(movie);
         }
 
