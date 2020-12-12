@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Show.Models;
+using Show.ViewModel;
 
 namespace Show.Controllers
 {
