@@ -52,7 +52,7 @@ namespace Movie
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapAreaControllerRoute();
+              
 
                 endpoints.MapControllerRoute(
                     name: "default",
