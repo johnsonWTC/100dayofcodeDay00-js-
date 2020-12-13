@@ -28,8 +28,8 @@ namespace Movie.Controllers
             Show show = new Show();
             show.Name = "Mad Man";
             show.Id = 0;
+            randomMovieVieModel.Movie = show;
             return View(show);
-            randomMovieVieModel.Movie = show
 
           
 
