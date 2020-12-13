@@ -23,7 +23,7 @@ namespace Movie.Controllers
             customers.Add(customer1);
 
             RandomMovieVieModel randomMovieVieModel = new RandomMovieVieModel();
-            randomMovieVieModel.Customers
+            randomMovieVieModel.Customers = customers;
 
           
 
