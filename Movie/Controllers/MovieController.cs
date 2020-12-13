@@ -25,16 +25,18 @@ namespace Movie.Controllers
             RandomMovieVieModel randomMovieVieModel = new RandomMovieVieModel();
             randomMovieVieModel.Customers = customers;
 
+            Show show = new Show();
+            show.Name = "Mad Man";
+            show.Id = 0;
+            return View(show);
+            randomMovieVieModel.Movie
+
           
 
 
 
 
 
-            Show show = new Show();
-            show.Name = "Mad Man";
-            show.Id = 0;
-            return View(show);
         }
 
         public ActionResult Edit(int id)
