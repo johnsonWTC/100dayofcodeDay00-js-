@@ -29,7 +29,7 @@ namespace Movie.Controllers
             show.Name = "Mad Man";
             show.Id = 0;
             return View(show);
-            randomMovieVieModel.Movie
+            randomMovieVieModel.Movie = show
 
           
 
