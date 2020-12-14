@@ -21,7 +21,7 @@ namespace Movie.Controllers
             customers.Add(customer);
             customers.Add(customer1);
 
-            RandomMovieModel randomMovieModel = new
+            RandomMovieModel randomMovieModel = new RandomMovieModel();
 
 
 
