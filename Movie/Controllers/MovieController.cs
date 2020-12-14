@@ -19,7 +19,7 @@ namespace Movie.Controllers
 
             List<Customer> customers = new List<Customer>();
             customers.Add(customer);
-            customers
+            customers.Add(customer1);
 
 
 
