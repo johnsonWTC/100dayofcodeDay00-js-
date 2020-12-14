@@ -18,7 +18,7 @@ namespace Movie.Controllers
             customer1.Name = "Thandwelihle Dubula";
 
             List<Customer> customers = new List<Customer>();
-            customers.Add
+            customers.Add(customer)
 
 
 
