@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Movie.Models;
-using Movie
+using Movie.ViewModels;
 
 namespace Movie.Controllers
 {
