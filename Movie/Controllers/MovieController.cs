@@ -18,6 +18,9 @@ namespace Movie.Controllers
             customer1.Name = "Thandwelihle Dubula";
 
 
+
+
+
             Show show = new Show();
             show.Name = "Mad Man";
             show.Id = 0;
