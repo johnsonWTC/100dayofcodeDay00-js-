@@ -17,6 +17,8 @@ namespace Movie.Controllers
             Customer customer1 = new Customer();
             customer1.Name = "Thandwelihle Dubula";
 
+            List<Customer>
+
 
 
 
