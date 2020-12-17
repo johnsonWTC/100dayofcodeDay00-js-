@@ -36,3 +36,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Movie\obj\Debug\netcoreapp3.1\Mov
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Movie\obj\Debug\netcoreapp3.1\Movie.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Movie\obj\Debug\netcoreapp3.1\Movie.genruntimeconfig.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Movie\obj\Debug\netcoreapp3.1\Movie.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Movie\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Edit.cshtml.g.cs

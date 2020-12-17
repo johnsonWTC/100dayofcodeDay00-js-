@@ -19,7 +19,7 @@ namespace Movie.Controllers
 
         public ActionResult Edit(int id)
         {
-            return Content("id = "+ id);
+            return Content("id = "+ id);  
         }
     }
 }
