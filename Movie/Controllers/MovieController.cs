@@ -9,13 +9,12 @@ namespace Movie.Controllers
 {
     public class MovieController : Controller
     {
-        [Route("Movies/Released")]
         public IActionResult Random()
         {
             Customer customer = new Customer();
             customer.Name = "Johnson Dubula";
 
-            Customer customer1 = new Customer()
+            Customer customer1 = new Customer();
 
 
             Show show = new Show();
@@ -29,6 +28,7 @@ namespace Movie.Controllers
             return Content("id = "+ id);  
         }
 
+        [Route("Movies/Released")]
         public ActionResult Released(int date)
         {
             return View();
