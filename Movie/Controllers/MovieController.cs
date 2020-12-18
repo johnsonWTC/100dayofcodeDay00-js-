@@ -15,7 +15,7 @@ namespace Movie.Controllers
             Customer customer = new Customer();
             customer.Name = "Johnson Dubula";
 
-            Customer customer1 = new Customer
+            Customer customer1 = new Customer()
 
 
             Show show = new Show();
