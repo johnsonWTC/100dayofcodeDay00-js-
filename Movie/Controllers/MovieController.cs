@@ -13,7 +13,7 @@ namespace Movie.Controllers
         public IActionResult Random()
         {
             Customer customer = new Customer();
-            customer.Name = ""
+            customer.Name = "Johnson "
             Show show = new Show();
             show.Name = "Mad Man";
             show.Id = 0;
