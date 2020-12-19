@@ -9,6 +9,7 @@ namespace Movie.Controllers
 {
     public class MovieController : Controller
     {
+        [R]
         public IActionResult Random()
         {
             Show show = new Show();
