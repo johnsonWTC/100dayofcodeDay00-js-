@@ -9,7 +9,7 @@ namespace Movie.Controllers
 {
     public class MovieController : Controller
     {
-        [Route]
+        [Route("Movies/Released")]
         public IActionResult Random()
         {
             Show show = new Show();
