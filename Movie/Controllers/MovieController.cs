@@ -23,6 +23,6 @@ namespace Movie.Controllers
             return Content("id = "+ id);  
         }
 
-        public ActionResult
+        public ActionResult Released()
     }
 }
