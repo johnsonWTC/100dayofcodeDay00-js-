@@ -9,6 +9,6 @@ namespace Movie.ViewModels
     public class RandomMovieVieModel
     {
         public Show Movie { get; set; }
-        public int MyProperty { get; set; }
+        public List<> MyProperty { get; set; }
     }
 }
