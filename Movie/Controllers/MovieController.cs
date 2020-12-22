@@ -12,6 +12,7 @@ namespace Movie.Controllers
         [Route("Movies/Released")]
         public IActionResult Random()
         {
+            Customer customer
             Show show = new Show();
             show.Name = "Mad Man";
             show.Id = 0;
