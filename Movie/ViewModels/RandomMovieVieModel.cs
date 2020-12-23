@@ -7,5 +7,6 @@ namespace Movie.ViewModels
 {
     public class RandomMovieVieModel
     {
+        prop
     }
 }
