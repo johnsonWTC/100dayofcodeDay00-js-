@@ -25,7 +25,7 @@ namespace Movie.Controllers
 
         public ActionResult Released(int date)
         {
-
+            return View();
         }
     }
 }
