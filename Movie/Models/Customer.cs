@@ -8,6 +8,6 @@ namespace Movie.Models
     public class Customer
     {
         public int Id { get; set; }
-        prop
+        public string MyProperty { get; set; }
     }
 }
