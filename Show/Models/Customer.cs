@@ -7,6 +7,6 @@ namespace Show.Models
 {
     public class Customer
     {
-        prop
+        public int MyProperty { get; set; }
     }
 }
