@@ -7,6 +7,6 @@ namespace Show.Models
 {
     public class Movie
     {
-        public int MyProperty { get; set; }
+        public int Id { get; set; }
     }
 }
