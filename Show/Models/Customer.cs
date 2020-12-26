@@ -7,5 +7,6 @@ namespace Show.Models
 {
     public class Customer
     {
+        prop
     }
 }
