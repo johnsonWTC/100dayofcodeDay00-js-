@@ -22,7 +22,8 @@ namespace Show.Controllers
             var movie = new Movie();
             movie.Name = "Age Of Altron";
 
-            var movieTwo = new Movie()
+            var movieTwo = new Movie();
+            movieTwo.Name = "Winter Soldier";
                 return View(movie);
         }
 
