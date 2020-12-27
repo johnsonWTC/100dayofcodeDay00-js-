@@ -20,7 +20,7 @@ namespace Show.Controllers
         public ActionResult Random(int id)
         {
             var movie = new Movie();
-            movie.Name
+            movie.Name = "Age Of Altron";
                 return View();
         }
 
