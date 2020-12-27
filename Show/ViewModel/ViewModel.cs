@@ -7,5 +7,6 @@ namespace Show.ViewModel
 {
     public class ViewModel
     {
+        prop
     }
 }
