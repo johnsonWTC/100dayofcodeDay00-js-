@@ -18,7 +18,7 @@ namespace Show.Controllers
         // GET: MovieController/Details/5
         public ActionResult Random(int id)
         {
-
+            var movie =
             return View();
         }
 
