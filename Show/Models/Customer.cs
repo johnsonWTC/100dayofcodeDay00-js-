@@ -12,5 +12,7 @@ namespace Show.Models
         public bool isSubsribedToNewsLetter { get; set; }
 
         public MemberShipType MemberShipType { get; set; }
+
+        public int MemberShipTypeId { get; set; }
     }
 }
