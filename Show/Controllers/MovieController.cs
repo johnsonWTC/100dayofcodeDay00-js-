@@ -24,6 +24,10 @@ namespace Show.Controllers
 
             var movieTwo = new Movie();
             movieTwo.Name = "Winter Soldier";
+
+
+
+            var customer = 
                 return View(movie);
         }
 
