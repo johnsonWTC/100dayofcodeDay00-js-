@@ -22,7 +22,7 @@ namespace Show.Controllers
             var movie = new Movie();
             movie.Name = "Age Of Altron";
 
-            var movieTwo = 
+            var movieTwo = new Movie()
                 return View(movie);
         }
 
