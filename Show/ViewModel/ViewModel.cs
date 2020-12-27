@@ -7,6 +7,6 @@ namespace Show.ViewModel
 {
     public class ViewModel
     {
-        prop
+        public List<Movies> MyProperty { get; set; }
     }
 }
