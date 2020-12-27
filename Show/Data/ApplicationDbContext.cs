@@ -18,7 +18,7 @@ namespace Show.Data
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Movie> Movies { get; set; }
 
-        public DbSet<FollowTable> followTables { get ; set }
+        public DbSet<FollowTable> followTables { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
