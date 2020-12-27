@@ -9,5 +9,6 @@ namespace Show.ViewModel
     public class ViewModel
     {
         public List<Movie> Movies { get; set; }
+        public int MyProperty { get; set; }
     }
 }
