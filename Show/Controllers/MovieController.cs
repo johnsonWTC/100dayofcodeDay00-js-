@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Show.Models;
 
 namespace Show.Controllers
 {
@@ -18,7 +19,8 @@ namespace Show.Controllers
         // GET: MovieController/Details/5
         public ActionResult Random(int id)
         {
-            var movie = new Movie();         
+            var movie = new Movie();
+            movie.Name
                 return View();
         }
 
