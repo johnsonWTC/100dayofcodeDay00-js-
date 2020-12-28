@@ -7,5 +7,6 @@ namespace APINew.Model
 {
     public class Character
     {
+        prop
     }
 }
