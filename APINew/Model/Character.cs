@@ -8,5 +8,6 @@ namespace APINew.Model
     public class Character
     {
         public int id { get; set; }
+        prop
     }
 }
