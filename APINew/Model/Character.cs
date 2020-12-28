@@ -8,6 +8,6 @@ namespace APINew.Model
     public class Character
     {
         public int id { get; set; }
-        public string Name { get; set; } = 
+        public string Name { get; set; } = "Jam";
     }
 }
