@@ -7,6 +7,6 @@ namespace APINew.Model
 {
     public class Character
     {
-        public int MyProperty { get; set; }
+        public int id { get; set; }
     }
 }
