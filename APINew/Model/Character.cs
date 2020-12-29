@@ -11,5 +11,6 @@ namespace APINew.Model
         public string Name { get; set; } = "Jam";
         public int Hitpoints { get; set; } = 100;
         public int Strength { get; set; } = 10;
+        prop
     }
 }
