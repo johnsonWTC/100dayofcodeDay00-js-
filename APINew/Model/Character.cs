@@ -13,6 +13,6 @@ namespace APINew.Model
         public int Strength { get; set; } = 10;
         public int Defense { get; set; }
 
-        prop
+        public int MyProperty { get; set; }
     }
 }
