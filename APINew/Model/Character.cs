@@ -10,6 +10,6 @@ namespace APINew.Model
         public int id { get; set; }
         public string Name { get; set; } = "Jam";
         public int Hitpoints { get; set; } = 100;
-        prop
+        public int MyProperty { get; set; }
     }
 }
