@@ -132,6 +132,10 @@ namespace Show.Controllers
             followTable.FollowedID = FollowedID;
             followTable.FollowerID = FollowerID;
 
+
+            var userProfiles = _co   .UserProfile
+                               .Where(t => idList.Contains(t.Id));
+
             applicationDBContect.followTables.Add(followTable);
             applicationDBContect.SaveChanges();
 

@@ -1,8 +1,3 @@
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.AssemblyInfoInputs.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.AssemblyInfo.cs
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.csproj.CoreCompileInputs.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.RazorAssemblyInfo.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.RazorAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -16,7 +11,11 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\bin\Debug\netcoreapp3.1
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\bin\Debug\netcoreapp3.1\MoviesApp.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\bin\Debug\netcoreapp3.1\MoviesApp.Views.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\bin\Debug\netcoreapp3.1\MoviesApp.Views.pdb
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.AssemblyInfoInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.AssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.RazorAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.RazorAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.TagHelpers.input.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.TagHelpers.output.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\MoviesApp\obj\Debug\netcoreapp3.1\MoviesApp.RazorCoreGenerate.cache

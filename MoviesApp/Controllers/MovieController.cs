@@ -124,14 +124,15 @@ namespace MoviesApp.Controllers
             }
         }
 
-        public void AddFollower()
-        {
-            FollowTable followTable = new FollowTable();
-            int FollowedID = 4;
-            int FollowerID = 5;
-            followTable.FollowedID = FollowedID;
-            followTable.FollowerID = FollowerID;
+        //public void AddFollower()
+        //{
+        //    FollowTable followTable = new FollowTable();
+        //    int FollowedID = 4;
+        //    int FollowerID = 5;
+        //    followTable.FollowedID = FollowedID;
+        //    followTable.FollowerID = FollowerID;
 
-        }
+
+        //}
     }
 }
