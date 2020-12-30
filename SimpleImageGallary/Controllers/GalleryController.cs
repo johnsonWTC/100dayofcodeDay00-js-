@@ -17,7 +17,7 @@ namespace SimpleImageGallary.Controllers
             GalleryImage galleryImage3 = new GalleryImage();
 
             galleryImage1.Title = "image one";
-            galleryImage1.Created = 
+            galleryImage1.Created = DateTime.Now();
 
 
 
