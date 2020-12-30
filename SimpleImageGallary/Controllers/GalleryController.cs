@@ -15,6 +15,13 @@ namespace SimpleImageGallary.Controllers
             var hickingImages = new List<ImageTag>();
             var cityImages = new List<ImageTag>();
 
+            var imageTagOne = new ImageTag();
+            var imageTagTwo = new ImageTag();
+            var imageTagThree = new ImageTag();
+
+
+
+
             GalleryImage galleryImage1 = new GalleryImage();
             GalleryImage galleryImage2 = new GalleryImage();
             GalleryImage galleryImage3 = new GalleryImage();
