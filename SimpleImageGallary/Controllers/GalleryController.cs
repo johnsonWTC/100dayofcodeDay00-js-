@@ -29,6 +29,8 @@ namespace SimpleImageGallary.Controllers
             imageTagThree.Id = 2;
 
             hickingImages.Add(imageTagOne);
+            hickingImages.Add(imageTagTwo);
+            cityImages.Add(imageTagThree);
 
 
 
