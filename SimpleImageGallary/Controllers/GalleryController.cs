@@ -14,7 +14,7 @@ namespace SimpleImageGallary.Controllers
         {
             GalleryImage galleryImage1 = new GalleryImage();
             GalleryImage galleryImage2 = new GalleryImage();
-            GalleryImage
+            GalleryImage galleryImage3
 
             var model = new GalleryIndexModel();
             return View(model  );
