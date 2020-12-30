@@ -28,7 +28,7 @@ namespace SimpleImageGallary.Controllers
             imageTagThree.Discription = "kasi";
             imageTagThree.Id = 2;
 
-      
+            hickingImages.Add(imageTagOne);
 
 
 
@@ -45,7 +45,7 @@ namespace SimpleImageGallary.Controllers
             galleryImage2.Created = DateTime.Now;
             galleryImage2.Tags = cityImages;
             
-            galleryImage3.Title = "image three";
+            galleryImage3.Title = " ";
             galleryImage3.Created = DateTime.Now;
             galleryImage3.Tags = hickingImages;
 
