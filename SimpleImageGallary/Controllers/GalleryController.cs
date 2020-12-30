@@ -18,6 +18,7 @@ namespace SimpleImageGallary.Controllers
 
             galleryImage1.Title = "image one";
             galleryImage1.Created = DateTime.Now;
+            galleryImage1.Tags = hickingImages;
 
 
 
