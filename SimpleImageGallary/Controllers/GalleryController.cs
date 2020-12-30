@@ -22,11 +22,11 @@ namespace SimpleImageGallary.Controllers
             imageTagOne.Discription = "urban";
             imageTagOne.Id = 0;
 
-            imageTagTwo.Discription = "urban";
-            imageTagTwo.Id = 0;
+            imageTagTwo.Discription = "Adveture";
+            imageTagTwo.Id = 1;
 
-            imageTagThree.Discription = "urban";
-            imageTagThree.Id = 0;
+            imageTagThree.Discription = "kasi";
+            imageTagThree.Id = 2;
 
       
 
@@ -37,7 +37,7 @@ namespace SimpleImageGallary.Controllers
             GalleryImage galleryImage2 = new GalleryImage();
             GalleryImage galleryImage3 = new GalleryImage();
 
-            galleryImage1.Title = "image one";
+            galleryImage1.Title = "Hicking Trip";
             galleryImage1.Created = DateTime.Now;
             galleryImage1.Tags = hickingImages; 
             
