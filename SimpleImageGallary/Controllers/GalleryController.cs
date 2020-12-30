@@ -53,6 +53,11 @@ namespace SimpleImageGallary.Controllers
 
 
             ImageList.Add(galleryImage1);
+            ImageList.Add(galleryImage2);
+            ImageList.Add(galleryImage3);
+
+
+
 
 
 
