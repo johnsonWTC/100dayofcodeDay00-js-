@@ -22,6 +22,14 @@ namespace SimpleImageGallary.Controllers
             imageTagOne.Discription = "urban";
             imageTagOne.Id = 0;
 
+            imageTagTwo.Discription = "urban";
+            imageTagTwo.Id = 0;
+
+            imageTagThree.Discription = "urban";
+            imageTagThree.Id = 0;
+
+      
+
 
 
 
