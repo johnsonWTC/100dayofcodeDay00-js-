@@ -16,6 +16,11 @@ namespace SimpleImageGallary.Controllers
             GalleryImage galleryImage2 = new GalleryImage();
             GalleryImage galleryImage3 = new GalleryImage();
 
+            galleryImage1.Title = "image one";
+
+
+
+
             var model = new GalleryIndexModel();
             return View(model  );
         }
