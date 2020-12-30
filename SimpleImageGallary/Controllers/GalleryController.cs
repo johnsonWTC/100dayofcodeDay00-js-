@@ -33,7 +33,7 @@ namespace SimpleImageGallary.Controllers
             cityImages.Add(imageTagThree);
 
 
-
+            var ImageList = new List<GalleryImage>();
 
             GalleryImage galleryImage1 = new GalleryImage();
             GalleryImage galleryImage2 = new GalleryImage();
@@ -50,6 +50,9 @@ namespace SimpleImageGallary.Controllers
             galleryImage3.Title = " ";
             galleryImage3.Created = DateTime.Now;
             galleryImage3.Tags = hickingImages;
+
+
+            ImageList.Add(galleryImage1);
 
 
 
