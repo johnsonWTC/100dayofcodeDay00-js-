@@ -13,7 +13,7 @@ namespace SimpleImageGallary.Controllers
         public IActionResult Index()
         {
             GalleryImage galleryImage1 = new GalleryImage();
-            GalleryImage galleryImage2
+            GalleryImage galleryImage2 = new GalleryImage();
 
             var model = new GalleryIndexModel();
             return View(model  );
