@@ -19,6 +19,9 @@ namespace SimpleImageGallary.Controllers
             var imageTagTwo = new ImageTag();
             var imageTagThree = new ImageTag();
 
+            imageTagOne.Discription = "urban";
+            imageTagOne.Id = 0;
+
 
 
 
