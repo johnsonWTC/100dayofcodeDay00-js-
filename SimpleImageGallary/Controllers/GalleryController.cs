@@ -41,15 +41,18 @@ namespace SimpleImageGallary.Controllers
 
             galleryImage1.Title = "Hicking Trip";
             galleryImage1.Created = DateTime.Now;
-            galleryImage1.Tags = hickingImages; 
+            galleryImage1.Tags = hickingImages;
+            galleryImage1.url = "https://qph.fs.quoracdn.net/main-qimg-b7414df082fcbab596a1a1911ebf584b.webp";
             
             galleryImage2.Title = "On the trail";
             galleryImage2.Created = DateTime.Now;
             galleryImage2.Tags = cityImages;
+            galleryImage2.url = "https://rclfoods.com/wp-content/uploads/2020/03/taste-of-kasi-1.jpg";
             
-            galleryImage3.Title = " ";
+            galleryImage3.Title = "Kasi ";
             galleryImage3.Created = DateTime.Now;
             galleryImage3.Tags = hickingImages;
+            galleryImage3.url = "https://dictionary.cambridge.org/images/thumb/rambli_noun_002_30100.jpg?version=5.0.141";
 
 
             ImageList.Add(galleryImage1);
