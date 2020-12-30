@@ -41,7 +41,7 @@ namespace SimpleImageGallary.Controllers
             galleryImage1.Created = DateTime.Now;
             galleryImage1.Tags = hickingImages; 
             
-            galleryImage2.Title = "image two";
+            galleryImage2.Title = "On the trail";
             galleryImage2.Created = DateTime.Now;
             galleryImage2.Tags = cityImages;
             
