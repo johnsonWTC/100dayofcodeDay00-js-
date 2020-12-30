@@ -12,7 +12,7 @@ namespace SimpleImageGallary.Controllers
     {
         public IActionResult Index()
         {
-            var hickingImages
+            var hickingImages = new List<ImageTag>();
 
             GalleryImage galleryImage1 = new GalleryImage();
             GalleryImage galleryImage2 = new GalleryImage();
