@@ -13,7 +13,7 @@ for details on configuring this project to bundle and minify static web assets. 
     height: 300px;
     margin: 12px;
     position: relative;
-    box-shadow:
+    box-shadow: 0 10px 18px rgba(0,0,0,2), 0 5px 5px rgba (0, 0, 0,0.2);
 }
 
 
