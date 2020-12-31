@@ -66,6 +66,8 @@ namespace SimpleImageGallary.Controllers
 
 
             var model = new GalleryIndexModel();
+            model.Images = ImageList;
+            model.SearchQuery = "";
             return View(model  );
         }
     }

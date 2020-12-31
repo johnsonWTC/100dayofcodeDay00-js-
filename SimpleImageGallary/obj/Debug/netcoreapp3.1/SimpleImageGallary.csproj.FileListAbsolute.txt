@@ -79,3 +79,4 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallary\bin\Debug\netc
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallary\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallary\obj\Debug\netcoreapp3.1\SimpleImageGallary.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallary\obj\Debug\netcoreapp3.1\Razor\Views\Gallery\Index.cshtml.g.cs
