@@ -6,6 +6,14 @@
         {
             <div class="gallery-image"></div>
             <span>@image.Title</span>
+            <ul>
+                @foreach(var tag in image.Tags)
+                {
+                    <li>
+                    @tag.Discription
+                    </li>
+                }
+            </ul>
           
         }
     </div>
