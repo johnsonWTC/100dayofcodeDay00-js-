@@ -7,17 +7,18 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Service.Data;
 using Service.Models;
+using Service.Service;
 
 namespace Service.Controllers
 {
     public class UsersController : Controller
     {
         private readonly Context _context;
-        private readonly UserService userService;
+        private readonly UserService _userService;
 
-        public UsersController(Context context)
+        public UsersController(UserService userService)
         {
-            _context = context;
+            _userService = userService;
         }
 
         // GET: Users
