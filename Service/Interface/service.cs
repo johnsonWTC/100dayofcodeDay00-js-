@@ -7,6 +7,6 @@ namespace Service.Interface
 {
     interface service
     {
-
+        getallUser();
     }
 }
