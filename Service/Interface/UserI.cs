@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Service.Interface
 {
-    interface service
+    interface UserI
     {
       IEnumerable<User> getallUser();
         User GetUserById(int id);
-        User GetUserById();
+       
     }
 }
