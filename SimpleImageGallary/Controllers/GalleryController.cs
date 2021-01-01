@@ -34,7 +34,7 @@ namespace SimpleImageGallary.Controllers
             ImageViewModel.Id = image.Id;
             ImageViewModel.Title = image.Title;
             ImageViewModel.url = image.url; 
-            ImageViewModel.Tags = image.Tags.Select
+            ImageViewModel.Tags = image.Tags.Select(t =>)
             return View(ImageViewModel);  
         }
     }
