@@ -9,7 +9,7 @@ namespace Service.Service
 {
     public class UserService : UserI
     {
-        public 
+        public UserService
         public IEnumerable<User> getallUser()
         {
             throw new NotImplementedException();
