@@ -17,7 +17,7 @@ namespace Service.Service
         }
         public IEnumerable<User> getallUser()
         {
-            throw new NotImplementedException();
+            var users = context.Users.ToList();
         }
 
         public User GetUserById(int id)
