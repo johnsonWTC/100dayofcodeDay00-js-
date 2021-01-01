@@ -13,7 +13,7 @@ namespace Service.Service
         private readonly Context context;
         public UserService(Context _context)
         {
-
+            context = _context;
         }
         public IEnumerable<User> getallUser()
         {
