@@ -8,6 +8,6 @@ namespace Service.Interface
 {
     interface service
     {
-      IEnumerable getallUser();
+      IEnumerable<User> getallUser();
     }
 }
