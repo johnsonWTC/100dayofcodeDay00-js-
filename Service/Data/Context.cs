@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Service.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,8 @@ namespace Service.Data
 
     }
 
-    public DbSet<User> GalleryImages { get; set; }
-    public DbSet<ImageTag> ImageTags { get; set; }
+    public DbSet<User> Users { get; set; }
+   
 }
 {
     }
