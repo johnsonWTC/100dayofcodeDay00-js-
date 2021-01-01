@@ -22,7 +22,7 @@ namespace Service.Service
 
         public User GetUserById(int id)
         {
-            throw new NotImplementedException();
+            return context.Users.FirstOrDefault(e => e.UserId == id);
         }
     }
 }
