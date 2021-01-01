@@ -33,10 +33,9 @@ namespace SimpleImageGallary.Controllers
             ImageViewModel.Created = image.Created;
             ImageViewModel.Id = image.Id;
             ImageViewModel.Title = image.Title;
-            ImageViewModel.url = image.url;
-            ImageViewModel.Created = image.Created;
-            ImageViewModel.Created = image.Created;
-            return View(ImageViewModel);
+            ImageViewModel.url = image.url; 
+            ImageViewModel.Tags = image.Tags.Select
+            return View(ImageViewModel);  
         }
     }
 }
