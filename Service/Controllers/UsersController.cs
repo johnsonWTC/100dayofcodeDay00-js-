@@ -30,8 +30,8 @@ namespace Service.Controllers
         // GET: Users/Details/5
         public IActionResult Details(int? id)
         {
-      
 
+            var user = _userService.GetUserById(id);
             return View(user);
         }
 
