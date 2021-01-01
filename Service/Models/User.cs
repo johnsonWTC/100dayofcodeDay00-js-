@@ -7,6 +7,6 @@ namespace Service.Models
 {
     public class User
     {
-        prop
+        public int MyProperty { get; set; }
     }
 }
