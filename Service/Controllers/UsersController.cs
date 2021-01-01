@@ -1,22 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Service.Data;
+using Service.Interface;
 using Service.Models;
-using Service.Service;
 
 namespace Service.Controllers
 {
     public class UsersController : Controller
     {
         private readonly Context _context;
-        private readonly UserService _userService;
+        private readonly IUser _userService;
 
-        public UsersController(UserService userService, Context context)
+        public UsersController(IUser userService, Context context)
         {
             _userService = userService;
             _context = context;

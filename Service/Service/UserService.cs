@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Service.Service
 {
-    public class UserService : UserI
+    public class UserService : IUser
     {
         private readonly Context context;
         public UserService(Context _context)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Service.Interface
 {
-    interface UserI
+    public interface IUser
     {
       IEnumerable<User> getallUser();
         User GetUserById(int id);

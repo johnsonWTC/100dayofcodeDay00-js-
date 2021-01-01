@@ -10,6 +10,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Service.Data;
+using Service.Interface;
+using Service.Service;
 
 namespace Service
 {
@@ -30,6 +32,9 @@ namespace Service
             services.AddDbContext<Context>(options =>
             options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IUser, UserService>();
+
 
         }
 
