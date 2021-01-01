@@ -170,3 +170,8 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\z
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Service.csproj.CoreCompileInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Service.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Razor\Views\Users\Delete.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs

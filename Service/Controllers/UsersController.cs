@@ -16,9 +16,10 @@ namespace Service.Controllers
         private readonly Context _context;
         private readonly UserService _userService;
 
-        public UsersController(UserService userService)
+        public UsersController(UserService userService, Context context)
         {
             _userService = userService;
+            _context = context;
         }
 
         // GET: Users
