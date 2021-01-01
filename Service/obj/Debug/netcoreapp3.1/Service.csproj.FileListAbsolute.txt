@@ -35,3 +35,7 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\S
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\obj\Debug\netcoreapp3.1\Service.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\Service\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
