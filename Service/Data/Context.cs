@@ -8,7 +8,7 @@ namespace Service.Data
 {
     public class Context :DbContext
     {
-        public SimpleImageGalleryDbContext(DbContextOptions options) : base(options)
+        public Context(DbContextOptions options) : base(options)
     {
 
     }
