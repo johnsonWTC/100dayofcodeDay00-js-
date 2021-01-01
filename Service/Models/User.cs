@@ -7,5 +7,6 @@ namespace Service.Models
 {
     public class User
     {
+        prop
     }
 }
