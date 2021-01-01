@@ -1,4 +1,5 @@
-﻿using Service.Interface;
+﻿using Service.Data;
+using Service.Interface;
 using Service.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,11 @@ namespace Service.Service
 {
     public class UserService : UserI
     {
-        public UserService
+        private readonly Context context;
+        public UserService(Context _context)
+        {
+
+        }
         public IEnumerable<User> getallUser()
         {
             throw new NotImplementedException();
