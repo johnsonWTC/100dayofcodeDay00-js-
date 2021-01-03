@@ -8,6 +8,6 @@ namespace Azzure.Models
     public class Image
     {
         public int Id { get; set; }
-        public string MyProperty { get; set; }
+        public string title { get; set; }
     }
 }
