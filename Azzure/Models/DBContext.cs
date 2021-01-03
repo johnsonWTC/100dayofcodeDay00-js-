@@ -5,9 +5,7 @@ using System.Threading.Tasks;
 
 namespace Azzure.Models
 {
-    public class Image
+    public class DBContext
     {
-        public int Id { get; set; }
-        public string Title { get; set; }   
     }
 }
