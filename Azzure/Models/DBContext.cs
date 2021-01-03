@@ -5,7 +5,12 @@ using System.Threading.Tasks;
 
 namespace Azzure.Models
 {
-    public class DBContext
-    {
+    
+        public Context(DbContextOptions options) : base(options)
+        {
+
+        }
+
+        public DbSet<User> Users { get; set; }
     }
-}
+
