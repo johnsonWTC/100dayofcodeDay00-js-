@@ -11,6 +11,6 @@ namespace Azzure.Models
 
         }
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<Image> Users { get; set; }
     }
 
