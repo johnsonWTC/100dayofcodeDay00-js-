@@ -23,7 +23,7 @@ namespace SimpleImageGallery.Services
 
         public GalleryImage GetGalleryById(int id)
         {
-            return _context.GalleryImages.FirstOrDefault(e => e.Id == id);
+            return GetAll().Where(img => img.Id == id).First();
         }
 
         public IEnumerable<GalleryImage> GetWithTag(string tag)

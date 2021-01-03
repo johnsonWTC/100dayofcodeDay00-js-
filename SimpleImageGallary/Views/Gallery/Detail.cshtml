@@ -8,6 +8,15 @@
         </div>
     </div>
     <div class="row image-datail-meta">
-  <span >Title: </span> 
+  <span>Title: @Model.Title</span>
+        <span>
+            uploaded: @Model.Created
+        </span>
     </div>
+    <div class="row controls">
+        <a class="btn btn-primary" asp-controller="Gallery" asp-action="Index">
+            Back to Gallery
+        </a>
+    </div>
+
 </div>
