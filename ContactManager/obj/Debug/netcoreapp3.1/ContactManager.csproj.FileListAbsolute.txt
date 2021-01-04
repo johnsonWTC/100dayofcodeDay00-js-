@@ -1,0 +1,8 @@
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.AssemblyInfoInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.AssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.RazorAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\ContactManager\obj\Debug\netcoreapp3.1\ContactManager.RazorAssemblyInfo.cs
