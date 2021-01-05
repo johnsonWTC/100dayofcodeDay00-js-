@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -14,12 +15,17 @@ namespace PhotoApp.Controllers
     public class PhotosController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private object webHostEnvironment;
+        private readonly IWebHostEnvironment webHostEnvironment;
+     
 
-        public PhotosController(ApplicationDbContext context)
+        public PhotosController(ApplicationDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            webHostEnvironment = hostEnvironment;
         }
+
+
+    
 
         // GET: Photos
         public async Task<IActionResult> Index()
@@ -56,21 +62,23 @@ namespace PhotoApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Tittle,DateCreated,Likes,ProfilePicture")] Photo photo)
+        public async Task<IActionResult> Create(PhotoViewModel photoViewModel)
         {
             if (ModelState.IsValid)
             {
-                string uniqueFileName = UploadedFile(photo);
-                PhotoViewModel photoViewModel =new PhotoViewModel();
-                photoViewModel.DateCreated = photo.DateCreated;
-                photoViewModel.Likes = photo.Likes;
-                photoViewModel.ProfileImage = photo.ProfilePicture;
+                string uniqueFileName = UploadedFile(photoViewModel);
+                Photo photo = new Photo();
+                photo.DateCreated = photoViewModel.DateCreated;
+                photo.Tittle = photoViewModel.Tittle;
+                photo.ProfilePicture = uniqueFileName;
+                photo.Likes = photoViewModel.Likes;
+              
 
                 _context.Add(photo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(photo);
+            return View(photoViewModel);
         }
 
 
