@@ -13,7 +13,7 @@ namespace PhotoApp.Data
             : base(options)
         {
         }
-
-        DbSet<Photo> Photos { get; set ; }
+    
+        public DbSet<Photo> Photos { get; set ; }
     }
 }
