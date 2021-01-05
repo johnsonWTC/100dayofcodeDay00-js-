@@ -189,4 +189,3 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\PhotoApp.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\PhotoApp.pdb
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\PhotoApp.genruntimeconfig.cache
-C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\PhotoApp.csprojAssemblyReference.cache
