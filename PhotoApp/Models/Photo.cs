@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace PhotoApp.Models
 {
-    public class Photos
+    public class Photo
     {
         public int Id { get; set; }
         public string Tittle { get; set; }

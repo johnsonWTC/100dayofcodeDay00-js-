@@ -14,6 +14,6 @@ namespace PhotoApp.Data
         {
         }
 
-        DbSet<Photos> Photos { get; set ; }
+        DbSet<Photo> Photos { get; set ; }
     }
 }
