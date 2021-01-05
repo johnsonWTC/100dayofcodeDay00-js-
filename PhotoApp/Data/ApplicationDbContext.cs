@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PhotoApp.Models;
 
 namespace PhotoApp.Data
 {
@@ -12,5 +13,7 @@ namespace PhotoApp.Data
             : base(options)
         {
         }
+
+        DbSet<Photos> Photos { get; set ; }
     }
 }

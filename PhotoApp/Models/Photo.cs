@@ -11,5 +11,7 @@ namespace PhotoApp.Models
         public string Tittle { get; set; }
 
         public DateTime DateCreated { get; set; }
+
+        public int Likes { get; set; }
     }
 }
