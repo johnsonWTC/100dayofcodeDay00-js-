@@ -185,3 +185,8 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\bin\Debug\netcoreapp3.1\
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\PhotoApp.csproj.CoreCompileInputs.cache
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\PhotoApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\PhotoApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\Razor\Views\Photos\Create.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\Razor\Views\Photos\Delete.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\Razor\Views\Photos\Details.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\Razor\Views\Photos\Edit.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\PhotoApp\obj\Debug\netcoreapp3.1\Razor\Views\Photos\Index.cshtml.g.cs
