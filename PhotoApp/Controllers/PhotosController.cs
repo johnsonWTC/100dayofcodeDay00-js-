@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,7 @@ namespace PhotoApp.Controllers
     public class PhotosController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private object webHostEnvironment;
 
         public PhotosController(ApplicationDbContext context)
         {
@@ -54,15 +56,39 @@ namespace PhotoApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Tittle,DateCreated,Likes")] Photo photo)
+        public async Task<IActionResult> Create([Bind("Id,Tittle,DateCreated,Likes,ProfilePicture")] Photo photo)
         {
             if (ModelState.IsValid)
             {
+                string uniqueFileName = UploadedFile(photo);
+                PhotoViewModel photoViewModel =new PhotoViewModel();
+                photoViewModel.DateCreated = photo.DateCreated;
+                photoViewModel.Likes = photo.Likes;
+                photoViewModel.ProfileImage = photo.ProfilePicture;
+
                 _context.Add(photo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(photo);
+        }
+
+
+        private string UploadedFile(PhotoViewModel photoVewModel)
+        {
+            string uniqueFileName = null;
+
+            if (photoVewModel.ProfileImage != null)
+            {
+                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                uniqueFileName = Guid.NewGuid().ToString() + "_" + photoVewModel.ProfileImage.FileName;
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    photoVewModel.ProfileImage.CopyTo(fileStream);
+                }
+            }
+            return uniqueFileName;
         }
 
         // GET: Photos/Edit/5

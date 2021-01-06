@@ -15,6 +15,6 @@ namespace PhotoApp.Models
         public int Likes { get; set; }
 
         [Required(ErrorMessage = "Please choose profile image")]
-        public string ProfilePicture { get; set; }
+        public IFormFile ProfileImage { get; set; }
     }
 }
