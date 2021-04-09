@@ -424,3 +424,11 @@ C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\bin\Debug\netcoreapp3.1\
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\AuthTest\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
