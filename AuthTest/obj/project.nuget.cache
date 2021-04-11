@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LjUPS8Mz5w+/vTOg/GLh6SvIX+LonfgJbHCx0l1GrgG/T25fBmZBlREN8BpYa488gcZptQ3Q/oEZW1GMOJiPMg==",
+  "dgSpecHash": "7gPReArtZyxRLwLX83aB12qHTjf9wsxcX/tJUfxAHFHYjJd0vn5Dyg0++RFXevvoasN/sGT+Tol++5ZkdmmceQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jdubula\\Desktop\\100dayofcodeDay00-js-\\AuthTest\\AuthTest.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.6\\microsoft.aspnetcore.cryptography.keyderivation.5.0.6.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.6\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.6.nupkg.sha512",
-    "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.13\\microsoft.aspnetcore.identity.ui.3.1.13.nupkg.sha512",
+    "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.10\\microsoft.aspnetcore.identity.ui.3.1.10.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.10\\microsoft.aspnetcore.mvc.razor.extensions.3.1.10.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.10\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.10.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -37,8 +37,8 @@
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.dependencymodel\\3.1.6\\microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
-    "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.13\\microsoft.extensions.fileproviders.abstractions.3.1.13.nupkg.sha512",
-    "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\3.1.13\\microsoft.extensions.fileproviders.embedded.3.1.13.nupkg.sha512",
+    "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.10\\microsoft.extensions.fileproviders.abstractions.3.1.10.nupkg.sha512",
+    "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.fileproviders.embedded\\3.1.10\\microsoft.extensions.fileproviders.embedded.3.1.10.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.6\\microsoft.extensions.identity.core.5.0.6.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.identity.stores\\5.0.6\\microsoft.extensions.identity.stores.5.0.6.nupkg.sha512",
     "C:\\Users\\jdubula\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
