@@ -1,0 +1,12 @@
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\bin\Debug\netcoreapp3.1\SimpleImageGallery.Services.deps.json
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\bin\Debug\netcoreapp3.1\SimpleImageGallery.Services.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\bin\Debug\netcoreapp3.1\SimpleImageGallery.Services.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\bin\Debug\netcoreapp3.1\SimpleImageGallery.Data.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\bin\Debug\netcoreapp3.1\SimpleImageGallery.Data.pdb
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\obj\Debug\netcoreapp3.1\SimpleImageGallery.Services.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\obj\Debug\netcoreapp3.1\SimpleImageGallery.Services.AssemblyInfoInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\obj\Debug\netcoreapp3.1\SimpleImageGallery.Services.AssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\obj\Debug\netcoreapp3.1\SimpleImageGallery.Services.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\obj\Debug\netcoreapp3.1\SimpleImageGallery.Services.csproj.CopyComplete
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\obj\Debug\netcoreapp3.1\SimpleImageGallery.Services.dll
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\SimpleImageGallery.Services\obj\Debug\netcoreapp3.1\SimpleImageGallery.Services.pdb
