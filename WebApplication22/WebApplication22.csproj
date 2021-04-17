@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>aspnet-WebApplication21-788295D0-7428-49B2-9DA8-E67E6602CA3C</UserSecretsId>
-    <WebProject_DirectoryAccessLevelKey>0</WebProject_DirectoryAccessLevelKey>
+    <UserSecretsId>aspnet-WebApplication22-658192B4-4244-4F2B-8BCF-3B3D4BEAF21E</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +10,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.6" NoWarn="NU1605" />
     <PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
     <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Owin.Host.SystemWeb" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Owin.Security.Cookies" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Owin.Security.OpenIdConnect" Version="4.2.0" />
   </ItemGroup>
 
 </Project>
