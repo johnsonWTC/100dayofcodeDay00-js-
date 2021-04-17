@@ -1,0 +1,9 @@
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.csprojAssemblyReference.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.AssemblyInfoInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.AssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.csproj.CoreCompileInputs.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.RazorAssemblyInfo.cache
+C:\Users\jdubula\Desktop\100dayofcodeDay00-js-\WebApplication25\obj\Debug\net5.0\WebApplication25.RazorAssemblyInfo.cs
