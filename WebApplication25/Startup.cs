@@ -31,7 +31,7 @@ namespace WebApplication25
             })
             .AddAzureAd(options => Configuration.Bind("AzureAd", options))
             .AddCookie();
-
+            services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddMvc();
         }
 
